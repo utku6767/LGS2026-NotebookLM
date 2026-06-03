@@ -10,6 +10,9 @@
             --primary: #007bff;
             --bg: #f4f7f6;
             --text: #333;
+            --success: #28a745;
+            --danger: #dc3545;
+            --info: #17a2b8;
         }
 
         body {
@@ -26,8 +29,8 @@
             background-color: transparent; pointer-events: none;
             z-index: 9999; transition: background-color 0.4s ease;
         }
-        .flash-green { background-color: rgba(0, 255, 0, 0.15) !important; }
-        .flash-red { background-color: rgba(255, 0, 0, 0.15) !important; }
+        .flash-green { background-color: rgba(40, 167, 69, 0.15) !important; }
+        .flash-red { background-color: rgba(220, 53, 69, 0.15) !important; }
 
         /* Ekran Yönetimi */
         .screen {
@@ -38,6 +41,11 @@
         }
         .screen.active { display: flex; }
 
+        /* Renk Sınıfları */
+        .c-success { color: var(--success); }
+        .c-danger { color: var(--danger); }
+        .c-info { color: var(--info); }
+
         /* ================= ANA MENÜ EKRANI ================= */
         #main-menu { padding: 30px 20px; align-items: center; }
         
@@ -46,16 +54,22 @@
             letter-spacing: 2px; text-transform: uppercase;
         }
 
-        .total-score-box {
-            background: #d4edda; color: #155724; border: 2px solid #c3e6cb;
-            padding: 10px 20px; border-radius: 8px; font-weight: bold;
-            font-size: 1.1rem; margin-bottom: 30px; text-align: center;
-            width: 100%; box-sizing: border-box;
+        /* Ana Menü İstatistik Kutusu */
+        .stats-box {
+            background: #f8f9fa; border: 2px solid #e9ecef;
+            padding: 15px 20px; border-radius: 12px; font-weight: bold;
+            font-size: 1.05rem; margin-bottom: 25px; text-align: center;
+            width: 100%; box-sizing: border-box; display: flex;
+            flex-direction: column; gap: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .stats-box div {
+            display: flex; justify-content: space-between;
+            padding: 5px 10px; background: #fff; border-radius: 6px; border: 1px solid #eee;
         }
 
         .menu-btn {
-            width: 100%; padding: 20px; margin-bottom: 15px;
-            font-size: 1.2rem; font-weight: bold; background-color: #fff;
+            width: 100%; padding: 18px; margin-bottom: 15px;
+            font-size: 1.15rem; font-weight: bold; background-color: #fff;
             border: 2px solid var(--text); border-radius: 12px;
             cursor: pointer; text-transform: uppercase;
             box-shadow: 4px 4px 0px rgba(0,0,0,1);
@@ -64,7 +78,7 @@
         .menu-btn:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px rgba(0,0,0,1); }
 
         .reset-btn {
-            width: 100%; padding: 15px; margin-top: auto; /* En alta iter */
+            width: 100%; padding: 15px; margin-top: auto; 
             font-size: 1.1rem; font-weight: bold; background-color: #f8d7da;
             color: #721c24; border: 2px solid #f5c6cb; border-radius: 12px;
             cursor: pointer; text-transform: uppercase;
@@ -75,9 +89,7 @@
             color: var(--text); text-decoration: none; font-weight: 600;
             font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;
         }
-        .source-link:hover {
-            opacity: 1; text-decoration: underline; color: var(--primary);
-        }
+        .source-link:hover { opacity: 1; text-decoration: underline; color: var(--primary); }
 
         /* ================= ÖZEL UYARI PENCERESİ (MODAL) ================= */
         #modal-overlay {
@@ -91,30 +103,36 @@
             width: 85%; max-width: 400px; text-align: center;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
-        .modal-box h2 { margin-top: 0; color: #dc3545; }
-        .modal-buttons {
-            display: flex; justify-content: space-between; margin-top: 25px; gap: 15px;
-        }
+        .modal-box h2 { margin-top: 0; color: var(--danger); }
+        .modal-buttons { display: flex; justify-content: space-between; margin-top: 25px; gap: 15px; }
         .modal-btn {
             flex: 1; padding: 12px; font-weight: bold; font-size: 1rem;
             border: none; border-radius: 8px; cursor: pointer;
         }
         .btn-deny { background: #6c757d; color: #fff; }
-        .btn-accept { background: #dc3545; color: #fff; }
+        .btn-accept { background: var(--danger); color: #fff; }
 
         /* ================= SORU EKRANI ================= */
         .top-bar {
-            padding: 15px 20px; border-bottom: 2px solid #eee;
+            padding: 12px 15px; border-bottom: 2px solid #eee;
             display: flex; justify-content: space-between; align-items: center;
             background: #fff; position: sticky; top: 0; z-index: 10;
         }
         .back-btn {
             padding: 10px 15px; background: #e2e6ea; border: 1px solid #ccc;
-            border-radius: 6px; font-weight: bold; cursor: pointer;
+            border-radius: 6px; font-weight: bold; cursor: pointer; white-space: nowrap;
         }
-        .subject-info { text-align: right; }
-        #subject-title { display: block; font-size: 1.1rem; color: #333; }
-        #subject-score { display: block; font-size: 0.9rem; color: #28a745; font-weight: bold; margin-top: 3px; }
+        
+        .subject-info { text-align: right; display: flex; flex-direction: column; align-items: flex-end;}
+        #subject-title { font-size: 1.05rem; color: #333; margin-bottom: 5px; text-transform: uppercase;}
+        
+        /* Soru Ekranı İstatistikleri */
+        .subject-stats {
+            display: flex; gap: 8px; font-size: 0.85rem; font-weight: bold; 
+            background: #f8f9fa; padding: 5px 8px; border-radius: 6px; border: 1px solid #eee;
+            flex-wrap: wrap; justify-content: flex-end;
+        }
+        .subject-stats span { display: flex; align-items: center; gap: 3px; }
 
         .quiz-content { padding: 20px; display: flex; flex-direction: column; flex: 1; }
         .question-text { font-size: 1.15rem; line-height: 1.6; margin-bottom: 25px; font-weight: 500; }
@@ -128,8 +146,8 @@
         .option-btn:disabled { color: #333; cursor: default; }
         .option-icon { margin-right: 12px; font-size: 1.2rem; min-width: 25px; }
 
-        .correct { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724 !important; }
-        .incorrect { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24 !important; }
+        .correct { background-color: #d4edda !important; border-color: var(--success) !important; color: #155724 !important; }
+        .incorrect { background-color: #f8d7da !important; border-color: var(--danger) !important; color: #721c24 !important; }
 
         .bottom-nav {
             margin-top: auto; padding-top: 20px; border-top: 2px solid #eee;
@@ -165,8 +183,12 @@
 
     <div id="main-menu" class="screen active">
         <h1>ANA MENÜ</h1>
-        <div class="total-score-box">
-            Tüm Dersler Toplam Doğru: <span id="main-total-score">0</span>
+        
+        <div class="stats-box">
+            <div><span>Toplam Çözülen:</span> <span id="main-total-answered">0</span></div>
+            <div><span class="c-success">Toplam Doğru:</span> <span id="main-total-correct" class="c-success">0</span></div>
+            <div><span class="c-danger">Toplam Yanlış:</span> <span id="main-total-wrong" class="c-danger">0</span></div>
+            <div><span class="c-info">Başarı Oranı:</span> <span class="c-info">%<span id="main-percentage">0</span></span></div>
         </div>
 
         <button class="menu-btn" onclick="startSubject('matematik')">MATEMATİK</button>
@@ -185,7 +207,12 @@
             <button class="back-btn" onclick="showMainMenu()">Ana Menü</button>
             <div class="subject-info">
                 <strong id="subject-title">Ders Adı</strong>
-                <span id="subject-score">Doğru: 0</span>
+                <div class="subject-stats">
+                    <span title="Çözülen Soru">Ç: <b id="sub-answered">0</b></span>
+                    <span class="c-success" title="Doğru Sayısı">D: <b id="sub-correct">0</b></span>
+                    <span class="c-danger" title="Yanlış Sayısı">Y: <b id="sub-wrong">0</b></span>
+                    <span class="c-info" title="Başarı Yüzdesi">%<b id="sub-percent">0</b></span>
+                </div>
             </div>
         </div>
 
@@ -246,24 +273,42 @@
             if(currentSubject) updateSubjectScore();
         }
 
+        // Ana Menü İstatistikleri
         function updateMainScore() {
-            let total = 0;
+            let answered = 0;
+            let correct = 0;
             for (let sub in userProgress) {
                 for (let q in userProgress[sub]) {
-                    if (userProgress[sub][q].isCorrect) total++;
+                    answered++;
+                    if (userProgress[sub][q].isCorrect) correct++;
                 }
             }
-            document.getElementById('main-total-score').innerText = total;
+            let wrong = answered - correct;
+            let percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+            document.getElementById('main-total-answered').innerText = answered;
+            document.getElementById('main-total-correct').innerText = correct;
+            document.getElementById('main-total-wrong').innerText = wrong;
+            document.getElementById('main-percentage').innerText = percent;
         }
 
+        // Ders Ekranı İstatistikleri
         function updateSubjectScore() {
-            let total = 0;
+            let answered = 0;
+            let correct = 0;
             if (userProgress[currentSubject]) {
                 for (let q in userProgress[currentSubject]) {
-                    if (userProgress[currentSubject][q].isCorrect) total++;
+                    answered++;
+                    if (userProgress[currentSubject][q].isCorrect) correct++;
                 }
             }
-            document.getElementById('subject-score').innerText = `Doğru: ${total}`;
+            let wrong = answered - correct;
+            let percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
+
+            document.getElementById('sub-answered').innerText = answered;
+            document.getElementById('sub-correct').innerText = correct;
+            document.getElementById('sub-wrong').innerText = wrong;
+            document.getElementById('sub-percent').innerText = percent;
         }
 
         // Modal Yönetimi
@@ -404,7 +449,6 @@
                 btn.appendChild(iconSpan);
                 btn.appendChild(textSpan);
 
-                // Eğer daha önce çözüldüyse eski durumu ekrana yansıt ve butonları kilitle
                 if (pastAnswer) {
                     btn.disabled = true;
                     if (key === q.correct) {
@@ -457,7 +501,7 @@
                 }
             }
 
-            // İlerlemeyi Kaydet
+            // İlerlemeyi Kaydet ve Güncelle
             userProgress[currentSubject][currentIndex] = {
                 selected: selectedKey,
                 isCorrect: isCorrect
