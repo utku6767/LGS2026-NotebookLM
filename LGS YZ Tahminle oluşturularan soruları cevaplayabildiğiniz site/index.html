@@ -69,6 +69,15 @@
             color: #721c24; border: 2px solid #f5c6cb; border-radius: 12px;
             cursor: pointer; text-transform: uppercase;
         }
+        
+        .source-link {
+            display: block; text-align: center; margin-top: 15px; margin-bottom: 10px;
+            color: var(--text); text-decoration: none; font-weight: 600;
+            font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;
+        }
+        .source-link:hover {
+            opacity: 1; text-decoration: underline; color: var(--primary);
+        }
 
         /* ================= ÖZEL UYARI PENCERESİ (MODAL) ================= */
         #modal-overlay {
@@ -168,6 +177,7 @@
         <button class="menu-btn" onclick="startSubject('ingilizce')">İNGİLİZCE</button>
 
         <button class="reset-btn" onclick="showResetModal()">İLERLEMEYİ SIFIRLA</button>
+        <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank" class="source-link">Kaynaklar</a>
     </div>
 
     <div id="quiz-screen" class="screen">
