@@ -68,13 +68,13 @@ Buna göre çuvallara eklenen un miktarlarının kilogram cinsinden değerleri a
 **Doğru Cevap ve Çözüm:** **Cevap: A.** a=3 için 2840<3000, a=4 için 28400>3000.
 
 ## 8. Soru Tipi: Cebirsel İfadeler / Özdeşlikler
-**Soru Kökü:** $(3x - A)^2 = Bx^2 + 30x + C$ özdeşliğine göre $A + B + C$ kaçtır?
+**Soru Kökü:** $(Ax + 3)^2 = 16x^2 + Bx + C$ özdeşliğine göre $A + B + C$ kaçtır?
 **Şıklar:**
-- A) -11
-- B) 19
-- C) 29
-- D) 39
-**Doğru Cevap ve Çözüm:** **Cevap: C.** A=-5, B=9, C=25. Toplam 29.
+- A) 31
+- B) 34
+- C) 37
+- D) 40
+**Doğru Cevap ve Çözüm:** **Cevap: C.** $(Ax+3)^2 = A^2x^2 + 6Ax + 9$. $A^2=16$ → $A=4$, $B=6A=24$, $C=9$. $A+B+C = 4+24+9 = 37$.
 
 ## 9. Soru Tipi: Cebirsel İfadeler / Toplama ve Çarpma
 **Soru Kökü:** $K = 5x$, $L = 3x - 2$, $M = x - 1$ olduğuna göre $(K - L) \cdot M$ işleminin sonucu aşağıdakilerden hangisine eşittir?

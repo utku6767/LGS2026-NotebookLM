@@ -729,10 +729,10 @@
             try {
                 const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
                 if (!soruMatch) continue;
-                const aMatch = block.match(/-\s*A\)\s*(.*)/);
-                const bMatch = block.match(/-\s*B\)\s*(.*)/);
-                const cMatch = block.match(/-\s*C\)\s*(.*)/);
-                const dMatch = block.match(/-\s*D\)\s*(.*)/);
+                const aMatch = block.match(/(?:^|\n)-\s*A\)\s*(.*)/);
+                const bMatch = block.match(/(?:^|\n)-\s*B\)\s*(.*)/);
+                const cMatch = block.match(/(?:^|\n)-\s*C\)\s*(.*)/);
+                const dMatch = block.match(/(?:^|\n)-\s*D\)\s*(.*)/);
                 const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
                 questions.push({
                     text: soruMatch[1].trim(),
@@ -744,10 +744,13 @@
         return questions;
     }
 
-    // MathJax render helper
-    function renderMath() {
+    // MathJax render helper - setTimeout lets DOM settle before typesetting
+    function renderMath(targetEl) {
         if (window.MathJax && window.MathJax.typesetPromise) {
-            window.MathJax.typesetPromise().catch(err => console.log('MathJax error:', err));
+            setTimeout(() => {
+                const els = targetEl ? [targetEl] : undefined;
+                window.MathJax.typesetPromise(els).catch(err => console.log('MathJax error:', err));
+            }, 0);
         }
     }
 
@@ -811,9 +814,15 @@
         }
         
         const q = currentQuestions[currentIndex];
-        // Soru metnini göster (MathJax düzgün işlesin diye class='math' ekledik)
-        document.getElementById('question-text').innerHTML = q.text.replace(/\n/g, '<br>');
+        const questionEl = document.getElementById('question-text');
         const optsDiv = document.getElementById('options-container');
+        
+        // Clear MathJax state on old nodes before replacing innerHTML
+        if (window.MathJax && window.MathJax.typesetClear) {
+            window.MathJax.typesetClear([questionEl, optsDiv]);
+        }
+        
+        questionEl.innerHTML = q.text.replace(/\n/g, '<br>');
         optsDiv.innerHTML = '';
         const saved = userProgress[currentSubject]?.[currentIndex];
         ['A','B','C','D'].forEach(key => {
@@ -838,8 +847,9 @@
         });
         if (saved) answered = true;
         
-        // MathJax'i çağır
-        renderMath();
+        // MathJax'i sadece quiz ekranında çağır
+        const quizScreen = document.getElementById('quiz-screen');
+        renderMath(quizScreen);
         updateSubjectScore();
     }
 
@@ -906,8 +916,8 @@
         if (!userProgress._meta) userProgress._meta = {};
         if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
         if (dirty) saveProgress();
-        // İlk MathJax render
-        renderMath();
+        // İlk MathJax render (ana menüde matematik yok, sadece hazırlık)
+        renderMath(document.getElementById('main-menu'));
     };
 </script>
 </body>
