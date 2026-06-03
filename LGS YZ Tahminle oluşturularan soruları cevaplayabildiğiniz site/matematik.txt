@@ -1,0 +1,365 @@
+## 1. Soru Tipi: Çarpanlar ve Katlar / Aralarında Asal Olma
+**Soru Kökü:** Aşağıda iki adet un çuvalı ve bu çuvallarda bulunan un miktarları verilmiştir:
+I. çuval: 46 kg
+II. çuval: 12 kg
+
+Bu çuvallara belli miktarlarda un eklendiğinde çuvallardaki un miktarlarının kilogram cinsinden değerleri aralarında asal olmaktadır.
+
+Buna göre çuvallara eklenen un miktarlarının kilogram cinsinden değerleri aşağıdakilerin hangisi olabilir?
+**Şıklar:**
+- A) I. çuvala: 8 kg, II. çuvala: 6 kg
+- B) I. çuvala: 3 kg, II. çuvala: 2 kg
+- C) I. çuvala: 5 kg, II. çuvala: 4 kg
+- D) I. çuvala: 9 kg, II. çuvala: 3 kg
+**Doğru Cevap ve Çözüm:** **Cevap: C.** A şıkkı: 54 ve 18 (2'ye bölünür), B şıkkı: 49 ve 14 (7'ye bölünür), C şıkkı: 51 ve 16 (ortak böleni yok), D şıkkı: 55 ve 15 (5'e bölünür).
+
+## 2. Soru Tipi: Kareköklü İfadeler / Aralık Bulma
+**Soru Kökü:** Yükseklikleri 5 m ve 6 m olan A ile B direkleri arasına, boyu 2 m olan bir fidan dikilmiştir. Bir süre sonra bu fidanın boyu A direğinin yüksekliğinden fazla, B direğinin yüksekliğinden az olmuştur. Buna göre bu fidan, dikildikten sonra kaç metre uzamış olabilir?
+**Şıklar:**
+- A) $2\sqrt{3}$
+- B) $2\sqrt{2}$
+- C) $3\sqrt{2}$
+- D) $2\sqrt{6}$
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Uzama miktarı 3 ile 4 arasında olmalıdır. $2\sqrt{3} = \sqrt{12}$ (9 ile 16 arasında).
+
+## 3. Soru Tipi: Üslü İfadeler / Bilimsel Gösterim
+**Soru Kökü:** Tam kapasiteyle çalıştığında Türkiye'nin elektrik ihtiyacının önemli bir kısmını karşılayacak olan Akkuyu Nükleer Güç Santrali'yle, 60 yıllık süreçte $21 \cdot 10^8$ ton karbon emisyonu engellenecektir. Buna göre Akkuyu Nükleer Güç Santrali'nin tam kapasiteyle çalıştığında 1 yılda engelleyeceği karbon emisyonunun "kilogram" cinsinden bilimsel gösterimi aşağıdakilerden hangisidir? (1 ton = 1000 kg)
+**Şıklar:**
+- A) $3,5 \cdot 10^7$
+- B) $2,1 \cdot 10^{10}$
+- C) $21 \cdot 10^7$
+- D) $3,5 \cdot 10^{10}$
+**Doğru Cevap ve Çözüm:** **Cevap: D.** 1 yılda $0,35 \cdot 10^8$ ton = $0,35 \cdot 10^{11}$ kg = $3,5 \cdot 10^{10}$ kg.
+
+## 4. Soru Tipi: Kareköklü İfadeler / Toplama ve Çıkarma
+**Soru Kökü:** $\sqrt{363} - \sqrt{75} - \sqrt{27}$ işleminin sonucu aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) $2\sqrt{3}$
+- B) $3\sqrt{3}$
+- C) $4\sqrt{3}$
+- D) $5\sqrt{3}$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $\sqrt{363}=11\sqrt{3}$, $\sqrt{75}=5\sqrt{3}$, $\sqrt{27}=3\sqrt{3}$, sonuç $3\sqrt{3}$.
+
+## 5. Soru Tipi: Çarpanlar ve Katlar / EBOB Problemi
+**Soru Kökü:** Bir dolabın alt kısımlarına eşit yükseklikte çekmeceler yapılacaktır. Çekmece yapılacak kısımların toplam yükseklikleri 144 cm ve 180 cm'dir. Yapılacak her bir çekmecenin yüksekliği 15 cm'den kısa olup çekmeceler arasında boşluk bırakılmayacaktır. Buna göre bu dolaba yapılacak çekmece sayısı **en az** kaçtır?
+**Şıklar:**
+- A) 18
+- B) 24
+- C) 27
+- D) 30
+**Doğru Cevap ve Çözüm:** **Cevap: C.** EBOB(144,180)=36. 15'ten küçük en büyük bölen 12'dir. 144/12=12, 180/12=15, toplam 27.
+
+## 6. Soru Tipi: Oran - Orantı ve Ortak Kat (EKOK)
+**Soru Kökü:** 1. fotokopi makinesi 5 saniyede 1 çıktı, 2. makine 8 saniyede 1 çıktı. Makineler aynı anda çalışarak toplam 780 adet broşür basmış ve aynı anda durmuşlardır. Baskı işlemi kaç dakikada tamamlanmıştır?
+**Şıklar:**
+- A) 20
+- B) 26
+- C) 30
+- D) 40
+**Doğru Cevap ve Çözüm:** **Cevap: D.** EKOK(5,8)=40 saniyede 8+5=13 adet. 780/13=60 periyot, 60×40=2400 saniye=40 dakika.
+
+## 7. Soru Tipi: Üslü İfadeler / Basamak Analizi ve Eşitsizlik
+**Soru Kökü:** $2,84 \cdot 10^a$ sayısının 3000'den küçük olduğu bilindiğine göre $a$'nın alabileceği en büyük doğal sayı değeri kaçtır?
+**Şıklar:**
+- A) 3
+- B) 4
+- C) 5
+- D) 6
+**Doğru Cevap ve Çözüm:** **Cevap: A.** a=3 için 2840<3000, a=4 için 28400>3000.
+
+## 8. Soru Tipi: Cebirsel İfadeler / Özdeşlikler
+**Soru Kökü:** $(3x - A)^2 = Bx^2 + 30x + C$ özdeşliğine göre $A + B + C$ kaçtır?
+**Şıklar:**
+- A) -11
+- B) 19
+- C) 29
+- D) 39
+**Doğru Cevap ve Çözüm:** **Cevap: C.** A=-5, B=9, C=25. Toplam 29.
+
+## 9. Soru Tipi: Cebirsel İfadeler / Toplama ve Çarpma
+**Soru Kökü:** $K = 5x$, $L = 3x - 2$, $M = x - 1$ olduğuna göre $(K - L) \cdot M$ işleminin sonucu aşağıdakilerden hangisine eşittir?
+**Şıklar:**
+- A) $2x^2 - 1$
+- B) $2x^2 - 2$
+- C) $x^2 - 4$
+- D) $x^2 - 1$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $K-L=2x+2$, $(2x+2)(x-1)=2x^2-2$.
+
+## 10. Soru Tipi: Çarpanlar ve Katlar / Tam Kare Sayılar
+**Soru Kökü:** Mert bir yıl boyunca her gün kumbarasına para atacaktır. Günleri 1'den 365'e kadar numaralandıran Mert, numarası tam kare olan günlerde 10 TL, diğer günlerde 1 TL atacaktır. Mert kumbarasında bir yıl boyunca toplam kaç TL biriktirir? (1 yıl = 365 gün)
+**Şıklar:**
+- A) 498
+- B) 512
+- C) 524
+- D) 536
+**Doğru Cevap ve Çözüm:** **Cevap: D.** 19 tam kare gün var: 19×10=190 TL. Kalan 346 gün: 346×1=346 TL. Toplam 536 TL.
+
+## 11. Soru Tipi: Çarpanlar ve Katlar / EBOB Problemi
+**Soru Kökü:** 120 cm ve 150 cm uzunluğunda iki demir çubuk, hiç parça artmayacak ve tüm parçaların uzunlukları birbirine eşit olacak şekilde ayrı ayrı kesilecektir. Her bir kesim işlemi 3 saniye sürdüğüne göre, tüm çubukların kesim işlemi için geçen toplam süre **en az** kaç saniyedir?
+**Şıklar:**
+- A) 18
+- B) 21
+- C) 24
+- D) 27
+**Doğru Cevap ve Çözüm:** **Cevap: B.** EBOB(120,150)=30. 120'de 4 parça için 3 kesim, 150'de 5 parça için 4 kesim. Toplam 7 kesim × 3 saniye = 21.
+
+## 12. Soru Tipi: Olasılık / Periyodik Tekrar Eden Durumlar
+**Soru Kökü:** Dakikada 1 kazak üreten bir makine, sırasıyla 4 beyaz, 3 siyah ve 5 lacivert kazak üreterek bu döngüyü sürekli tekrarlamaktadır. Makine toplam 175 dakika boyunca aralıksız üretim yapmıştır. Üretilen son 18 kazak arasından rastgele seçilen bir kazağın beyaz olma olasılığı kaçtır?
+**Şıklar:**
+- A) $\frac{5}{18}$
+- B) $\frac{1}{3}$
+- C) $\frac{7}{18}$
+- D) $\frac{4}{9}$
+**Doğru Cevap ve Çözüm:** **Cevap: C.** 175 kazakta 14 tam döngü + 7 kazak (4B,3S). Son 18 kazak: önceki periyottan 11 kazak (3B,3S,5L) + sondan 7 kazak (4B,3S) = 7B, 6S, 5L. Olasılık 7/18.
+
+## 13. Soru Tipi: Üslü İfadeler / Geometri ile Bütünleştirme
+**Soru Kökü:** Çevresinin uzunluğu $64^3$ birim olan dikdörtgen biçimindeki bir kâğıt, biri dikdörtgen diğeri kare şeklinde olacak biçimde kesilerek iki parçaya ayrılıyor. Kesilen kare şeklindeki parçanın bir kenarının uzunluğu $8^5$ birimdir. Buna göre kesim işleminden sonra kalan dikdörtgen şeklindeki parçanın bir yüzünün alanı kaç birimkaredir?
+**Şıklar:**
+- A) $2^{30}$
+- B) $2^{31}$
+- C) $2^{32}$
+- D) $2^{33}$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Çevre=$2^{18}$, kısa kenar=$2^{15}$, uzun kenar=$3\cdot2^{15}$. Kalan uzun kenar=$2^{16}$, alan=$2^{15}\cdot2^{16}=2^{31}$.
+
+## 14. Soru Tipi: Üslü İfadeler / Bilimsel Gösterim ve Eşitsizlik
+**Soru Kökü:** 1. Araba: $1,48 \cdot 10^a$ km, 2. Araba: $960 \cdot 10^{a-3}$ km. Selim'in seçtiği arabanın değeri $1,28 \cdot 10^5$ km'dir ve bu değer 1. araçtan küçük, 2. araçtan büyüktür. Fatih'in seçtiği arabanın kilometresi aşağıdakilerden hangisi olabilir?
+**Şıklar:**
+- A) $9,5 \cdot 10^4$
+- B) $1,36 \cdot 10^5$
+- C) $1,24 \cdot 10^6$
+- D) $1,5 \cdot 10^5$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** a=5 için 2. araba 96.000 km, 1. araba 148.000 km. Fatih'in arabası 96.000-148.000 arasında olmalı, $1,36\cdot10^5=136.000$ uygundur.
+
+## 15. Soru Tipi: Kareköklü İfadeler / Büyüklük Karşılaştırma
+**Soru Kökü:** Ahmet, içerisinde 6 GB boş alan bulunan bir klasöre dosya yükleyecektir. Dosya boyutları: Müzik $4\sqrt{2}$ GB, Fotoğraf $5\sqrt{2}$ GB, Video $3\sqrt{3}$ GB, Belge $2\sqrt{5}$ GB. Kaç dosya yüklenebilir?
+**Şıklar:**
+- A) 1
+- B) 2
+- C) 3
+- D) 4
+**Doğru Cevap ve Çözüm:** **Cevap: C.** $\sqrt{32}$, $\sqrt{50}$, $\sqrt{27}$, $\sqrt{20}$. $\sqrt{36}=6$ ile karşılaştırıldığında 3 dosya sığar.
+
+## 16. Soru Tipi: Kareköklü İfadeler / Katlama ve Benzerlik
+**Soru Kökü:** Ön yüzü sarı, arka yüzü mavi olan dikdörtgen kâğıdın kısa kenarı 15 cm, uzun kenarı 45 cm'dir. Bu kâğıt her iki ucundan, kısa kenarına paralel olacak şekilde içe doğru katlanıyor. Katlama sonucunda her iki yanda görünen mavi dikdörtgenler, başlangıçtaki büyük dikdörtgen ile benzerdir. Ortada kalan sarı bölgenin uzun kenarı kaç cm'dir?
+**Şıklar:**
+- A) 35
+- B) 30
+- C) 25
+- D) 20
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Benzerlik oranı 1/3, mavi dikdörtgenin diğer kenarı 5 cm. İki uçtan katlanınca 20 cm kaybolur, kalan 25 cm.
+
+## 17. Soru Tipi: Kareköklü İfadeler / Aralık Belirleme
+**Soru Kökü:** Can 18 m, Burak 27 m atış yapmıştır. Ali yarışmada ikinci olmuştur. Ali'nin atış mesafesi, Can ve Burak'ın mesafelerinin her birine en az 3 m uzaklıktadır. Ali'nin atış mesafesi aşağıdakilerden hangisi olabilir?
+**Şıklar:**
+- A) $\sqrt{400}$
+- B) $\sqrt{430}$
+- C) $10\sqrt{5}$
+- D) $\sqrt{600}$
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Ali'nin mesafesi 21-24 m arasında olmalı. $10\sqrt{5}=\sqrt{500}$ (22,36 m) uygundur.
+
+## 18. Soru Tipi: Çarpanlar ve Katlar / Aralarında Asal Olma
+**Soru Kökü:** Kartlar: 12, 15, 22, 28, 33, 35. Kartlar ikişerli üç gruba ayrılmış ve her gruptaki sayılar aralarında asaldır. 15 sayısının eşleştiği kart kesinlikle kaçtır?
+**Şıklar:**
+- A) 22
+- B) 28
+- C) 33
+- D) 35
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Asal çarpanları yazıldığında 15'in eşleşebileceği tek sayı 22'dir (diğer eşleşmeler sistem bozar).
+
+## 19. Soru Tipi: Olasılık / Eşitsizlik ile Sayı Tahmini
+**Soru Kökü:** Sadece sarı, kırmızı ve mavi topların bulunduğu bir torbadan rastgele alınan bir topun mavi olma olasılığı $\frac{1}{4}$'tür. Kırmızı olma olasılığı en fazla, sarı olma olasılığı en azdır. Torbada toplam 36 top bulunduğuna göre, kırmızı top sayısı **en az** kaçtır?
+**Şıklar:**
+- A) 18
+- B) 19
+- C) 20
+- D) 21
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Mavi=9, Sarı+Kırmızı=27, Sarı<9 ve Kırmızı>9. Sarı en fazla 8 olabilir, o zaman Kırmızı=19.
+
+## 20. Soru Tipi: Veri Analizi / Daire Grafiği ve Yüzde Oranları
+**Soru Kökü:** A, B ve C marka telefonların aylık toplam satışı 360 adettir. A markasının merkez açısı 120°, B'nin 150°'dir. A'dan 12, B'den 15 adet iade edilmiştir. Tüm markalarda iade oranları eşit olduğuna göre C'den kaç adet iade edilmiştir?
+**Şıklar:**
+- A) 6
+- B) 9
+- C) 12
+- D) 15
+**Doğru Cevap ve Çözüm:** **Cevap: B.** A=120 adet, iade oranı %10. C=90 adet, iade sayısı=9.
+
+## 21. Soru Tipi: Çarpanlar ve Katlar / Aralarında Asal Olma
+**Soru Kökü:** 78 dakikalık bir belgesel saat 11.00'da başlatılıyor. Hangi saatte, videonun oynatılan kısmının süresi ile kalan kısmının süresi aralarında asal olur?
+**Şıklar:**
+- A) 11.10
+- B) 11.27
+- C) 11.35
+- D) 11.57
+**Doğru Cevap ve Çözüm:** **Cevap: C.** 11.35'te 35 dk geçti, 43 dk kaldı. EBOB(35,43)=1.
+
+## 22. Soru Tipi: Çarpanlar ve Katlar / EBOB ve Geometri Uygulaması
+**Soru Kökü:** Alanı 150 m² olan dikdörtgen arsanın kenar uzunlukları aralarında asaldır. Arsanın bir bölümüne, kenar uzunluğu doğal sayı olan kare biçiminde tek bir kulübe yapılacaktır. Kulübe dışında kalan alan **en az** kaç m²'dir?
+**Şıklar:**
+- A) 114
+- B) 141
+- C) 146
+- D) 149
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Olası boyutlar: 1×150, 2×75, 3×50, 6×25. Kısa kenar 6 seçilince kare alanı 36, kalan 114.
+
+## 23. Soru Tipi: Olasılık / Periyodik Tekrar Eden Durumlar
+**Soru Kökü:** Mavi lamba 4 sn yanıp 2 sn sönük, turuncu lamba 6 sn yanıp 6 sn sönük kalır. Lambalar aynı anda çalışmaya başlıyor. Rastgele bir anda bakıldığında her iki lambayı da aynı anda yanarken görme olasılığı kaçtır?
+**Şıklar:**
+- A) $\frac{1}{3}$
+- B) $\frac{1}{4}$
+- C) $\frac{5}{12}$
+- D) $\frac{2}{3}$
+**Doğru Cevap ve Çözüm:** **Cevap: A.** EKOK(6,12)=12 saniyelik periyotta kesişen yanık süresi 4 saniye. Olasılık 4/12=1/3.
+
+## 24. Soru Tipi: Cebirsel İfadeler / Özdeşlikler ve İlerleme
+**Soru Kökü:** "Çek-bırak" oyuncağı geriye $(x-3)$ cm çekilip bırakıldığında ileriye $(3x+2)$ cm gitmektedir. Bu hareket $(2x+5)$ kez tekrarlanıyor. A ve D noktaları arasındaki toplam mesafe nedir?
+**Şıklar:**
+- A) $4x^2 + 20x + 25$
+- B) $4x^2 + 8x - 5$
+- C) $6x^2 + 18x + 13$
+- D) $8x^2 + 18x - 5$
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Net ilerleme $(3x+2)-(x-3)=2x+5$. Toplam mesafe $(2x+5)^2=4x^2+20x+25$.
+
+## 25. Soru Tipi: Üslü İfadeler / Geometrik Büyüme (Satranç Tahtası)
+**Soru Kökü:** Satranç tahtasının C2 karesinde başlangıç değeri $0,12 \cdot 10^5$ olan bir pul vardır. Pul yukarı hareket edince 25 katına, sağa hareket edince 4 katına çıkar. F6 karesine geldiğinde değerinin bilimsel gösterimi nedir?
+**Şıklar:**
+- A) $1,2 \cdot 10^9$
+- B) $3 \cdot 10^{10}$
+- C) $3 \cdot 10^{11}$
+- D) $1,2 \cdot 10^{12}$
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Başlangıç=12.000. 3 sağa ($4^3$) ve 4 yukarı ($25^4$). $12.000 \cdot 4^3 \cdot 25^4 = 3 \cdot 10^{11}$.
+
+## 26. Soru Tipi: Denklem Kurma / Doğrusal İlişkiler
+**Soru Kökü:** İki metro hattının Ana Terminal ile Aktarma İstasyonu arasındaki mesafeleri eşittir. 1. hatta 3 eş aralık, 2. hatta 4 eş aralık vardır. 1. hattaki her aralık, 2. hattakinden 1 km fazladır. Ana Terminal ile Aktarma İstasyonu arası kaç km'dir?
+**Şıklar:**
+- A) 10
+- B) 12
+- C) 14
+- D) 16
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $3(x+1)=4x$, $x=3$, mesafe $4x=12$ km.
+
+## 27. Soru Tipi: Kareköklü İfadeler / Ondalık Gösterimlerin Karekökü
+**Soru Kökü:** $\dfrac{\sqrt{0,81} + \sqrt{0,09}}{\sqrt{0,64} - \sqrt{0,04}}$ işleminin sonucu kaçtır?
+**Şıklar:**
+- A) 1
+- B) 2
+- C) 3
+- D) 4
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $\sqrt{0,81}=0,9$, $\sqrt{0,09}=0,3$, $\sqrt{0,64}=0,8$, $\sqrt{0,04}=0,2$. $\frac{1,2}{0,6}=2$.
+
+## 28. Soru Tipi: Doğrusal Denklemler / Koordinat Sistemi ve Uzaklık
+**Soru Kökü:** Ali ve İsa arasında başlangıçta 100 m vardır. Ali ATM'den saniyede 2 m uzaklaşmakta, İsa ATM'ye saniyede 3 m yaklaşmaktadır. Kaçıncı saniyede ATM'ye uzaklıkları eşitlenir?
+**Şıklar:**
+- A) 15
+- B) 20
+- C) 25
+- D) 30
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $2t = 100 - 3t$, $5t=100$, $t=20$.
+
+## 29. Soru Tipi: Veri Analizi / Daire ve Ortak Çarpan
+**Soru Kökü:** A ürünü 120°, B ürünü 150°'lik açıya sahiptir. A ürünü sayısı C ürünü sayısından 600 fazladır. B ürünü sayısı kaçtır?
+**Şıklar:**
+- A) 1500
+- B) 2400
+- C) 3000
+- D) 3600
+**Doğru Cevap ve Çözüm:** **Cevap: C.** C açısı 90°, A-C=30°=600 adet, 1°=20 adet. B=150×20=3000.
+
+## 30. Soru Tipi: Kareköklü İfadeler / Geometrik Şekiller ve Alan
+**Soru Kökü:** Banyo zeminine kenar uzunlukları $\sqrt{3}$ dm ve $\sqrt{12}$ dm olan fayanslar döşenecektir. Zeminin alanı 120 dm² olduğuna göre kaç fayans gerekir?
+**Şıklar:**
+- A) 10
+- B) 20
+- C) 30
+- D) 40
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Fayans alanı $\sqrt{3} \cdot \sqrt{12} = \sqrt{36}=6$ dm². $120/6=20$ adet.
+
+## 31. Soru Tipi: Periyodik Tekrar (EKOK) / Optimizasyon
+**Soru Kökü:** Caddenin iki yanına genişliği 10 m olan evler yapılacaktır. Sol tarafta evler arası 8 m, sağ tarafta 10 m'dir. Uzunluğu 200 m'den fazla olan caddenin her iki tarafına toplamda en az kaç ev yapılabilir?
+**Şıklar:**
+- A) 19
+- B) 23
+- C) 38
+- D) 40
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Sol periyot 18 m, sağ periyot 20 m. EKOK(18,20)=180, cadde 360 m. Sol:20 ev, sağ:18 ev, toplam 38.
+
+## 32. Soru Tipi: Kareköklü İfadeler / Geometrik Tuzak (Çevre)
+**Soru Kökü:** Alanı 200 cm² olan kare kartonun bir köşesinden, alanı 18 cm² olan kare parça kesilip çıkarılıyor. Kalan parçanın çevresi kaç cm'dir?
+**Şıklar:**
+- A) $30\sqrt{2}$
+- B) $34\sqrt{2}$
+- C) $40\sqrt{2}$
+- D) $46\sqrt{2}$
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Büyük karenin kenarı $10\sqrt{2}$, çevresi $40\sqrt{2}$. Köşeden kesme çevreyi değiştirmez.
+
+## 33. Soru Tipi: Doğrusal Denklemler / Eşitsizlik Kurma (Aralık Bulma)
+**Soru Kökü:** 800 m'lik parkurda A'dan B'ye gidip dönmek 1 turdur. İkinci turu koşan Efe, A'ya uzaklığı 10 m'den fazla iken durmuştur. Başlangıçtan itibaren koştuğu $x$ metre için eşitsizlik nedir?
+**Şıklar:**
+- A) $1500 < x < 3000$
+- B) $1610 < x < 3190$
+- C) $1620 < x < 3200$
+- D) $1600 < x < 3190$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** $x > 1600+10=1610$ ve $3200-x > 10 \rightarrow x < 3190$.
+
+## 34. Soru Tipi: Olasılık ve Mantık / Sistematik Yerleştirme
+**Soru Kökü:** 1-9 sayıları 3×3 tabloya yazılacaktır. I. satır: [Mavi]-4-[Mavi], II: 5-[Mavi]-[Mavi], III: 7-[Mavi]-6. I. satırda 3'ten küçük olma olasılığı daha fazla, III. satırda tek olma olasılığı daha azdır. II. satırdaki mavi kartların toplamı kaçtır?
+**Şıklar:**
+- A) 10
+- B) 12
+- C) 15
+- D) 17
+**Doğru Cevap ve Çözüm:** **Cevap: B.** I. satırdaki maviler 1 ve 2, III. satırdaki mavi 8, II. satırdaki maviler 3 ve 9, toplam 12.
+
+## 35. Soru Tipi: Üslü İfadeler / Özdeş Çarpımlar Oluşturma
+**Soru Kökü:** Kartlar: $4^4$, $5^8$, $10^2$, $10^6$, $A$, $B$ ikişerli gruplara ayrılıyor. Her gruptaki çarpım eşit. $A \cdot B$ kaçtır?
+**Şıklar:**
+- A) $10^4$
+- B) $10^6$
+- C) $10^8$
+- D) $10^{10}$
+**Doğru Cevap ve Çözüm:** **Cevap: C.** $4^4=2^8$, $2^8 \cdot 5^8 = 10^8$. $10^2 \cdot 10^6 = 10^8$. $A \cdot B = 10^8$.
+
+## 36. Soru Tipi: Denklem Kurma / Oran-Orantı (Sistematik Kesir)
+**Soru Kökü:** Mavi:Sarı:Turuncu = 3:2:4 oranında boncuk vardır. Önce üç renkli, sonra iki renkli, sonra tek renkli kolyeler yapılıyor. Üç renkli kolyelerdeki boncuk sayısı, iki renkli kolyelerdekinden 48 fazladır. Tek renkli kolyelerde kaç boncuk vardır?
+**Şıklar:**
+- A) 10
+- B) 12
+- C) 18
+- D) 24
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Başlangıç: 3k,2k,4k. 1.aşama: 6k kullanılır, kalan 1k,0,2k. 2.aşama: 2k kullanılır, kalan 0,0,1k. $6k-2k=48 \rightarrow k=12$.
+
+## 37. Soru Tipi: Doğrusal İlişkiler / Cebirsel Modelleme
+**Soru Kökü:** 120 cm'lik borular birleştiriliyor, her bağlantıda 15 cm kayboluyor. En uca 30 cm'lik uç takılıyor (10 cm kayıp). Boru sayısı $x$, net uzunluk $y$ arasındaki denklem nedir?
+**Şıklar:**
+- A) $y = 105x + 20$
+- B) $y = 105x + 35$
+- C) $y = 120x + 20$
+- D) $y = 120x + 40$
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Borular: $120x - 15(x-1)=105x+15$, uç eklenince $+20$, toplam $105x+35$.
+
+## 38. Soru Tipi: Üslü İfadeler / Ondalık Gösterimlerin Çözümlenmesi
+**Soru Kökü:** Tepki süreleri: A: $3\cdot10^{-1}+5\cdot10^{-2}$, B: $4\cdot10^{-1}+2\cdot10^{-2}$, C: $2\cdot10^{-1}+8\cdot10^{-2}$, D: $3\cdot10^{-1}+9\cdot10^{-2}$. Bitiş süreleri: 10,25 - 10,40 - 10,15 - 10,30. Sadece koşu süresi en kısa olan hangisidir?
+**Şıklar:**
+- A) A
+- B) B
+- C) C
+- D) D
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Tepki süreleri: 0,35 - 0,42 - 0,28 - 0,39. Koşu süreleri: 9,90 - 9,98 - 9,87 - 9,91. En kısa C.
+
+## 39. Soru Tipi: Denklem ve Olasılık Entegrasyonu
+**Soru Kökü:** Kırmızı toplar, mavinin 2 katından 1 fazla; sarı toplar, kırmızıdan 2 eksik. Mavi olma olasılığı $\frac{1}{5}$ olduğuna göre, kırmızı olma olasılığı yüzde kaçtır?
+**Şıklar:**
+- A) %30
+- B) %35
+- C) %40
+- D) %45
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Mavi=x, Kırmızı=2x+1, Sarı=2x-1, Toplam=5x. Mavi olasılık x/5x=1/5. Kırmızı olasılık (2x+1)/5x, x=4 için 9/20=%45.
+
+## 40. Soru Tipi: Veri Analizi / Daire ve Sütun Grafiği Dönüşümü
+**Soru Kökü:** Daire grafiği: Simit 180°, Poğaça 120°, Börek 60°. Satılmayan: Simit 20, Poğaça 10, Börek 15. Satılan poğaça, satılan böreğin 3 katıdır. Kaç simit satılmıştır?
+**Şıklar:**
+- A) 65
+- B) 75
+- C) 85
+- D) 95
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Üretilen: 3k,2k,1k. Satılan poğaça=2k-10, satılan börek=k-15. $2k-10=3(k-15) \rightarrow k=35$. Satılan simit=105-20=85.

@@ -1,0 +1,394 @@
+## 1. Soru Tipi: Sözcükte Çok Anlamlılık
+**Soru Kökü:** "Düşmek" sözcüğü aşağıdaki cümlelerin hangisinde "Aşırı ilgi göstermek, bir şeyin üzerine çok titremek" anlamında kullanılmıştır?
+**Şıklar:**
+- A) Yağmurun ardından ıslanan merdivenlerden çıkarken ayağı kayıp düştü.
+- B) Bu zor günlerinde ailesi onun üzerine fazlasıyla düşüyor, her ihtiyacını karşılıyordu.
+- C) Şirketin son çeyrekteki kâr oranları beklenmedik bir şekilde düştü.
+- D) Yıllardır görüşmediği eski dostunun yolu tesadüfen bizim kasabaya düşmüştü.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** "Düşmek" sözcüğü B şıkkında "aşırı ilgi göstermek, üzerine titremek" anlamında kullanılmıştır. A şıkkında "yerçekiminin etkisiyle yukarıdan aşağıya inmek", C şıkkında "azalmak, gerilemek", D şıkkında ise "yolu uğramak, varmak" anlamlarındadır.
+
+## 2. Soru Tipi: Cümle Birleştirme
+**Soru Kökü:** (I) Göçmen kuşlar, yollarını bulabilmek için Güneş'in ve yıldızların gökyüzündeki konumlarından faydalanırlar. (II) Son yıllarda artan ışık kirliliği, bu kuşların yön bulma yeteneklerini olumsuz yönde etkilemektedir. Numaralandırılmış cümlelerin anlamca doğru biçimde birleştirilmiş hâli aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Güneş ve yıldızların konumuna bakarak göç eden kuşlar, ışık kirliliği yüzünden artık yollarını bulamamaktadır.
+- B) Göçmen kuşların yollarını bulmak için kullandıkları Güneş ve yıldızlar, artan ışık kirliliğinden dolayı görünmemektedir.
+- C) Yönlerini Güneş'in ve yıldızların konumundan faydalanarak bulan göçmen kuşların bu yetenekleri, son yıllarda artan ışık kirliliğinden olumsuz etkilenmektedir.
+- D) Son yıllarda artan ışık kirliliği, göçmen kuşların Güneş ve yıldızları kullanarak göç etmelerini tamamen engellemiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Her iki cümlenin anlamsal olarak eksiksiz ve yoruma yer bırakmadan birleştirildiği tek seçenek C şıkkıdır.
+
+## 3. Soru Tipi: Sözel Mantık ve Muhakeme
+**Soru Kökü:** Bir okulda düzenlenen sanat festivalinde; Pazartesi, Salı, Çarşamba, Perşembe ve Cuma günleri ardışık olarak Tiyatro, Resim, Müzik, Heykel ve Şiir etkinlikleri yapılacaktır. Etkinliklerin günleriyle ilgili bilinenler şunlardır:
+- Müzik etkinliği, Şiir etkinliğinden hemen önceki gün yapılacaktır.
+- Resim etkinliği haftanın ilk ya da son günü değildir.
+- Tiyatro etkinliği, Çarşamba günü yapılacaktır.
+- Heykel etkinliği, Resim etkinliğinden sonraki bir günde yapılacaktır.
+
+Bu bilgilere göre aşağıdakilerden hangisi kesinlikle yanlıştır?
+**Şıklar:**
+- A) Müzik etkinliği Pazartesi günü yapılmıştır.
+- B) Resim etkinliği Salı günü yapılmıştır.
+- C) Şiir etkinliği Cuma günü yapılmıştır.
+- D) Heykel etkinliği Perşembe günü yapılmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Geçerli tek dizilim: 1. Pazartesi (Müzik), 2. Salı (Şiir), 3. Çarşamba (Tiyatro), 4. Perşembe (Resim), 5. Cuma (Heykel). Heykel etkinliği Cuma günüdür, Perşembe değildir.
+
+## 4. Soru Tipi: Geçiş ve Bağlantı İfadeleri / Paragraf Tamamlama
+**Soru Kökü:** Teknolojinin gelişmesiyle birlikte bilgiye ulaşmak saniyelerimizi alıyor. Eskiden günlerce kütüphanelerde araştırma yapmamız gereken bir konuyu, şimdi akıllı telefonumuzdan birkaç tuşa basarak öğrenebiliyoruz. ---- bu hız, bilginin derinlemesine sindirilmesini engelliyor ve insanları yüzeysel okumaya itiyor. Bilgiye çabuk ulaşan modern insan, aynı hızla o bilgiyi unutuyor. Bu metinde boş bırakılan yere düşüncenin akışına göre aşağıdakilerden hangisi getirilmelidir?
+**Şıklar:**
+- A) Ne var ki
+- B) Başka bir deyişle
+- C) Özellikle
+- D) İlk olarak
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Olumlu bir düşünceden olumsuz bir düşünceye geçiş yapıldığı için buraya zıtlık/karşıtlık bildiren "Ne var ki" gelmelidir.
+
+## 5. Soru Tipi: Paragrafta Ana Düşünce
+**Soru Kökü:** Birçok insan başarısızlıkla karşılaştığında hevesini kaybeder ve yolundan döner. Oysa tarihe adını yazdırmış büyük bilim insanları ve sanatçıların ortak özelliği, ilk denemelerinde başarmaları değil, düştükleri yerden daha güçlü kalkabilmeleridir. Thomas Edison, ampulü icat etmeden önce binlerce kez başarısız olmuş ancak her birini "Çalışmayan bir yöntem daha buldum." diyerek tecrübeye dönüştürmüştür. Başarı, dikensiz bir bahçede yürümek değil, dikenlerin battığı yerleri tanıyıp yola devam etme cesaretidir. Bu metnin ana fikri aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) İnsanlar başarısızlıkla karşılaştıklarında çoğu zaman heveslerini kaybederek hedeflerinden vazgeçerler.
+- B) Gerçek başarı, karşılaşılan zorluklar ve başarısızlıklar karşısında pes etmeden mücadele etmeyi gerektirir.
+- C) Thomas Edison'un ampulü icat etmesi, sabırlı çalışmanın tarihteki en büyük örneklerinden biridir.
+- D) Tarihteki büyük bilim insanları her zaman ilk denemelerinde başarılı olamamışlardır.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Metnin tamamını kapsayan temel mesaj B seçeneğinde verilmiştir.
+
+## 6. Soru Tipi: Görsel Okuma / İnfografik Yorumlama
+**Soru Kökü:** Bir kütüphanenin 2024 yılındaki kitap ödünç alma verilerine ilişkin bir analiz raporundan şunlar elde edilmiştir:
+- Şiir kitaplarının ödünç alınma oranı, deneme kitaplarının ödünç alınma oranından daha fazladır.
+- Yıl boyunca en çok ödünç alınan kitap türü roman olmuştur.
+- Bilim kurgu ve biyografi kitaplarının ödünç alınma oranları ise birbirine tam olarak eşittir.
+
+Buna göre aşağıdaki oransal dağılımlardan hangisi bu kütüphanenin 2024 yılı kitap ödünç alma verilerini doğru yansıtmaktadır?
+**Şıklar:**
+- A) %40 Roman, %20 Şiir, %15 Deneme, %15 Bilim Kurgu, %10 Biyografi
+- B) %45 Roman, %15 Şiir, %20 Deneme, %10 Bilim Kurgu, %10 Biyografi
+- C) %35 Roman, %25 Şiir, %15 Deneme, %12,5 Bilim Kurgu, %12,5 Biyografi
+- D) %30 Roman, %20 Şiir, %20 Deneme, %15 Bilim Kurgu, %15 Biyografi
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Tüm şartları karşılayan tek seçenek C'dir.
+
+## 7. Soru Tipi: Fiilimsiler (Eylemsiler)
+**Soru Kökü:** Fiil kök veya gövdelerine belirli eklerin getirilmesiyle oluşturulan, cümlede isim, sıfat veya zarf görevinde kullanılan sözcüklere fiilimsi denir. Ancak bazı sözcükler fiilimsi eklerini almalarına rağmen zamanla eylem anlamlarını yitirerek bir varlığın kalıcı adı olurlar. Bunlar fiilimsi olarak değerlendirilemez. Buna göre aşağıdaki cümlelerin hangisinde altı çizili sözcük fiilimsi (eylemsi) **değildir**?
+**Şıklar:**
+- A) Bahar gelince etrafı saran o <u>tanıdık</u> koku hepimize çocukluğumuzu hatırlatmıştı.
+- B) Akşamki misafirler için annemle markete gidip taze <u>ekmek</u> almam gerekiyordu.
+- C) Masanın üzerinde duran gizli dosyaları detaylıca <u>okumadan</u> sakın imzalama.
+- D) Çocukların ağaçların arasında neşeyle <u>koşuşması</u> bütün mahalleyi şenlendirdi.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** "Ekmek" sözcüğü fiilimsi değil, kalıcı isimdir.
+
+## 8. Soru Tipi: Metin Türleri (Deneme, Fıkra, Makale Ayırımı)
+**Soru Kökü:** Yalnız kalmak, günümüz insanı için âdeta bir ceza gibi algılanıyor. Oysa ben yalnızlığı, insanın kendi içine yaptığı en verimli yolculuk olarak görürüm. Geçenlerde bir kitapta okudum; yazar, yalnızlığı "Ruhun kendi kendisiyle sohbet etmesi" olarak tanımlıyordu. Ne kadar da doğru... İnsan kalabalıklar içinde her şeye kulak verir de bir tek kendi iç sesini duyamaz. Bu yüzden fırsat buldukça teknolojiden, gürültüden ve o bitmek bilmeyen insan selinden kaçıp kendi kıyılarıma çekilmeyi seviyorum. Orada yargılanmak yok, rol yapmak yok; sadece ben ve arınmış düşüncelerim var. Bu metnin türüyle ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) Bilimsel bir gerçeklik, istatistiksel verilerle ve nesnel bir dille kanıtlanmaya çalışıldığı için bir makaleden alınmıştır.
+- B) Güncel ve siyasi bir mesele, halkın anlayacağı sade bir dille eleştirildiği için bir fıkradan alınmıştır.
+- C) Geçmişte yaşanmış, yazarın hayatında derin izler bırakmış bir olay anlatıldığı için bir anıdan alınmıştır.
+- D) Yazar, herhangi bir konudaki kişisel görüşlerini kesin hükümlere varmadan, kendisiyle konuşuyormuş gibi anlattığı için bir denemeden alınmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Yazarın "ben" diliyle, samimi bir üslupla kendi kendine konuşur gibi yazması "deneme" türünün en temel özelliğidir.
+
+## 9. Soru Tipi: Cümlede Anlam / Çıkarım (Örtülü Anlam)
+**Soru Kökü:** "Son yıllarda edebiyat dünyamıza katılan genç yazarların ilk eserleri, usta eleştirmenlerden tam not alarak satış listelerinde üst sıralara tırmanmaya devam ediyor." Bu cümleden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Edebiyat dünyasına yeni katılan bazı yazarların kitapları, hem profesyonellerce beğenilmekte hem de okurlar tarafından ilgi görmektedir.
+- B) Usta eleştirmenler, kitap değerlendirmeleri yaparken sadece edebiyat dünyasına yeni katılan genç yazarların eserlerini dikkate almaktadır.
+- C) Genç yazarların edebiyat dünyasına sunduğu her yeni kitap, satış rekorları kırarak eski yazarların kitaplarını geride bırakmaktadır.
+- D) Günümüzde en çok okunan ve satış listelerinde her zaman birinci olan kitaplar, usta eleştirmenlerin de onayladığı genç yazarlara aittir.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** B, C ve D şıkları metinde yer almayan aşırı genellemeler içerir.
+
+## 10. Soru Tipi: Yazım Kuralları
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde bir yazım yanlışı yapılmıştır?
+**Şıklar:**
+- A) Dicle Nehri'nin suları bahar mevsimiyle birlikte çok daha coşkun akmaya başladı.
+- B) Yazarın bu eşsiz eseri, uzun değerlendirmeler sonucunda Türk Dil Kurumu tarafından ödüle layık görüldü.
+- C) Tarih kitapları, Millî Mücadele Dönemi'ni sadece savaşlarla değil sosyal yönüyle de ele almalıdır.
+- D) Mahallemizdeki çevre sorunlarını görüşmek üzere yarın sabah Ankara Valiliği'ne bir dilekçe vereceğiz.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** "Ankara Valiliği'ne" ifadesindeki kesme işareti yanlıştır; doğrusu "Ankara Valiliğine" şeklinde bitişik olmalıdır.
+
+## 11. Soru Tipi: Noktalama İşaretleri
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinin sonuna üç nokta (...) getirilmelidir?
+**Şıklar:**
+- A) Ne kadar çabalarsan çabala, akıp giden zamanı hiçbir güç geri alamaz( )
+- B) Gecenin zifiri karanlığında etrafımızda tek duyulan şey, ağaçların arasında dolaşan rüzgârın ürkütücü uğultusuydu( )
+- C) Tepenin ardına geçtiğimizde göz alabildiğine uzanan yemyeşil bir vadi, rengârenk çiçekler, şırıl şırıl akan bir dere( )
+- D) Bu zorlu dağ tırmanışında sırt çantanıza mutlaka koymanız gerekenler şunlardır: su, pusula, fener, halat( )
+**Doğru Cevap ve Çözüm:** **Cevap: C.** C şıkkında yüklem kullanılmamıştır, anlamca tamamlanmamış eksiltili cümlenin sonuna üç nokta konmalıdır.
+
+## 12. Soru Tipi: Cümlenin Ögeleri
+**Soru Kökü:** "Köyün hemen girişindeki asırlık çınar ağacı, yıllardır buraya gelen misafirleri sessizce selamlıyor." Bu cümlenin öznesi aşağıdakilerin hangisinde doğru verilmiştir?
+**Şıklar:**
+- A) Köyün hemen girişindeki asırlık çınar ağacı
+- B) Asırlık çınar ağacı
+- C) Çınar ağacı
+- D) Yıllardır buraya gelen misafirleri
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Söz öbekleri ve tamlamalar öge bulunurken asla bölünemez.
+
+## 13. Soru Tipi: Sözel Mantık ve Muhakeme
+**Soru Kökü:** K, L, M, N ve P adlı beş farklı araç, bir otoparkın 1'den 5'e kadar numaralandırılmış yan yana duran park yerlerine sırayla park etmişlerdir. Araçların park ettikleri yerlerle ilgili bilinenler şunlardır:
+- K aracı, P aracının hemen solundaki (bir önceki) numaraya park etmiştir.
+- M aracı, otoparka ne ilk ne de son park eden araçtır.
+- N aracı, L aracından daha sonraki bir numaraya park etmiştir.
+- K aracının 2 numaralı yere park ettiği bilinmektedir.
+
+Bu bilgilere göre aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) M aracı, otoparktaki 5 numaralı yere park etmiştir.
+- B) L aracı, otoparktaki ilk (1 numaralı) yere park etmiştir.
+- C) P aracı, 4 numaralı yere park etmiştir.
+- D) N aracı, K aracından önceki bir numaraya park etmiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Sıralama: 1: L, 2: K, 3: P, 4: M, 5: N şeklindedir.
+
+## 14. Soru Tipi: Paragrafta Yapı / Paragrafı İkiye Bölme
+**Soru Kökü:** (I) Fotoğrafçılık, zamanı durdurma ve yaşanan bir anı ölümsüzleştirme sanatıdır. (II) İyi bir fotoğrafçı, vizörden baktığında sadece nesneleri değil, o anın taşıdığı gizli duyguyu da görür. (III) Işığı doğru ayarlamak, kompozisyonu dengelemek ve doğru açıyı bulmak bu sanatın vazgeçilmez kurallarıdır. (IV) Gelişen akıllı telefon kameraları sayesinde günümüzde artık herkes kolayca fotoğraf çekebiliyor. (V) Sosyal medyanın hayatımıza girmesiyle birlikte, çekilen bu fotoğraflar saniyeler içinde milyonlarca kişiye ulaşıyor. (VI) Artık fotoğraf çekme eylemi, anıları saklamaktan çok o anı başkalarına gösterme ve beğeni toplama aracına dönüşmüş durumda. Bu metin iki paragrafa bölünmek istense ikinci paragraf numaralanmış cümlelerin hangisiyle başlar?
+**Şıklar:**
+- A) II.
+- B) III.
+- C) IV.
+- D) V.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Konunun yönünün değiştiği ilk cümle IV. cümledir.
+
+## 15. Soru Tipi: Paragrafta Yardımcı Düşünce (Ulaşılamaz / Değinilmemiştir)
+**Soru Kökü:** Yapay zekâ artık şiir yazabiliyor, hikâyeler kurgulayabiliyor. Hatta bazı robot yazılım denemelerinin dergilerde yayımlandığını bile görüyoruz. Ancak bir makinenin sıfır hatayla, kusursuz dil bilgisiyle ürettiği bu metinler; insan ruhunun karmaşıklığını, hatalarını ve acılarını yansıtmaktan henüz çok uzak. Çünkü edebiyat, sadece kelimeleri doğru sıraya dizmek, kurallı cümleler kurmak değil; yaşanmışlıkları, derin bir hüznü ve umudu okurun kalbine nakşetmektir. Yapay zekâ, veri tabanı ve kelime hazinesi ne kadar geniş olursa olsun, şu an için sadece hiç ağlamamış birinin gözyaşını tarif etmesine benzer metinler üretiyor. Duyguyu biliyor ama hissetmiyor. Bu metinden yapay zekâ ve edebiyat ile ilgili aşağıdakilerden hangisine **ulaşılamaz**?
+**Şıklar:**
+- A) Yapay zekânın, şiir ve hikâye gibi çeşitli edebî türlerde üretim yapabildiğine
+- B) İnsani duyguların ve kişisel yaşanmışlıkların, gerçek edebiyatın temel taşlarından biri olduğuna
+- C) Makine tarafından yazılan metinlerin, dil bilgisi kuralları ve kelime dizilimi açısından oldukça başarılı olabildiğine
+- D) Teknolojinin hızla gelişmesiyle birlikte yapay zekânın yakın gelecekte insan yazarların yerini tamamen alacağına
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde yapay zekânın yazarların yerini alacağı fikri yoktur, aksine eleştirilmektedir.
+
+## 16. Soru Tipi: Cümle Türleri
+**Soru Kökü:** "Kendi kültürel özgünlüğünün farkında olan, onu hakkıyla yaşayan ve yaşatmaya gayret eden toplumlar varlıklarını daima korumuşlardır." Bu cümlenin özellikleri aşağıdakilerin hangisinde doğru verilmiştir?
+**Şıklar:**
+- A) Kurallı – olumlu – içinde fiilimsi bulunan – fiil cümlesi
+- B) Devrik – olumlu – içinde fiilimsi bulunan – isim cümlesi
+- C) Kurallı – olumsuz – birden çok yüklemli – fiil cümlesi
+- D) Kurallı – olumlu – içinde fiilimsi bulunan – isim cümlesi
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Yüklem "korumuşlardır" fiildir, kurallıdır, olumludur, fiilimsi içerir.
+
+## 17. Soru Tipi: Metin Türleri
+**Soru Kökü:** Zamanımızda Süleymaniye Kütüphanesi; Türk-İslam kültürünün ana kaynaklarından olan yazma ve eski basma eserleri bünyesinde barındıran, yerli ve yabancı araştırmacılara uluslararası düzeyde hizmet veren bir kuruluştur. İçerisinde hayırsever kişilerin ve Osmanlı padişahlarının kurduğu vakıf kütüphanelerinin de bulunduğu çok sayıda tarihi koleksiyon mevcuttur. Bu eserlerin korunması, dijitalleştirilmesi ve gelecek nesillere aktarılması için kütüphane bünyesinde modern restorasyon laboratuvarları aralıksız çalışmaktadır. Bu parçanın türüyle ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) Geçmişte yaşanmış, yazarın hayatında derin izler bırakmış bir olay anlatıldığı için bir anıdan alınmıştır.
+- B) Yazarın kendi kişisel düşüncelerini, karşısındakiyle konuşuyormuşçasına samimi bir üslupla aktardığı için bir denemedir.
+- C) Belirli bir konu hakkında bilgi vermek amacıyla bilimsel gerçekliğe uygun ve nesnel bir dille yazıldığı için bir makaleden alınmıştır.
+- D) Toplumun genelini ilgilendiren güncel bir olay, gazete köşelerinde yazarın şahsi yorumlarıyla ele alındığı için bir fıkradır.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Metin nesnel, bilgi verici bir makale örneğidir.
+
+## 18. Soru Tipi: Yazım Kuralları
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde bir yazım yanlışı yapılmıştır?
+**Şıklar:**
+- A) Mimar Sinan'ın en büyük eserlerinden biri olan Süleymaniye Camisi'nin avlusunda hep birlikte toplandık.
+- B) Bu zorlu süreçte bize her türlü maddi ve manevi desteği sağlayan Türk Dil Kurumu'na sonsuz teşekkürlerimizi sunarız.
+- C) Kuzey Anadolu'nun sarp dağları, kış aylarında kar yağışının da etkisiyle geçit vermez bir hâl alır.
+- D) Şehrin batısına doğru ilerledikçe eski kerpiç evler yerini modern ve yüksek binalara bırakıyor.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Kurum adına gelen ek kesme işaretiyle ayrılmaz, doğrusu "Türk Dil Kurumuna" olmalıdır.
+
+## 19. Soru Tipi: Noktalama İşaretleri
+**Soru Kökü:** Kitapları neden bu kadar çok seviyorsun ( ) diye sordular bana ( ) Cevabım şuydu ( ) Kitaplar bana hem yeni dünyalar sunuyor hem de kendimi bulmamı sağlıyor ( ) Bu metinde yay ayraçla ( ) gösterilen yerlere sırasıyla aşağıdaki noktalama işaretlerinden hangileri getirilmelidir?
+**Şıklar:**
+- A) (,) (.) (:) (.)
+- B) (?) (.) (:) (.)
+- C) (,) (:) (:) (!)
+- D) (?) (,) (;) (.)
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Alıntı cümlelerden sonra virgül konur, ardından nokta, iki nokta ve nokta gelir.
+
+## 20. Soru Tipi: Fiilimsiler (Eylemsiler)
+**Soru Kökü:** Bu sabah erkenden kalkıp bahçeyi suladıktan (I) sonra dinlenmek (II) için sandalyesine oturdu. Kafası dünkü meseleye takılmıştı. Sessizce yürüyen (III) kediyi ise hiç fark etmedi. Zaten bu kadar dalgınken kimseleri gözü görmezdi (IV). Bu metinde numaralanmış sözcüklerden hangisi fiilimsi **değildir**?
+**Şıklar:**
+- A) I
+- B) II
+- C) III
+- D) IV
+**Doğru Cevap ve Çözüm:** **Cevap: D.** "Görmezdi" çekimli fiildir, fiilimsi değildir.
+
+## 21. Soru Tipi: Paragrafta Anlam / Ana Düşünce
+**Soru Kökü:** Boş bırakılmış topraklar gübreli ve bereketli ise yüz bin çeşit otla dolar. Yararlı olabilmeleri için onlara kazma vurmamız, işe yarar tohumlar ekmemiz ve o toprağı sabırla işlememiz gerekir. Ruhlar da böyledir, onları faydalı bir fikirle uğraştırıp dizginlerini tutmazsanız uçsuz bucaksız bir hayal dünyasında başıboş öteye beriye dolaşıp durur. O ruhun bir eser ortaya koyması, ancak bilinçli ve faydalı bir hedefe yönlendirilmesiyle mümkün olabilir. Bu metinde anlatılmak istenen aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Hayal gücü değerlidir ama yönlendirilmezse insanı amaçsızlığa ve ruhsal bunalıma itebilir.
+- B) İnsanların verimli düşünceler üretebilmesi ve topluma yararlı olabilmesi için her zaman yalnız kalmaya ihtiyacı vardır.
+- C) İnsan ruhu tıpkı verimli bir toprak gibi ancak bilinçli bir çaba ve faydalı fikirlerle işlendiğinde ortaya yararlı bir sonuç çıkarabilir.
+- D) Boş bırakılan toprakların zamanla verimini kaybetmesi gibi, çalışmayan insanlar da zamanla yeteneklerini köreltir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Metnin tamamını karşılayan eksiksiz bir ana fikir cümlesidir.
+
+## 22. Soru Tipi: Söz Sanatları
+**Soru Kökü:** "Yağmur, yeryüzüne ince ince düşerken toprak derin bir nefes aldı. Gökyüzü, yaramaz bir çocuk gibi bırakıyordu damlalarını. Ağaçlar bir o yana bir bu yana savruluyor, her damla koskoca bir ırmağa dönüşüyordu. Sokaklar eski bir filmi büyük bir heyecanla oynatıyordu sessizce." Bu parçada aşağıdaki söz sanatlarından hangisi **yoktur**?
+**Şıklar:**
+- A) Abartma
+- B) Benzetme
+- C) Kişileştirme
+- D) Tezat (Karşıtlık)
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde anlamca birbirine zıt kavramlar bir arada kullanılmadığı için Tezat yoktur.
+
+## 23. Soru Tipi: Cümlenin Ögeleri
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde altı çizili ifade cümlenin öznesidir?
+**Şıklar:**
+- A) Masanın üzerindeki o <u>eski ahşap kutuyu</u> yıllar önce dedesi kendi elleriyle yapmıştı.
+- B) Dün gece aniden bastıran şiddetli kar yağışı, <u>şehrin yüksek kesimlerindeki yolları</u> tamamen trafiğe kapattı.
+- C) Tarihî eserler, <u>geçmişin izlerini bugüne taşıyan önemli yapılar olarak</u> daima ön planda yer almaktadır.
+- D) <u>Sabahın ilk ışıklarıyla uyanan sessiz kasaba</u>, yeni bir güne büyük bir umutla hazırlanıyordu.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** D şıkkında altı çizili ifade öznedir.
+
+## 24. Soru Tipi: Anlatım Bozuklukları
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde **nesne eksikliğinden** kaynaklanan bir anlatım bozukluğu **yoktur**?
+**Şıklar:**
+- A) Eskimiş düşünceler, paslanmış çivilere benzer; bir an önce söküp atmalıyız.
+- B) Hayatın dallarına her zaman sıkı sıkı sarılmalı, zorluklar karşısında hiçbir zaman bırakmamalısın.
+- C) Dilimizi her mecrada doğru bir şekilde konuşmalı, her zaman gerekli özeni göstermeliyiz.
+- D) Ay, tepelerin üstünde yavaş yavaş yükseldi; saatlerce balkondan sessizce seyrettik.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** C şıkkında nesne değil, dolaylı tümleç eksikliği vardır.
+
+## 25. Soru Tipi: Sözel Mantık ve Muhakeme
+**Soru Kökü:** Fatma'nın perşembe günü 1'den 5'e kadar art arda işlenen beş dersi vardır. Bu dersler; Türkçe, Müzik, Fen Bilimleri, İngilizce ve Beden Eğitimi'dir. Derslerin işlenme sırasıyla ilgili bilinenler şunlardır:
+- Günün 3. dersi Türkçe'dir.
+- Müzik dersi, Türkçe dersinden hemen sonraki saatte işlenmektedir.
+- Fen Bilimleri dersi günün ilk ya da son dersi değildir.
+- İngilizce dersi, Beden Eğitimi dersinden daha önceki bir saatte işlenmektedir.
+
+Bu bilgilere göre Fatma'nın 5. dersi kesinlikle aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) İngilizce
+- B) Beden Eğitimi
+- C) Fen Bilimleri
+- D) Müzik
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Dizilim: 1. İngilizce, 2. Fen Bilimleri, 3. Türkçe, 4. Müzik, 5. Beden Eğitimi.
+
+## 26. Soru Tipi: Söz Sanatları
+**Soru Kökü:** Bulutlar gözyaşı döktü usulca, Rüzgâr teselli etti fısıltıyla, Ağaçlar eğilip dedi ki yavaşça: "Korkma, bahar gelecek bu kışın ardında." Bu dizelerde aşağıdaki söz sanatlarından hangisine **yer verilmemiştir**?
+**Şıklar:**
+- A) Tezat (Karşıtlık)
+- B) Kişileştirme (Teşhis)
+- C) Konuşturma (İntak)
+- D) Benzetme (Teşbih)
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Dizelerde birbirine zıt iki kavram bir arada kullanılmamıştır.
+
+## 27. Soru Tipi: Metin Karşılaştırma / Ortak Özellik
+**Soru Kökü:** I. Metin: Küresel ısınmanın deniz seviyelerinde yarattığı yükseliş, son elli yılda kıyı şeritlerindeki erozyonu %30 oranında artırdı. Uzmanlar, önlem alınmazsa birçok ada ülkesinin sular altında kalacağını belirtiyor. II. Metin: Kıyılara vuran dalgaların o eski masumiyeti kalmadı artık. Deniz, adeta insanların bitmek bilmeyen hırsına öfkelenmiş gibi karaları yutmaya hazırlanıyor. Yakında o güzelim adalar sadece anılarımızda kalacak. Bu metinlerin ortak yönü aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Anlatımlarında istatistiksel verilerden yararlanılması
+- B) İkna etmek amacıyla tartışmacı anlatım biçiminin kullanılması
+- C) İklim krizinin sonuçlarını aynı tema çerçevesinde ele almaları
+- D) Kişisel duygu ve düşüncelere (öznelliğe) ağırlık vermeleri
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Her iki metin de küresel ısınmanın deniz seviyesini yükseltmesi konusunu işlemektedir.
+
+## 28. Soru Tipi: Cümlenin Ögeleri
+**Soru Kökü:** "Güneş dağların ardında yavaş yavaş kaybolurken, köyün ihtiyar balıkçısı teknesini usulca limana yanaştırdı." Bu cümlenin öge dizilişi aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?
+**Şıklar:**
+- A) Zarf Tümleci - Özne - Belirtili Nesne - Zarf Tümleci - Yüklem
+- B) Zarf Tümleci - Özne - Belirtili Nesne - Zarf Tümleci - Dolaylı Tümleç - Yüklem
+- C) Özne - Zarf Tümleci - Belirtili Nesne - Dolaylı Tümleç - Yüklem
+- D) Zarf Tümleci - Özne - Belirtisiz Nesne - Dolaylı Tümleç - Yüklem
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Öge dizilişi doğru verilmiştir.
+
+## 29. Soru Tipi: Görsel Okuma / Afiş Yorumlama
+**Soru Kökü:** (Görsel Betimlemesi: Görselde "Sonbahar Renkleri: Kapadokya Turu" yazmaktadır. Tarih: 12 Kasım 2025. Kalkış: Okul Bahçesi, Saat: 08.00. Tur Programı: Peribacaları gezisi, Çömlek atölyesinde etkinlik, Yöresel yemek molası. Alt kısımda "Kayıt için gezi kulübüne başvurunuz." yazmaktadır.) Bu afişteki bilgilere göre aşağıdakilerden hangisine **ulaşılamaz**?
+**Şıklar:**
+- A) Gezinin hangi tarihte ve saat kaçta başlayacağına
+- B) Geziye katılacak öğrencilerin ödemesi gereken gezi ücretine
+- C) Tur boyunca katılımcıların yapacağı etkinliklerin neler olduğuna
+- D) Geziye katılmak isteyenlerin nereye başvuru yapması gerektiğine
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Afişte gezi ücreti ile ilgili bir bilgi bulunmamaktadır.
+
+## 30. Soru Tipi: Paragrafta Yapı / Anlamlı Metin Oluşturma (Sıralama)
+**Soru Kökü:** I. Bu zorlu yolculuğun sonunda nihayet o gizli şelaleye ulaşmayı başarmıştık. II. Kamp alanından sabahın erken saatlerinde, yanımıza bolca su alarak ayrıldık. III. Şelalenin buz gibi suyu, yorgunluğumuzu bir anda alıp götürmüştü. IV. Ormanın derinliklerine doğru ilerledikçe yürüdüğümüz patika iyice daralıyordu. V. Daralan bu patika, bizi zaman zaman devrilmiş ağaç kütüklerinin üzerinden atlamak zorunda bıraktı. Numaralanmış cümlelerle anlamlı bir metin oluşturulduğunda doğru sıralama aşağıdakilerden hangisi olur?
+**Şıklar:**
+- A) II - I - IV - V - III
+- B) I - III - II - IV - V
+- C) IV - V - II - I - III
+- D) II - IV - V - I - III
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Doğru sıralama II - IV - V - I - III şeklindedir.
+
+## 31. Soru Tipi: Fiilimsiler (Eylemsiler)
+**Soru Kökü:** I. Bütün gün aralıksız *çalışarak* projeyi teslim tarihine yetiştirdi. II. Çocukların bahçedeki neşeli *gülüşmeleri* tüm sokağa yayılmıştı. III. Karşıdan koşup *gelen* adam, elindeki paketi hızla bana uzattı. IV. Soruları dikkatlice *okumadan* cevap şıklarını işaretlemeyin. Numaralanmış cümlelerin hangilerinde **aynı tür** fiilimsi kullanılmıştır?
+**Şıklar:**
+- A) I ve IV
+- B) II ve III
+- C) I ve III
+- D) II ve IV
+**Doğru Cevap ve Çözüm:** **Cevap: A.** I ve IV'te zarf-fiil kullanılmıştır.
+
+## 32. Soru Tipi: Yazım Kuralları
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde bir yazım yanlışı vardır?
+**Şıklar:**
+- A) Sen de bizimle gelirsen takımın kazanma ihtimali bir hayli artar.
+- B) Yıllardır üzerinde çalıştığı bu zorlu projeden asla vazgeçmeyeceğini söyledi.
+- C) Sorunun çözümü için yarın sabah erkenden yetkili mercilere baş vuracağız.
+- D) Dolabın içindeki karmakarışık dosyaları birkaç saat içinde düzenleyiverdi.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** "Baş vuracağız" ayrı yazılamaz, doğrusu "başvuracağız" olmalıdır.
+
+## 33. Soru Tipi: Cümlede Anlam / Kesin Çıkarım
+**Soru Kökü:** "Türkiye'nin uzay çalışmalarındaki en önemli adımlarından biri olan yerli gözlem uydumuz İMECE, fırlatıldıktan kısa bir süre sonra yüksek çözünürlüklü ilk görüntülerini Dünya'daki kontrol merkezine başarılı bir şekilde iletti." Bu cümleden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) İMECE uydusu, fırlatılmasının ardından görevini yerine getirerek merkeze veri aktarımı yapmıştır.
+- B) İMECE, Türkiye'nin uzaya fırlattığı ilk ve tek yüksek çözünürlüklü yerli gözlem uydusudur.
+- C) Dünyadaki diğer gözlem uydularından çok daha kaliteli görüntüler elde eden İMECE, başarısını kanıtlamıştır.
+- D) Türkiye'nin uzay çalışmaları, İMECE uydusunun gönderdiği görüntüler sayesinde tamamlanmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** A seçeneği yoruma yer bırakmayan, cümlenin en yalın ve kesin özetidir.
+
+## 34. Soru Tipi: Metin Türleri ve Anlatım Biçimleri
+**Soru Kökü:** Güneş, kasabanın dar ve Arnavut kaldırımlı sokaklarına usulca vururken ihtiyar saatçi dükkânının kepengini ağır ağır kaldırdı. Dükkânın içi, yılların yorgunluğunu taşıyan ahşap raflar ve her biri farklı bir zamanı gösteren irili ufaklı antika saatlerle doluydu. Adam, cebinden çıkardığı bakır anahtarla masanın üzerindeki oymalı saati kurmaya başladı. O sırada dışarıdan geçen çocukların neşeli sesleri, dükkânın içindeki tik taklara karışıyordu. Bu parçada kullanılan anlatım biçimleri aşağıdakilerin hangisinde bir arada verilmiştir?
+**Şıklar:**
+- A) Açıklama – Örneklendirme
+- B) Tartışma – Karşılaştırma
+- C) Açıklama – Betimleme
+- D) Öyküleme – Betimleme
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde hem öyküleme hem betimleme kullanılmıştır.
+
+## 35. Soru Tipi: Sözel Mantık ve Muhakeme
+**Soru Kökü:** Bir otoparkta 1'den 5'e kadar soldan sağa doğru numaralandırılmış park yerlerinde Kırmızı, Beyaz, Siyah, Mavi ve Gri renkli beş araç bulunmaktadır. Araçların konumlarıyla ilgili bilinenler şunlardır:
+- Kırmızı araç, Siyah aracın hemen sağındaki numaradadır.
+- Mavi araç, 1 numaralı veya 5 numaralı park yerinde değildir.
+- Beyaz araç ile Gri araç arasında sadece bir araç vardır.
+- Siyah araç 3 numaralı park yerindedir.
+
+Bu bilgilere göre aşağıdakilerden hangisi **kesinlikle** doğrudur?
+**Şıklar:**
+- A) Kırmızı araç 5 numaralı park yerindedir.
+- B) Kırmızı araç 4 numaralı park yerindedir.
+- C) Beyaz araç 2 numaralı park yerindedir.
+- D) Mavi araç 1 numaralı park yerindedir.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Kırmızı araç kesinlikle 4 numaradadır.
+
+## 36. Soru Tipi: Paragrafta Anlam / Ana Düşünce
+**Soru Kökü:** İnsanlar genellikle eleştiriyi sevmezler ve kendilerini sadece alkışlayan kişilere yakın hissederler. Ancak gelişim, hataların fark edilmesiyle başlar. Bizi sürekli övenler değil, eksiklerimizi samimiyetle yüzümüze söyleyenler bize daha çok fayda sağlar. Eleştiriye kapalı olan birinin ilerlemesi, eksiklerini tamamlayarak mükemmele ulaşması mümkün değildir. Bu metinde asıl anlatılmak istenen aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Eleştiriler her zaman doğru ve objektif sonuçlar vermeyebilir.
+- B) İnsanlar yalnızca sevdikleri ve güvendikleri kişileri eleştirmelidir.
+- C) Hataları sürekli yüzüne vurulan kişiler zamanla öz güvenini kaybeder.
+- D) İnsanın kendini geliştirebilmesi için yapıcı eleştirilere açık olması gerekir.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Yapıcı eleştirilere açık olmak ana düşüncedir.
+
+## 37. Soru Tipi: Fiilimsiler / Fiilimsi Türleri
+**Soru Kökü:** Kitap okuyarak (I) yeni dünyalar keşfeden (II), ufkunu durmaksızın genişletip (III) kelimelerle bağ kurunca (IV) mutlu olan bir çocuktu. Bu cümlede numaralanmış fiilimsilerden hangisi türce diğerlerinden **farklıdır**?
+**Şıklar:**
+- A) I
+- B) II
+- C) III
+- D) IV
+**Doğru Cevap ve Çözüm:** **Cevap: B.** II numaralı "keşfeden" sıfat-fiil, diğerleri zarf-fiildir.
+
+## 38. Soru Tipi: Sözel Mantık ve Muhakeme / Tablo Çıkarımı
+**Soru Kökü:** K, L, M ve N adlı farklı kitapları okuyan Ayşe, Bora, Ceyda ve Deniz ile ilgili şu bilgiler verilmektedir:
+- Herkes sadece bir kitap okumuştur ve okudukları kitaplar birbirinden farklıdır.
+- Ceyda, L kitabını okumuştur.
+- Deniz; K, L veya M kitabından birini okumamıştır.
+- Ayşe, K kitabını okumuştur.
+
+Verilen bu bilgilere göre Bora hangi kitabı okumuştur?
+**Şıklar:**
+- A) K
+- B) L
+- C) M
+- D) N
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Bora M kitabını okumuştur.
+
+## 39. Soru Tipi: Yazım Kuralları / Büyük Harflerin Kullanımı
+**Soru Kökü:** Aşağıdaki cümlelerin hangisinde bir yazım yanlışı yapılmıştır?
+**Şıklar:**
+- A) Geçen yıl 15 Mayıs'ta İzmir'e tamamen yerleştik.
+- B) Kardeşim, bahçedeki köpeğimiz Karabaş'a yeni bir tasma almış.
+- C) Annem her yıl Ramazan bayramında elleriyle cevizli baklava yapar.
+- D) Kuzey Anadolu'nun eşsiz manzarası ve temiz havası hepimizi büyüledi.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** "Ramazan bayramında" ifadesindeki "bayram" küçük yazılmıştır, doğrusu "Ramazan Bayramı'nda" olmalıdır.
+
+## 40. Soru Tipi: Cümlenin Ögeleri / Öge Dizilişi
+**Soru Kökü:** "Soğuk kış günlerinde, sobanın üzerinde kaynayan çayın kokusu, bütün odayı sardı." Bu cümlenin öge dizilişi aşağıdakilerin hangisinde sırasıyla verilmiştir?
+**Şıklar:**
+- A) Özne - Zarf Tamlayıcısı - Belirtili Nesne - Yüklem
+- B) Zarf Tamlayıcısı - Belirtisiz Nesne - Özne - Yüklem
+- C) Yer Tamlayıcısı - Özne - Zarf Tamlayıcısı - Yüklem
+- D) Zarf Tamlayıcısı - Özne - Belirtili Nesne - Yüklem
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Öge dizilişi doğru verilmiştir.

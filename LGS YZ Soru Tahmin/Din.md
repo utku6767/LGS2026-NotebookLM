@@ -1,0 +1,519 @@
+# DİN KÜLTÜRÜ VE AHLAK BİLGİSİ TESTİ (1-30)
+
+## 1. Soru Tipi: Kader ve Kaza / Evrensel Yasalar
+
+**Kazanım:** Evrendeki fiziksel, biyolojik ve toplumsal yasaları ayırt eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Öğrencinin ayetleri okuyarak Allah'ın evrene koyduğu sünnetullah (evrensel yasalar) kavramlarıyla eşleştirmesi istenir.
+
+**Soru Kökü:** I. "Güneş ve Ay bir hesaba göre hareket etmektedir." (Rahmân suresi, 5. ayet) II. "O, insanı alaktan (embriyodan) yarattı." (Alak suresi, 2. ayet) III. "Şüphesiz ki bir topluluk kendi durumunu değiştirmedikçe Allah onların durumunu değiştirmez." (Ra'd suresi, 11. ayet) Numaralanmış ayetlerin ilgili olduğu evrensel yasalar aşağıdakilerin hangisinde sırasıyla doğru verilmiştir?
+
+**Şıklar:**
+- A) Toplumsal - Biyolojik - Fiziksel
+- B) Biyolojik - Fiziksel - Toplumsal
+- C) Fiziksel - Biyolojik - Toplumsal
+- D) Fiziksel - Toplumsal - Biyolojik
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** I. ayet Fiziksel Yasa (Gök cisimlerinin hareketi), II. ayet Biyolojik Yasa (İnsanın yaratılışı), III. ayet Toplumsal Yasa (Toplumların değişimi).
+
+---
+
+## 2. Soru Tipi: Kader ve Kaza / Tevekkül İnancı
+
+**Kazanım:** İslam'ın tevekkül anlayışını kavrar ve örneklendirir.
+
+**Soru Nasıl Çalışır (Mekanizma):** Başarı, sağlık veya spor gibi güncel hayat senaryoları üzerinden "aktif" ve "doğru" tevekkül tanımı istenir.
+
+**Soru Kökü:** Millî futbolcumuz Arda Güler, attığı gollerden sonra sevincini kutlarken bir elini kalbinin üzerine koyup diğer elinin işaret parmağını göğe doğru kaldırmaktadır. Bunun ne anlama geldiği sorulduğunda: "Bu benim tevekkül inancımın bir göstergesidir. Ben antrenmanlarda elimden geleni yapıyor, çok çalışıyor ve çabalıyorum; sonucunu ise Allah'a bırakıyorum." demiştir. Bu metinden hareketle Arda Güler'in tevekkül anlayışıyla ilgili aşağıdakilerden hangisi söylenebilir?
+
+**Şıklar:**
+- A) Doğru bir tevekkülün, insanın üzerine düşen tüm tedbirleri ve çabayı gösterdikten sonra Allah'a güvenmek olduğunu kavramıştır.
+- B) İnsanın doğuştan getirdiği yeteneklerin, başarılı olmak için çalışmaktan daha önemli olduğuna inanmaktadır.
+- C) Hayatta karşılaşılan zorlukların tamamen insanın kendi iradesi dışında gerçekleştiğini düşünmektedir.
+- D) Başarıya ulaşmak için sadece dua etmenin ve kaderi beklemenin yeterli olacağını savunmaktadır.
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Arda Güler'in sözü İslam'ın emrettiği "doğru tevekkül" anlayışının tam bir özetidir.
+
+---
+
+## 3. Soru Tipi: Kader ve İrade (Cüzi İrade Sorumluluğu)
+
+**Kazanım:** İnsanın ilmi, iradesi ve sorumluluğu ile kader arasındaki ilişkiyi kurar.
+
+**Soru Nasıl Çalışır (Mekanizma):** "Kader mahkûmu", "Alın yazım böyleymiş" gibi toplumdaki yanlış kader anlayışlarını eleştirmeye dayalı klasik MEB senaryosudur.
+
+**Soru Kökü:** Kurallara uymadan çok hızlı araç kullandığı için kaza yapan ve yaralanan bir sürücü, hastanede kendisini ziyarete gelenlere: "Ne yapalım, kaderimde kaza yapmak varmış. Alın yazım böyleymiş, ecelden kaçılmaz. Allah böyle takdir etmişse benim elimden ne gelir ki?" diyerek durumu açıklamıştır. Bu sürücünün kader anlayışıyla ilgili aşağıdakilerden hangisi söylenebilir?
+
+**Şıklar:**
+- A) Allah'ın külli iradesinin her şeyi kuşattığı gerçeğini hayatına doğru bir şekilde yansıtmıştır.
+- B) Kendi cüzi iradesiyle yaptığı tercihlerin sonucunu kadere yükleyerek sorumluluktan kaçmaktadır.
+- C) Kaza ve kader inancını birbirine karıştırsa da tevekkül inancını doğru uygulamıştır.
+- D) Biyolojik ve fiziksel yasaların insan hayatındaki değiştirilemez etkisini vurgulamaktadır.
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Sürücü, hatasını kabul etmek yerine suçu kadere atarak sorumluluktan kaçmaktadır.
+
+---
+
+## 4. Soru Tipi: Zekât ve Sadaka / Kimlere Verilmez
+
+**Kazanım:** Zekât ve sadakanın kimlere, nasıl verileceğini kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** İslam fıkhında "usul ve füru" adı verilen; kişinin anne, baba, dede, nine, çocuk ve torunlarına (bakmakla yükümlü olduğu kişilere) zekât verilemeyeceği kuralı test edilir.
+
+**Soru Kökü:** Zekât ibadetinin yerine getirilmesinde uyulması gereken belirli kurallar vardır. Bunlardan biri de zekâtın verileceği kişilerin doğru seçilmesidir. Dinen zengin sayılan bir Müslüman, Tevbe suresi 60. ayette belirtilen ihtiyaç sahiplerine zekât verebilirken, bakmakla yükümlü olduğu bazı yakın akrabalarına zekât veremez. Buna göre aşağıdaki durumlardan hangisinde zekât ibadeti dinen **geçerli olmaz**?
+
+**Şıklar:**
+- A) Varlıklı bir iş insanının, iflas etmiş olan mahalledeki eski komşusuna zekât vermesi
+- B) Bir memurun, başka bir şehirde üniversite okuyan ve maddi zorluk çeken kardeşine zekât vermesi
+- C) Bir doktorun, hastane masraflarını karşılayamayan fakir amcasına zekât vermesi
+- D) Zengin bir babanın, uzun süredir işsiz olan ve borçlarını ödeyemeyen öz oğluna zekât vermesi
+
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Kişi, kendi soyundan gelenlere (anne, baba, çocuklar ve torunlar) zekât veremez.
+
+---
+
+## 5. Soru Tipi: Sadaka-i Cariye Kavramı
+
+**Kazanım:** Zekât, infak, fıtır sadakası ve sadaka-i cariye kavramlarını ayırt eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Hz. Muhammed'in (sav) "amel defterini kapatmayan iyilikler" hadisi üzerinden "Sadaka-i Cariye" kavramı sorulur.
+
+**Soru Kökü:** Hz. Muhammed (sav) şöyle buyurmuştur: "İnsan ölünce üç şey dışında ameli kesilir (sevap yazılması durur): Bunlar; faydası kesintisiz devam eden sadaka, kendisinden faydalanılan ilim ve kendisine dua eden hayırlı bir evlattır." Aşağıdakilerden hangisi hadiste altı çizili ifadeye (faydası kesintisiz devam eden sadaka) uygun bir örnek **değildir**?
+
+**Şıklar:**
+- A) İnsanların faydalanması için köye bir çeşme ve su kuyusu yaptırmak
+- B) Ramazan ayında ailedeki kişi sayısı kadar hesaplanıp yoksullara fitre vermek
+- C) Gelecek nesillerin eğitim alabilmesi adına bir okul inşa ettirmek
+- D) Meyvesinden hem insanların hem de hayvanların yemesi için yol kenarına ağaç dikmek
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Fıtır Sadakası (Fitre) anlık bir ibadettir, kesintisiz devam eden kalıcı bir eser değildir.
+
+---
+
+## 6. Soru Tipi: Peygamber Kıssaları / Hz. Şuayb (as)
+
+**Kazanım:** Bir peygamber tanıyorum bölümünde Hz. Şuayb'in (as) hayatını ve mücadelesini analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Peygamberlerin öne çıkan tebliğ konuları eşleştirilir. Ticari ahlak, ölçü ve tartıda hile yapma gibi vurgular doğrudan Hz. Şuayb'i (as) işaret eder.
+
+**Soru Kökü:** O, Medyen halkına gönderilmiş bir peygamberdir. Kavmi, ticarette hile yapan, ölçü ve tartıda adaletsiz davranan, insanların mallarını eksik veren bir toplumdu. O, kavmine: "Ölçüyü ve tartıyı adaletle tam yapın. İnsanların eşyalarını (mallarını) eksiltmeyin. Yeryüzünde bozgunculuk yaparak karışıklık çıkarmayın." (Hûd suresi, 85. ayet) diyerek onları Allah'ın emrettiği dürüst ticarete çağırmıştır. Hakkında bilgi verilen ve ticaret ahlakı üzerine verdiği mücadeleyle bilinen peygamber aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Hz. Şuayb (as)
+- B) Hz. Yusuf (as)
+- C) Hz. Musa (as)
+- D) Hz. Nuh (as)
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Medyen halkına gönderilen, ticari ahlak vurgusu bulunan peygamber Hz. Şuayb'dir.
+
+---
+
+## 7. Soru Tipi: Bir Sure Tanıyorum / Maûn Suresi
+
+**Kazanım:** Maûn suresini okur ve anlamını açıklar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Surenin içeriğindeki ahlaki eleştiriler sorgulanır. LGS, "Ölçü ve tartıda hile yapmak" kavramını şıklara yerleştirerek öğrenciyi yanıltmayı hedefler.
+
+**Soru Kökü:** "Gördün mü, hesap ve ceza gününü yalanlayanı? İşte o, yetimi itip kakar. Yoksulu doyurmaya teşvik etmez. Öyleyse yazıklar olsun böyle namaz kılanlara! Onlar namazlarını ciddiye almazlar. Onlar gösteriş yaparlar. En küçük yardıma bile engel olurlar." Verilen Maûn suresinin anlamı incelendiğinde, aşağıdakilerden hangisi bu surede eleştirilen davranışlardan biri **değildir**?
+
+**Şıklar:**
+- A) İbadetleri Allah rızası için değil, insanlara gösteriş yapmak (riya) için kılmak
+- B) Kimsesiz çocuklara ve yetimlere karşı şefkatsiz davranıp onları hor görmek
+- C) Toplumdaki ihtiyaç sahiplerine karşı duyarsız kalıp yardımlaşmayı engellemek
+- D) Ticaret yaparken insanların mallarını eksik verip ölçü ve tartıda hile yapmak
+
+**Doğru Cevap ve Çözüm:** **Cevap: D.** "Ölçü ve tartıda hile yapmak" Maûn suresinin değil, Mutaffifîn suresinin konusudur.
+
+---
+
+## 8. Soru Tipi: İslam'ın Korunmasına Önem Verdiği Temel Haklar
+
+**Kazanım:** İslam'ın korunmasını emrettiği temel hakları (Zarurat-ı Hamse) ayet ve hadisler üzerinden yorumlar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Hırsızlık, rüşvet, faiz, israf gibi kavramların hangi hak kategorisine girdiği sorulur.
+
+**Soru Kökü:** İslam dini, toplumun huzuru ve güvenliği için beş temel değerin (can, mal, akıl, nesil, din) korunmasını zorunlu kılmıştır. Örneğin; haksız kazanç yolları olan hırsızlık, rüşvet, kumar ve faiz kesin bir dille yasaklanmış; insanların emek vererek helal yoldan rızıklarını kazanmaları emredilmiştir. Bu metinde İslam'ın korunmasına önem verdiği temel haklardan hangisi vurgulanmaktadır?
+
+**Şıklar:**
+- A) Canın Korunması
+- B) Malın Korunması
+- C) Aklın Korunması
+- D) Neslin Korunması
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Hırsızlık, rüşvet, kumar, faiz gibi haksız kazanç yollarının yasaklanması Malın Korunması ilkesi ile ilgilidir.
+
+---
+
+## 9. Soru Tipi: Hz. Muhammed'in (sav) Örnekliği / İstişare
+
+**Kazanım:** Hz. Muhammed'in (sav) istişareye (danışarak iş yapmaya) verdiği önemi kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Savaş kararları veya toplumsal konularda sahabenin fikrine başvurulması üzerinden "İstişare" kavramı test edilir.
+
+**Soru Kökü:** Hz. Muhammed (sav), Uhud Savaşı'ndan önce düşmanın nasıl karşılanacağı konusunda arkadaşlarıyla bir toplantı düzenledi. Kendisi, Medine şehrinde kalıp savunma savaşı yapılmasını düşünüyordu. Ancak toplantıda bulunan özellikle genç sahabeler, düşmanın şehir dışında karşılanmasını ve meydan savaşı yapılmasını talep ettiler. Çoğunluğun bu fikri desteklemesi üzerine Hz. Muhammed (sav), kendi kişisel fikrinden vazgeçerek çoğunluğun kararına uydu. Bu olaydan Hz. Muhammed (sav) ile ilgili çıkarılabilecek **en temel sonuç** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Savaş stratejilerini belirlerken daima ilahi vahyin (Cebrail'in) yönlendirmesini beklemiştir.
+- B) Düşmanla savaşmak yerine barışçıl yollarla antlaşma yapmak için fırsat kollamıştır.
+- C) Ortak aklı önemsemiş, kendi düşüncesine uymasa bile istişare sonucuna saygı duymuştur.
+- D) Askerî başarıları sayesinde çevresindeki insanların ona duyduğu güveni artırmıştır.
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** İstişare (danışma, fikir alışverişi), Hz. Muhammed'in liderliğinin temel taşlarından biridir.
+
+---
+
+## 10. Soru Tipi: Hz. Muhammed'in (sav) Örnekliği / Güvenilirliği (El-Emin)
+
+**Kazanım:** Hz. Muhammed'in (sav) doğruluğunu ve güvenilir kişiliğini kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Kâbe hakemliği olayı verilerek Peygamberimizin peygamberlik öncesinde bile toplumda nasıl bir imaja sahip olduğu sorulur.
+
+**Soru Kökü:** Hz. Muhammed'in (sav) gençlik yıllarında Kâbe onarılmış, Hacerülesved'in (siyah taş) yerine konulması sırasında kabileler arasında büyük bir anlaşmazlık çıkmıştır. Her kabile bu şerefe nail olmak istemiştir. Sorunu çözmek için "Kâbe'nin kapısından ilk giren kişinin hakem olmasına" karar verilmiştir. Kapıdan giren ilk kişi Hz. Muhammed (sav) olunca, oradaki herkes "İşte el-Emin (Güvenilir kişi) geliyor, onun vereceği karara razıyız." diyerek bu durumu büyük bir memnuniyetle karşılamıştır. Kabilelerin bu tutumu, Hz. Muhammed'in (sav) daha çok hangi ahlaki özelliğiyle ilgilidir?
+
+**Şıklar:**
+- A) Doğruluğu ve güvenilir bir insan olması
+- B) İnsanlara karşı her zaman merhametli olması
+- C) Hakkı gözeterek cesaretle adalet dağıtması
+- D) Karşılaştığı zorluklar karşısında sabırlı olması
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Kabilelerin onu "el-Emin" (Güvenilir) olarak tanımlaması, onun dürüstlük ve güvenilirlik özelliğiyle ilgilidir.
+
+---
+
+## 11. Soru Tipi: Peygamber Kıssaları / Hz. Musa ve Tevekkül
+
+**Kazanım:** İslam'ın tevekkül anlayışını kavrar ve peygamberlerin hayatından örneklerle açıklar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Öğrenciden Hz. Musa'nın (as) karşılaştığı zorluk anında gösterdiği tutumu analiz etmesi istenir.
+
+**Soru Kökü:** Hz. Musa (as) ve İsrailoğulları, Firavun'un zulmünden kaçarken Kızıldeniz'in kıyısına ulaşmışlardı. Arkalarından Firavun'un güçlü ordusunun yaklaştığını gören İsrailoğulları büyük bir korkuya kapılarak "İşte şimdi yakalandık, mahvolduk!" dediler. Ancak Hz. Musa (as) en ufak bir ümitsizliğe düşmeden, "Hayır! Şüphesiz Rabbim benimledir, O bana bir çıkış yolu gösterecektir." dedi. (Şuarâ suresi, 61-62. ayetler). Ardından Allah'ın emriyle asasını denize vurdu ve sular yarılarak onlara bir yol açıldı. Hz. Musa'nın (as) bu olaydaki tutumu, aşağıdaki kavramlardan hangisiyle doğrudan açıklanabilir?
+
+**Şıklar:**
+- A) Kendi üzerine düşeni yaptıktan sonra Allah'a mutlak bir güven duyması (Tevekkül)
+- B) Kaderinde yazılı olan her şeyin çaba göstermeksizin gerçekleşeceğine inanması
+- C) İnsan iradesinin (cüzi irade) karşılaşılan sorunları çözmede yetersiz kalması
+- D) Toplumun kurtuluşunun sadece o toplumun kendi çabasına bağlı olması
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Hz. Musa (as), gerekli çabayı gösterip ardından Allah'a sığınmasıyla kusursuz bir "Tevekkül" örneği sergilemiştir.
+
+---
+
+## 12. Soru Tipi: İslam'ın Korunmasına Önem Verdiği Temel Haklar
+
+**Kazanım:** İslam'ın korunmasını emrettiği temel hakları (Zarurat-ı Hamse) ayet ve hadisler üzerinden yorumlar.
+
+**Soru Nasıl Çalışır (Mekanizma):** İçki, uyuşturucu ve kumar gibi zararlı alışkanlıkların İslam hukukunda hangi temel hakkın ihlali sayıldığı sorgulanır.
+
+**Soru Kökü:** Hz. Muhammed (sav) bir hadisinde şöyle buyurmuştur: "Sarhoş eden her şey içkidir ve sarhoş eden her şey haramdır." Yine Kur'an-ı Kerim'de içki ve uyuşturucu gibi maddeler "şeytan işi iğrenç şeyler" olarak nitelendirilmiş ve kesin olarak yasaklanmıştır. Çünkü bu maddeler, insanı insan yapan ve onu diğer canlılardan üstün kılan en önemli yetisini devreden çıkararak kişinin sorumluluk bilincini yok eder. Bu metinde İslam'ın korunmasına önem verdiği temel haklardan hangisi vurgulanmaktadır?
+
+**Şıklar:**
+- A) Neslin Korunması
+- B) Dinin Korunması
+- C) Aklın Korunması
+- D) Canın Korunması
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** İçki ve uyuşturucu, insanın düşünme ve karar verme mekanizmasını uyuşturduğu için "Aklın Korunması" ilkesiyle yasaklanmıştır.
+
+---
+
+## 13. Soru Tipi: Zekât ve Sadaka / Zekât Verilecek Mallar
+
+**Kazanım:** Zekât ve sadakanın kimlere, nelerden ve nasıl verileceğini kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Hangi mallardan zekât verileceği, hangilerinden verilmeyeceği (Havâic-i Asliye / Temel İhtiyaçlar) kuralı üzerinden mantık yürütülmesi istenir.
+
+**Soru Kökü:** Ticaretle uğraşan varlıklı bir adam olan Kemal Bey, yıl sonunda mal varlığının hesaplamasını yapmıştır. Oturduğu lüks evi ve bindiği arabası için zekât vermemiş; ancak bankadaki birikmiş parası, sahip olduğu altınları ve deposundaki ticaret malları için üzerinden bir yıl geçmesini bekleyerek kırkta bir (%2,5) oranında zekâtını hesaplayıp ihtiyaç sahiplerine dağıtmıştır. Kemal Bey'in evi ve arabası için zekât vermemesi İslam'ın zekât ibadetiyle ilgili hangi kuralına dayanmaktadır?
+
+**Şıklar:**
+- A) Bütün malların üzerinden tam bir kameri yıl geçmeden zekât verilemeyeceğine
+- B) Zekâtın sadece tarım ürünleri ve küçükbaş hayvanlar üzerinden verilebileceğine
+- C) Gayrimenkullerin ve taşıtların hiçbir zaman gelir getiren bir yatırım aracı olmadığına
+- D) Kişinin kendi ve ailesinin kullandığı temel ihtiyaç maddelerinin zekât kapsamı dışında olduğuna
+
+**Doğru Cevap ve Çözüm:** **Cevap: D.** "Havâic-i Asliye" (Temel İhtiyaçlar) kuralına göre oturulan ev ve binilen araba zekât kapsamı dışındadır.
+
+---
+
+## 14. Soru Tipi: Hz. Muhammed'in (sav) Örnekliği / Adalet
+
+**Kazanım:** Hz. Muhammed'in (sav) hakkı gözetmedeki (adaletli oluşundaki) hassasiyetini kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** "Kızım Fatıma da olsa cezasını verirdim" hadisi, LGS'nin en sevdiği kurgulardan biridir.
+
+**Soru Kökü:** Mekke'nin fethinden sonra soylu bir kabileye mensup olan bir kadın hırsızlık yapmıştı. Kadının kabilesi, onun cezalandırılmasını engellemek için Hz. Peygamber'in çok sevdiği Üsame bin Zeyd'i aracı olarak gönderdi ve affedilmesini rica etti. Bu duruma çok öfkelenen Hz. Muhammed (sav) insanları toplayarak şöyle dedi: "Sizden önceki toplumlar, içlerinden soylu ve zengin biri suç işlediğinde onu affettikleri, zayıf ve kimsesiz biri suç işlediğinde ise onu cezalandırdıkları için helak oldular. Allah'a yemin ederim ki hırsızlık yapan, kızım Fatıma da olsa onun cezasını verirdim." Bu olayda Hz. Muhammed (sav) aşağıdakilerden hangisini vurgulamaktadır?
+
+**Şıklar:**
+- A) Aile ve akrabalık bağlarının her zaman toplumun huzuru için gözetilmesi gerektiğini
+- B) Suç işleyen kimselerin topluma yeniden kazandırılması için affedilmelerinin önemini
+- C) İnsanlar arasındaki ekonomik farklılıkların suç işleme oranlarını doğrudan artırdığını
+- D) Hukuk karşısında herkesin eşit olduğunu ve kişilerin sosyal statüsüne göre ayrım yapılamayacağını
+
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Peygamberimiz, "kızım Fatıma da olsa" diyerek adalet ve eşitlik ilkesini vurgulamıştır.
+
+---
+
+## 15. Soru Tipi: Bir Ayet Tanıyorum / Ayet el-Kürsi
+
+**Kazanım:** Ayet el-Kürsi'yi okur ve anlamını açıklar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Ayet el-Kürsi'nin içeriğinde yer alan Allah'ın "Hayy" ve "Kayyum" sıfatları ile "Uyku tutmaması" ifadelerinin ne anlama geldiği sorgulanır.
+
+**Soru Kökü:** Ayet el-Kürsi'de Allah'ın (cc) yüce sıfatları ve eşsiz kudreti anlatılırken şöyle buyrulmaktadır: "...O'nu ne uyuklama tutar ne de uyku. Göklerdeki ve yerdeki her şey O'nundur. İzni olmadan O'nun katında kim şefaat edebilir? O, kullarının yaptıklarını ve yapacaklarını bilir..." (Bakara suresi, 255. ayet). Ayetin mealinde geçen "O'nu ne uyuklama tutar ne de uyku." ifadesi Allah (cc) hakkında öncelikle neyi ifade etmektedir?
+
+**Şıklar:**
+- A) Ahiret gününde sadece O'nun izniyle şefaat edilebileceğini
+- B) Kâinattaki yaratma, idare ve denetiminin hiçbir an kesintiye uğramadığını
+- C) İnsanların aksine, fiziksel bir bedene veya maddeye ihtiyaç duymadığını
+- D) Evrendeki hiçbir varlığın O'nun ilminden ve bilgisinden bir şey gizleyemeyeceğini
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** "Uyku veya uyuklama tutmaz" ifadesi, Allah'ın evreni yönetmesinin kesintisiz olduğunu vurgular.
+
+---
+
+## 16. Soru Tipi: Kur'an-ı Kerim'in Ana Konuları
+
+**Kazanım:** Kur'an-ı Kerim'in ana konularını (inanç, ibadet, ahlak, muamelat ve kıssa) ayetler üzerinden sınıflandırır.
+
+**Soru Nasıl Çalışır (Mekanizma):** MEB, genellikle "Muamelat" kavramını öğrencinin bilip bilmediğini test eder.
+
+**Soru Kökü:** "Ey iman edenler! Belirlenmiş bir zamana kadar bir borç ilişkisi kurduğunuzda bunu yazın. Aranızdan bir kâtip bunu adaletle yazsın… Eğer borçlu, aklı ermeyen veya zayıf (yaşlı, çocuk vb.) biri ise velisi adaletle yazdırsın..." (Bakara suresi, 282. ayet) Bu ayet Kur'an-ı Kerim'de yer alan aşağıdaki ana konulardan hangisine örnek oluşturur?
+
+**Şıklar:**
+- A) Muamelat (Toplumsal ve hukuki ilişkiler)
+- B) İnanç Esasları (Akaid ve Tevhit)
+- C) İbadet (Allah'a kulluk vazifeleri)
+- D) Ahlak (Bireysel ve erdemli davranışlar)
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Ayet, borç alıp verme kurallarını düzenlediği için "Muamelat" kapsamındadır.
+
+---
+
+## 17. Soru Tipi: Zekât ve Sadaka / Sadaka-i Cariye
+
+**Kazanım:** Zekât, infak, fıtır sadakası ve sadaka-i cariye kavramlarını ayırt eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** "Kalıcı hayır" ile "Geçici hayır" ayrımı yapılır.
+
+**Soru Kökü:** Zengin bir iş insanı olan Ahmet Bey, vefatından sonra da amel defterinin kapanmamasını ve kendisine sevap yazılmaya devam etmesini arzulamaktadır. Bu amaçla Hz. Muhammed'in (sav) "kesintisiz sadaka" (sadaka-i cariye) hadisini rehber edinmiştir. Buna göre Ahmet Bey'in bu amacına ulaşması için aşağıdaki yardımlardan hangisini yapması en uygundur?
+
+**Şıklar:**
+- A) Maddi imkânı olmayan yetenekli çocukların ücretsiz eğitim görebileceği bir okul inşa ettirmesi
+- B) Her ramazan ayında mahallesindeki yüzlerce yoksul aileye erzak kolisi ve iftar yemeği dağıtması
+- C) Sahip olduğu fabrikalardaki işçilerin maaşlarını bayramlarda çift prim ödeyerek artırması
+- D) Yıl sonunda zekât hesabını dikkatlice yaparak parasını ihtiyaç sahibi akrabalarına nakit olarak vermesi
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Okul inşa ettirmek, fiziki bir yapı olduğu için Sadaka-i Cariye kapsamındadır.
+
+---
+
+## 18. Soru Tipi: Bir Sure Tanıyorum / Kureyş Suresi
+
+**Kazanım:** Kureyş suresini okur ve anlamını açıklar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Surenin mealinden yola çıkarak "Nimetler karşısında ne yapmalıyız?" sorusunun yanıtı aranır.
+
+**Soru Kökü:** "Kureyş'e kolaylaştırıldığı, evet, kış ve yaz seyahatleri onlara kolaylaştırıldığı için onlar, kendilerini açlıktan doyuran ve her çeşit korkudan emin kılan şu Ev'in (Kâbe'nin) Rabb'ine kulluk etsinler." (Kureyş suresi, 1-4. ayetler). Bu surenin mealinden çıkarılabilecek asıl mesaj aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Toplumların gelişmesi için ticaretin ve kervan yolculuklarının desteklenmesi gerektiği
+- B) Kâbe'nin korunmasının yalnızca Arap kabilelerinin sorumluluğunda olduğu
+- C) İnsanın sahip olduğu nimetleri fark ederek bunları veren Allah'a şükredip ibadet etmesi gerektiği
+- D) Korku ve açlık gibi sınavların insanın kaderinde değiştirilemez bir yazgı olduğu
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Sure, nimetleri veren Allah'a şükretmeye ve kulluk etmeye çağırmaktadır.
+
+---
+
+## 19. Soru Tipi: Kader ve Kaza / Toplumsal Yasalar
+
+**Kazanım:** Evrendeki fiziksel, biyolojik ve toplumsal yasaları ayetler üzerinden yorumlar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Sosyolojik değişimlerin, Allah'ın evrene koyduğu sünnetullaha bağlı olduğu kavramı sorgulanır.
+
+**Soru Kökü:** Tarihe baktığımızda adalet, dürüstlük ve yardımlaşma gibi değerlerin hâkim olduğu toplumların huzur içinde yükseldiğini; haksızlık, rüşvet ve zulmün yaygınlaştığı toplumların ise iç karışıklıklarla çöktüğünü görürüz. Nitekim Kur'an-ı Kerim'de şöyle buyrulmaktadır: "Şüphesiz ki bir topluluk kendi durumunu değiştirmedikçe, Allah onların durumunu değiştirmez." (Ra'd suresi, 11. ayet). Bu metin ve ayetten hareketle ulaşılabilecek en kapsamlı yargı aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Evrendeki fiziksel ve biyolojik yasalar toplumsal hayatın gidişatından tamamen bağımsız işler.
+- B) Toplumların kaderindeki değişimler ve gelişmeler, o toplumdaki insanların kendi irade ve eylemlerine bağlıdır.
+- C) Tarihte yaşanan tüm çöküşler, Allah'ın insanlara müdahale etmeden onları kaderleriyle baş başa bırakmasıyla oluşmuştur.
+- D) Allah, her topluma belirli bir ömür biçmiş olup eceli gelen toplumların değişimi kaçınılmazdır.
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Toplumların değişimi, insanların kendi irade ve eylemlerine bağlıdır.
+
+---
+
+## 20. Soru Tipi: Hz. Muhammed'in (sav) Örnekliği / Merhamet
+
+**Kazanım:** Hz. Muhammed'in (sav) insanlara, doğaya ve hayvanlara karşı merhametli oluşunu örneklendirir.
+
+**Soru Nasıl Çalışır (Mekanizma):** Peygamberimizin hayvan haklarıyla ilgili bir anısı/hadisi verilir.
+
+**Soru Kökü:** Hz. Muhammed (sav) ashabıyla birlikte bir yolculuk sırasında mola vermişti. Bu esnada sahabelerden biri bir kuşun yuvasına yaklaşarak içindeki yavruları aldı. Anne kuş dönüp yavrularını bulamayınca panik içinde Hz. Muhammed'in (sav) ve ashabının başının üzerinde çırpınarak uçmaya başladı. Durumu fark eden Hz. Muhammed (sav), "Bunun yavrularını alıp da onu kim kederlendirdi? Derhâl yavrularını ona geri verin!" diyerek sert bir şekilde uyarıda bulundu. Bu olay, Hz. Muhammed'in (sav) aşağıdaki ahlaki özelliklerinden hangisini **doğrudan** örneklendirir?
+
+**Şıklar:**
+- A) Toplum içindeki sorunları istişare (ortak akıl) yoluyla çözmesini
+- B) Suç işleyen kimselere karşı adaletle hükmetmekten asla çekinmemesini
+- C) İnsanların güvenini kazanarak el-Emin (güvenilir) sıfatını hak etmesini
+- D) Yalnızca insanlara değil, tüm canlılara karşı şefkatli ve merhametli bir tutum sergilemesini
+
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde Peygamberimizin bir anne kuşa karşı gösterdiği merhamet anlatılmaktadır.
+
+---
+
+## 21. Soru Tipi: Kader ve Kaza / Evrensel Yasalar
+
+**Kazanım:** Evrendeki fiziksel, biyolojik ve toplumsal yasaları ayetler üzerinden sınıflandırır ve yorumlar.
+
+**Soru Kökü:** Allah'ın (cc) evrene koyduğu yasalar fiziksel, biyolojik ve toplumsal olmak üzere üç grupta incelenir. Aşağıda Kur'an-ı Kerim'den bazı ayet mealleri verilmiştir: I. "Güneş ve Ay belirli bir hesaba göre hareket etmektedir." (Rahmân suresi, 5. ayet) II. "O, insanı alaktan (embriyodan) yarattı." (Alak suresi, 2. ayet) III. "Onlar yeryüzünde gezip kendilerinden öncekilerin sonunun nasıl olduğuna bakmazlar mı?.." (Fâtır suresi, 44. ayet) Bu ayetlerin evrensel yasalarla doğru eşleştirilmiş hâli aşağıdakilerin hangisidir?
+
+**Şıklar:**
+- A) I. Fiziksel, II. Biyolojik, III. Toplumsal
+- B) I. Biyolojik, II. Fiziksel, III. Toplumsal
+- C) I. Fiziksel, II. Toplumsal, III. Biyolojik
+- D) I. Toplumsal, II. Biyolojik, III. Fiziksel
+
+**Doğru Cevap ve Çözüm:** **Cevap: A.** I. Fiziksel, II. Biyolojik, III. Toplumsal yasadır.
+
+---
+
+## 22. Soru Tipi: Bir Sure Tanıyorum / Maun Suresi
+
+**Kazanım:** Maûn suresini okur ve anlamını açıklar.
+
+**Soru Kökü:** "Gördün mü o hesap ve ceza gününü yalanlayanı! İşte o, yetimi itip kakan, yoksula yedirmeyi özendirmeyen kimsedir. Yazıklar olsun o namaz kılanlara ki onlar namazlarını ciddiye almazlar. Onlar (namazlarıyla) gösteriş yaparlar. Ufacık bir yardıma bile engel olurlar." (Maun suresi, 1-7. ayetler). Maun suresinin bu mealinden hareketle aşağıdakilerden hangisi **çıkarılamaz**?
+
+**Şıklar:**
+- A) İbadetlerin yalnızca Allah'ın rızasını kazanmak amacıyla, samimiyetle yapılması gerektiği
+- B) Toplumdaki yardımlaşma ve dayanışmaya engel olmanın büyük bir vebal (günah) olduğu
+- C) Namaz ibadetinin diğer tüm yardımlaşma ibadetlerinden daha fazla gösterişe açık olduğu
+- D) İnsanlara karşı merhametsiz olanların ve yetimi korumayanların ahiret bilincinden uzaklaştığı
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Surede namazın diğer ibadetlerden "daha fazla" gösterişe açık olduğu bilgisi yoktur.
+
+---
+
+## 23. Soru Tipi: İslam'ın Korunmasına Önem Verdiği Temel Haklar
+
+**Kazanım:** İslam'ın korunmasını emrettiği temel hakları (Zarurat-ı Hamse) ayet ve hadisler üzerinden yorumlar.
+
+**Soru Kökü:** İslam dini, insanların emek harcayarak alın teriyle kazanç elde etmelerini emrederken; başkalarının hakkını gasp etmeyi, rüşveti, faizi, hırsızlığı ve şans oyunlarını (kumar) kesin bir dille yasaklamıştır. Kur'an-ı Kerim'de "Aranızda birbirinizin mallarını haksız yere yemeyin..." (Bakara suresi, 188. ayet) buyrularak bu duruma dikkat çekilmiştir. Bu metinde ve ayette İslam'ın temel gayelerinden (Zarurat-ı Hamse) hangisinin korunmasına vurgu yapılmaktadır?
+
+**Şıklar:**
+- A) Dinin Korunması
+- B) Aklın Korunması
+- C) Malın Korunması
+- D) Canın Korunması
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Haksız kazanç yollarının yasaklanması Malın Korunması ilkesiyle ilgilidir.
+
+---
+
+## 24. Soru Tipi: Hz. Muhammed'in Örnekliği / İstişare
+
+**Kazanım:** Hz. Muhammed'in (sav) istişareye (danışmaya) verdiği önemi kavrar.
+
+**Soru Kökü:** Hz. Muhammed (sav) Hendek Savaşı öncesinde düşman ordusunun Mekke'den yola çıktığını haber alınca ashabını toplamış ve onlara şehri nasıl savunacakları konusunda fikirlerini sormuştur. Toplantı sırasında Selman-ı Farisi söz alarak: "Ey Allah'ın Elçisi! Biz İran'da düşman saldırısına karşı şehrin etrafına derin hendekler kazarak savunma yapardık." demiştir. Bu fikir Hz. Peygamber ve diğer sahabeler tarafından çok beğenilmiş ve hemen uygulamaya geçilmiştir. Bu metin, Hz. Muhammed'in (sav) özelliklerinden hangisine **doğrudan** bir örnektir?
+
+**Şıklar:**
+- A) İnsanlar arasında adaleti sağlamasına
+- B) Ortak aklı kullanarak istişareye önem vermesine
+- C) Düşmanlara karşı üstün bir cesaret göstermesine
+- D) Verilen emanetleri her koşulda korumasına
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Hz. Muhammed'in fikir alışverişinde bulunması "İstişare" kavramıyla ifade edilir.
+
+---
+
+## 25. Soru Tipi: Kur'an-ı Kerim'in Temel Özellikleri
+
+**Kazanım:** Kur'an-ı Kerim'in temel özelliklerini ayetler üzerinden analiz eder.
+
+**Soru Kökü:** Kur'an-ı Kerim'de birçok ayetin sonunda "Hiç düşünmüyor musunuz?", "Hâlâ aklınızı kullanmayacak mısınız?", "İbret alan yok mu?" gibi ifadeler yer alır. İslam dini, insanın körü körüne başkalarını taklit etmesini (taassubu) ve atalarından gördüğü yanlış inançları sorgulamadan kabul etmesini reddeder. Bu durum Kur'an-ı Kerim'in aşağıdaki özelliklerinden hangisiyle **en çok** ilişkilidir?
+
+**Şıklar:**
+- A) Geçmiş peygamberlerin hayatlarından kıssalar (hikâyeler) sunmasıyla
+- B) İnsanı aklını kullanmaya, araştırmaya ve doğruyu bulmaya teşvik etmesiyle
+- C) İbadetlerin ve ahlaki kuralların nasıl yapılacağını detaylarıyla açıklamasıyla
+- D) Bütün insanlığa değil, yalnızca indirildiği dönemin toplumuna seslenmesiyle
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** "Düşünmüyor musunuz?" gibi ifadeler Kur'an'ın akla verdiği önemi gösterir.
+
+---
+
+## 26. Soru Tipi: Kader ve Kaza / Emek ve Rızık
+
+**Kazanım:** Emek, rızık, başarı ve başarısızlık kavramlarını İslam'ın kader anlayışı çerçevesinde yorumlar.
+
+**Soru Kökü:** Hz. Ömer (ra), halifeliği döneminde çalışabilecek güçte oldukları hâlde gün boyu camide oturup bekleyen ve "Bizler Allah'a tevekkül eden (güvenen) kimseleriz, O bizim rızkımızı gönderir." diyen bir gruba çok kızmış ve onları camiden çıkarmıştır. Ardından onlara: "Hiçbiriniz rızkını aramak için çalışmaktan vazgeçip de 'Allah'ım bana rızık ver' diyerek oturmasın. Biliyorsunuz ki gökten altın ve gümüş yağmaz!" diyerek uyarıda bulunmuştur. Hz. Ömer'in (ra) bu uyarısında asıl vurguladığı husus aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) İbadetlerin sadece camilerde değil, evlerde de yapılabileceği
+- B) Doğru tevekkül anlayışının, kişinin fiili çabasını (emeğini) ortadan kaldırmadığı
+- C) İnsanın ömrünün ne zaman biteceğinin (ecel) yalnızca Allah tarafından bilindiği
+- D) Toplumdaki fakirlere yardım etmenin devletin en önemli görevi olduğu
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Hz. Ömer, çalışmadan bekleyenlerin tevekkül inancını yanlış anladığını vurgulamıştır.
+
+---
+
+## 27. Soru Tipi: Hz. Muhammed'in Örnekliği / Kararlılık
+
+**Kazanım:** Hz. Muhammed'in (sav) davasındaki azmini, cesaretini ve kararlılığını kavrar.
+
+**Soru Kökü:** Mekkeli müşrikler, Hz. Muhammed'in (sav) İslam'ı yaymasını engellemek için ona büyük tekliflerde bulundular. Amcası Ebu Talip aracılığıyla ona Mekke'nin krallığını, en güzel kadınlarını ve çok büyük bir servet vermeyi teklif ettiler; yeter ki davasından vazgeçsin. Ancak Hz. Muhammed (sav) amcasına şu tarihî cevabı verdi: "Amca! Allah'a yemin ederim ki, bu davadan vazgeçmem için güneşi sağ elime, ayı da sol elime verseler, Allah bu dini üstün kılıncaya veya ben bu yolda ölünceye kadar asla dâvamdan vazgeçmeyeceğim!" Bu olay, Hz. Muhammed'in (sav) öncelikle hangi ahlaki özelliğini yansıtmaktadır?
+
+**Şıklar:**
+- A) Hakkı gözetmekteki adaletini
+- B) Yalan söylememesini ve dürüstlüğünü
+- C) Hedefine ulaşmadaki azim ve kararlılığını
+- D) İnsanların fikirlerine danışmasını (istişare)
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** "Güneşi ve ayı da verseler vazgeçmem" sözü azim ve kararlılığı gösterir.
+
+---
+
+## 28. Soru Tipi: Bir Sure Tanıyorum / Asr Suresi
+
+**Kazanım:** Asr suresini okur ve anlamını açıklar.
+
+**Soru Kökü:** "Asra (zamana) yemin olsun ki, insan mutlaka ziyandadır (hüsrandadır). Ancak iman edenler, salih amel (iyi işler) işleyenler, birbirlerine hakkı tavsiye edenler ve sabrı tavsiye edenler bunun dışındadır." (Asr suresi, 1-3. ayetler). Bu sureye göre insanı ziyanda olmaktan (zarara uğramaktan) kurtaracak temel şartlar arasında aşağıdakilerden hangisi **yer almaz**?
+
+**Şıklar:**
+- A) Allah'a samimi bir şekilde iman etmek
+- B) Topluma ve kendisine faydalı güzel işler yapmak
+- C) Sahip olduğu zenginliği sürekli olarak artırmaya çalışmak
+- D) İnsanlara doğruyu (hakkı) ve zorluklara karşı dayanmayı (sabrı) öğütlemek
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Zenginliği artırmak surede kurtuluş şartı olarak zikredilmemiştir.
+
+---
+
+## 29. Soru Tipi: Zekât ve Sadaka / Toplumsal Fayda
+
+**Kazanım:** Zekât, infak ve sadakanın bireysel ve toplumsal faydalarını kavrar.
+
+**Soru Kökü:** İslam dininde zenginlere farz kılınan zekât ibadeti, sadece Allah'ın bir emrini yerine getirmekle kalmaz, aynı zamanda toplum içinde çok derin etkiler bırakır. Zekât sayesinde varlıklı insanlar ile yoksullar arasında bir gönül köprüsü kurulur. Yoksul insan, zenginin malında gözü kalmaz; aksine onun malının bereketlenmesi için dua eder. Bu metinde zekât ibadetinin daha çok hangi yönü (faydası) vurgulanmaktadır?
+
+**Şıklar:**
+- A) Bireyin cimrilik ve bencillik gibi kötü huylarından arınması (Bireysel)
+- B) Ekonomik dengesizlikleri azaltarak toplumsal dayanışma ve huzuru sağlaması (Toplumsal)
+- C) Ülkenin uluslararası ticaret hacmini ve ihracat gelirlerini artırması (Küresel)
+- D) Kişiyi ahiretteki zorlu hesap gününde cehennem azabından kurtarması (Ahiret)
+
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Metinde zengin-fakir arasında köprü kurulması, toplumsal faydayı vurgulamaktadır.
+
+---
+
+## 30. Soru Tipi: Kader ve Kaza / Ömür ve Ecel
+
+**Kazanım:** Kader inancı bağlamında ömür ve ecel kavramlarını kavrar.
+
+**Soru Kökü:** İslam inancına göre her canlının yaşayacağı belirli bir süre (ömür) ve bu sürenin sona erdiği kesin bir an (ecel) vardır. Kur'an-ı Kerim'de "Her ümmetin bir eceli vardır. Ecelleri geldiğinde ne bir an erteleyebilirler ne de öne alabilirler." (A'râf suresi, 34. ayet) buyrulmaktadır. Ancak bu inanç, insanın hayatını tehlikeye atmasını veya sağlığını korumamasını haklı çıkarmaz. Bu bilgiye göre "Ömür ve Ecel" inancıyla ilgili aşağıdakilerden hangisi **söylenemez**?
+
+**Şıklar:**
+- A) Ölümün (ecelin) zamanı, insanın iradesi (cüzi irade) dışında Allah (külli irade) tarafından belirlenmiştir.
+- B) İnsan, ecelinin ne zaman geleceğini bilmese de sağlığını korumakla ve tedbir almakla yükümlüdür.
+- C) Ecel inancı insana "nasıl olsa öleceğim" diyerek dünyevi tüm işleri bırakma ve sadece ahirete çalışma sorumluluğu yükler.
+- D) Dünya hayatının geçici olduğunun bilinmesi (ecel gerçeği), insanın zamanını (ömrünü) daha verimli ve iyilikle geçirmesini sağlar.
+
+**Doğru Cevap ve Çözüm:** **Cevap: C.** İslam, hem dünya hem ahiret için çalışmayı emreder; dünyevi işleri bırakmak doğru değildir.

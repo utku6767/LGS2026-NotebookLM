@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGS Etkileşimli Soru Çözümü</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        :root {
+            --primary: #007bff;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Ekran Flash Efektleri */
+        #flash-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background-color: transparent; pointer-events: none;
+            z-index: 9999; transition: background-color 0.4s ease;
+        }
+        .flash-green { background-color: rgba(0, 255, 0, 0.15) !important; }
+        .flash-red { background-color: rgba(255, 0, 0, 0.15) !important; }
+
+        /* Ekran Yönetimi */
+        .screen {
+            display: none; flex-direction: column; width: 100%;
+            max-width: 600px; margin: 0 auto; background: #fff;
+            min-height: 100vh; box-sizing: border-box;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+        }
+        .screen.active { display: flex; }
+
+        /* ================= ANA MENÜ EKRANI ================= */
+        #main-menu { padding: 30px 20px; align-items: center; }
+        
+        #main-menu h1 {
+            font-size: 2.2rem; margin-bottom: 10px; text-align: center;
+            letter-spacing: 2px; text-transform: uppercase;
+        }
+
+        .total-score-box {
+            background: #d4edda; color: #155724; border: 2px solid #c3e6cb;
+            padding: 10px 20px; border-radius: 8px; font-weight: bold;
+            font-size: 1.1rem; margin-bottom: 30px; text-align: center;
+            width: 100%; box-sizing: border-box;
+        }
+
+        .menu-btn {
+            width: 100%; padding: 20px; margin-bottom: 15px;
+            font-size: 1.2rem; font-weight: bold; background-color: #fff;
+            border: 2px solid var(--text); border-radius: 12px;
+            cursor: pointer; text-transform: uppercase;
+            box-shadow: 4px 4px 0px rgba(0,0,0,1);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+        .menu-btn:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px rgba(0,0,0,1); }
+
+        .reset-btn {
+            width: 100%; padding: 15px; margin-top: auto; /* En alta iter */
+            font-size: 1.1rem; font-weight: bold; background-color: #f8d7da;
+            color: #721c24; border: 2px solid #f5c6cb; border-radius: 12px;
+            cursor: pointer; text-transform: uppercase;
+        }
+
+        /* ================= ÖZEL UYARI PENCERESİ (MODAL) ================= */
+        #modal-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.6); z-index: 10000;
+            display: none; align-items: center; justify-content: center;
+        }
+        #modal-overlay.active { display: flex; }
+        .modal-box {
+            background: #fff; padding: 25px; border-radius: 12px;
+            width: 85%; max-width: 400px; text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        .modal-box h2 { margin-top: 0; color: #dc3545; }
+        .modal-buttons {
+            display: flex; justify-content: space-between; margin-top: 25px; gap: 15px;
+        }
+        .modal-btn {
+            flex: 1; padding: 12px; font-weight: bold; font-size: 1rem;
+            border: none; border-radius: 8px; cursor: pointer;
+        }
+        .btn-deny { background: #6c757d; color: #fff; }
+        .btn-accept { background: #dc3545; color: #fff; }
+
+        /* ================= SORU EKRANI ================= */
+        .top-bar {
+            padding: 15px 20px; border-bottom: 2px solid #eee;
+            display: flex; justify-content: space-between; align-items: center;
+            background: #fff; position: sticky; top: 0; z-index: 10;
+        }
+        .back-btn {
+            padding: 10px 15px; background: #e2e6ea; border: 1px solid #ccc;
+            border-radius: 6px; font-weight: bold; cursor: pointer;
+        }
+        .subject-info { text-align: right; }
+        #subject-title { display: block; font-size: 1.1rem; color: #333; }
+        #subject-score { display: block; font-size: 0.9rem; color: #28a745; font-weight: bold; margin-top: 3px; }
+
+        .quiz-content { padding: 20px; display: flex; flex-direction: column; flex: 1; }
+        .question-text { font-size: 1.15rem; line-height: 1.6; margin-bottom: 25px; font-weight: 500; }
+        .options-container { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
+
+        .option-btn {
+            text-align: left; padding: 18px 20px; font-size: 1.05rem;
+            background-color: #fff; border: 2px solid #ddd; border-radius: 10px;
+            cursor: pointer; transition: all 0.2s; display: flex; align-items: center;
+        }
+        .option-btn:disabled { color: #333; cursor: default; }
+        .option-icon { margin-right: 12px; font-size: 1.2rem; min-width: 25px; }
+
+        .correct { background-color: #d4edda !important; border-color: #28a745 !important; color: #155724 !important; }
+        .incorrect { background-color: #f8d7da !important; border-color: #dc3545 !important; color: #721c24 !important; }
+
+        .bottom-nav {
+            margin-top: auto; padding-top: 20px; border-top: 2px solid #eee;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .nav-btn {
+            padding: 15px 20px; background: var(--text); color: #fff;
+            border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer;
+        }
+        .nav-btn:disabled { background: #ccc; }
+
+        .q-input-group { display: flex; align-items: center; font-size: 1.1rem; font-weight: bold; gap: 8px; }
+        .q-input-group input {
+            width: 50px; padding: 10px; font-size: 1.1rem; text-align: center;
+            border: 2px solid #ddd; border-radius: 8px; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="flash-overlay"></div>
+
+    <div id="modal-overlay">
+        <div class="modal-box">
+            <h2>UYARI</h2>
+            <p>Tüm derslerdeki doğru ve yanlış ilerlemeleriniz tamamen silinecektir. Bunu onaylıyor musunuz?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn btn-deny" onclick="closeResetModal()">REDDET</button>
+                <button class="modal-btn btn-accept" onclick="confirmReset()">KABUL ET</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-menu" class="screen active">
+        <h1>ANA MENÜ</h1>
+        <div class="total-score-box">
+            Tüm Dersler Toplam Doğru: <span id="main-total-score">0</span>
+        </div>
+
+        <button class="menu-btn" onclick="startSubject('matematik')">MATEMATİK</button>
+        <button class="menu-btn" onclick="startSubject('turkce')">TÜRKÇE</button>
+        <button class="menu-btn" onclick="startSubject('fen')">FEN BİLİMLERİ</button>
+        <button class="menu-btn" onclick="startSubject('din')">DİN KÜLTÜRÜ</button>
+        <button class="menu-btn" onclick="startSubject('sosyal')">SOSYAL BİLGİLER</button>
+        <button class="menu-btn" onclick="startSubject('ingilizce')">İNGİLİZCE</button>
+
+        <button class="reset-btn" onclick="showResetModal()">İLERLEMEYİ SIFIRLA</button>
+    </div>
+
+    <div id="quiz-screen" class="screen">
+        <div class="top-bar">
+            <button class="back-btn" onclick="showMainMenu()">Ana Menü</button>
+            <div class="subject-info">
+                <strong id="subject-title">Ders Adı</strong>
+                <span id="subject-score">Doğru: 0</span>
+            </div>
+        </div>
+
+        <div class="quiz-content">
+            <div class="question-text" id="question-text">Sorular yükleniyor...</div>
+            <div class="options-container" id="options-container"></div>
+            
+            <div class="bottom-nav">
+                <button class="nav-btn" id="prev-btn">ÖNCEKİ</button>
+                <div class="q-input-group">
+                    <input type="number" id="q-input" min="1" value="1">
+                    <span>/ <span id="total-q">0</span></span>
+                </div>
+                <button class="nav-btn" id="next-btn">SONRAKİ</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Ses Ayarları
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx;
+
+        function playSound(isCorrect) {
+            if (!audioCtx) audioCtx = new AudioContext();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            
+            const osc = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+            osc.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+            
+            if (isCorrect) {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); 
+                osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.1); 
+                gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.5);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(100, audioCtx.currentTime + 0.3);
+                gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.3);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.3);
+            }
+        }
+
+        // Yerel Depolama (Local Storage) Ayarları
+        let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
+
+        function saveProgress() {
+            localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
+            updateMainScore();
+            if(currentSubject) updateSubjectScore();
+        }
+
+        function updateMainScore() {
+            let total = 0;
+            for (let sub in userProgress) {
+                for (let q in userProgress[sub]) {
+                    if (userProgress[sub][q].isCorrect) total++;
+                }
+            }
+            document.getElementById('main-total-score').innerText = total;
+        }
+
+        function updateSubjectScore() {
+            let total = 0;
+            if (userProgress[currentSubject]) {
+                for (let q in userProgress[currentSubject]) {
+                    if (userProgress[currentSubject][q].isCorrect) total++;
+                }
+            }
+            document.getElementById('subject-score').innerText = `Doğru: ${total}`;
+        }
+
+        // Modal Yönetimi
+        function showResetModal() {
+            document.getElementById('modal-overlay').classList.add('active');
+        }
+        function closeResetModal() {
+            document.getElementById('modal-overlay').classList.remove('active');
+        }
+        function confirmReset() {
+            userProgress = {};
+            localStorage.removeItem('lgsProgress');
+            updateMainScore();
+            closeResetModal();
+        }
+
+        // TXT Parçalama
+        function parseQuestions(rawText) {
+            if(!rawText) return [];
+            const questions = [];
+            const blocks = rawText.split(/## \d+\.\s*Soru Tipi:/).slice(1);
+            for(let block of blocks) {
+                try {
+                    const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
+                    if(!soruMatch) continue;
+                    const aMatch = block.match(/-\s*A\)\s*(.*)/);
+                    const bMatch = block.match(/-\s*B\)\s*(.*)/);
+                    const cMatch = block.match(/-\s*C\)\s*(.*)/);
+                    const dMatch = block.match(/-\s*D\)\s*(.*)/);
+                    const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
+                    questions.push({
+                        text: soruMatch[1].trim(),
+                        options: { 'A': aMatch?.[1].trim(), 'B': bMatch?.[1].trim(), 'C': cMatch?.[1].trim(), 'D': dMatch?.[1].trim() },
+                        correct: ansMatch ? ansMatch[1] : "A"
+                    });
+                } catch(e) {}
+            }
+            return questions;
+        }
+
+        let currentQuestions = [];
+        let currentIndex = 0;
+        let answered = false;
+        let currentSubject = "";
+
+        const mainMenu = document.getElementById('main-menu');
+        const quizScreen = document.getElementById('quiz-screen');
+        const subjectTitle = document.getElementById('subject-title');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const qInput = document.getElementById('q-input');
+        const totalQSpan = document.getElementById('total-q');
+        const qText = document.getElementById('question-text');
+        const optsContainer = document.getElementById('options-container');
+        const overlay = document.getElementById('flash-overlay');
+
+        function showMainMenu() {
+            currentSubject = "";
+            quizScreen.classList.remove('active');
+            mainMenu.classList.add('active');
+            updateMainScore();
+            window.scrollTo(0, 0);
+        }
+
+        async function startSubject(subject) {
+            currentSubject = subject;
+            if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+            
+            mainMenu.classList.remove('active');
+            quizScreen.classList.add('active');
+            subjectTitle.innerText = subjectNameMap(subject);
+            updateSubjectScore();
+            
+            qText.innerHTML = "Sorular sunucudan çekiliyor, lütfen bekleyin...";
+            optsContainer.innerHTML = "";
+            totalQSpan.innerText = "0";
+            
+            try {
+                const response = await fetch(`${subject}.txt?v=` + new Date().getTime()); 
+                if (!response.ok) throw new Error(`Dosya bulunamadı: ${subject}.txt`);
+                const textData = await response.text();
+                currentQuestions = parseQuestions(textData);
+                currentIndex = 0;
+                renderQuestion();
+            } catch (error) {
+                qText.innerHTML = `<span style="color:red; font-weight:bold;">Hata: ${error.message}</span>`;
+            }
+        }
+
+        function subjectNameMap(key) {
+            const map = {
+                'matematik': 'MATEMATİK', 'turkce': 'TÜRKÇE', 'fen': 'FEN BİLİMLERİ',
+                'din': 'DİN KÜLTÜRÜ', 'sosyal': 'SOSYAL BİLGİLER', 'ingilizce': 'İNGİLİZCE'
+            };
+            return map[key] || key.toUpperCase();
+        }
+
+        function renderQuestion() {
+            answered = false;
+            const total = currentQuestions.length;
+            totalQSpan.innerText = total;
+            
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex >= total) currentIndex = Math.max(0, total - 1);
+            
+            qInput.value = currentIndex + 1;
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === total - 1;
+            window.scrollTo(0, 0);
+
+            if (total === 0) {
+                qText.innerHTML = "Bu ders için soru bulunamadı.";
+                return;
+            }
+
+            const q = currentQuestions[currentIndex];
+            qText.innerHTML = q.text.replace(/\n/g, '<br>');
+            optsContainer.innerHTML = "";
+
+            // Daha önce çözülmüş mü kontrol et
+            let pastAnswer = userProgress[currentSubject][currentIndex];
+
+            ['A', 'B', 'C', 'D'].forEach(key => {
+                if(!q.options[key]) return;
+                
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.id = 'btn-' + key;
+                
+                const iconSpan = document.createElement('span');
+                iconSpan.className = 'option-icon';
+                iconSpan.id = 'icon-' + key;
+                iconSpan.innerText = '•'; 
+                
+                const textSpan = document.createElement('span');
+                textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
+                
+                btn.appendChild(iconSpan);
+                btn.appendChild(textSpan);
+
+                // Eğer daha önce çözüldüyse eski durumu ekrana yansıt ve butonları kilitle
+                if (pastAnswer) {
+                    btn.disabled = true;
+                    if (key === q.correct) {
+                        btn.classList.add('correct');
+                        iconSpan.innerText = '✅';
+                    } else if (key === pastAnswer.selected) {
+                        btn.classList.add('incorrect');
+                        iconSpan.innerText = '❌';
+                    }
+                } else {
+                    btn.onclick = () => selectOption(key);
+                }
+
+                optsContainer.appendChild(btn);
+            });
+
+            if (pastAnswer) answered = true;
+
+            if (window.MathJax) MathJax.typesetPromise().catch(() => {});
+        }
+
+        function selectOption(selectedKey) {
+            if (answered) return;
+            answered = true;
+            
+            const q = currentQuestions[currentIndex];
+            const buttons = document.querySelectorAll('.option-btn');
+            buttons.forEach(b => b.disabled = true);
+
+            const selBtn = document.getElementById('btn-' + selectedKey);
+            const selIcon = document.getElementById('icon-' + selectedKey);
+            const correctBtn = document.getElementById('btn-' + q.correct);
+            const correctIcon = document.getElementById('icon-' + q.correct);
+
+            let isCorrect = (selectedKey === q.correct);
+
+            if (isCorrect) {
+                playSound(true);
+                overlay.className = 'flash-green';
+                selBtn.classList.add('correct');
+                selIcon.innerText = '✅';
+            } else {
+                playSound(false);
+                overlay.className = 'flash-red';
+                selBtn.classList.add('incorrect');
+                selIcon.innerText = '❌';
+                if(correctBtn) {
+                    correctBtn.classList.add('correct');
+                    correctIcon.innerText = '✅';
+                }
+            }
+
+            // İlerlemeyi Kaydet
+            userProgress[currentSubject][currentIndex] = {
+                selected: selectedKey,
+                isCorrect: isCorrect
+            };
+            saveProgress();
+
+            setTimeout(() => { overlay.className = ''; }, 400);
+        }
+
+        prevBtn.addEventListener('click', () => { currentIndex--; renderQuestion(); });
+        nextBtn.addEventListener('click', () => { currentIndex++; renderQuestion(); });
+        qInput.addEventListener('change', (e) => {
+            let val = parseInt(e.target.value);
+            const max = currentQuestions.length;
+            if(isNaN(val) || val < 1) val = 1;
+            if(val > max) val = max;
+            currentIndex = val - 1;
+            renderQuestion();
+        });
+
+        // Başlangıçta ana menü skorunu güncelle
+        window.onload = updateMainScore;
+    </script>
+</body>
+</html>
+

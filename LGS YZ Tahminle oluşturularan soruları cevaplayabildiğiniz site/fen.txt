@@ -1,0 +1,427 @@
+
+# FEN BİLİMLERİ TESTİ (1-40)
+
+## 1. Soru Tipi: Çıkarım Yapma / Adaptasyon
+**Kazanım:** Canlıların yaşadıkları çevreye uyum sağlamaları (adaptasyon) ile hayatta kalma şansları arasındaki ilişkiyi açıklar.
+**Soru Kökü:** Çöllerde yaşayan Addaks antilopları çarpık büyük boynuzlarıyla türün diğer üyelerinden ayrılır. Kışın kahverengi olan kürk renkleri yazın açık bej rengi veya beyaza dönüşerek çöl sıcağından korunurlar. Addaks antiloplarının kısa, kalın bacakları, kumda batmalarını önleyen düz, geniş tabanlı ayakları vardır. Addakslar su ihtiyaçlarını sadece yedikleri bitkilerden karşılarlar. Diğer antiloplar kadar hızlı koşamadıklarından, aşırı avlanma sonucunda soyları tükenme tehlikesiyle karşı karşıya kalmıştır. Bu metne göre Addaks antilopları ile ilgili aşağıdakilerden hangisine ulaşılabilir?
+**Şıklar:**
+- A) Sahip oldukları adaptasyonlar çöldeki yaşama şanslarını artırır, ancak insan faktörü soylarını tehdit etmektedir.
+- B) Kısa ve kalın bacakları onların çölde diğer hayvanlardan çok daha hızlı koşarak avcılardan kaçmasını sağlamıştır.
+- C) Yazın kürk renklerinin açılması, genetik yapılarının aniden bozulmasıyla ortaya çıkan kalıtsal bir mutasyondur.
+- D) Su ihtiyaçlarını bitkilerden karşılamaları, çöl ekosistemindeki besin zincirinin en üst basamağında olduklarını gösterir.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Addaksların özellikleri adaptasyon örneğidir. Metindeki "aşırı avlanma sonucu soylarının tükenme tehlikesi yaşaması" ifadesi insan faktörünün onları tehdit ettiğini gösterir.
+
+## 2. Soru Tipi: Model Yorumlama / DNA ve Genetik Kod
+**Kazanım:** Nükleotid, gen, DNA ve kromozom kavramlarını açıklar ve DNA'nın kendini nasıl eşlediğini model üzerinde gösterir.
+**Soru Kökü:** Bir öğrenci, yapboz parçaları kullanarak yapacağı DNA modelinin birinci zincirini aşağıdaki nükleotid dizilimi ile oluşturmuştur: A - T - G - A - T - T - T - C - G - G. Daha sonra içinde her nükleotid çeşidinden onar (10) tane bulunan yapboz kutusundaki parçalarla bu DNA modelinin karşısına gelecek olan ikinci zinciri oluşturacaktır. Buna göre, ikinci zincir hatasız bir şekilde tamamlandığında yapboz kutusunda kalan nükleotid sayılarıyla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Kutuda 8 adet Adenin, 6 adet Timin nükleotidi kalmıştır.
+- B) Kutuda 6 adet Adenin, 8 adet Timin nükleotidi kalmıştır.
+- C) Kutuda 9 adet Sitozin, 7 adet Guanin nükleotidi kalmıştır.
+- D) Kutuda hiç Adenin nükleotidi kalmamıştır, tamamı kullanılmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Birinci zincirde: 2A, 4T, 3G, 1C. İkinci zincir için: 2T, 4A, 3C, 1G kullanılır. Başlangıçta 10'ar tane vardı. Kalan: A=10-4=6, T=10-2=8.
+
+## 3. Soru Tipi: Karşılaştırma / Besin Zinciri ve Enerji Akışı
+**Kazanım:** Besin zincirinin başlangıcında üreticilerin bulunduğunu ve enerji akışının nasıl gerçekleştiğini analiz eder.
+**Soru Kökü:** Bir ekosistemde yer alan iki farklı besin zinciri aşağıda gösterilmiştir: Birinci Besin Zinciri: Çimen → Çekirge → Kurbağa → Yılan → Şahin. İkinci Besin Zinciri: Çimen → Tavşan → Tilki → Aslan. Verilen besin zincirleri ile ilgili aşağıda yapılan yorumlardan hangisi yanlıştır?
+**Şıklar:**
+- A) Farklı besin zincirlerinde aynı türe ait üretici canlılar (Çimen) ortak olarak yer alabilir.
+- B) Birinci besin zincirinde yılan sayısındaki ani bir azalma, çekirge sayısını olumsuz yönde etkiler.
+- C) İkinci besin zincirinde aslan sayısındaki artış, çimen miktarının artmasına (olumlu etkilenmesine) neden olur.
+- D) Besin zincirlerinde enerji akışı daima üreticilerden (çimen) tüketicilere doğru tek bir yönde gerçekleşir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Aslan sayısı artarsa tilki sayısı azalır, tavşan sayısı artar, bu da çimen miktarının azalmasına neden olur. Dolayısıyla çimen olumlu değil olumsuz etkilenir.
+
+## 4. Soru Tipi: Tablo Okuma / Periyodik Sistem
+**Kazanım:** Periyodik sistemdeki elementleri metal, ametal ve yarı metal olarak sınıflandırır.
+**Soru Kökü:** Periyodik tablonun bir bölümü ve bu bölümden alınan bazı kesitler verilmiştir. Verilen 1. kesitte 1A grubunda alt alta bulunan H (Hidrojen), Li (Lityum) ve Na (Sodyum) elementleri yer almaktadır. Diğer kesitlerde ise ametal ve soygaz sınıfına ait elementler (O, F, Ne, C, N vb.) gösterilmiştir. Buna göre verilen kesitlerdeki elementlerin sınıflandırılmasıyla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Birinci kesitteki elementlerin (H, Li, Na) tamamı aynı element sınıfında yer alır ve metalik özellik gösterir.
+- B) İkinci kesitte bulunan O, F ve Ne elementlerinin tamamı ametaldir ve kendi aralarında bağ yaparak bileşik oluştururlar.
+- C) Üçüncü kesitteki elementlerin (C, N, Si, P) tamamı ametal sınıfındadır ve parlak görünüme sahip değildirler.
+- D) Birinci kesitte yer alan hidrojen (H) ametal iken, onun hemen altında bulunan lityum (Li) ve sodyum (Na) metal sınıfındadır.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** 1A grubunun en üstündeki Hidrojen (H) ametaldir, altındaki Li ve Na alkali metallerdir.
+
+## 5. Soru Tipi: Deney Analizi / Katı Basıncı
+**Kazanım:** Katı basıncını etkileyen değişkenleri (ağırlık ve yüzey alanı) deney ve gözlemlerle keşfeder.
+**Soru Kökü:** Katı cisimler ile bulundukları zemin arasında oluşan basınçla ilgili bir etkinlikte, bir masanın üzerine renkleri ve içerikleri dışında tamamen özdeş olan kitaplar farklı konumlarda dizilmiştir: K Durumu: İki kitap üst üste ve yatay olarak masada durmaktadır. L Durumu: Üç kitap üst üste ve yatay olarak masada durmaktadır. M Durumu: Tek bir kitap yatay olarak masada durmaktadır. Kitapların masaya temas eden yüzey alanları tüm durumlarda birbirine eşit olduğuna göre, masa zemininde oluşan basınçların (P_K, P_L, P_M) sıralaması aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) P_L > P_K > P_M
+- B) P_K = P_L = P_M
+- C) P_M > P_K > P_L
+- D) P_K > P_L > P_M
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Yüzey alanları aynı olduğu için basınç ağırlıkla doğru orantılıdır. Ağırlık sıralaması L (3 kitap) > K (2 kitap) > M (1 kitap) olduğundan basınç sıralaması da L > K > M şeklindedir.
+
+## 6. Soru Tipi: Sınıflandırma / Fiziksel ve Kimyasal Değişimler
+**Kazanım:** Fiziksel ve kimyasal değişimleri, olayların oluşumuna göre sınıflandırır.
+**Soru Kökü:** Aşağıda günlük hayatta maddelerde gerçekleşen bazı değişim örnekleri numaralandırılarak verilmiştir: 1. Patatesin haşlanması, 2. Ekmeğin küflenmesi, 3. Petrolün damıtılması, 4. Solunum olayının gerçekleşmesi, 5. Gümüşten küpe (takı) yapılması, 6. Şekerin çay içerisinde suda çözünmesi. Buna göre verilen değişimlerin "Fiziksel" ve "Kimyasal" olarak doğru sınıflandırılmış hâli aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Fiziksel: 1, 3, 5 | Kimyasal: 2, 4, 6
+- B) Fiziksel: 3, 5, 6 | Kimyasal: 1, 2, 4
+- C) Fiziksel: 1, 2, 4 | Kimyasal: 3, 5, 6
+- D) Fiziksel: 4, 5, 6 | Kimyasal: 1, 2, 3
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Kimyasal değişimler: 1 (pişme), 2 (küflenme), 4 (solunum). Fiziksel değişimler: 3 (damıtma), 5 (şekil değişimi), 6 (çözünme).
+
+## 7. Soru Tipi: Grafik ve Kavram Yorumlama / Mevsimler ve İklim
+**Kazanım:** Mevsimlerin oluşumuna yönelik tahminlerde bulunur ve Dünya'nın Güneş etrafındaki hareketinin sonuçlarını kavrar.
+**Soru Kökü:** Dünya'nın Güneş etrafındaki dolanımı sırasında bulunduğu konumlar mevsimlerin oluşumunu belirler. 21 Haziran tarihinde Dünya'nın bulunduğu konumda Güneş ışınlarının geliş açısına bağlı olarak Kuzey Yarım Küre'de yaz mevsimi başlarken Güney Yarım Küre'de kış mevsimi başlar. Buna göre 21 Haziran tarihi itibarıyla Dünya üzerinde yaşanan olaylarla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Bu tarihte Ekvator üzerindeki noktalara Güneş ışınları öğle vakti tam dik (90°) açıyla düşer.
+- B) Bu tarihten itibaren Güney Yarım Küre'de gündüzler kısalmaya, geceler uzamaya başlar.
+- C) Kuzey Yarım Küre'de bulunan Yengeç Dönencesi üzerindeki noktalara öğle vakti Güneş ışınları dik açıyla düşer.
+- D) Tüm dünyada gece ve gündüz süreleri eşitlenir ve 12 saat gece, 12 saat gündüz yaşanır.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** 21 Haziran'da Güneş ışınları Kuzey Yarım Küre'deki Yengeç Dönencesi'ne öğle vakti dik açıyla gelir.
+
+## 8. Soru Tipi: Değişken Analizi / Basit Makineler (Kaldıraçlar)
+**Kazanım:** Basit makinelerin sağladığı avantajları (kuvvet kazancı) verilen örnekler üzerinden analiz eder.
+**Soru Kökü:** Bir kaldıraç sisteminde ağırlığı bilinen P yükü, F kuvveti uygulanarak dengelenmiştir. Desteğin, yük ile kuvvetin arasında olduğu bir kaldıraç türü kullanılmıştır. Bu kaldıraç sisteminde P yükünü dengede tutan F kuvvetinin değerini azaltmak (kuvvet kazancını artırmak) için aşağıdakilerden hangisi kesinlikle yapılmalıdır?
+**Şıklar:**
+- A) Yük ile destek arasındaki mesafe (yük kolu) artırılmalıdır.
+- B) Kuvvetin uygulandığı nokta, desteğe doğru (içeriye) kaydırılmalıdır.
+- C) Hem yük ile destek arasındaki uzunluk hem de kuvvet ile destek arasındaki uzunluk aynı oranda artırılmalıdır.
+- D) Kuvvet ile destek arasındaki uzunluk (kuvvet kolu) artırılmalıdır.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Kaldıraçlarda kuvvet kolunu uzatmak, uygulanan kuvveti azaltır (kuvvet kazancını artırır).
+
+## 9. Soru Tipi: Grafik Okuma / Fotosentez ve Solunum
+**Kazanım:** Bitkilerde fotosentez hızını etkileyen çevresel faktörleri grafikleri yorumlayarak açıklar.
+**Soru Kökü:** Fotosentez hızının ışık şiddeti ve birim hacimdeki karbondioksit miktarına göre değişimini gösteren bir grafik incelenmiştir. Araştırmacı, yüksek ışık şiddetinde fotosentez hızının başlangıçta arttığını, ancak belirli bir noktadan sonra sabit hızda devam ettiğini gözlemlemiştir. Buna göre, fotosentez hızına etki eden faktörlerle ilgili yapılan yorumlardan hangisi doğrudur?
+**Şıklar:**
+- A) Karbondioksit miktarının sürekli artırılması fotosentez hızını sonsuza kadar artırmaz, tepkime hızı belirli bir değerden sonra sabit kalır.
+- B) Düşük ışık şiddetinde bitkiler fotosentez yapma yeteneklerini kaybederler, yalnızca solunum yaparlar.
+- C) Fotosentez hızı dış faktörlerden ziyade bitkinin sadece topraktan aldığı su miktarına bağlı olarak artıp azalır.
+- D) Fotosentez olayı ışık şiddeti çok yüksek olduğunda, bitkinin yapraklarında değil sadece köklerinde gerçekleşir.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Fotosentez hızını etkileyen çevresel faktörler belirli bir noktaya kadar etkilidir, sonrasında hız sabitlenir.
+
+## 10. Soru Tipi: Kavram Analizi / Madde Döngüleri (Azot Döngüsü)
+**Kazanım:** Madde döngülerini ve çevre sorunlarını açıklar, azot döngüsünün aşamalarını kavrar.
+**Soru Kökü:** Doğadaki azot döngüsü sırasında çeşitli olaylar gerçekleşir. Havadaki serbest azotun toprağa bağlanması ve topraktaki azotun tekrar havaya karışması belirli döngüler ve canlılar aracılığıyla sağlanır. Bu döngüde görev alan olaylarla ve canlılarla ilgili aşağıdakilerden hangisi **yanlıştır**?
+**Şıklar:**
+- A) Yıldırım ve şimşek gibi güçlü doğa olayları, havadaki serbest azotun toprağa bağlanmasına yardımcı olur.
+- B) Bitkiler, fotosentez yaparken ihtiyaç duydukları serbest azotu doğrudan havadan yaprakları aracılığıyla alırlar.
+- C) Azot ayrıştırıcı bakteriler, topraktaki ölü atıkları parçalayarak azotun tekrar atmosfere karışmasını sağlar.
+- D) Tüketici hayvanlar, azot ihtiyaçlarını azot bağlayıcı bitkileri veya diğer hayvanları yiyerek karşılarlar.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Bitkiler havadaki serbest azotu doğrudan alamazlar; azotu topraktan nitrat tuzları şeklinde kökleriyle alırlar.
+
+## 11. Soru Tipi: Model ve Grafik Analizi / DNA Eşlenmesi
+**Kazanım:** DNA'nın kendini nasıl eşlediğini ifade eder.
+**Soru Kökü:** Bir hücrede gerçekleşen hatasız DNA eşlenmesi sırasında sitoplazmadaki serbest nükleotid miktarının zamanla azaldığı ve çekirdeğe girdiği bilinmektedir. Eşlenme süreci tamamlandığında birbirinin kopyası olan iki yeni DNA molekülü oluşur. Buna göre hücrede gerçekleşen DNA eşlenmesi süreciyle ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Eşlenme sırasında çekirdekteki toplam organik baz ve şeker sayısı azalmıştır.
+- B) Sitoplazmadaki serbest deoksiriboz şekeri ve fosfat miktarı eşlenme boyunca sabit kalmıştır.
+- C) Eşlenme sonucunda oluşan iki yeni DNA molekülündeki nükleotid dizilimleri birbirinin tamamen aynısıdır.
+- D) Eşlenme sırasında sitoplazmadan çekirdeğe geçen Adenin sayısı, her zaman sitoplazmadan çekirdeğe geçen Guanin sayısına eşittir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Hatasız DNA eşlenmesinde oluşan iki yeni DNA molekülü birbirinin ve ana DNA'nın aynısıdır.
+
+## 12. Soru Tipi: Hava Olayları / Rüzgâr Oluşumu
+**Kazanım:** İklim ve hava olayları arasındaki farkı açıklar, rüzgârın oluşumunu analiz eder.
+**Soru Kökü:** X ve Y şehirleri arasında gözlemlenen yatay yönlü hava hareketinin (rüzgârın) X şehrinden Y şehrine doğru şiddetli bir şekilde estiği tespit edilmiştir. Bu gözleme dayanarak X ve Y şehirlerindeki hava durumuyla ilgili aşağıdakilerden hangisi kesinlikle söylenebilir?
+**Şıklar:**
+- A) X şehrinde havanın sıcaklığı, Y şehrine göre çok daha yüksektir.
+- B) X şehrinde alçak basınç alanı, Y şehrinde yüksek basınç alanı oluşmuştur.
+- C) Y şehrinde yükselici hava hareketi, X şehrine göre daha az gerçekleşmektedir.
+- D) X şehri yüksek basınç alanının etkisindeyken, Y şehri alçak basınç alanının etkisindedir.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Rüzgâr yüksek basınçtan (soğuk) alçak basınca (sıcak) doğru eser. X'ten Y'ye esiyorsa X yüksek basınç, Y alçak basınçtır.
+
+## 13. Soru Tipi: Deney Tasarımı / Sıvı Basıncı
+**Kazanım:** Sıvı basıncını etkileyen değişkenleri tahmin eder ve deneyle test eder.
+**Soru Kökü:** Bir öğrenci, "Sıvı basıncı sıvının derinliğine bağlı olarak değişir." hipotezini test etmek için bir kontrollü deney tasarlamak istiyor. Elinde farklı hacimlerde su ve zeytinyağı dolu kaplar bulunmaktadır. Buna göre öğrenci hipotezini doğrulamak için aşağıdaki işlemlerden hangisini yapmalıdır?
+**Şıklar:**
+- A) Aynı cins sıvı (su) bulunan özdeş kapların farklı derinliklerindeki sıvı basınçlarını ölçerek karşılaştırmalıdır.
+- B) Farklı cins sıvılar (su ve zeytinyağı) bulunan kapların aynı derinliklerindeki sıvı basınçlarını ölçerek kaydetmelidir.
+- C) Aynı derinlikteki farklı cins sıvıların, bulundukları kap tabanına uyguladıkları toplam sıvı kütlelerini tartmalıdır.
+- D) Kapların şekillerini ve sıvı cinslerini değiştirerek sıvı yoğunluğunun basınca olan etkisini incelemelidir.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Kontrollü deneyde bağımsız değişken (derinlik) dışındaki tüm değişkenler (sıvı cinsi, kap vb.) aynı tutulmalıdır.
+
+## 14. Soru Tipi: Kavram Analizi / Asitler ve Bazlar
+**Kazanım:** Asitleri ve bazları ayırt eder, günlük hayattaki maddelerle ilişkilendirir.
+**Soru Kökü:** K, L ve M sıvılarına ait bazı özellikler aşağıda verilmiştir:
+- K sıvısı kırmızı turnusol kâğıdının rengini maviye çeviriyor.
+- L sıvısının pH cetvelindeki değeri 7'den küçüktür.
+- M sıvısı, L sıvısı ile birleşerek kimyasal bir tepkimeye (nötralleşme) giriyor ve sonucunda tuz ile su oluşuyor.
+Buna göre bu sıvılarla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) K sıvısı günlük hayatta kullandığımız limon suyu veya sirke olabilir.
+- B) M sıvısı bazik bir maddedir ve sulu çözeltilerinde ortama OH⁻ (hidroksit) iyonu verir.
+- C) L sıvısı bazik özellik gösterdiğinden cam ve porselen eşyalara etki ederek onları aşındırır.
+- D) K ve M sıvıları bir kapta karıştırıldığında aralarında nötralleşme tepkimesi gerçekleşir.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** K bazdır (kırmızı turnusolu mavi yapar). L asittir (pH<7). M, L ile nötralleştiğine göre bazdır. Bazlar OH⁻ iyonu verir.
+
+## 15. Soru Tipi: Grafik ve Yorum / Öz Isı
+**Kazanım:** Isınmanın maddenin cinsi, kütlesi ve sıcaklık değişimiyle ilişkisini analiz eder.
+**Soru Kökü:** Başlangıç sıcaklıkları ve kütleleri eşit olan K, L ve M sıvıları, özdeş ısıtıcılarla tamamen eşit süre ısıtılmıştır. Süre sonunda maddelerde hâl değişimi gerçekleşmediği ve son sıcaklık değerlerinin K > L > M şeklinde olduğu ölçülmüştür. Sıcaklık artışlarındaki bu farklılığın nedenini açıklayan en doğru yargı aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) M sıvısının öz ısısı en küçük olduğu için sıcaklık artışı diğerlerine göre çok yavaş kalmıştır.
+- B) L sıvısının özdeş ısıtıcıdan aldığı ısı enerjisi miktarı, K sıvısının aldığı ısı miktarından çok daha fazladır.
+- C) M sıvısının öz ısısı en büyüktür, ısınması zor olduğu için sıcaklık değişimi K ve L'ye göre en az olmuştur.
+- D) K sıvısı ısıyı yalıtan bir madde olduğu için aldığı ısıyı doğrudan iç enerjisine çevirerek sıcaklığını artırmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Öz ısısı büyük olan maddeler geç ısınır, az sıcaklık artışı gösterir. M en az ısındığına göre öz ısısı en büyüktür.
+
+## 16. Soru Tipi: İhtimal Hesaplama / Kalıtım
+**Kazanım:** Tek karakter çaprazlamaları ile ilgili problemler çözer.
+**Soru Kökü:** Mor çiçekli iki bezelye bitkisi serada çaprazlandığında, elde edilen birinci kuşak yavru bezelyelerin bir kısmının beyaz çiçekli olduğu gözlemlenmiştir. (Bezelyelerde mor çiçek aleli, beyaz çiçek aleline baskındır.) Bu çaprazlamayla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Çaprazlanan mor çiçekli ana bezelyelerden biri homozigot (saf döl), diğeri heterozigot (melez) genotipe sahiptir.
+- B) Elde edilen tüm yavrular içinde, fenotipinde beyaz çiçek rengini gösteren bezelye oluşma ihtimali %50'dir.
+- C) Çaprazlama sonucu oluşan mor çiçekli bezelyelerin tamamı homozigot (saf) baskın genotipe sahip olmak zorundadır.
+- D) Çaprazlanan mor çiçekli ana bezelyelerin her ikisi de çekinik geni taşıyan heterozigot (melez) genotipe sahiptir.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** İki mor bezelyeden beyaz (aa) yavru oluşması için her iki ata da melez (Aa) olmalıdır.
+
+## 17. Soru Tipi: Tablo ve Sınıflandırma / Periyodik Sistem
+**Kazanım:** Periyodik sistemde elementleri metal, yarı metal ve ametal olarak sınıflandırır.
+**Soru Kökü:** Periyodik tablonun aynı periyodunda (aynı yatay sırada) soldan sağa doğru gidildikçe atom numarası artar. Aynı periyotta bulunan X, Y ve Z elementleri için şu fiziksel özellikler verilmiştir:
+- X elementi tel ve levha hâline getirilerek bükülebilir.
+- Y elementi oda koşullarında tek atomlu gaz hâlinde bulunur ve kimyasal reaksiyonlara girmez (kararlıdır).
+- Z elementi katı hâlde elektrik ve ısıyı iyi iletmez, vurulduğunda kırılgandır.
+Buna göre X, Y ve Z elementlerinin periyodik tablodaki soldan sağa doğru sıralanışı aşağıdakilerin hangisinde doğru verilmiştir?
+**Şıklar:**
+- A) Y - X - Z
+- B) Z - X - Y
+- C) X - Z - Y
+- D) Y - Z - X
+**Doğru Cevap ve Çözüm:** **Cevap: C.** X metal (sol), Z ametal (orta/sağ), Y soygaz (en sağ). Soldan sağa: X - Z - Y.
+
+## 18. Soru Tipi: Kavram Analizi / Biyoteknoloji
+**Kazanım:** Biyoteknolojik uygulamaların insanlık için yararlı ve zararlı yönlerini tartışır.
+**Soru Kökü:** Genetik mühendislerinin yaptığı bir çalışmada, Kuzey Kutbu'nda yaşayan bir balık türünden alınan "antifriz geni", bir tarım bitkisi olan domatese aktarılmıştır. Bu işlem sonucunda domates bitkisinin dondurucu soğuklarda bile hücrelerindeki suyun donmadığı ve bitkinin ürün vermeye devam ettiği gözlemlenmiştir. Uygulama bu genetik işlem ile ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) Bu işlem sayesinde domates bitkisinin DNA'sındaki kromozom sayısı artırılarak domatesten yeni bir bitki türü elde edilmiştir.
+- B) Gerçekleştirilen bu uygulama bir geleneksel ıslah çalışması olup, doğadaki tesadüfi sonuçlar temel alınarak yapılmıştır.
+- C) Uygulama, bitkinin sadece fiziksel görünümünde çevresel şartlarla ortaya çıkan geçici bir modifikasyona neden olmuştur.
+- D) Yapılan gen aktarımı sayesinde domates bitkisi, normalde doğasında bulunmayan yeni bir direnç özelliğine sahip olmuştur.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Gen aktarımı ile canlıya doğasında olmayan yeni bir genetik özellik kazandırılır.
+
+## 19. Soru Tipi: Sistematik Muhakeme / Basit Makineler (Eğik Düzlem)
+**Kazanım:** Basit makinelerden yararlanarak günlük yaşamda iş kolaylığı sağlayacak bir düzenek tasarlar.
+**Soru Kökü:** P ağırlığındaki bir yükü, 1 metre yüksekliğindeki bir kamyon kasasına çıkarmak için bir tahta kalas (eğik düzlem) kullanılmaktadır. Sistemi kullanan işçi, yükü iterken zorlandığı için uyguladığı F kuvvetini daha da azaltmak istemektedir. Bunun için yüksekliği aynı tutarak önceki kalasın yerine daha uzun bir kalas yerleştirmiştir. İşçinin yaptığı bu değişikliğin sistem üzerindeki etkisiyle ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Uygulanan kuvvetin büyüklüğü azalmış, ancak yükü o yüksekliğe çıkarmak için yapılan işin miktarında bir kazanç olmamıştır.
+- B) Eğik düzlemin boyu (yolu) uzatıldığı için kuvvet kazancı azalmış, buna karşılık yoldan büyük bir kazanç sağlanmıştır.
+- C) Sistemin eğim açısı azaldığı için yükü yukarı çıkarmak amacıyla harcanan toplam enerji (iş) miktarı azalmıştır.
+- D) Yükü dengeleyen itme kuvveti azaldığı için sistem enerjiden de tasarruf sağlayarak daha verimli hâle gelmiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Eğik düzlemde boy uzadıkça kuvvet azalır (kuvvet kazancı artar) ancak yapılan iş değişmez. İşten/enerjiden kazanç olmaz.
+
+## 20. Soru Tipi: Olay Analizi / Elektrik Yükleri ve Elektriklenme
+**Kazanım:** Elektriklenmeyi açıklayarak elektrik yüklerinin özelliklerini kavrar.
+**Soru Kökü:** Yalıtkan ipliklerle tavana asılmış K, L ve M iletken küreleri ikili gruplar hâlinde yan yana getirildiğinde; K ve L kürelerinin birbirini çektiği, L ve M kürelerinin ise birbirini ittiği gözlemleniyor. Buna göre K, L ve M kürelerinin yük durumlarıyla ilgili aşağıdakilerden hangisi **kesinlikle** doğrudur?
+**Şıklar:**
+- A) K ve L küreleri başlangıçta zıt cins elektrik yükleri ile yüklüdür.
+- B) L ve M küreleri aynı cins elektrik yükü ile (ikisi de + veya ikisi de -) yüklüdür.
+- C) K küresi pozitif (+) elektrik yüküne sahipse, L küresi kesinlikle nötr bir cisimdir.
+- D) L ve M küreleri nötr yapıda oldukları için yan yana geldiklerinde birbirlerini itmişlerdir.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** İki cismin birbirini itmesi için kesinlikle aynı cins yüklü olmaları gerekir. L ve M birbirini ittiğine göre aynı cins yüklüdür.
+
+## 21. Soru Tipi: Yorumlama ve Çıkarım / Mevsimler ve İklim (Gölge Boyu)
+**Kazanım:** Mevsimlerin oluşumuna yönelik tahminlerde bulunur.
+**Soru Kökü:** 21 Aralık tarihinde öğle vakti, Dünya üzerindeki farklı yarım kürelerde bulunan K, L ve M şehirlerinde özdeş cisimlerin gölge boyları ölçülüyor. Yapılan ölçümlerde K şehrindeki cismin gölge boyunun sıfır olduğu, L şehrindeki cismin gölge boyunun ise M şehrindeki cismin gölge boyundan daha uzun olduğu tespit ediliyor. Buna göre K, L ve M şehirleriyle ilgili aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) K şehri Güney Yarım Küre'deki Oğlak Dönencesi üzerinde yer almaktadır.
+- B) M şehri Kuzey Yarım Küre'de yer alan ve kış mevsimini yaşayan bir şehirdir.
+- C) L şehrinde bu tarihten itibaren gündüzler kısalmaya, geceler uzamaya başlar.
+- D) 21 Haziran tarihinde en uzun gölge boyu K şehrinde oluşur.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** 21 Aralık'ta Güneş ışınları Oğlak Dönencesi'ne dik gelir, bu noktada gölge boyu sıfır olur.
+
+## 22. Soru Tipi: İhtimal Hesaplama / Kalıtım (Soy Ağacı ve Çaprazlama)
+**Kazanım:** Tek karakter çaprazlamaları ile ilgili problemler çözer.
+**Soru Kökü:** Bezelyelerde yuvarlak tohum şekli aleli (Y), buruşuk tohum şekli aleline (y) baskındır. Genotipleri bilinmeyen ancak fenotipleri yuvarlak tohumlu olan iki bezelye bitkisi çaprazlandığında, elde edilen yavrular arasında buruşuk tohumlu bezelyelerin de olduğu gözlemlenmiştir. Bu çaprazlama işlemiyle ilgili aşağıdakilerden hangisi **kesinlikle** doğrudur?
+**Şıklar:**
+- A) Çaprazlama sonucunda oluşan yuvarlak tohumlu yavru bezelyelerin tamamı saf döl (homozigot) genotipe sahiptir.
+- B) Çaprazlanan ana bezelyelerden biri homozigot baskın, diğeri ise heterozigot (melez) genotipe sahiptir.
+- C) Çaprazlanan ana bezelyelerin her ikisi de çekinik geni yapısında barındıran heterozigot (melez) genotipe sahiptir.
+- D) Bu çaprazlama sonucunda elde edilecek tüm yavrular içinde buruşuk tohumlu bezelye oluşma ihtimali %50'dir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Yuvarlak (baskın) iki bezelyeden buruşuk (çekinik = yy) yavru oluşması için her iki ata da melez (Yy) olmalıdır.
+
+## 23. Soru Tipi: Deney Analizi / Gaz Basıncı (Açık Hava Basıncı)
+**Kazanım:** Gaz basıncının varlığını ve etkilerini deneylerle açıklar.
+**Soru Kökü:** Bir öğrenci, ağzına kadar tamamen su ile doldurduğu cam bardağın üzerini hava almayacak şekilde bir kâğıtla kapatıyor. Bardağı kâğıtla birlikte yavaşça ters çevirdiğinde, kâğıdın yere düşmediğini ve suyun bardaktan dökülmediğini gözlemliyor. Buna göre yapılan bu deneyle ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) Suyun kâğıda uyguladığı sıvı basıncı, kâğıda dışarıdan uygulanan açık hava basıncından daha büyüktür.
+- B) Bardağın içindeki kapalı gaz basıncı, dışarıdaki açık hava basıncını dengeleyerek suyun dökülmesini önlemiştir.
+- C) Suyun yoğunluğu havanın yoğunluğundan büyük olduğu için kâğıt yerçekimine karşı koymuştur.
+- D) Kâğıda alttan yukarı doğru etki eden açık hava basıncı, suyun kâğıda uyguladığı sıvı basıncını dengelemiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Açık hava basıncı, suyun kâğıda uyguladığı basıncı dengeleyerek kâğıdın düşmesini ve suyun dökülmesini engeller.
+
+## 24. Soru Tipi: Grafik Okuma / Kimyasal Tepkimeler ve Kütlenin Korunumu
+**Kazanım:** Kimyasal tepkimelerde kütlenin korunduğunu kavrar.
+**Soru Kökü:** Kapalı bir kapta gerçekleşen kimyasal bir tepkimede, kapta bulunan X, Y, Z ve T maddelerinin kütlelerinin zamanla değişimini gösteren grafikte şu veriler tespit edilmiştir:
+- X maddesi 40 gramdan 10 grama inerek sabitlenmiştir.
+- Y maddesi 30 gramdan 0 grama inmiştir.
+- Z maddesi kapta hiç yokken 45 gram oluşmuştur.
+- T maddesi kapta hiç yokken m gram oluşmuştur.
+Buna göre bu kimyasal tepkimeyle ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Tepkimede X maddesinin tamamı tükenmiş ve girenlerin tümü ürüne dönüşmüştür.
+- B) Tepkime sonucunda kapta oluşan T maddesinin kütlesi (m) 15 gramdır.
+- C) Kaba başlangıçta toplam 60 gram reaktif (tepkimeye giren madde) konulmuştur.
+- D) Tepkime denkleminde X ve Y ürünleri, Z ve T ise girenleri oluşturmaktadır.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Girenler: X'ten 30g (40-10), Y'den 30g kullanılmıştır. Toplam giren = 60g. Ürünler: Z=45g, T=60-45=15g.
+
+## 25. Soru Tipi: Sistematik Muhakeme / Basit Makineler (Palangalar)
+**Kazanım:** Basit makine sistemlerinin (palangaların) sağladığı avantajları analiz eder.
+**Soru Kökü:** Özdeş yükler, hareketli ve sabit makaraların bir arada kullanıldığı iki farklı palanga sistemiyle (K ve L sistemleri) yerden aynı yüksekliğe sabit süratle çıkarılacaktır. K sisteminde ip aşağı doğru çekilerek, L sisteminde ise ip yukarı doğru çekilerek yükler hedeflenen yüksekliğe ulaştırılmıştır. L sistemindeki hareketli makara sayısı K sistemindekinden fazladır. Buna göre sistemlerin uygulanmasıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur? (Sürtünmeler ve makara ağırlıkları önemsizdir.)
+**Şıklar:**
+- A) Her iki sistemde de yükleri aynı yüksekliğe çıkarmak için yapılan fiziksel işler birbirine eşittir.
+- B) K sisteminde kuvvetten daha fazla kazanç sağlandığı için ip, L sistemine göre daha az çekilmiştir.
+- C) L sisteminde hareketli makara sayısı fazla olduğu için sistem, toplam enerjiden büyük oranda tasarruf sağlamıştır.
+- D) Yükü yukarı çıkaran ipler bırakıldığında L sistemindeki yük daha hızlı bir şekilde yere düşer.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Basit makinelerde işten ve enerjiden kazanç olmaz. Aynı yük aynı yüksekliğe çıkarılıyorsa yapılan iş eşittir.
+
+## 26. Soru Tipi: Model Analizi / Enerji Dönüşümleri (Besin Zinciri)
+**Kazanım:** Besin zincirindeki canlılar arasında enerji akışını ve biyolojik birikimi açıklar.
+**Soru Kökü:** Bir ekosistemde aynı besin zincirinde yer alan K, L, M ve N canlılarının dokularında biriken zehirli (toksik) madde miktarını gösteren ölçümler sonucunda elde edilen sıralama M > K > L > N şeklindedir. Bu canlıların oluşturduğu besin zinciriyle ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) N canlısı besin zincirinin en üst basamağında yer alan yırtıcı bir etçildir.
+- B) Güneş enerjisinden besin üretebilen ototrof canlı L canlısıdır.
+- C) Ekosistemde N canlısının sayısında yaşanacak bir azalış, L, K ve M canlılarının sayısını olumsuz etkiler.
+- D) K canlısının popülasyonu aşırı artarsa, doğrudan L canlısı sayısında artış, M canlısı sayısında azalış yaşanır.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Zehir miktarı en az olan N üreticidir. Üreticinin azalması tüm besin zincirini olumsuz etkiler.
+
+## 27. Soru Tipi: Olay Analizi / Elektrik Yükleri ve Topraklama
+**Kazanım:** Cisimleri elektriklenme yöntemleriyle elektrikler, topraklamanın işlevini açıklar.
+**Soru Kökü:** Yalıtkan bir ayak üzerinde duran, pozitif (+) yüklü iletken K küresi, iletken bir tel yardımıyla toprağa bağlanarak (topraklama yapılarak) nötr hâle getirilmek isteniyor. Topraklama işlemi sırasında gerçekleşen elektriksel olaylarla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) K küresindeki pozitif (+) yükler iletken tel üzerinden toprağa doğru akarak cismi yüksüz bırakır.
+- B) K küresi nötr hâle gelebilmek için topraktan kendi bünyesine pozitif (+) yük çeker.
+- C) K küresi ile toprak arasında hiçbir yük alışverişi yaşanmaz, iletken telin direncinden dolayı ısınma gerçekleşir.
+- D) Topraktan K küresine iletken tel üzerinden negatif (-) yükler (elektronlar) geçerek kürenin yükünü dengeler.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Topraklama olaylarında sadece negatif yükler (elektronlar) hareket eder. Pozitif yüklü cisme topraktan elektron akışı olur.
+
+## 28. Soru Tipi: Tablo ve Grafik Yorumlama / Isı ve Hâl Değişimi
+**Kazanım:** Isı alışverişi sonucu maddelerde meydana gelen hâl değişimi ve sıcaklık grafiğini yorumlar.
+**Soru Kökü:** Saf bir X gazının, oda koşullarındaki soğutulma sürecine ait sıcaklık-zaman grafiğinde; başlangıçta 110°C olan sıcaklığın 80°C'de 5 dakika boyunca sabit kaldığı, ardından düşmeye devam ederek 15°C'de tekrar 7 dakika boyunca sabit kaldığı ve en son 0°C'ye inerek deneyin sonlandırıldığı gözlemlenmiştir. Bu soğuma grafiğiyle ilgili aşağıda yapılan yorumlardan hangisi **yanlıştır**?
+**Şıklar:**
+- A) Madde, grafik boyunca çevreye ısı enerjisi vermiştir.
+- B) Maddenin yoğuşma sıcaklığı 80°C, donma sıcaklığı ise 15°C'dir.
+- C) Madde 50°C sıcaklıktayken dışarıdan ısı alarak sıvı hâle geçmektedir.
+- D) Sıcaklığın 15°C'de sabit kaldığı zaman aralığında maddenin katı ve sıvı hâlleri birlikte gözlemlenir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Soğuma grafiğinde madde dışarıya ısı verir, dışarıdan ısı almaz. 50°C'de madde sıvıdır ve soğumaktadır.
+
+## 29. Soru Tipi: Etkileşim ve Gözlem / Basınç (Sıvı-Gaz)
+**Kazanım:** Açık hava basıncının ve sıvı basıncının bağlı olduğu faktörleri günlük yaşamdan örneklerle açıklar.
+**Soru Kökü:** İtalyan bilim insanı Toriçelli, açık hava basıncını ölçmek için deniz seviyesinde (0 metre) ve 0°C sıcaklıkta cıva ile yaptığı deneyde borudaki cıva yüksekliğini 76 cm olarak ölçmüştür. Öğrenciler, bu deneyi birebir aynı malzemelerle ve aynı sıcaklıkta yüksek bir dağın zirvesine çıkarak tekrarlamışlardır. Buna göre dağın zirvesinde yapılan bu deneyle ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Dağın zirvesinde açık hava basıncı daha düşük olduğu için cam borudaki cıva seviyesi 76 cm'den daha az ölçülür.
+- B) Yükseklere çıkıldıkça açık hava basıncı artacağı için cam borudaki cıva 76 cm'den daha yukarıya tırmanır.
+- C) Deneyde cıva yerine yoğunluğu çok daha küçük olan su kullanılsaydı borudaki sıvı seviyesi 76 cm'den düşük olurdu.
+- D) Kullanılan cam borunun kesit alanı (kalınlığı) artırılsaydı, açık hava basıncı değişmemesine rağmen cıva yüksekliği artardı.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Yükseklere çıkıldıkça açık hava basıncı azalır, bu nedenle cıva seviyesi 76 cm'nin altına düşer.
+
+## 30. Soru Tipi: Tanım ve Sınıflandırma / Biyoteknoloji
+**Kazanım:** Biyoteknolojik uygulamaların insanlık için yararlı ve zararlı yönlerini tartışır.
+**Soru Kökü:** Kalıtsal (genetik) bir hastalık olan kistik fibrozis hastalarının hücrelerindeki bozuk genler yüzünden vücutları gerekli proteinleri üretemez. Modern tıp, laboratuvar ortamında zararsız hâle getirilmiş özel virüsleri "kargo" gibi kullanarak sağlıklı genleri bu hastaların hücrelerine ulaştırmayı ve hatalı genin işlevini düzeltmeyi hedeflemektedir. Tıp dünyasındaki bu biyoteknolojik uygulama aşağıdakilerden hangisiyle adlandırılır?
+**Şıklar:**
+- A) Türlerin kendi aralarında melezlenmesi ile sağlanan geleneksel ıslah yöntemi
+- B) Bir canlının istenilen genetik özellikte birebir kopyasının üretildiği klonlama işlemi
+- C) Canlıların DNA dizilimindeki nükleotid sayısını artırarak mutasyonu engelleme işlemi
+- D) Hastalıklı hücrelerin genetik yapısının onarılmasını veya düzeltilmesini amaçlayan "gen tedavisi"
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Hastalıklı genlerin sağlıklı genlerle onarılmasına "Gen Tedavisi" denir.
+
+## 31. Soru Tipi: Kavram Analizi / Mutasyon ve Modifikasyon
+**Kazanım:** Mutasyonla modifikasyon arasındaki farkı kavrar.
+**Soru Kökü:** Çuha çiçeği tohumları 15-20°C sıcaklıkta yetiştirildiğinde kırmızı renkli çiçekler açarken, aynı tohumlar 30-35°C sıcaklıkta yetiştirildiğinde beyaz renkli çiçekler açmaktadır. Beyaz çiçekli bitkiden alınan tohumlar tekrar 15-20°C'ye konulduğunda yeniden kırmızı çiçekler vermektedir. Sadece bu gözleme dayanılarak aşağıdaki çıkarımlardan hangisi yapılabilir?
+**Şıklar:**
+- A) Çevresel faktörler (sıcaklık), canlının genetik yapısını bozmadan sadece genlerin işleyişini değiştirmiştir.
+- B) Sıcaklık değişimi, çuha çiçeğinin DNA'sında kalıcı bir hasara (mutasyona) neden olmuştur.
+- C) Çuha çiçeğinde meydana gelen bu renk değişimi, sonraki nesillere kesin olarak aktarılan kalıtsal bir özelliktir.
+- D) Yüksek sıcaklık, bitkinin yaşama ve üreme şansını artıran yararlı bir adaptasyon geliştirmesini sağlamıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Bu durum modifikasyondur (çevresel etkiyle gen işleyişinin değişmesi, kalıtsal değildir).
+
+## 32. Soru Tipi: Rüzgâr Oluşumu / Basınç Merkezleri
+**Kazanım:** Rüzgârın oluşum nedenlerini basınç ve sıcaklık farklarıyla ilişkilendirir.
+**Soru Kökü:** K ve L bölgeleri arasında gözlemlenen yatay yönlü hava hareketinin (rüzgârın) gün boyunca K bölgesinden L bölgesine doğru şiddetli bir şekilde estiği ölçülmüştür. Bu ölçüme göre K ve L bölgeleriyle ilgili aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) K bölgesinin hava sıcaklığı, L bölgesinin hava sıcaklığından çok daha yüksektir.
+- B) K bölgesinde hava molekülleri yoğunlaşarak yüksek basınç alanı, L bölgesinde ise alçak basınç alanı oluşturmuştur.
+- C) L bölgesinde havanın alçalıcı hareket yapması nedeniyle yağış görülme ihtimali K bölgesine göre daha azdır.
+- D) K bölgesi, güneş ışınlarını L bölgesine göre daha dik ve etkili bir açıyla almaktadır.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Rüzgâr yüksek basınçtan alçak basınca doğru eser. K'den L'ye estiğine göre K yüksek basınç, L alçak basınçtır.
+
+## 33. Soru Tipi: Bağımsız Değişken Analizi / Katı Basıncı
+**Kazanım:** Katı basıncını etkileyen değişkenleri kontrollü deneylerle test eder.
+**Soru Kökü:** Bir öğrenci "Katıların zemine uyguladığı basınç, cismin ağırlığı ile doğru orantılıdır." hipotezini ispatlamak için laboratuvarda bir kontrollü deney tasarlamak istemektedir. Öğrencinin elinde yeterli sayıda özdeş küp bulunmaktadır. Öğrenci bu hipotezi kanıtlamak için nasıl bir deney düzeneği kurmalıdır?
+**Şıklar:**
+- A) Hem yere temas eden yüzey alanları farklı hem de toplam ağırlıkları farklı iki düzenek kurmalıdır.
+- B) Zemine temas eden yüzey alanlarını farklı tutup, toplam ağırlıkları aynı olan iki düzenek kurmalıdır.
+- C) Zemine temas eden yüzey alanlarını aynı tutup, toplam ağırlıkları birbirinden farklı iki düzenek kurmalıdır.
+- D) Küplerden birini katı, diğerini sıvı hâle getirerek maddenin fiziksel hâlinin basınca etkisini ölçmelidir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Bağımsız değişken (ağırlık) dışındaki tüm değişkenler (yüzey alanı) sabit tutulmalıdır.
+
+## 34. Soru Tipi: Grafik Analizi / Sıvı Basıncı
+**Kazanım:** Sıvı basıncının sıvı derinliği ve yoğunluğu ile olan ilişkisini açıklar.
+**Soru Kökü:** Taban alanından ağız kısmına doğru gidildikçe genişleyen huni şeklindeki boş bir kaba, sabit hızla su akıtan bir musluk açılarak su doldurulmaya başlanıyor. Buna göre, kap dolana kadar geçen sürede kap tabanında oluşan sıvı basıncının zamana bağlı değişimini en iyi ifade eden açıklama aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Kap tabanındaki sıvı basıncı, zamanla doğru orantılı olarak sürekli aynı hızda ve düzgün bir şekilde artar.
+- B) Kap tabanındaki sıvı basıncı, kabın genişlemesinden dolayı zamanla tamamen sabit kalır, hiç değişmez.
+- C) Kap tabanındaki sıvı basıncı önce hızlıca artar, ardından birden azalarak sıfıra iner.
+- D) Kap yukarı doğru genişlediği için suyun yükselme hızı giderek yavaşlar, dolayısıyla sıvı basıncındaki artış hızı da zamanla yavaşlayarak devam eder.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Kap genişledikçe su seviyesi yavaş yükselir, basınç artış hızı da yavaşlar.
+
+## 35. Soru Tipi: Sınıflandırma / Periyodik Sistem
+**Kazanım:** Periyodik sistemde elementleri metal, ametal, yarı metal ve soygaz olarak sınıflandırır.
+**Soru Kökü:** Periyodik tabloda yer alan X, Y ve Z elementlerinin bazı fiziksel ve kimyasal özellikleri aşağıda verilmiştir:
+- X elementi oda koşullarında tek atomlu gaz hâlinde bulunur ve diğer elementlerle bileşik oluşturmaz.
+- Y elementi tel ve levha hâline getirilebilir, elektrik akımını çok iyi iletir.
+- Z elementi mat görünümlüdür ve katı hâldeyken darbe aldığında kırılır.
+Bu özelliklere göre elementlerin periyodik tablodaki genel konumlarıyla ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) X elementi soygazdır ve periyodik tablonun en sağındaki (8A) grupta yer alır.
+- B) Y elementi bir ametaldir ve periyodik tablonun sağ tarafında bulunur.
+- C) Z elementi parlak görünümlü bir metaldir ve tablonun sol tarafındadır.
+- D) X, Y ve Z elementlerinin üçü de periyodik tablonun aynı periyodunda ve yan yana yer almaktadır.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** X soygazdır (8A grubu, en sağ). Y metaldir (sol taraf). Z ametaldir (sağ taraf).
+
+## 36. Soru Tipi: Matematiksel Okuma / Kütlenin Korunumu Yasası
+**Kazanım:** Kimyasal tepkimelerde kütlenin korunduğunu deney verileri üzerinden ispatlar.
+**Soru Kökü:** Kapalı bir kapta gerçekleşen "K + L → M + N" kimyasal tepkimesine ait kütle-zaman analizinde şu veriler elde edilmiştir:
+- Kaba başlangıçta 20 gram K ve 30 gram L maddesi konulmuştur.
+- Tepkime tamamlandığında kapta L maddesinden 5 gram arttığı, K maddesinin ise tamamen tükendiği görülmüştür.
+- Tepkime sonucunda 15 gram M maddesi oluşmuştur.
+Buna göre tepkime sonucunda oluşan N maddesinin kütlesi kaç gramdır?
+**Şıklar:**
+- A) 25
+- B) 30
+- C) 35
+- D) 45
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Harcanan: K=20g, L=30-5=25g, toplam giren=45g. Oluşan M=15g, N=45-15=30g.
+
+## 37. Soru Tipi: Ayıraçlar (İndikatörler) / Asitler ve Bazlar
+**Kazanım:** Asit ve bazların genel özelliklerini ifade eder, ayıraçlarla tespitini yapar.
+**Soru Kökü:** Asit ve bazları ayırt etmek için kullanılan fenolftalein damlatıldığında bazlar pembe renk alırken asitler renksiz kalır. Mavi turnusol kâğıdı ise asitlere batırıldığında kırmızıya dönüşür.
+- X sıvısına fenolftalein damlatıldığında sıvının rengi pembeye dönmüştür.
+- Y sıvısına mavi turnusol kâğıdı batırıldığında kâğıdın rengi kırmızı olmuştur.
+Bu gözlemlere göre X ve Y sıvılarıyla ilgili aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) X sıvısının pH değeri 7'den küçüktür ve tatları genellikle ekşidir.
+- B) Y sıvısı cam ve porselen yüzeyleri matlaştırarak onlara zarar verir.
+- C) X ve Y sıvıları uygun oranlarda karıştırılırsa aralarında kimyasal bir nötralleşme tepkimesi gerçekleşir.
+- D) Y sıvısının sulu çözeltisi ortama OH⁻ (hidroksit) iyonu verir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Fenolftaleini pembe yapan X bazdır. Mavi turnusolu kırmızı yapan Y asittir. Asit + baz → nötralleşme.
+
+## 38. Soru Tipi: Isı ve Sıcaklık / Öz Isı Kıyaslaması
+**Kazanım:** Isınmanın maddenin cinsiyle (öz ısı) ilişkisini deney verilerini kullanarak analiz eder.
+**Soru Kökü:** İlk sıcaklıkları 10°C olan, kütleleri eşit X ve Y sıvıları özdeş ısıtıcılarla 5 dakika boyunca ısıtılıyor. Süre sonunda X sıvısının sıcaklığı 40°C'ye ulaşırken, Y sıvısının sıcaklığının sadece 20°C'ye ulaştığı ölçülüyor. (Deney sırasında hâl değişimi ve ısı kaybı yaşanmamıştır.) Bu deney sonucuna bakılarak aşağıdaki yargılardan hangisine ulaşılabilir?
+**Şıklar:**
+- A) Y sıvısı ısıtıcılardan X sıvısına göre daha az ısı enerjisi almıştır.
+- B) X sıvısının kaynama noktası Y sıvısının kaynama noktasından kesinlikle daha düşüktür.
+- C) X ve Y sıvıları aynı cins maddelerdir, farklılık ortam basıncından kaynaklanmıştır.
+- D) X sıvısının öz ısısı Y sıvısının öz ısısından daha küçük olduğu için sıcaklığı çok daha hızlı artmıştır.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Öz ısısı küçük olan maddeler çabuk ısınır. X daha hızlı ısındığına göre öz ısısı daha küçüktür.
+
+## 39. Soru Tipi: Kural ve Prensip / Basit Makineler (İşten Kazanç Yoktur)
+**Kazanım:** Basit makinelerin sağladığı avantajları ve değişmez fiziksel kurallarını analiz eder.
+**Soru Kökü:** Bir işçi, ağır bir çuvalı 2 metre yüksekliğindeki kamyon kasasına doğrudan kollarını kullanarak kaldırmakta çok zorlanmıştır. İşçi, bu zorluğu aşmak için kamyonun kasasına uzun bir tahta kalas (eğik düzlem) dayamış ve çuvalı bu kalas üzerinden daha az kuvvet harcayarak itip kasaya ulaştırmıştır. İşçinin tahta kalas (eğik düzlem) kullanmasıyla ilgili aşağıdakilerden hangisi doğrudur?
+**Şıklar:**
+- A) Eğik düzlem, işçinin uyguladığı kuvvetten kazanç sağlasa da yapılan toplam işten herhangi bir kazanç veya tasarruf sağlamamıştır.
+- B) Eğik düzlem sayesinde çuvalı yukarı çıkarmak için harcanan toplam enerji miktarı önemli ölçüde azalmıştır.
+- C) Eğik düzlemin kullanılması, işçinin hem yoldan hem de kuvvetten aynı anda kazanç elde etmesine imkân tanımıştır.
+- D) Çuvalı kasaya çıkarırken uygulanan itme kuvveti azaldığı için sistemin fiziksel iş yapabilme kapasitesi düşmüştür.
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Basit makineler işten veya enerjiden kazanç sağlamaz, sadece iş kolaylığı sağlar.
+
+## 40. Soru Tipi: Piramit ve Biyolojik Birikim / Enerji Akışı
+**Kazanım:** Besin zincirindeki enerji akışını ve biyolojik birikimi açıklar.
+**Soru Kökü:** Sağlıklı bir orman ekosisteminde aynı besin zincirinde yer alan K, L, M ve N canlılarının vücut dokularında biriken zehirli (toksik) madde oranları yapılan analizler sonucunda "L > M > K > N" şeklinde sıralanmıştır. Bu sıralamaya dayanarak canlıların besin piramidindeki yerleri ile ilgili aşağıdakilerden hangisi kesinlikle doğrudur?
+**Şıklar:**
+- A) L canlısı, besin zincirinin en temelinde yer alan fotosentetik bir bitkidir (üreticidir).
+- B) N canlısı, ihtiyaç duyduğu besini kendi üretebilen bir canlı (üretici) grubundadır.
+- C) K canlısı sadece ot yiyerek beslenen otçul bir hayvan (birinci dereceden tüketici) olmak zorundadır.
+- D) M canlısının toplam biyokütlesi (birey sayısının toplam ağırlığı), N canlısının biyokütlesinden daha fazladır.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Zehir miktarı en az olan N, besin piramidinin en altındaki üreticidir (kendi besinini üretir).
+`;
