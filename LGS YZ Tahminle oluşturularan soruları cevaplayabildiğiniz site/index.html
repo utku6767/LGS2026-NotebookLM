@@ -2,529 +2,830 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LGS Etkileşimli Soru Çözümü</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>LGS Etkileşimli Soru Çözümü | Gerçek Başarı Oranı</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
-            --primary: #007bff;
-            --bg: #f4f7f6;
-            --text: #333;
-            --success: #28a745;
-            --danger: #dc3545;
-            --info: #17a2b8;
+            --bg: #0d0d0d;
+            --surface: #1a1a1a;
+            --surface2: #212121;
+            --surface3: #2a2a2a;
+            --border: #333;
+            --text: #e0e0e0;
+            --text-secondary: #aaa;
+            --text-heading: #fff;
+            --primary: #5c9ce6;
+            --primary-glow: rgba(92, 156, 230, 0.3);
+            --success: #3cb371;
+            --success-bg: rgba(60, 179, 113, 0.15);
+            --success-border: #2d8a4e;
+            --danger: #e0556a;
+            --danger-bg: rgba(224, 85, 106, 0.15);
+            --danger-border: #b33a4a;
+            --warning: #e5a840;
+            --warning-bg: rgba(229, 168, 64, 0.15);
+            --info: #4a9eff;
+            --accent-gradient: linear-gradient(135deg, #5c9ce6, #7b68ee);
+            --shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+            --radius: 16px;
+            --radius-sm: 12px;
+            --transition: 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg);
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
             color: var(--text);
-            margin: 0;
-            padding: 0;
+            min-height: 100vh;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
-        /* Ekran Flash Efektleri */
+        /* Flash overlay */
         #flash-overlay {
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background-color: transparent; pointer-events: none;
-            z-index: 9999; transition: background-color 0.4s ease;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            pointer-events: none;
+            z-index: 9999;
+            transition: background 0.3s ease;
         }
-        .flash-green { background-color: rgba(40, 167, 69, 0.15) !important; }
-        .flash-red { background-color: rgba(220, 53, 69, 0.15) !important; }
+        .flash-green { background: rgba(60, 179, 113, 0.25) !important; backdrop-filter: blur(1px); }
+        .flash-red { background: rgba(224, 85, 106, 0.25) !important; backdrop-filter: blur(1px); }
 
-        /* Ekran Yönetimi */
+        /* Ekranlar */
         .screen {
-            display: none; flex-direction: column; width: 100%;
-            max-width: 600px; margin: 0 auto; background: #fff;
-            min-height: 100vh; box-sizing: border-box;
-            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--surface);
+            min-height: 100vh;
+            box-shadow: var(--shadow);
+            position: relative;
         }
         .screen.active { display: flex; }
 
-        /* Renk Sınıfları */
-        .c-success { color: var(--success); }
-        .c-danger { color: var(--danger); }
-        .c-info { color: var(--info); }
-
-        /* ================= ANA MENÜ EKRANI ================= */
-        #main-menu { padding: 30px 20px; align-items: center; }
-        
+        /* ========= ANA MENÜ ========= */
+        #main-menu {
+            padding: 32px 20px 28px;
+            align-items: center;
+            gap: 18px;
+        }
+        .logo-icon {
+            font-size: 3.2rem;
+            filter: drop-shadow(0 0 16px var(--primary-glow));
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
         #main-menu h1 {
-            font-size: 2.2rem; margin-bottom: 10px; text-align: center;
-            letter-spacing: 2px; text-transform: uppercase;
+            font-size: 2rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 6px;
         }
 
-        /* Ana Menü İstatistik Kutusu */
+        /* Gelişmiş istatistik kartı (ana menü) */
         .stats-box {
-            background: #f8f9fa; border: 2px solid #e9ecef;
-            padding: 15px 20px; border-radius: 12px; font-weight: bold;
-            font-size: 1.05rem; margin-bottom: 25px; text-align: center;
-            width: 100%; box-sizing: border-box; display: flex;
-            flex-direction: column; gap: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            width: 100%;
+            margin: 12px 0 8px;
+            transition: var(--transition);
         }
-        .stats-box div {
-            display: flex; justify-content: space-between;
-            padding: 5px 10px; background: #fff; border-radius: 6px; border: 1px solid #eee;
+        .stats-row-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
         }
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            background: var(--surface3);
+            padding: 8px 6px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+        }
+        .stat-value {
+            font-size: 1.7rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-heading);
+        }
+        .stat-value.success { color: var(--success); }
+        .stat-value.danger { color: var(--danger); }
+        .stat-value.primary { color: var(--primary); }
 
         .menu-btn {
-            width: 100%; padding: 18px; margin-bottom: 15px;
-            font-size: 1.15rem; font-weight: bold; background-color: #fff;
-            border: 2px solid var(--text); border-radius: 12px;
-            cursor: pointer; text-transform: uppercase;
-            box-shadow: 4px 4px 0px rgba(0,0,0,1);
-            transition: transform 0.1s, box-shadow 0.1s;
+            width: 100%;
+            padding: 16px 20px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-        .menu-btn:active { transform: translate(4px, 4px); box-shadow: 0px 0px 0px rgba(0,0,0,1); }
-
+        .menu-btn:hover {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px var(--primary-glow);
+        }
+        .subject-icon { font-size: 1.5rem; margin-right: 12px; }
+        .percentage-badge {
+            background: var(--surface3);
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
         .reset-btn {
-            width: 100%; padding: 15px; margin-top: auto; 
-            font-size: 1.1rem; font-weight: bold; background-color: #f8d7da;
-            color: #721c24; border: 2px solid #f5c6cb; border-radius: 12px;
-            cursor: pointer; text-transform: uppercase;
+            background: transparent;
+            border: 1px solid var(--danger-border);
+            color: var(--danger);
+            margin-top: 8px;
         }
-        
+        .reset-btn:hover {
+            background: var(--danger-bg);
+            border-color: var(--danger);
+            color: #ffb3b3;
+        }
         .source-link {
-            display: block; text-align: center; margin-top: 15px; margin-bottom: 10px;
-            color: var(--text); text-decoration: none; font-weight: 600;
-            font-size: 0.95rem; opacity: 0.7; transition: opacity 0.2s;
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--border);
+            transition: 0.2s;
         }
-        .source-link:hover { opacity: 1; text-decoration: underline; color: var(--primary); }
+        .source-link:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
 
-        /* ================= ÖZEL UYARI PENCERESİ (MODAL) ================= */
+        /* ========= ANALİZ EKRANI ========= */
+        #analytics-screen {
+            padding: 32px 20px;
+        }
+        .analytics-card {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            margin-bottom: 14px;
+        }
+        .progress-bar-wrap {
+            background: var(--surface3);
+            border-radius: 20px;
+            height: 8px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: var(--accent-gradient);
+            transition: width 0.5s ease;
+        }
+        .analytics-total {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+        }
+        .big-percent {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* ========= SORU EKRANI ========= */
+        .top-bar {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--surface);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #fff;
+        }
+        .subject-info {
+            text-align: right;
+        }
+        #subject-title {
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        /* Ders içi detay istatistikler (mini kart) */
+        .subject-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            margin-top: 6px;
+            border: 1px solid var(--border);
+        }
+        .subject-stats span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .quiz-content {
+            padding: 22px 18px;
+            flex: 1;
+        }
+        .question-text {
+            background: var(--surface2);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .option-btn {
+            text-align: left;
+            padding: 16px 18px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            color: var(--text);
+        }
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateX(4px);
+        }
+        .option-icon {
+            margin-right: 14px;
+            font-size: 1.2rem;
+            min-width: 28px;
+        }
+        .correct {
+            background: var(--success-bg) !important;
+            border-color: var(--success-border) !important;
+        }
+        .incorrect {
+            background: var(--danger-bg) !important;
+            border-color: var(--danger-border) !important;
+        }
+        .bottom-nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .nav-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 12px 18px;
+            border-radius: 32px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: white;
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .q-input-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+        }
+        .q-input-group input {
+            width: 55px;
+            text-align: center;
+            background: var(--surface3);
+            border: none;
+            padding: 8px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        /* modal */
         #modal-overlay {
-            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.6); z-index: 10000;
-            display: none; align-items: center; justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(4px);
+            z-index: 20000;
+            display: none;
+            align-items: center;
+            justify-content: center;
         }
         #modal-overlay.active { display: flex; }
         .modal-box {
-            background: #fff; padding: 25px; border-radius: 12px;
-            width: 85%; max-width: 400px; text-align: center;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            width: 85%;
+            max-width: 380px;
+            padding: 28px;
+            text-align: center;
         }
-        .modal-box h2 { margin-top: 0; color: var(--danger); }
-        .modal-buttons { display: flex; justify-content: space-between; margin-top: 25px; gap: 15px; }
-        .modal-btn {
-            flex: 1; padding: 12px; font-weight: bold; font-size: 1rem;
-            border: none; border-radius: 8px; cursor: pointer;
-        }
-        .btn-deny { background: #6c757d; color: #fff; }
-        .btn-accept { background: var(--danger); color: #fff; }
-
-        /* ================= SORU EKRANI ================= */
-        .top-bar {
-            padding: 12px 15px; border-bottom: 2px solid #eee;
-            display: flex; justify-content: space-between; align-items: center;
-            background: #fff; position: sticky; top: 0; z-index: 10;
-        }
-        .back-btn {
-            padding: 10px 15px; background: #e2e6ea; border: 1px solid #ccc;
-            border-radius: 6px; font-weight: bold; cursor: pointer; white-space: nowrap;
-        }
-        
-        .subject-info { text-align: right; display: flex; flex-direction: column; align-items: flex-end;}
-        #subject-title { font-size: 1.05rem; color: #333; margin-bottom: 5px; text-transform: uppercase;}
-        
-        /* Soru Ekranı İstatistikleri */
-        .subject-stats {
-            display: flex; gap: 8px; font-size: 0.85rem; font-weight: bold; 
-            background: #f8f9fa; padding: 5px 8px; border-radius: 6px; border: 1px solid #eee;
-            flex-wrap: wrap; justify-content: flex-end;
-        }
-        .subject-stats span { display: flex; align-items: center; gap: 3px; }
-
-        .quiz-content { padding: 20px; display: flex; flex-direction: column; flex: 1; }
-        .question-text { font-size: 1.15rem; line-height: 1.6; margin-bottom: 25px; font-weight: 500; }
-        .options-container { display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; }
-
-        .option-btn {
-            text-align: left; padding: 18px 20px; font-size: 1.05rem;
-            background-color: #fff; border: 2px solid #ddd; border-radius: 10px;
-            cursor: pointer; transition: all 0.2s; display: flex; align-items: center;
-        }
-        .option-btn:disabled { color: #333; cursor: default; }
-        .option-icon { margin-right: 12px; font-size: 1.2rem; min-width: 25px; }
-
-        .correct { background-color: #d4edda !important; border-color: var(--success) !important; color: #155724 !important; }
-        .incorrect { background-color: #f8d7da !important; border-color: var(--danger) !important; color: #721c24 !important; }
-
-        .bottom-nav {
-            margin-top: auto; padding-top: 20px; border-top: 2px solid #eee;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .nav-btn {
-            padding: 15px 20px; background: var(--text); color: #fff;
-            border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer;
-        }
-        .nav-btn:disabled { background: #ccc; }
-
-        .q-input-group { display: flex; align-items: center; font-size: 1.1rem; font-weight: bold; gap: 8px; }
-        .q-input-group input {
-            width: 50px; padding: 10px; font-size: 1.1rem; text-align: center;
-            border: 2px solid #ddd; border-radius: 8px; font-weight: bold;
+        @media (max-width: 450px) {
+            .stat-value { font-size: 1.3rem; }
+            .menu-btn { padding: 14px; }
         }
     </style>
 </head>
 <body>
 
-    <div id="flash-overlay"></div>
+<div id="flash-overlay"></div>
 
-    <div id="modal-overlay">
-        <div class="modal-box">
-            <h2>UYARI</h2>
-            <p>Tüm derslerdeki doğru ve yanlış ilerlemeleriniz tamamen silinecektir. Bunu onaylıyor musunuz?</p>
-            <div class="modal-buttons">
-                <button class="modal-btn btn-deny" onclick="closeResetModal()">REDDET</button>
-                <button class="modal-btn btn-accept" onclick="confirmReset()">KABUL ET</button>
+<!-- SIFIRLAMA MODAL -->
+<div id="modal-overlay">
+    <div class="modal-box">
+        <h2 style="color: var(--danger);">⚠ TÜM VERİLER SİLİNECEK</h2>
+        <p style="margin: 12px 0;">Doğru/yanlış ilerlemeniz kalıcı olarak sıfırlanır. Geri alınamaz!</p>
+        <div class="modal-buttons" style="display: flex; gap: 12px; margin-top: 20px;">
+            <button class="modal-btn btn-deny" style="flex:1; background: #333; color:white; border: none; padding: 12px; border-radius: 40px; font-weight: bold;" onclick="closeResetModal()">REDDET</button>
+            <button class="modal-btn btn-accept" style="flex:1; background: var(--danger); color:white; border: none; border-radius: 40px; font-weight: bold;" onclick="confirmReset()">SİL</button>
+        </div>
+    </div>
+</div>
+
+<!-- ANA MENÜ -->
+<div id="main-menu" class="screen active">
+    <div class="logo-icon">🎯</div>
+    <h1>LGS ÇÖZÜM</h1>
+    <p class="subtitle">akıllı pratik · sesli geri bildirim · gerçek başarı oranı</p>
+
+    <!-- GENEL İSTATİSTİK KARTI (başarı oranı sadece çözülen sorular bazında) -->
+    <div class="stats-box">
+        <div class="stats-row-grid">
+            <div class="stat-item"><div class="stat-label">📌 ÇÖZÜLEN</div><div class="stat-value" id="main-total-answered">0</div></div>
+            <div class="stat-item"><div class="stat-label">✅ DOĞRU</div><div class="stat-value success" id="main-total-correct">0</div></div>
+            <div class="stat-item"><div class="stat-label">❌ YANLIŞ</div><div class="stat-value danger" id="main-total-wrong">0</div></div>
+            <div class="stat-item"><div class="stat-label">🏆 BAŞARI</div><div class="stat-value primary" id="main-percentage">0%</div></div>
+        </div>
+        <div style="font-size:0.7rem; text-align:center; margin-top:10px; color:var(--text-secondary);">⚡ Başarı = (Doğru / Çözülen) × 100</div>
+    </div>
+
+    <button class="menu-btn" onclick="startSubject('matematik')"><span><span class="subject-icon">📐</span> MATEMATİK</span><span class="percentage-badge" id="pct-matematik">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('turkce')"><span><span class="subject-icon">📖</span> TÜRKÇE</span><span class="percentage-badge" id="pct-turkce">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('fen')"><span><span class="subject-icon">🔬</span> FEN BİLİMLERİ</span><span class="percentage-badge" id="pct-fen">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('din')"><span><span class="subject-icon">🕌</span> DİN KÜLTÜRÜ</span><span class="percentage-badge" id="pct-din">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('sosyal')"><span><span class="subject-icon">🌍</span> SOSYAL BİLGİLER</span><span class="percentage-badge" id="pct-sosyal">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('ingilizce')"><span><span class="subject-icon">🇬🇧</span> İNGİLİZCE</span><span class="percentage-badge" id="pct-ingilizce">%0</span></button>
+
+    <button class="menu-btn analytics-btn" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
+    <button class="menu-btn reset-btn" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
+    <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank" class="source-link">📂 Kaynaklar & Güncellemeler</a>
+</div>
+
+<!-- ANALİZ EKRANI -->
+<div id="analytics-screen" class="screen">
+    <h1 style="text-align:center; margin-bottom: 6px;">📈 Gelişim Raporu</h1>
+    <p class="subtitle" style="text-align:center">Başarı oranı = (Doğru / Çözülen) × 100</p>
+    <div id="analytics-container"></div>
+    <div class="analytics-total" id="analytics-total-box"></div>
+    <button class="back-btn-analytics" onclick="showMainMenu()" style="margin-top: 20px; background: var(--surface2); border: 1px solid var(--border); padding: 14px; border-radius: 40px; font-weight: bold;">⬅ ANA MENÜYE DÖN</button>
+</div>
+
+<!-- SORU ÇÖZÜM EKRANI -->
+<div id="quiz-screen" class="screen">
+    <div class="top-bar">
+        <button class="back-btn" onclick="showMainMenu()">← Menü</button>
+        <div class="subject-info">
+            <strong id="subject-title">Ders Adı</strong>
+            <div class="subject-stats" id="quiz-stats-area">
+                <span>📘 Ç: <b id="sub-answered">0</b></span>
+                <span style="color:var(--success)">✔ D: <b id="sub-correct">0</b></span>
+                <span style="color:var(--danger)">✘ Y: <b id="sub-wrong">0</b></span>
+                <span style="color:var(--primary)">% <b id="sub-percent">0</b></span>
             </div>
         </div>
     </div>
-
-    <div id="main-menu" class="screen active">
-        <h1>ANA MENÜ</h1>
-        
-        <div class="stats-box">
-            <div><span>Toplam Çözülen:</span> <span id="main-total-answered">0</span></div>
-            <div><span class="c-success">Toplam Doğru:</span> <span id="main-total-correct" class="c-success">0</span></div>
-            <div><span class="c-danger">Toplam Yanlış:</span> <span id="main-total-wrong" class="c-danger">0</span></div>
-            <div><span class="c-info">Başarı Oranı:</span> <span class="c-info">%<span id="main-percentage">0</span></span></div>
-        </div>
-
-        <button class="menu-btn" onclick="startSubject('matematik')">MATEMATİK</button>
-        <button class="menu-btn" onclick="startSubject('turkce')">TÜRKÇE</button>
-        <button class="menu-btn" onclick="startSubject('fen')">FEN BİLİMLERİ</button>
-        <button class="menu-btn" onclick="startSubject('din')">DİN KÜLTÜRÜ</button>
-        <button class="menu-btn" onclick="startSubject('sosyal')">SOSYAL BİLGİLER</button>
-        <button class="menu-btn" onclick="startSubject('ingilizce')">İNGİLİZCE</button>
-
-        <button class="reset-btn" onclick="showResetModal()">İLERLEMEYİ SIFIRLA</button>
-        <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank" class="source-link">Kaynaklar</a>
-    </div>
-
-    <div id="quiz-screen" class="screen">
-        <div class="top-bar">
-            <button class="back-btn" onclick="showMainMenu()">Ana Menü</button>
-            <div class="subject-info">
-                <strong id="subject-title">Ders Adı</strong>
-                <div class="subject-stats">
-                    <span title="Çözülen Soru">Ç: <b id="sub-answered">0</b></span>
-                    <span class="c-success" title="Doğru Sayısı">D: <b id="sub-correct">0</b></span>
-                    <span class="c-danger" title="Yanlış Sayısı">Y: <b id="sub-wrong">0</b></span>
-                    <span class="c-info" title="Başarı Yüzdesi">%<b id="sub-percent">0</b></span>
-                </div>
+    <div class="quiz-content">
+        <div class="question-text" id="question-text">Sorular yükleniyor...</div>
+        <div class="options-container" id="options-container"></div>
+        <div class="bottom-nav">
+            <button class="nav-btn" id="prev-btn">◀ ÖNCEKİ</button>
+            <div class="q-input-group">
+                <input type="number" id="q-input" min="1" value="1">
+                <span>/ <span id="total-q">0</span></span>
             </div>
-        </div>
-
-        <div class="quiz-content">
-            <div class="question-text" id="question-text">Sorular yükleniyor...</div>
-            <div class="options-container" id="options-container"></div>
-            
-            <div class="bottom-nav">
-                <button class="nav-btn" id="prev-btn">ÖNCEKİ</button>
-                <div class="q-input-group">
-                    <input type="number" id="q-input" min="1" value="1">
-                    <span>/ <span id="total-q">0</span></span>
-                </div>
-                <button class="nav-btn" id="next-btn">SONRAKİ</button>
-            </div>
+            <button class="nav-btn" id="next-btn">SONRAKİ ▶</button>
         </div>
     </div>
+</div>
 
-    <script>
-        // Ses Ayarları
-        const AudioContext = window.AudioContext || window.webkitAudioContext;
-        let audioCtx;
-
-        function playSound(isCorrect) {
+<script>
+    // ------------------- SES SİSTEMİ -------------------
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    function playSound(isCorrect) {
+        try {
             if (!audioCtx) audioCtx = new AudioContext();
             if (audioCtx.state === 'suspended') audioCtx.resume();
-            
             const osc = audioCtx.createOscillator();
-            const gainNode = audioCtx.createGain();
-            osc.connect(gainNode);
-            gainNode.connect(audioCtx.destination);
-            
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
             if (isCorrect) {
                 osc.type = 'sine';
-                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime); 
-                osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.1); 
-                gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.5);
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+                osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.12);
+                osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.24);
+                gain.gain.setValueAtTime(0.09, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.55);
                 osc.start();
-                osc.stop(audioCtx.currentTime + 0.5);
+                osc.stop(audioCtx.currentTime + 0.55);
             } else {
                 osc.type = 'sawtooth';
-                osc.frequency.setValueAtTime(150, audioCtx.currentTime);
-                osc.frequency.linearRampToValueAtTime(100, audioCtx.currentTime + 0.3);
-                gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
-                gainNode.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.3);
+                osc.frequency.setValueAtTime(190, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(80, audioCtx.currentTime + 0.35);
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
                 osc.start();
-                osc.stop(audioCtx.currentTime + 0.3);
+                osc.stop(audioCtx.currentTime + 0.35);
+            }
+        } catch(e) { /* sessiz */ }
+    }
+
+    // ------------------- VERİ YÖNETİMİ (YENİ: BAŞARI ORANI SADECE ÇÖZÜLENLER BAZINDA) -------------------
+    let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let answered = false;
+    let currentSubject = "";
+
+    function saveProgress() {
+        localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
+        updateAllUI();
+    }
+
+    // Toplam mevcut soru sayısı (sadece gösterim için, başarı hesaplamalarında kullanılmıyor)
+    function getTotalQuestionsForSubject(subject) {
+        const progress = userProgress[subject] || {};
+        if (progress._total && progress._total > 0) return progress._total;
+        const keys = Object.keys(progress).map(Number).filter(k => !isNaN(k) && k !== '_total');
+        if (keys.length === 0) return 0;
+        return Math.max(...keys) + 1;
+    }
+
+    // Ders istatistikleri: solved, correct, wrong, ve percent (sadece çözülenler bazında)
+    function getSubjectStats(subject) {
+        const progress = userProgress[subject] || {};
+        let solved = 0, correct = 0;
+        for (let key in progress) {
+            if (key === '_total') continue;
+            if (progress[key] && progress[key].selected) {
+                solved++;
+                if (progress[key].isCorrect) correct++;
             }
         }
+        const wrong = solved - correct;
+        // Başarı yüzdesi sadece çözülen sorulara göre
+        const percent = solved > 0 ? Math.round((correct / solved) * 100) : 0;
+        // totalAvailable sadece bilgi amaçlı tutuluyor, başarıda kullanılmıyor
+        const totalAvailable = getTotalQuestionsForSubject(subject);
+        return { totalAvailable, solved, correct, wrong, percent };
+    }
 
-        // Yerel Depolama (Local Storage) Ayarları
-        let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
-
-        function saveProgress() {
-            localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
-            updateMainScore();
-            if(currentSubject) updateSubjectScore();
-        }
-
-        // Ana Menü İstatistikleri
-        function updateMainScore() {
-            let answered = 0;
-            let correct = 0;
-            for (let sub in userProgress) {
-                for (let q in userProgress[sub]) {
-                    answered++;
-                    if (userProgress[sub][q].isCorrect) correct++;
-                }
-            }
-            let wrong = answered - correct;
-            let percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-
-            document.getElementById('main-total-answered').innerText = answered;
-            document.getElementById('main-total-correct').innerText = correct;
-            document.getElementById('main-total-wrong').innerText = wrong;
-            document.getElementById('main-percentage').innerText = percent;
-        }
-
-        // Ders Ekranı İstatistikleri
-        function updateSubjectScore() {
-            let answered = 0;
-            let correct = 0;
-            if (userProgress[currentSubject]) {
-                for (let q in userProgress[currentSubject]) {
-                    answered++;
-                    if (userProgress[currentSubject][q].isCorrect) correct++;
-                }
-            }
-            let wrong = answered - correct;
-            let percent = answered > 0 ? Math.round((correct / answered) * 100) : 0;
-
-            document.getElementById('sub-answered').innerText = answered;
-            document.getElementById('sub-correct').innerText = correct;
-            document.getElementById('sub-wrong').innerText = wrong;
-            document.getElementById('sub-percent').innerText = percent;
-        }
-
-        // Modal Yönetimi
-        function showResetModal() {
-            document.getElementById('modal-overlay').classList.add('active');
-        }
-        function closeResetModal() {
-            document.getElementById('modal-overlay').classList.remove('active');
-        }
-        function confirmReset() {
-            userProgress = {};
-            localStorage.removeItem('lgsProgress');
-            updateMainScore();
-            closeResetModal();
-        }
-
-        // TXT Parçalama
-        function parseQuestions(rawText) {
-            if(!rawText) return [];
-            const questions = [];
-            const blocks = rawText.split(/## \d+\.\s*Soru Tipi:/).slice(1);
-            for(let block of blocks) {
-                try {
-                    const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
-                    if(!soruMatch) continue;
-                    const aMatch = block.match(/-\s*A\)\s*(.*)/);
-                    const bMatch = block.match(/-\s*B\)\s*(.*)/);
-                    const cMatch = block.match(/-\s*C\)\s*(.*)/);
-                    const dMatch = block.match(/-\s*D\)\s*(.*)/);
-                    const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
-                    questions.push({
-                        text: soruMatch[1].trim(),
-                        options: { 'A': aMatch?.[1].trim(), 'B': bMatch?.[1].trim(), 'C': cMatch?.[1].trim(), 'D': dMatch?.[1].trim() },
-                        correct: ansMatch ? ansMatch[1] : "A"
-                    });
-                } catch(e) {}
-            }
-            return questions;
-        }
-
-        let currentQuestions = [];
-        let currentIndex = 0;
-        let answered = false;
-        let currentSubject = "";
-
-        const mainMenu = document.getElementById('main-menu');
-        const quizScreen = document.getElementById('quiz-screen');
-        const subjectTitle = document.getElementById('subject-title');
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const qInput = document.getElementById('q-input');
-        const totalQSpan = document.getElementById('total-q');
-        const qText = document.getElementById('question-text');
-        const optsContainer = document.getElementById('options-container');
-        const overlay = document.getElementById('flash-overlay');
-
-        function showMainMenu() {
-            currentSubject = "";
-            quizScreen.classList.remove('active');
-            mainMenu.classList.add('active');
-            updateMainScore();
-            window.scrollTo(0, 0);
-        }
-
-        async function startSubject(subject) {
-            currentSubject = subject;
-            if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
-            
-            mainMenu.classList.remove('active');
-            quizScreen.classList.add('active');
-            subjectTitle.innerText = subjectNameMap(subject);
-            updateSubjectScore();
-            
-            qText.innerHTML = "Sorular sunucudan çekiliyor, lütfen bekleyin...";
-            optsContainer.innerHTML = "";
-            totalQSpan.innerText = "0";
-            
-            try {
-                const response = await fetch(`${subject}.txt?v=` + new Date().getTime()); 
-                if (!response.ok) throw new Error(`Dosya bulunamadı: ${subject}.txt`);
-                const textData = await response.text();
-                currentQuestions = parseQuestions(textData);
-                currentIndex = 0;
-                renderQuestion();
-            } catch (error) {
-                qText.innerHTML = `<span style="color:red; font-weight:bold;">Hata: ${error.message}</span>`;
-            }
-        }
-
-        function subjectNameMap(key) {
-            const map = {
-                'matematik': 'MATEMATİK', 'turkce': 'TÜRKÇE', 'fen': 'FEN BİLİMLERİ',
-                'din': 'DİN KÜLTÜRÜ', 'sosyal': 'SOSYAL BİLGİLER', 'ingilizce': 'İNGİLİZCE'
-            };
-            return map[key] || key.toUpperCase();
-        }
-
-        function renderQuestion() {
-            answered = false;
-            const total = currentQuestions.length;
-            totalQSpan.innerText = total;
-            
-            if (currentIndex < 0) currentIndex = 0;
-            if (currentIndex >= total) currentIndex = Math.max(0, total - 1);
-            
-            qInput.value = currentIndex + 1;
-            prevBtn.disabled = currentIndex === 0;
-            nextBtn.disabled = currentIndex === total - 1;
-            window.scrollTo(0, 0);
-
-            if (total === 0) {
-                qText.innerHTML = "Bu ders için soru bulunamadı.";
-                return;
-            }
-
-            const q = currentQuestions[currentIndex];
-            qText.innerHTML = q.text.replace(/\n/g, '<br>');
-            optsContainer.innerHTML = "";
-
-            // Daha önce çözülmüş mü kontrol et
-            let pastAnswer = userProgress[currentSubject][currentIndex];
-
-            ['A', 'B', 'C', 'D'].forEach(key => {
-                if(!q.options[key]) return;
-                
-                const btn = document.createElement('button');
-                btn.className = 'option-btn';
-                btn.id = 'btn-' + key;
-                
-                const iconSpan = document.createElement('span');
-                iconSpan.className = 'option-icon';
-                iconSpan.id = 'icon-' + key;
-                iconSpan.innerText = '•'; 
-                
-                const textSpan = document.createElement('span');
-                textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
-                
-                btn.appendChild(iconSpan);
-                btn.appendChild(textSpan);
-
-                if (pastAnswer) {
-                    btn.disabled = true;
-                    if (key === q.correct) {
-                        btn.classList.add('correct');
-                        iconSpan.innerText = '✅';
-                    } else if (key === pastAnswer.selected) {
-                        btn.classList.add('incorrect');
-                        iconSpan.innerText = '❌';
-                    }
-                } else {
-                    btn.onclick = () => selectOption(key);
-                }
-
-                optsContainer.appendChild(btn);
-            });
-
-            if (pastAnswer) answered = true;
-
-            if (window.MathJax) MathJax.typesetPromise().catch(() => {});
-        }
-
-        function selectOption(selectedKey) {
-            if (answered) return;
-            answered = true;
-            
-            const q = currentQuestions[currentIndex];
-            const buttons = document.querySelectorAll('.option-btn');
-            buttons.forEach(b => b.disabled = true);
-
-            const selBtn = document.getElementById('btn-' + selectedKey);
-            const selIcon = document.getElementById('icon-' + selectedKey);
-            const correctBtn = document.getElementById('btn-' + q.correct);
-            const correctIcon = document.getElementById('icon-' + q.correct);
-
-            let isCorrect = (selectedKey === q.correct);
-
-            if (isCorrect) {
-                playSound(true);
-                overlay.className = 'flash-green';
-                selBtn.classList.add('correct');
-                selIcon.innerText = '✅';
-            } else {
-                playSound(false);
-                overlay.className = 'flash-red';
-                selBtn.classList.add('incorrect');
-                selIcon.innerText = '❌';
-                if(correctBtn) {
-                    correctBtn.classList.add('correct');
-                    correctIcon.innerText = '✅';
-                }
-            }
-
-            // İlerlemeyi Kaydet ve Güncelle
-            userProgress[currentSubject][currentIndex] = {
-                selected: selectedKey,
-                isCorrect: isCorrect
-            };
-            saveProgress();
-
-            setTimeout(() => { overlay.className = ''; }, 400);
-        }
-
-        prevBtn.addEventListener('click', () => { currentIndex--; renderQuestion(); });
-        nextBtn.addEventListener('click', () => { currentIndex++; renderQuestion(); });
-        qInput.addEventListener('change', (e) => {
-            let val = parseInt(e.target.value);
-            const max = currentQuestions.length;
-            if(isNaN(val) || val < 1) val = 1;
-            if(val > max) val = max;
-            currentIndex = val - 1;
-            renderQuestion();
+    // Genel istatistikler (tüm dersler, başarı sadece çözülenler bazında)
+    function getOverallStats() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        let totalSolved = 0, totalCorrect = 0;
+        subjects.forEach(sub => {
+            const st = getSubjectStats(sub);
+            totalSolved += st.solved;
+            totalCorrect += st.correct;
         });
+        const totalWrong = totalSolved - totalCorrect;
+        const overallPercent = totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : 0;
+        // toplam mevcut soru sayısı sadece istatistik kartında gösterilmek üzere (ama şu an kullanmıyoruz)
+        let totalAvailableSum = 0;
+        subjects.forEach(sub => { totalAvailableSum += getTotalQuestionsForSubject(sub); });
+        return { totalSolved, totalCorrect, totalWrong, overallPercent, totalAvailableSum };
+    }
 
-        // Başlangıçta ana menü skorunu güncelle
-        window.onload = updateMainScore;
-    </script>
+    function updateAllUI() {
+        updateMainScore();
+        updatePercentageBadges();
+        if (currentSubject && document.getElementById('quiz-screen').classList.contains('active')) {
+            updateSubjectScore();
+        }
+    }
+
+    function updateMainScore() {
+        const stats = getOverallStats();
+        document.getElementById('main-total-answered').innerText = stats.totalSolved;
+        document.getElementById('main-total-correct').innerText = stats.totalCorrect;
+        document.getElementById('main-total-wrong').innerText = stats.totalWrong;
+        document.getElementById('main-percentage').innerText = stats.overallPercent + '%';
+    }
+
+    function updateSubjectScore() {
+        if (!currentSubject) return;
+        const stats = getSubjectStats(currentSubject);
+        const elAns = document.getElementById('sub-answered');
+        const elCor = document.getElementById('sub-correct');
+        const elWro = document.getElementById('sub-wrong');
+        const elPer = document.getElementById('sub-percent');
+        if (elAns) elAns.innerText = stats.solved;
+        if (elCor) elCor.innerText = stats.correct;
+        if (elWro) elWro.innerText = stats.wrong;
+        if (elPer) elPer.innerText = stats.percent;
+    }
+
+    function updatePercentageBadges() {
+        const subs = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        subs.forEach(sub => {
+            const pct = getSubjectStats(sub).percent;
+            const badge = document.getElementById(`pct-${sub}`);
+            if (badge) {
+                badge.innerText = `%${pct}`;
+                badge.style.color = pct >= 70 ? '#3cb371' : (pct >= 40 ? '#e5a840' : '#e0556a');
+            }
+        });
+    }
+
+    // ANALİZ (başarı oranları da çözülen bazında)
+    function showAnalytics() {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('analytics-screen').classList.add('active');
+        renderAnalytics();
+    }
+    function renderAnalytics() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        const container = document.getElementById('analytics-container');
+        let html = '';
+        for (let sub of subjects) {
+            const s = getSubjectStats(sub);
+            // progress bar yüzdesi yine çözülenler içindeki doğru oranı
+            let fillWidth = s.percent;
+            html += `
+                <div class="analytics-card">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                        <span style="font-weight:800;">${sub === 'matematik'?'📐':sub==='turkce'?'📖':sub==='fen'?'🔬':sub==='din'?'🕌':sub==='sosyal'?'🌍':'🇬🇧'} ${sub.toUpperCase()}</span>
+                        <span style="color:var(--primary); font-weight:800;">%${s.percent}</span>
+                    </div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap; font-size:0.75rem;">
+                        <span>📚 Toplam soru: ${s.totalAvailable}</span>
+                        <span>✅ Doğru: ${s.correct}</span>
+                        <span>❌ Yanlış: ${s.wrong}</span>
+                        <span>📌 Çözülen: ${s.solved}</span>
+                    </div>
+                    <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${fillWidth}%;"></div></div>
+                    <div style="font-size:0.65rem; margin-top:5px; color:var(--text-secondary);">Başarı = (Doğru / Çözülen) × 100</div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+        const overall = getOverallStats();
+        document.getElementById('analytics-total-box').innerHTML = `
+            <div style="font-size:0.9rem;">GENEL BAŞARI (Çözülenler Bazında)</div>
+            <div class="big-percent">%${overall.overallPercent}</div>
+            <div style="margin-top:6px;">${overall.totalCorrect} doğru / ${overall.totalSolved} çözülen soru</div>
+            <div class="progress-bar-wrap mt-2"><div class="progress-bar-fill" style="width:${overall.overallPercent}%;"></div></div>
+            <div style="font-size:0.7rem; margin-top:8px;">⭐ Havuzdaki toplam soru: ${overall.totalAvailableSum}</div>
+        `;
+    }
+
+    // MODAL
+    function showResetModal() { document.getElementById('modal-overlay').classList.add('active'); }
+    function closeResetModal() { document.getElementById('modal-overlay').classList.remove('active'); }
+    function confirmReset() {
+        userProgress = {};
+        localStorage.removeItem('lgsProgress');
+        updateAllUI();
+        closeResetModal();
+        if (document.getElementById('analytics-screen').classList.contains('active')) renderAnalytics();
+    }
+
+    // PARSER
+    function parseQuestions(rawText) {
+        if (!rawText) return [];
+        const questions = [];
+        const blocks = rawText.split(/## \d+\.\s*Soru Tipi:/).slice(1);
+        for (let block of blocks) {
+            try {
+                const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
+                if (!soruMatch) continue;
+                const aMatch = block.match(/-\s*A\)\s*(.*)/);
+                const bMatch = block.match(/-\s*B\)\s*(.*)/);
+                const cMatch = block.match(/-\s*C\)\s*(.*)/);
+                const dMatch = block.match(/-\s*D\)\s*(.*)/);
+                const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
+                questions.push({
+                    text: soruMatch[1].trim(),
+                    options: { A: aMatch?.[1]?.trim() || '', B: bMatch?.[1]?.trim() || '', C: cMatch?.[1]?.trim() || '', D: dMatch?.[1]?.trim() || '' },
+                    correct: ansMatch ? ansMatch[1] : "A"
+                });
+            } catch(e) {}
+        }
+        return questions;
+    }
+
+    async function startSubject(subject) {
+        currentSubject = subject;
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('quiz-screen').classList.add('active');
+        document.getElementById('subject-title').innerText = subject.toUpperCase();
+        updateSubjectScore();
+
+        document.getElementById('question-text').innerHTML = '<span style="color:#aaa;">⏳ Sorular hazırlanıyor...</span>';
+        document.getElementById('options-container').innerHTML = '';
+        try {
+            const response = await fetch(`${subject}.txt?v=${Date.now()}`);
+            if (!response.ok) throw new Error(`${subject}.txt bulunamadı`);
+            const txt = await response.text();
+            currentQuestions = parseQuestions(txt);
+            if (currentQuestions.length && !userProgress[currentSubject]._total) {
+                userProgress[currentSubject]._total = currentQuestions.length;
+                saveProgress();
+            }
+            currentIndex = 0;
+            renderQuestion();
+        } catch (err) {
+            document.getElementById('question-text').innerHTML = `❌ Hata: ${err.message}`;
+        }
+    }
+
+    function renderQuestion() {
+        answered = false;
+        const total = currentQuestions.length;
+        document.getElementById('total-q').innerText = total;
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex >= total && total) currentIndex = total - 1;
+        document.getElementById('q-input').value = currentIndex + 1;
+        document.getElementById('prev-btn').disabled = currentIndex === 0;
+        document.getElementById('next-btn').disabled = currentIndex === total - 1 || total === 0;
+        if (total === 0) {
+            document.getElementById('question-text').innerHTML = '⚠️ Soru bulunamadı. Lütfen dosyaları kontrol edin.';
+            document.getElementById('options-container').innerHTML = '';
+            return;
+        }
+        const q = currentQuestions[currentIndex];
+        document.getElementById('question-text').innerHTML = q.text.replace(/\n/g, '<br>');
+        const optsDiv = document.getElementById('options-container');
+        optsDiv.innerHTML = '';
+        const saved = userProgress[currentSubject]?.[currentIndex];
+        ['A','B','C','D'].forEach(key => {
+            if (!q.options[key]) return;
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'option-icon';
+            iconSpan.innerText = '○';
+            const textSpan = document.createElement('span');
+            textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
+            btn.appendChild(iconSpan); btn.appendChild(textSpan);
+            if (saved) {
+                btn.disabled = true;
+                if (key === q.correct) { btn.classList.add('correct'); iconSpan.innerText = '✅'; }
+                else if (key === saved.selected) { btn.classList.add('incorrect'); iconSpan.innerText = '❌'; }
+            } else {
+                btn.onclick = () => selectOption(key);
+            }
+            optsDiv.appendChild(btn);
+        });
+        if (saved) answered = true;
+        if (window.MathJax) MathJax.typesetPromise().catch(()=>{});
+        updateSubjectScore();
+    }
+
+    function selectOption(selected) {
+        if (answered) return;
+        answered = true;
+        const q = currentQuestions[currentIndex];
+        const isCorrect = (selected === q.correct);
+        playSound(isCorrect);
+        const overlay = document.getElementById('flash-overlay');
+        overlay.className = isCorrect ? 'flash-green' : 'flash-red';
+        setTimeout(() => overlay.className = '', 380);
+
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        userProgress[currentSubject][currentIndex] = { selected, isCorrect };
+        if (!userProgress[currentSubject]._total) userProgress[currentSubject]._total = currentQuestions.length;
+        saveProgress();
+        renderQuestion();
+    }
+
+    // NAVIGASYON
+    document.getElementById('prev-btn')?.addEventListener('click', () => { if (currentIndex > 0) { currentIndex--; renderQuestion(); } });
+    document.getElementById('next-btn')?.addEventListener('click', () => { if (currentIndex < currentQuestions.length - 1) { currentIndex++; renderQuestion(); } });
+    document.getElementById('q-input')?.addEventListener('change', (e) => {
+        let val = parseInt(e.target.value);
+        if (isNaN(val)) val = 1;
+        val = Math.min(Math.max(val, 1), currentQuestions.length);
+        currentIndex = val - 1;
+        renderQuestion();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('quiz-screen').classList.contains('active')) return;
+        if (e.key === 'ArrowLeft' && !document.getElementById('prev-btn')?.disabled) { e.preventDefault(); document.getElementById('prev-btn')?.click(); }
+        if (e.key === 'ArrowRight' && !document.getElementById('next-btn')?.disabled) { e.preventDefault(); document.getElementById('next-btn')?.click(); }
+    });
+
+    function showMainMenu() {
+        currentSubject = "";
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('main-menu').classList.add('active');
+        updateAllUI();
+    }
+
+    window.onload = () => {
+        updateAllUI();
+        const subjects = ['matematik','turkce','fen','din','sosyal','ingilizce'];
+        let dirty = false;
+        for (let sub of subjects) {
+            if (userProgress[sub] && !userProgress[sub]._total) {
+                const keys = Object.keys(userProgress[sub]).filter(k => k !== '_total' && !isNaN(k));
+                if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
+            }
+        }
+        if (dirty) saveProgress();
+    };
+</script>
 </body>
 </html>
-
