@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>LGS Etkileşimli Soru Çözümü | Gerçek Başarı Oranı</title>
+    <title>LGS Etkileşimli Soru Çözümü | Akıllı Devam</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         * {
@@ -48,7 +48,6 @@
             -webkit-user-select: none;
         }
 
-        /* Flash overlay */
         #flash-overlay {
             position: fixed;
             top: 0;
@@ -63,7 +62,6 @@
         .flash-green { background: rgba(60, 179, 113, 0.25) !important; backdrop-filter: blur(1px); }
         .flash-red { background: rgba(224, 85, 106, 0.25) !important; backdrop-filter: blur(1px); }
 
-        /* Ekranlar */
         .screen {
             display: none;
             flex-direction: column;
@@ -77,7 +75,6 @@
         }
         .screen.active { display: flex; }
 
-        /* ========= ANA MENÜ ========= */
         #main-menu {
             padding: 32px 20px 28px;
             align-items: center;
@@ -107,7 +104,6 @@
             margin-bottom: 6px;
         }
 
-        /* Gelişmiş istatistik kartı (ana menü) */
         .stats-box {
             background: var(--surface2);
             border: 1px solid var(--border);
@@ -204,7 +200,6 @@
             border-bottom-color: var(--primary);
         }
 
-        /* ========= ANALİZ EKRANI ========= */
         #analytics-screen {
             padding: 32px 20px;
         }
@@ -244,7 +239,6 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* ========= SORU EKRANI ========= */
         .top-bar {
             padding: 14px 18px;
             border-bottom: 1px solid var(--border);
@@ -275,7 +269,6 @@
             font-size: 1rem;
             letter-spacing: 1px;
         }
-        /* Ders içi detay istatistikler (mini kart) */
         .subject-stats {
             display: flex;
             gap: 12px;
@@ -385,7 +378,6 @@
             font-size: 1rem;
         }
 
-        /* modal */
         #modal-overlay {
             position: fixed;
             top: 0;
@@ -419,7 +411,6 @@
 
 <div id="flash-overlay"></div>
 
-<!-- SIFIRLAMA MODAL -->
 <div id="modal-overlay">
     <div class="modal-box">
         <h2 style="color: var(--danger);">⚠ TÜM VERİLER SİLİNECEK</h2>
@@ -431,13 +422,11 @@
     </div>
 </div>
 
-<!-- ANA MENÜ -->
 <div id="main-menu" class="screen active">
     <div class="logo-icon">🎯</div>
     <h1>LGS ÇÖZÜM</h1>
-    <p class="subtitle">akıllı pratik · sesli geri bildirim · gerçek başarı oranı</p>
+    <p class="subtitle">akıllı pratik · sesli geri bildirim · akıllı devam</p>
 
-    <!-- GENEL İSTATİSTİK KARTI (başarı oranı sadece çözülen sorular bazında) -->
     <div class="stats-box">
         <div class="stats-row-grid">
             <div class="stat-item"><div class="stat-label">📌 ÇÖZÜLEN</div><div class="stat-value" id="main-total-answered">0</div></div>
@@ -460,7 +449,6 @@
     <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank" class="source-link">📂 Kaynaklar & Güncellemeler</a>
 </div>
 
-<!-- ANALİZ EKRANI -->
 <div id="analytics-screen" class="screen">
     <h1 style="text-align:center; margin-bottom: 6px;">📈 Gelişim Raporu</h1>
     <p class="subtitle" style="text-align:center">Başarı oranı = (Doğru / Çözülen) × 100</p>
@@ -469,7 +457,6 @@
     <button class="back-btn-analytics" onclick="showMainMenu()" style="margin-top: 20px; background: var(--surface2); border: 1px solid var(--border); padding: 14px; border-radius: 40px; font-weight: bold;">⬅ ANA MENÜYE DÖN</button>
 </div>
 
-<!-- SORU ÇÖZÜM EKRANI -->
 <div id="quiz-screen" class="screen">
     <div class="top-bar">
         <button class="back-btn" onclick="showMainMenu()">← Menü</button>
@@ -498,7 +485,7 @@
 </div>
 
 <script>
-    // ------------------- SES SİSTEMİ -------------------
+    // SES SİSTEMİ
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     let audioCtx;
     function playSound(isCorrect) {
@@ -527,22 +514,25 @@
                 osc.start();
                 osc.stop(audioCtx.currentTime + 0.35);
             }
-        } catch(e) { /* sessiz */ }
+        } catch(e) { }
     }
 
-    // ------------------- VERİ YÖNETİMİ (YENİ: BAŞARI ORANI SADECE ÇÖZÜLENLER BAZINDA) -------------------
+    // VERİ YÖNETİMİ
     let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
     let currentQuestions = [];
     let currentIndex = 0;
     let answered = false;
     let currentSubject = "";
 
+    // Meta bilgileri (lastVisited)
+    if (!userProgress._meta) userProgress._meta = {};
+    if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+
     function saveProgress() {
         localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
         updateAllUI();
     }
 
-    // Toplam mevcut soru sayısı (sadece gösterim için, başarı hesaplamalarında kullanılmıyor)
     function getTotalQuestionsForSubject(subject) {
         const progress = userProgress[subject] || {};
         if (progress._total && progress._total > 0) return progress._total;
@@ -551,7 +541,6 @@
         return Math.max(...keys) + 1;
     }
 
-    // Ders istatistikleri: solved, correct, wrong, ve percent (sadece çözülenler bazında)
     function getSubjectStats(subject) {
         const progress = userProgress[subject] || {};
         let solved = 0, correct = 0;
@@ -563,14 +552,61 @@
             }
         }
         const wrong = solved - correct;
-        // Başarı yüzdesi sadece çözülen sorulara göre
         const percent = solved > 0 ? Math.round((correct / solved) * 100) : 0;
-        // totalAvailable sadece bilgi amaçlı tutuluyor, başarıda kullanılmıyor
         const totalAvailable = getTotalQuestionsForSubject(subject);
         return { totalAvailable, solved, correct, wrong, percent };
     }
 
-    // Genel istatistikler (tüm dersler, başarı sadece çözülenler bazında)
+    // AKILLI BAŞLANGIÇ İNDEKSİ (yeni mantık)
+    function getStartIndex(subject, total) {
+        const progress = userProgress[subject] || {};
+        // Tüm sorular çözülmüş mü?
+        let allSolved = true;
+        for (let i = 0; i < total; i++) {
+            if (!progress[i] || !progress[i].selected) {
+                allSolved = false;
+                break;
+            }
+        }
+
+        if (allSolved) {
+            // Tüm sorular çözüldü → en baştaki yanlışı bul
+            for (let i = 0; i < total; i++) {
+                if (progress[i] && progress[i].selected && !progress[i].isCorrect) {
+                    return i;
+                }
+            }
+            // Hiç yanlış yoksa (aced it) → başa dön
+            return 0;
+        } else {
+            // Tüm sorular çözülmedi
+            const finalSolved = (progress[total-1] && progress[total-1].selected);
+            if (finalSolved) {
+                // Son soru çözüldü → en baştaki çözülmemiş soruya git
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0; // fallback
+            } else {
+                // Son soru çözülmedi → kaldığı yerden devam et (lastVisited'ten sonraki ilk çözülmemiş)
+                const lastVisited = userProgress._meta?.lastVisited?.[subject];
+                if (lastVisited !== undefined && lastVisited < total) {
+                    // Önce lastVisited'in kendisi çözülmemiş mi kontrol et
+                    if (!progress[lastVisited] || !progress[lastVisited].selected) return lastVisited;
+                    // Çözülmüşse sonrasındaki ilk çözülmemişi bul
+                    for (let i = lastVisited + 1; i < total; i++) {
+                        if (!progress[i] || !progress[i].selected) return i;
+                    }
+                }
+                // Hiç lastVisited yoksa veya sonrasında çözülmemiş yoksa baştan ilk çözülmemiş
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0;
+            }
+        }
+    }
+
     function getOverallStats() {
         const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
         let totalSolved = 0, totalCorrect = 0;
@@ -581,7 +617,6 @@
         });
         const totalWrong = totalSolved - totalCorrect;
         const overallPercent = totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : 0;
-        // toplam mevcut soru sayısı sadece istatistik kartında gösterilmek üzere (ama şu an kullanmıyoruz)
         let totalAvailableSum = 0;
         subjects.forEach(sub => { totalAvailableSum += getTotalQuestionsForSubject(sub); });
         return { totalSolved, totalCorrect, totalWrong, overallPercent, totalAvailableSum };
@@ -628,19 +663,18 @@
         });
     }
 
-    // ANALİZ (başarı oranları da çözülen bazında)
     function showAnalytics() {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById('analytics-screen').classList.add('active');
         renderAnalytics();
     }
+    
     function renderAnalytics() {
         const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
         const container = document.getElementById('analytics-container');
         let html = '';
         for (let sub of subjects) {
             const s = getSubjectStats(sub);
-            // progress bar yüzdesi yine çözülenler içindeki doğru oranı
             let fillWidth = s.percent;
             html += `
                 <div class="analytics-card">
@@ -670,7 +704,6 @@
         `;
     }
 
-    // MODAL
     function showResetModal() { document.getElementById('modal-overlay').classList.add('active'); }
     function closeResetModal() { document.getElementById('modal-overlay').classList.remove('active'); }
     function confirmReset() {
@@ -681,7 +714,7 @@
         if (document.getElementById('analytics-screen').classList.contains('active')) renderAnalytics();
     }
 
-    // PARSER
+    // SORU PARSER
     function parseQuestions(rawText) {
         if (!rawText) return [];
         const questions = [];
@@ -708,6 +741,7 @@
     async function startSubject(subject) {
         currentSubject = subject;
         if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById('quiz-screen').classList.add('active');
         document.getElementById('subject-title').innerText = subject.toUpperCase();
@@ -724,7 +758,17 @@
                 userProgress[currentSubject]._total = currentQuestions.length;
                 saveProgress();
             }
-            currentIndex = 0;
+            
+            const total = currentQuestions.length;
+            const startIdx = getStartIndex(currentSubject, total);
+            currentIndex = startIdx;
+            
+            // Son ziyaret edilen soruyu kaydet
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+            
             renderQuestion();
         } catch (err) {
             document.getElementById('question-text').innerHTML = `❌ Hata: ${err.message}`;
@@ -740,11 +784,21 @@
         document.getElementById('q-input').value = currentIndex + 1;
         document.getElementById('prev-btn').disabled = currentIndex === 0;
         document.getElementById('next-btn').disabled = currentIndex === total - 1 || total === 0;
+        
         if (total === 0) {
             document.getElementById('question-text').innerHTML = '⚠️ Soru bulunamadı. Lütfen dosyaları kontrol edin.';
             document.getElementById('options-container').innerHTML = '';
             return;
         }
+        
+        // Son ziyaret edilen soruyu GÜNCELLE (her render'da)
+        if (currentSubject && currentIndex !== undefined) {
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+        }
+        
         const q = currentQuestions[currentIndex];
         document.getElementById('question-text').innerHTML = q.text.replace(/\n/g, '<br>');
         const optsDiv = document.getElementById('options-container');
@@ -792,8 +846,18 @@
     }
 
     // NAVIGASYON
-    document.getElementById('prev-btn')?.addEventListener('click', () => { if (currentIndex > 0) { currentIndex--; renderQuestion(); } });
-    document.getElementById('next-btn')?.addEventListener('click', () => { if (currentIndex < currentQuestions.length - 1) { currentIndex++; renderQuestion(); } });
+    document.getElementById('prev-btn')?.addEventListener('click', () => { 
+        if (currentIndex > 0) { 
+            currentIndex--; 
+            renderQuestion(); 
+        } 
+    });
+    document.getElementById('next-btn')?.addEventListener('click', () => { 
+        if (currentIndex < currentQuestions.length - 1) { 
+            currentIndex++; 
+            renderQuestion(); 
+        } 
+    });
     document.getElementById('q-input')?.addEventListener('change', (e) => {
         let val = parseInt(e.target.value);
         if (isNaN(val)) val = 1;
@@ -824,6 +888,8 @@
                 if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
             }
         }
+        if (!userProgress._meta) userProgress._meta = {};
+        if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
         if (dirty) saveProgress();
     };
 </script>
