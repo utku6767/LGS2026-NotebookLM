@@ -4,7 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>LGS Etkileşimli Soru Çözümü | Akıllı Devam</title>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'no-mathjax',
+                processHtmlClass: 'math'
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
     <style>
         * {
             margin: 0;
@@ -471,7 +489,7 @@
         </div>
     </div>
     <div class="quiz-content">
-        <div class="question-text" id="question-text">Sorular yükleniyor...</div>
+        <div class="question-text math" id="question-text">Sorular yükleniyor...</div>
         <div class="options-container" id="options-container"></div>
         <div class="bottom-nav">
             <button class="nav-btn" id="prev-btn">◀ ÖNCEKİ</button>
@@ -524,7 +542,6 @@
     let answered = false;
     let currentSubject = "";
 
-    // Meta bilgileri (lastVisited)
     if (!userProgress._meta) userProgress._meta = {};
     if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
 
@@ -557,10 +574,9 @@
         return { totalAvailable, solved, correct, wrong, percent };
     }
 
-    // AKILLI BAŞLANGIÇ İNDEKSİ (yeni mantık)
+    // AKILLI BAŞLANGIÇ İNDEKSİ
     function getStartIndex(subject, total) {
         const progress = userProgress[subject] || {};
-        // Tüm sorular çözülmüş mü?
         let allSolved = true;
         for (let i = 0; i < total; i++) {
             if (!progress[i] || !progress[i].selected) {
@@ -570,35 +586,25 @@
         }
 
         if (allSolved) {
-            // Tüm sorular çözüldü → en baştaki yanlışı bul
             for (let i = 0; i < total; i++) {
-                if (progress[i] && progress[i].selected && !progress[i].isCorrect) {
-                    return i;
-                }
+                if (progress[i] && progress[i].selected && !progress[i].isCorrect) return i;
             }
-            // Hiç yanlış yoksa (aced it) → başa dön
             return 0;
         } else {
-            // Tüm sorular çözülmedi
             const finalSolved = (progress[total-1] && progress[total-1].selected);
             if (finalSolved) {
-                // Son soru çözüldü → en baştaki çözülmemiş soruya git
                 for (let i = 0; i < total; i++) {
                     if (!progress[i] || !progress[i].selected) return i;
                 }
-                return 0; // fallback
+                return 0;
             } else {
-                // Son soru çözülmedi → kaldığı yerden devam et (lastVisited'ten sonraki ilk çözülmemiş)
                 const lastVisited = userProgress._meta?.lastVisited?.[subject];
                 if (lastVisited !== undefined && lastVisited < total) {
-                    // Önce lastVisited'in kendisi çözülmemiş mi kontrol et
                     if (!progress[lastVisited] || !progress[lastVisited].selected) return lastVisited;
-                    // Çözülmüşse sonrasındaki ilk çözülmemişi bul
                     for (let i = lastVisited + 1; i < total; i++) {
                         if (!progress[i] || !progress[i].selected) return i;
                     }
                 }
-                // Hiç lastVisited yoksa veya sonrasında çözülmemiş yoksa baştan ilk çözülmemiş
                 for (let i = 0; i < total; i++) {
                     if (!progress[i] || !progress[i].selected) return i;
                 }
@@ -738,6 +744,13 @@
         return questions;
     }
 
+    // MathJax render helper
+    function renderMath() {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetPromise().catch(err => console.log('MathJax error:', err));
+        }
+    }
+
     async function startSubject(subject) {
         currentSubject = subject;
         if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
@@ -763,7 +776,6 @@
             const startIdx = getStartIndex(currentSubject, total);
             currentIndex = startIdx;
             
-            // Son ziyaret edilen soruyu kaydet
             if (!userProgress._meta) userProgress._meta = {};
             if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
             userProgress._meta.lastVisited[currentSubject] = currentIndex;
@@ -791,7 +803,6 @@
             return;
         }
         
-        // Son ziyaret edilen soruyu GÜNCELLE (her render'da)
         if (currentSubject && currentIndex !== undefined) {
             if (!userProgress._meta) userProgress._meta = {};
             if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
@@ -800,6 +811,7 @@
         }
         
         const q = currentQuestions[currentIndex];
+        // Soru metnini göster (MathJax düzgün işlesin diye class='math' ekledik)
         document.getElementById('question-text').innerHTML = q.text.replace(/\n/g, '<br>');
         const optsDiv = document.getElementById('options-container');
         optsDiv.innerHTML = '';
@@ -812,6 +824,7 @@
             iconSpan.className = 'option-icon';
             iconSpan.innerText = '○';
             const textSpan = document.createElement('span');
+            // Şıklarda da matematik olabilir, ama inline olarak kalacak
             textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
             btn.appendChild(iconSpan); btn.appendChild(textSpan);
             if (saved) {
@@ -824,7 +837,9 @@
             optsDiv.appendChild(btn);
         });
         if (saved) answered = true;
-        if (window.MathJax) MathJax.typesetPromise().catch(()=>{});
+        
+        // MathJax'i çağır
+        renderMath();
         updateSubjectScore();
     }
 
@@ -891,6 +906,8 @@
         if (!userProgress._meta) userProgress._meta = {};
         if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
         if (dirty) saveProgress();
+        // İlk MathJax render
+        renderMath();
     };
 </script>
 </body>
