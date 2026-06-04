@@ -537,3 +537,171 @@
 - D) Mücadelesi ve başarılarıyla sınırları aşan evrensel bir lider olduğunu
 
 **Doğru Cevap ve Çözüm:** **Cevap: D.** Metindeki ifadeler Atatürk'ün evrensel bir lider olduğunu kanıtlamaktadır.
+## 31. Soru Tipi: Ekonomi Alanında Yapılan Yenilikler
+**Soru Kökü:** 17 Şubat 1923'te toplanan İzmir İktisat Kongresi'nde kabul edilen Misak-ı İktisadi (Millî Ekonomi Andı) kararlarından bazıları şunlardır:
+- Hammaddesi yurt içinde yetişen veya yetiştirilebilen sanayi dalları kurulmalıdır.
+- El işçiliğinden ve küçük imalattan hızla fabrikaya ve büyük işletmeye geçilmelidir.
+- Türk vatandaşları yerli malı kullanımına teşvik edilmelidir.
+
+Bu kararlardan hareketle yeni Türk devletinin ekonomi politikasıyla ilgili aşağıdakilerden hangisi **söylenemez**?
+**Şıklar:**
+- A) Ekonomide dışa bağımlılığın azaltılması hedeflenmiştir.
+- B) Yerli üreticinin güçlendirilmesi ve korunması amaçlanmıştır.
+- C) Özel sektör tamamen kaldırılarak bütün yatırımlar devlete devredilmiştir.
+- D) Üretim şeklinin modernleştirilmesi ve sanayileşme benimsenmiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Kararlarda sanayileşmek, yerli malı kullanmak ve dışa bağımlılığı azaltmak (A, B ve D) hedeflenmiştir. Ancak özel sektörü ortadan kaldırma gibi bir durum söz konusu değildir, aksine devlet özel sektörü desteklemek için Teşvik-i Sanayi Kanunu'nu çıkarmıştır.
+
+## 32. Soru Tipi: Atatürk İlke ve İnkılapları / Millî Egemenlik
+**Soru Kökü:** 1930 yılında belediye seçimlerine katılma, 1933’te muhtar seçilme ve 1934’te milletvekili seçme ve seçilme hakkının verilmesiyle Türk kadını ülke yönetiminde söz sahibi olmuştur. Böylece siyasi alanda kadın ile erkek arasındaki eşitsizlikler ortadan kaldırılarak demokratikleşme yolunda çok önemli bir adım atılmıştır.
+
+Bu gelişmeler, Atatürk’ün aşağıdaki ilkelerinden hangileriyle **doğrudan** ilişkilidir?
+**Şıklar:**
+- A) Cumhuriyetçilik ve Halkçılık
+- B) Laiklik ve Devletçilik
+- C) Milliyetçilik ve İnkılapçılık
+- D) Halkçılık ve Devletçilik
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Kadınların "seçme ve seçilme" hakkı elde ederek yönetime katılması "Cumhuriyetçilik", bu hakların erkeklerle eşit bir şekilde verilerek toplumdaki bir ayrımcılığın giderilmesi ise "Halkçılık" ilkesiyle doğrudan ilgilidir.
+
+## 33. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar
+**Soru Kökü:** Atatürk diyor ki: "Dünyada her şey için, maddiyat için, maneviyat için, hayat için, başarı için en hakiki yol gösterici ilimdir, fendir. İlim ve fennin haricinde yol gösterici aramak gaflettir, cehalettir, delalettir."
+
+Atatürk’ün bu sözü, onun inkılapçılık anlayışının aşağıdaki esaslardan hangisine dayandığını göstermektedir?
+**Şıklar:**
+- A) Millî tarih bilincine
+- B) Akılcılık ve bilimselliğe
+- C) Geleneklere bağlılığa
+- D) Millî birlik ve beraberliğe
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Metindeki "en hakiki yol gösterici ilimdir, fendir" vurgusu, hayatta dogmaların (hurafelerin) değil, kanıta ve mantığa dayanan "Akılcılık ve Bilimsellik" esasının rehber alınması gerektiğini kanıtlamaktadır.
+
+## 34. Soru Tipi: Çok Partili Siyasi Hayat
+**Soru Kökü:** 1930 yılında Mustafa Kemal, yakın arkadaşı Fethi Bey’e şu sözleri söylemiştir: "Bugünkü manzaraya bakılırsa memlekette sanki diktatörlük varmış gibi bir durum görülüyor. Bizim meclisimizde de iki parti olmalı, hükûmeti denetleme sistemi kurulmalı ve medeni ülkelerin parlamentolarına benzemeliyiz." Bu görüşmenin ardından Fethi Bey, Serbest Cumhuriyet Fırkası’nı kurmuştur.
+
+Bu bilgiye göre çok partili hayata geçişin **temel amacı** aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) Ülkedeki ekonomik sorunları tamamen yabancı sermayeyle çözmek
+- B) Meclis hükûmeti sistemine geçişi hızlandırmak
+- C) İktidar partisinin icraatlarının demokratik yollarla denetlenmesini sağlamak
+- D) Yabancı devletlerin Türkiye’nin iç işlerine karışmasını kolaylaştırmak
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Yeni bir muhalefet partisi kurulmasındaki asıl amaç, hükûmetin (iktidarın) yaptığı çalışmaların farklı görüşler tarafından "denetlenmesini" sağlamak ve ülkeye tam anlamıyla demokratik bir parlamento işleyişi kazandırmaktır.
+
+## 35. Soru Tipi: Çok Partili Siyasi Hayata Geçilememesinin Nedenleri
+**Soru Kökü:** Cumhuriyetin ilk yıllarında kurulan Terakkiperver Cumhuriyet Fırkası, Şeyh Sait İsyanı’nın çıkmasında rolü olduğu gerekçesiyle kapatılmıştır. Birkaç yıl sonra kurulan Serbest Cumhuriyet Fırkası ise kurucusu tarafından kapatılmış, ancak hemen ardından laik cumhuriyet rejimine karşı Menemen Olayı (Kubilay Olayı) patlak vermiştir. 
+
+Yaşanan bu gelişmelere bakılarak aşağıdaki çıkarımlardan hangisi yapılabilir?
+**Şıklar:**
+- A) Türk halkının saltanat ve halifeliğin geri getirilmesini istediği
+- B) Toplumun, demokratikleşme ve çok partili siyasi hayata henüz hazır olmadığı
+- C) Yeni anayasanın muhalefet partilerinin kurulmasını kesin olarak yasakladığı
+- D) Dış politikadaki sorunların meclisin çalışmasını tamamen durdurduğu
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Kurulan her yeni partinin etrafında rejime, yeniliklere ve laikliğe karşı olanların toplanarak isyanlar (Şeyh Sait, Menemen) çıkarması, Türk toplumunun o dönemde çok partili demokratik bir hayata "henüz hazır olmadığını" açıkça göstermektedir.
+
+## 36. Soru Tipi: Atatürk Dönemi Türk Dış Politikası Esasları
+**Soru Kökü:** Mustafa Kemal Paşa bir konuşmasında; "Biz, her devlet gibi hürriyet ve istiklal istiyoruz. Devletimizin siyasi, adli ve ekonomik gelişmesine engel olacak hiçbir sınırı (kapitülasyonları) ve himayeyi kabul edemeyiz. Bu konudaki kararımız kesindir." demiştir.
+
+Atatürk’ün bu ifadeleri, Türk dış politikasının hangi temel ilkesiyle **doğrudan** ilgilidir?
+**Şıklar:**
+- A) Tam Bağımsızlık
+- B) Mütekabiliyet (Karşılıklılık)
+- C) Akılcılık
+- D) Yurtta Sulh, Cihanda Sulh
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Metinde geçen "siyasi, adli ve ekonomik gelişmemize engel olacak himayeyi reddetmek" ve "hürriyet ve istiklal (özgürlük)" vurguları dış politikadaki "Tam Bağımsızlık" ilkesinin kesin tanımıdır.
+
+## 37. Soru Tipi: Atatürk Dönemi Türk Dış Politikası Uygulamaları
+**Soru Kökü:** 1930'lu yılların başında İtalya ve Almanya’nın hızla silahlanması ve yayılmacı bir dış politika izlemesi, dünya barışını tehdit etmeye başlamıştı. Bu tehlike karşısında Türkiye, 1934 yılında batı sınırlarını güvenceye almak için Balkan Antantı'nı; 1937 yılında ise doğu sınırlarını güvenceye almak için Sadabat Paktı'nı imzalamıştır.
+
+Buna göre Türkiye’nin izlediği dış politikayla ilgili aşağıdakilerden hangisi söylenebilir?
+**Şıklar:**
+- A) Sınırlarını genişleterek emperyalist bir devlet olmayı hedeflediği
+- B) Milletler Cemiyeti’ne karşı alternatif yeni bir askerî örgüt kurduğu
+- C) Yaklaşan savaş tehlikesine karşı bölgesel barışı ve sınır güvenliğini sağladığı
+- D) Kaybedilen eski Osmanlı topraklarını barışçıl yollarla geri aldığı
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Türkiye'nin saldırgan devletlere karşı komşularıyla paktlar (ittifaklar) imzalaması, yeni topraklar kazanmak için değil; yaklaşan II. Dünya Savaşı tehlikesine karşı sınırlarını güvenceye almak ve bölge barışını (C şıkkı) korumak içindir.
+
+## 38. Soru Tipi: Lozan'da Çözülemeyen Sorunlar / Musul Meselesi
+**Soru Kökü:** Lozan Antlaşması'nda çözülemeyen Musul sorunu için Türkiye ile İngiltere arasında doğrudan görüşmeler başlamıştı. Türkiye, gerekirse Musul'u askerî güç kullanarak almak için hazırlıklara girişmişti. Ancak tam bu sırada Doğu Anadolu’da patlak veren Şeyh Sait İsyanı’nı bastırmakla uğraşan Türk ordusu zayıf düştü. İngiltere’nin de baskısıyla imzalanan 1926 Ankara Antlaşması sonucunda Musul, İngiliz mandasındaki Irak’a bırakıldı.
+
+Bu tarihsel süreçten çıkarılabilecek **en kapsamlı sonuç** aşağıdakilerden hangisidir?
+**Şıklar:**
+- A) İç politikada yaşanan krizlerin, devletin dış politikasını olumsuz etkilediği
+- B) İngiltere’nin askerî gücünün Türkiye'den her alanda üstün olduğu
+- C) Musul halkının İngiliz mandasına girmeyi kendi iradesiyle seçtiği
+- D) Sorunun, Milletler Cemiyeti'nin tarafsız tutumu sayesinde çözüldüğü
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Türkiye'nin içeride Şeyh Sait İsyanı ile uğraşması (iç sorun), dışarıda Musul davasına (dış politika) yeterince odaklanamamasına ve masada taviz verilmesine neden olmuştur.
+
+## 39. Soru Tipi: Lozan'da Çözülemeyen Sorunlar / Yabancı Okullar
+**Soru Kökü:** 1924 yılında kabul edilen Tevhid-i Tedrisat Kanunu ve 1925’te yayımlanan yönetmelikle Türkiye’deki yabancı okullara Türkçe, tarih ve coğrafya derslerinin Türk öğretmenler tarafından verilmesi ve okulların Millî Eğitim Bakanlığı tarafından denetlenmesi zorunluluğu getirildi. Bu duruma tepki gösteren Fransa, konuyu devletler arası bir görüşme ile çözmek istedi. Ancak Türkiye, bu talebi "Bu konu Türkiye’nin kendi iç meselesidir." diyerek kesin bir dille reddetti.
+
+Türkiye'nin bu tutumu aşağıdaki kavramlardan hangisiyle **doğrudan** ilişkilidir?
+**Şıklar:**
+- A) Bağımsız devlet anlayışı ve egemenlik hakları
+- B) Uluslararası eşitlik ve mütekabiliyet
+- C) Sınırların güvenliği ve yayılmacılık
+- D) Ekonomik kalkınma ve devletçilik
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Yabancı devletlerin (Fransa'nın) Türk yasalarına ve okullarına müdahale etmesini reddetmek, Türkiye'nin bağımsız (tam bağımsızlık) bir devlet olduğunu ve kendi topraklarındaki egemenlik haklarını kimseyle paylaşmayacağını gösterir.
+
+## 40. Soru Tipi: Lozan'da Çözülemeyen Sorunlar / Boğazlar (Montrö)
+**Soru Kökü:** Lozan Barış Antlaşması’na göre Boğazların yönetimi başkanı Türk olan Uluslararası Boğazlar Komisyonu’na bırakılmış, Boğazların her iki yakası askerden arındırılmıştı. Ancak İtalya ve Almanya’nın saldırgan politikaları üzerine Türkiye konuyu yeniden gündeme getirdi. 1936’da imzalanan Montrö Boğazlar Sözleşmesi ile Boğazlar Komisyonu kaldırılarak tüm yetkileri Türkiye’ye devredildi ve Türkiye’ye Boğazların her iki yakasında asker bulundurma hakkı tanındı.
+
+Montrö Boğazlar Sözleşmesi'nin imzalanmasıyla ilgili aşağıdakilerden hangisi **söylenemez**?
+**Şıklar:**
+- A) Lozan’da Türkiye’nin egemenliğini kısıtlayan bir pürüzün ortadan kaldırıldığı
+- B) Boğazların savunmasının tamamen Türkiye’nin kontrolüne geçtiği
+- C) Türkiye'nin haklı talebini uluslararası diplomasi kurallarını işleterek çözdüğü
+- D) Boğazların tüm dünya devletlerinin askerî ve ticari gemilerine tamamen kapatıldığı
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Montrö ile Türkiye'nin egemenliği sağlanmış (A, B) ve bu diplomasi yoluyla başarılmıştır (C). Ancak Boğazlar tamamen dünya gemilerine kapatılmamış, geçişler savaş/barış durumuna göre sadece Türkiye'nin kurallarına ve kısıtlamalarına bağlanmıştır.
+
+## 41. Soru Tipi: Lozan'da Çözülemeyen Sorunlar / Hatay'ın Katılması
+**Soru Kökü:** 1921 Ankara Antlaşması ile Suriye sınırları içerisinde kalan Hatay’da özel bir yönetim kurulmuştu. II. Dünya Savaşı yaklaşırken Fransa, 1936’da Suriye’deki mandasını kaldırarak bölgeden çekilme kararı aldı ve yetkilerini Suriye Hükûmetine devretti. Bunun üzerine Türkiye, Hatay’ın da bağımsız olması gerektiğini belirterek Milletler Cemiyeti'ne başvurdu. Yürütülen yoğun diplomatik temaslar ve Hatay Meclisinin kendi hür iradesiyle aldığı karar sonucunda Hatay, 1939 yılında anavatana katıldı.
+
+Bu sürece bakılarak Türkiye’nin dış politikası hakkında hangi yargıya ulaşılabilir?
+**Şıklar:**
+- A) Hatay'ı topraklarına katmak için Fransa ile silahlı bir çatışmaya girmiştir.
+- B) Uluslararası koşullardaki değişimleri (konjonktürü) kendi lehine, barışçıl yollarla değerlendirmiştir.
+- C) Hatay meselesini çözerken sadece askerî gücüne dayanarak hareket etmiştir.
+- D) Milletler Cemiyeti kararlarını tanımadığını dünyaya ilan etmiştir.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Türkiye, Fransa'nın geri çekilmesini ve yaklaşan savaş tehlikesini (uluslararası değişimi) diplomatik yollarla ve Milletler Cemiyeti (barışçıl yollar) üzerinden çok iyi değerlendirerek savaşmadan Hatay'ı kazanmıştır.
+
+## 42. Soru Tipi: Atatürk'ün Evrensel Önemi ve Mirası
+**Soru Kökü:** Atatürk’ün vefatının ardından Pakistanlı bir yazar gazetede şu ifadelere yer vermiştir: "O'nun emperyalizme karşı kazandığı zafer, sadece Türklerin değil, bütün Doğu milletlerinin ve esaret altındaki mazlum halkların kurtuluş umudu olmuştur. Bizler, bağımsızlığın mümkün olduğunu onun yaktığı bağımsızlık meşalesine bakarak öğrendik."
+
+Bu ifadeler, Atatürk'ün ve Millî Mücadele’nin daha çok hangi yönünü vurgulamaktadır?
+**Şıklar:**
+- A) Başarılarının sınırları aşarak evrensel bir nitelik taşıdığını
+- B) Ekonomik alandaki inkılaplarının bütün dünya tarafından taklit edildiğini
+- C) Askerî başarılarının siyasi başarılarından daha az önemsendiğini
+- D) Millî Mücadele'nin yalnızca Anadolu coğrafyasını ilgilendirdiğini
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Yazarın "bütün Doğu milletlerinin", "esaret altındaki halkların umudu oldu" sözleri, Atatürk'ün sadece kendi milleti için değil, dünya çapında diğer milletlere de ilham olan "evrensel" bir lider olduğunu gösterir.
+
+## 43. Soru Tipi: Avrupa'daki Gelişmeler / Sanayi Devrimi Etkileri
+**Soru Kökü:** İngiltere'de başlayan Sanayi Devrimi ile birlikte Avrupa'da üretim makinelerle yapılmaya başlanmış, mallar hızlı ve çok ucuz bir şekilde üretilmiştir. Osmanlı Devleti ise bu teknolojik değişime ayak uyduramamıştır. Avrupalı devletler, kapitülasyonların da sağladığı kolaylıkla, fabrikalarda ürettikleri bu ucuz malları gümrüksüz olarak Osmanlı pazarlarına sokmuşlardır. 
+
+Bu durumun Osmanlı Devleti'nde aşağıdakilerden hangisine yol açtığı **söylenemez**?
+**Şıklar:**
+- A) Ülkedeki küçük el tezgâhlarının ve atölyelerin hızla kapanmasına
+- B) Osmanlı ekonomisinin giderek dışa bağımlı hâle gelmesine
+- C) Yerli üretimin durma noktasına gelerek işsizlik sorununun büyümesine
+- D) Osmanlı Devleti'nin ihracatının (dış satım) ithalatını (dış alım) geride bırakmasına
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Avrupa'nın ucuz mallarının ülkeyi doldurması ithalatı (dış alımı) aşırı derecede artırmış, yerli üretim çöktüğü için ihracat (dış satım) bitme noktasına gelmiştir. D şıkkında iddia edilenin tam tersi yaşanmıştır.
+
+## 44. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Nüfus Mübadelesi
+**Soru Kökü:** Lozan Antlaşması'na göre İstanbul'daki Rumlar ile Batı Trakya'daki Türkler hariç, Türkiye'deki Rumlar ile Yunanistan'daki Türkler karşılıklı olarak yer değiştirecekti. Ancak Yunanistan, İstanbul'da daha fazla Rum bırakmak isteyince iki ülke arasında "Nüfus Mübadelesi" krizi yaşandı. Karşılıklı görüşmeler ve diplomasi trafiği sonucunda 1930 yılında antlaşma sağlandı ve kriz çözüldü. Bu sorunun çözülmesi iki ülke arasında dostluk rüzgârları estirmiş, Yunan Başbakanı Venizelos Ankara’yı ziyaret etmiştir. Hatta bu sıcak ilişkiler 1934 yılında Balkan Antantı'nın kurulmasına da zemin hazırlamıştır.
+
+Bu metinden hareketle aşağıdaki yorumlardan hangisi yapılabilir?
+**Şıklar:**
+- A) Yunanistan'ın Batı Trakya topraklarını kendi isteğiyle Türkiye'ye geri verdiği
+- B) İkili sorunların barışçıl yollarla çözülmesinin bölgesel ittifaklara (iş birliklerine) kapı araladığı
+- C) Mübadele krizi çözülünce Balkan Antantı'nın işlevini tamamen yitirdiği
+- D) Lozan Barış Antlaşması'nın mübadele maddesinin Milletler Cemiyeti tarafından iptal edildiği
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Sorunun diplomasi ile çözülmesi (barışçıl yol), Türk-Yunan dostluğunu başlatmış ve bu durum bölgesel bir ittifak olan Balkan Antantı'nın kurulmasına zemin hazırlamıştır.
+
+## 45. Soru Tipi: Atatürk'ün Kişilik Özellikleri / Hatay Meselesi
+**Soru Kökü:** Atatürk, hayatının son günlerinde hastalığı iyice ağırlaşmasına ve doktorların "kesin istirahat etmelisiniz" uyarılarına rağmen Hatay davasından vazgeçmemiştir. "Kırk asırlık Türk yurdu düşman elinde esir bırakılamaz. Bu benim şahsi meselemdir." diyerek Adana ve Mersin'e gitmiş, askerî geçit törenlerini saatlerce ayakta izleyerek tüm dünyaya ve Fransa'ya gözdağı vermiştir. Hastalığının ilerleyeceğini bilmesine rağmen geri adım atmayarak Hatay’ın anavatana katılması için bütün ömrünü ortaya koymuştur.
+
+Bu paragrafta anlatılanlar, Mustafa Kemal Atatürk’ün kişilik özelliklerinden hangileriyle **doğrudan** ilişkilendirilebilir?
+**Şıklar:**
+- A) Vatanseverlik, kararlılık, mücadelecilik, fedakârlık
+- B) Vatanseverlik, kararlılık, fedakârlık, inkılapçılık
+- C) Akılcılık, teşkilatçılık, mücadelecilik, vatanseverlik
+- D) Sanatseverlik, çok cephelilik, eğitimcilik, mantıklılık
+**Doğru Cevap ve Çözüm:** **Cevap: A.** "Kırk asırlık Türk yurdu esir bırakılamaz" demesi Vatanseverlik, "benim şahsi meselemdir" diyerek sonuna kadar gitmesi Kararlılık ve Mücadelecilik, hasta olmasına rağmen sağlığını tehlikeye atıp saatlerce ayakta durması Fedakârlık (Özveri) özelliğini kanıtlar. B şıkkında "İnkılapçılık" (yenilik yapma), C şıkkında "Akılcılık ve Teşkilatçılık", D şıkkında ise paragrafla hiç alakası olmayan özellikler bulunmaktadır. Doğru şık A'dır.
+```
