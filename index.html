@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>LGS Etkileşimli Soru Çözümü | Akıllı Devam</title>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'no-mathjax',
+                processHtmlClass: 'math'
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0d0d0d;
+            --surface: #1a1a1a;
+            --surface2: #212121;
+            --surface3: #2a2a2a;
+            --border: #333;
+            --text: #e0e0e0;
+            --text-secondary: #aaa;
+            --text-heading: #fff;
+            --primary: #5c9ce6;
+            --primary-glow: rgba(92, 156, 230, 0.3);
+            --success: #3cb371;
+            --success-bg: rgba(60, 179, 113, 0.15);
+            --success-border: #2d8a4e;
+            --danger: #e0556a;
+            --danger-bg: rgba(224, 85, 106, 0.15);
+            --danger-border: #b33a4a;
+            --warning: #e5a840;
+            --warning-bg: rgba(229, 168, 64, 0.15);
+            --info: #4a9eff;
+            --accent-gradient: linear-gradient(135deg, #5c9ce6, #7b68ee);
+            --shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+            --radius: 16px;
+            --radius-sm: 12px;
+            --transition: 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        #flash-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            pointer-events: none;
+            z-index: 9999;
+            transition: background 0.3s ease;
+        }
+        .flash-green { background: rgba(60, 179, 113, 0.25) !important; backdrop-filter: blur(1px); }
+        .flash-red { background: rgba(224, 85, 106, 0.25) !important; backdrop-filter: blur(1px); }
+
+        .screen {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--surface);
+            min-height: 100vh;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+        .screen.active { display: flex; }
+
+        #main-menu {
+            padding: 32px 20px 28px;
+            align-items: center;
+            gap: 18px;
+        }
+        .logo-icon {
+            font-size: 3.2rem;
+            filter: drop-shadow(0 0 16px var(--primary-glow));
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        #main-menu h1 {
+            font-size: 2rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-bottom: 6px;
+        }
+
+        .stats-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            width: 100%;
+            margin: 12px 0 8px;
+            transition: var(--transition);
+        }
+        .stats-row-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            background: var(--surface3);
+            padding: 8px 6px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+        }
+        .stat-value {
+            font-size: 1.7rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-heading);
+        }
+        .stat-value.success { color: var(--success); }
+        .stat-value.danger { color: var(--danger); }
+        .stat-value.primary { color: var(--primary); }
+
+        .menu-btn {
+            width: 100%;
+            padding: 16px 20px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .menu-btn:hover {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px var(--primary-glow);
+        }
+        .subject-icon { font-size: 1.5rem; margin-right: 12px; }
+        .percentage-badge {
+            background: var(--surface3);
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
+        .reset-btn {
+            background: transparent;
+            border: 1px solid var(--danger-border);
+            color: var(--danger);
+            margin-top: 8px;
+        }
+        .reset-btn:hover {
+            background: var(--danger-bg);
+            border-color: var(--danger);
+            color: #ffb3b3;
+        }
+        .source-link {
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--border);
+            transition: 0.2s;
+        }
+        .source-link:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        #analytics-screen {
+            padding: 32px 20px;
+        }
+        .analytics-card {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            margin-bottom: 14px;
+        }
+        .progress-bar-wrap {
+            background: var(--surface3);
+            border-radius: 20px;
+            height: 8px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: var(--accent-gradient);
+            transition: width 0.5s ease;
+        }
+        .analytics-total {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+        }
+        .big-percent {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .top-bar {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--surface);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #fff;
+        }
+        .subject-info {
+            text-align: right;
+        }
+        #subject-title {
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        .subject-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            margin-top: 6px;
+            border: 1px solid var(--border);
+        }
+        .subject-stats span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .quiz-content {
+            padding: 22px 18px;
+            flex: 1;
+        }
+        .question-text {
+            background: var(--surface2);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .option-btn {
+            text-align: left;
+            padding: 16px 18px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            color: var(--text);
+        }
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateX(4px);
+        }
+        .option-icon {
+            margin-right: 14px;
+            font-size: 1.2rem;
+            min-width: 28px;
+        }
+        .correct {
+            background: var(--success-bg) !important;
+            border-color: var(--success-border) !important;
+        }
+        .incorrect {
+            background: var(--danger-bg) !important;
+            border-color: var(--danger-border) !important;
+        }
+        .bottom-nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .nav-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 12px 18px;
+            border-radius: 32px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: white;
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .q-input-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+        }
+        .q-input-group input {
+            width: 55px;
+            text-align: center;
+            background: var(--surface3);
+            border: none;
+            padding: 8px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(4px);
+            z-index: 20000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        #modal-overlay.active { display: flex; }
+        .modal-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            width: 85%;
+            max-width: 380px;
+            padding: 28px;
+            text-align: center;
+        }
+        @media (max-width: 450px) {
+            .stat-value { font-size: 1.3rem; }
+            .menu-btn { padding: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="flash-overlay"></div>
+
+<div id="modal-overlay">
+    <div class="modal-box">
+        <h2 style="color: var(--danger);">⚠ TÜM VERİLER SİLİNECEK</h2>
+        <p style="margin: 12px 0;">Doğru/yanlış ilerlemeniz kalıcı olarak sıfırlanır. Geri alınamaz!</p>
+        <div class="modal-buttons" style="display: flex; gap: 12px; margin-top: 20px;">
+            <button class="modal-btn btn-deny" style="flex:1; background: #333; color:white; border: none; padding: 12px; border-radius: 40px; font-weight: bold;" onclick="closeResetModal()">REDDET</button>
+            <button class="modal-btn btn-accept" style="flex:1; background: var(--danger); color:white; border: none; border-radius: 40px; font-weight: bold;" onclick="confirmReset()">SİL</button>
+        </div>
+    </div>
+</div>
+
+<div id="main-menu" class="screen active">
+    <div class="logo-icon">🎯</div>
+    <h1>LGS ÇÖZÜM</h1>
+    <p class="subtitle">akıllı pratik · sesli geri bildirim · akıllı devam</p>
+
+    <div class="stats-box">
+        <div class="stats-row-grid">
+            <div class="stat-item"><div class="stat-label">📌 ÇÖZÜLEN</div><div class="stat-value" id="main-total-answered">0</div></div>
+            <div class="stat-item"><div class="stat-label">✅ DOĞRU</div><div class="stat-value success" id="main-total-correct">0</div></div>
+            <div class="stat-item"><div class="stat-label">❌ YANLIŞ</div><div class="stat-value danger" id="main-total-wrong">0</div></div>
+            <div class="stat-item"><div class="stat-label">🏆 BAŞARI</div><div class="stat-value primary" id="main-percentage">0%</div></div>
+        </div>
+        <div style="font-size:0.7rem; text-align:center; margin-top:10px; color:var(--text-secondary);">⚡ Başarı = (Doğru / Çözülen) × 100</div>
+    </div>
+
+    <button class="menu-btn" onclick="startSubject('matematik')"><span><span class="subject-icon">📐</span> MATEMATİK</span><span class="percentage-badge" id="pct-matematik">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('turkce')"><span><span class="subject-icon">📖</span> TÜRKÇE</span><span class="percentage-badge" id="pct-turkce">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('fen')"><span><span class="subject-icon">🔬</span> FEN BİLİMLERİ</span><span class="percentage-badge" id="pct-fen">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('din')"><span><span class="subject-icon">🕌</span> DİN KÜLTÜRÜ</span><span class="percentage-badge" id="pct-din">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('sosyal')"><span><span class="subject-icon">🌍</span> SOSYAL BİLGİLER</span><span class="percentage-badge" id="pct-sosyal">%0</span></button>
+    <button class="menu-btn" onclick="startSubject('ingilizce')"><span><span class="subject-icon">🇬🇧</span> İNGİLİZCE</span><span class="percentage-badge" id="pct-ingilizce">%0</span></button>
+
+    <button class="menu-btn analytics-btn" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
+    <button class="menu-btn reset-btn" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
+    <div style="position:relative; width:100%;" id="source-dropdown-wrap">
+        <button class="menu-btn" onclick="toggleSourceMenu()" style="border-color: var(--border); justify-content:center; gap:8px;">
+            <span>📂 Kaynaklar & Güncellemeler</span><span id="source-arrow">▼</span>
+        </button>
+        <div id="source-menu" style="display:none; flex-direction:column; gap:10px; margin-top:8px; width:100%;">
+            <a href="https://drive.google.com/drive/folders/1lhfZzfCprak_EynAAKlCi9hefFUBe72P" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#4285f4'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🗂️</span>
+                <span>Google Drive</span>
+            </a>
+            <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#888'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🐙</span>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSourceMenu() {
+            const menu = document.getElementById('source-menu');
+            const arrow = document.getElementById('source-arrow');
+            const open = menu.style.display === 'flex';
+            menu.style.display = open ? 'none' : 'flex';
+            arrow.textContent = open ? '▼' : '▲';
+        }
+        document.addEventListener('click', function(e) {
+            const wrap = document.getElementById('source-dropdown-wrap');
+            if (wrap && !wrap.contains(e.target)) {
+                document.getElementById('source-menu').style.display = 'none';
+                document.getElementById('source-arrow').textContent = '▼';
+            }
+        });
+    </script>
+</div>
+
+<div id="analytics-screen" class="screen">
+    <h1 style="text-align:center; margin-bottom: 6px;">📈 Gelişim Raporu</h1>
+    <p class="subtitle" style="text-align:center">Başarı oranı = (Doğru / Çözülen) × 100</p>
+    <div id="analytics-container"></div>
+    <div class="analytics-total" id="analytics-total-box"></div>
+    <button class="back-btn-analytics" onclick="showMainMenu()" style="margin-top: 20px; background: var(--surface2); border: 1px solid var(--border); padding: 14px; border-radius: 40px; font-weight: bold;">⬅ ANA MENÜYE DÖN</button>
+</div>
+
+<div id="quiz-screen" class="screen">
+    <div class="top-bar">
+        <button class="back-btn" onclick="showMainMenu()">← Menü</button>
+        <div class="subject-info">
+            <strong id="subject-title">Ders Adı</strong>
+            <div class="subject-stats" id="quiz-stats-area">
+                <span>📘 Ç: <b id="sub-answered">0</b></span>
+                <span style="color:var(--success)">✔ D: <b id="sub-correct">0</b></span>
+                <span style="color:var(--danger)">✘ Y: <b id="sub-wrong">0</b></span>
+                <span style="color:var(--primary)">% <b id="sub-percent">0</b></span>
+            </div>
+        </div>
+    </div>
+    <div class="quiz-content">
+        <div class="question-text math" id="question-text">Sorular yükleniyor...</div>
+        <div class="options-container" id="options-container"></div>
+        <div class="bottom-nav">
+            <button class="nav-btn" id="prev-btn">◀ ÖNCEKİ</button>
+            <div class="q-input-group">
+                <input type="number" id="q-input" min="1" value="1">
+                <span>/ <span id="total-q">0</span></span>
+            </div>
+            <button class="nav-btn" id="next-btn">SONRAKİ ▶</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    // SES SİSTEMİ
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    function playSound(isCorrect) {
+        try {
+            if (!audioCtx) audioCtx = new AudioContext();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            if (isCorrect) {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+                osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.12);
+                osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.24);
+                gain.gain.setValueAtTime(0.09, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.55);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.55);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(190, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(80, audioCtx.currentTime + 0.35);
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.35);
+            }
+        } catch(e) { }
+    }
+
+    // VERİ YÖNETİMİ
+    let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let answered = false;
+    let currentSubject = "";
+
+    if (!userProgress._meta) userProgress._meta = {};
+    if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+
+    function saveProgress() {
+        localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
+        updateAllUI();
+    }
+
+    function getTotalQuestionsForSubject(subject) {
+        const progress = userProgress[subject] || {};
+        if (progress._total && progress._total > 0) return progress._total;
+        const keys = Object.keys(progress).map(Number).filter(k => !isNaN(k) && k !== '_total');
+        if (keys.length === 0) return 0;
+        return Math.max(...keys) + 1;
+    }
+
+    function getSubjectStats(subject) {
+        const progress = userProgress[subject] || {};
+        let solved = 0, correct = 0;
+        for (let key in progress) {
+            if (key === '_total') continue;
+            if (progress[key] && progress[key].selected) {
+                solved++;
+                if (progress[key].isCorrect) correct++;
+            }
+        }
+        const wrong = solved - correct;
+        const percent = solved > 0 ? Math.round((correct / solved) * 100) : 0;
+        const totalAvailable = getTotalQuestionsForSubject(subject);
+        return { totalAvailable, solved, correct, wrong, percent };
+    }
+
+    // AKILLI BAŞLANGIÇ İNDEKSİ
+    function getStartIndex(subject, total) {
+        const progress = userProgress[subject] || {};
+        let allSolved = true;
+        for (let i = 0; i < total; i++) {
+            if (!progress[i] || !progress[i].selected) {
+                allSolved = false;
+                break;
+            }
+        }
+
+        if (allSolved) {
+            for (let i = 0; i < total; i++) {
+                if (progress[i] && progress[i].selected && !progress[i].isCorrect) return i;
+            }
+            return 0;
+        } else {
+            const finalSolved = (progress[total-1] && progress[total-1].selected);
+            if (finalSolved) {
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0;
+            } else {
+                const lastVisited = userProgress._meta?.lastVisited?.[subject];
+                if (lastVisited !== undefined && lastVisited < total) {
+                    if (!progress[lastVisited] || !progress[lastVisited].selected) return lastVisited;
+                    for (let i = lastVisited + 1; i < total; i++) {
+                        if (!progress[i] || !progress[i].selected) return i;
+                    }
+                }
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0;
+            }
+        }
+    }
+
+    function getOverallStats() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        let totalSolved = 0, totalCorrect = 0;
+        subjects.forEach(sub => {
+            const st = getSubjectStats(sub);
+            totalSolved += st.solved;
+            totalCorrect += st.correct;
+        });
+        const totalWrong = totalSolved - totalCorrect;
+        const overallPercent = totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : 0;
+        let totalAvailableSum = 0;
+        subjects.forEach(sub => { totalAvailableSum += getTotalQuestionsForSubject(sub); });
+        return { totalSolved, totalCorrect, totalWrong, overallPercent, totalAvailableSum };
+    }
+
+    function updateAllUI() {
+        updateMainScore();
+        updatePercentageBadges();
+        if (currentSubject && document.getElementById('quiz-screen').classList.contains('active')) {
+            updateSubjectScore();
+        }
+    }
+
+    function updateMainScore() {
+        const stats = getOverallStats();
+        document.getElementById('main-total-answered').innerText = stats.totalSolved;
+        document.getElementById('main-total-correct').innerText = stats.totalCorrect;
+        document.getElementById('main-total-wrong').innerText = stats.totalWrong;
+        document.getElementById('main-percentage').innerText = stats.overallPercent + '%';
+    }
+
+    function updateSubjectScore() {
+        if (!currentSubject) return;
+        const stats = getSubjectStats(currentSubject);
+        const elAns = document.getElementById('sub-answered');
+        const elCor = document.getElementById('sub-correct');
+        const elWro = document.getElementById('sub-wrong');
+        const elPer = document.getElementById('sub-percent');
+        if (elAns) elAns.innerText = stats.solved;
+        if (elCor) elCor.innerText = stats.correct;
+        if (elWro) elWro.innerText = stats.wrong;
+        if (elPer) elPer.innerText = stats.percent;
+    }
+
+    function updatePercentageBadges() {
+        const subs = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        subs.forEach(sub => {
+            const pct = getSubjectStats(sub).percent;
+            const badge = document.getElementById(`pct-${sub}`);
+            if (badge) {
+                badge.innerText = `%${pct}`;
+                badge.style.color = pct >= 70 ? '#3cb371' : (pct >= 40 ? '#e5a840' : '#e0556a');
+            }
+        });
+    }
+
+    function showAnalytics() {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('analytics-screen').classList.add('active');
+        renderAnalytics();
+    }
+    
+    function renderAnalytics() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        const container = document.getElementById('analytics-container');
+        let html = '';
+        for (let sub of subjects) {
+            const s = getSubjectStats(sub);
+            let fillWidth = s.percent;
+            html += `
+                <div class="analytics-card">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                        <span style="font-weight:800;">${sub === 'matematik'?'📐':sub==='turkce'?'📖':sub==='fen'?'🔬':sub==='din'?'🕌':sub==='sosyal'?'🌍':'🇬🇧'} ${sub.toUpperCase()}</span>
+                        <span style="color:var(--primary); font-weight:800;">%${s.percent}</span>
+                    </div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap; font-size:0.75rem;">
+                        <span>📚 Toplam soru: ${s.totalAvailable}</span>
+                        <span>✅ Doğru: ${s.correct}</span>
+                        <span>❌ Yanlış: ${s.wrong}</span>
+                        <span>📌 Çözülen: ${s.solved}</span>
+                    </div>
+                    <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${fillWidth}%;"></div></div>
+                    <div style="font-size:0.65rem; margin-top:5px; color:var(--text-secondary);">Başarı = (Doğru / Çözülen) × 100</div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+        const overall = getOverallStats();
+        document.getElementById('analytics-total-box').innerHTML = `
+            <div style="font-size:0.9rem;">GENEL BAŞARI (Çözülenler Bazında)</div>
+            <div class="big-percent">%${overall.overallPercent}</div>
+            <div style="margin-top:6px;">${overall.totalCorrect} doğru / ${overall.totalSolved} çözülen soru</div>
+            <div class="progress-bar-wrap mt-2"><div class="progress-bar-fill" style="width:${overall.overallPercent}%;"></div></div>
+            <div style="font-size:0.7rem; margin-top:8px;">⭐ Havuzdaki toplam soru: ${overall.totalAvailableSum}</div>
+        `;
+    }
+
+    function showResetModal() { document.getElementById('modal-overlay').classList.add('active'); }
+    function closeResetModal() { document.getElementById('modal-overlay').classList.remove('active'); }
+    function confirmReset() {
+        userProgress = {};
+        localStorage.removeItem('lgsProgress');
+        updateAllUI();
+        closeResetModal();
+        if (document.getElementById('analytics-screen').classList.contains('active')) renderAnalytics();
+    }
+
+    // SORU PARSER
+    function parseQuestions(rawText) {
+        if (!rawText) return [];
+        const questions = [];
+        const blocks = rawText.split(/## \d+\.\s*Soru Tipi:/).slice(1);
+        for (let block of blocks) {
+            try {
+                const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
+                if (!soruMatch) continue;
+                const aMatch = block.match(/(?:^|\n)-\s*A\)\s*(.*)/);
+                const bMatch = block.match(/(?:^|\n)-\s*B\)\s*(.*)/);
+                const cMatch = block.match(/(?:^|\n)-\s*C\)\s*(.*)/);
+                const dMatch = block.match(/(?:^|\n)-\s*D\)\s*(.*)/);
+                const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
+                questions.push({
+                    text: soruMatch[1].trim(),
+                    options: { A: aMatch?.[1]?.trim() || '', B: bMatch?.[1]?.trim() || '', C: cMatch?.[1]?.trim() || '', D: dMatch?.[1]?.trim() || '' },
+                    correct: ansMatch ? ansMatch[1] : "A"
+                });
+            } catch(e) {}
+        }
+        return questions;
+    }
+
+    // MathJax render helper - setTimeout lets DOM settle before typesetting
+    function renderMath(targetEl) {
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            setTimeout(() => {
+                const els = targetEl ? [targetEl] : undefined;
+                window.MathJax.typesetPromise(els).catch(err => console.log('MathJax error:', err));
+            }, 0);
+        }
+    }
+
+    async function startSubject(subject) {
+        currentSubject = subject;
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('quiz-screen').classList.add('active');
+        document.getElementById('subject-title').innerText = subject.toUpperCase();
+        updateSubjectScore();
+
+        document.getElementById('question-text').innerHTML = '<span style="color:#aaa;">⏳ Sorular hazırlanıyor...</span>';
+        document.getElementById('options-container').innerHTML = '';
+        try {
+            const response = await fetch(`${subject}.txt?v=${Date.now()}`);
+            if (!response.ok) throw new Error(`${subject}.txt bulunamadı`);
+            const txt = await response.text();
+            currentQuestions = parseQuestions(txt);
+            if (currentQuestions.length && !userProgress[currentSubject]._total) {
+                userProgress[currentSubject]._total = currentQuestions.length;
+                saveProgress();
+            }
+            
+            const total = currentQuestions.length;
+            const startIdx = getStartIndex(currentSubject, total);
+            currentIndex = startIdx;
+            
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+            
+            renderQuestion();
+        } catch (err) {
+            document.getElementById('question-text').innerHTML = `❌ Hata: ${err.message}`;
+        }
+    }
+
+    function renderQuestion() {
+        answered = false;
+        const total = currentQuestions.length;
+        document.getElementById('total-q').innerText = total;
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex >= total && total) currentIndex = total - 1;
+        document.getElementById('q-input').value = currentIndex + 1;
+        document.getElementById('prev-btn').disabled = currentIndex === 0;
+        document.getElementById('next-btn').disabled = currentIndex === total - 1 || total === 0;
+        
+        if (total === 0) {
+            document.getElementById('question-text').innerHTML = '⚠️ Soru bulunamadı. Lütfen dosyaları kontrol edin.';
+            document.getElementById('options-container').innerHTML = '';
+            return;
+        }
+        
+        if (currentSubject && currentIndex !== undefined) {
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+        }
+        
+        const q = currentQuestions[currentIndex];
+        const questionEl = document.getElementById('question-text');
+        const optsDiv = document.getElementById('options-container');
+        
+        // Clear MathJax state on old nodes before replacing innerHTML
+        if (window.MathJax && window.MathJax.typesetClear) {
+            window.MathJax.typesetClear([questionEl, optsDiv]);
+        }
+        
+        questionEl.innerHTML = q.text.replace(/\n/g, '<br>');
+        optsDiv.innerHTML = '';
+        const saved = userProgress[currentSubject]?.[currentIndex];
+        ['A','B','C','D'].forEach(key => {
+            if (!q.options[key]) return;
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'option-icon';
+            iconSpan.innerText = '○';
+            const textSpan = document.createElement('span');
+            // Şıklarda da matematik olabilir, ama inline olarak kalacak
+            textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
+            btn.appendChild(iconSpan); btn.appendChild(textSpan);
+            if (saved) {
+                btn.disabled = true;
+                if (key === q.correct) { btn.classList.add('correct'); iconSpan.innerText = '✅'; }
+                else if (key === saved.selected) { btn.classList.add('incorrect'); iconSpan.innerText = '❌'; }
+            } else {
+                btn.onclick = () => selectOption(key);
+            }
+            optsDiv.appendChild(btn);
+        });
+        if (saved) answered = true;
+        
+        // MathJax'i sadece quiz ekranında çağır
+        const quizScreen = document.getElementById('quiz-screen');
+        renderMath(quizScreen);
+        updateSubjectScore();
+    }
+
+    function selectOption(selected) {
+        if (answered) return;
+        answered = true;
+        const q = currentQuestions[currentIndex];
+        const isCorrect = (selected === q.correct);
+        playSound(isCorrect);
+        const overlay = document.getElementById('flash-overlay');
+        overlay.className = isCorrect ? 'flash-green' : 'flash-red';
+        setTimeout(() => overlay.className = '', 380);
+
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        userProgress[currentSubject][currentIndex] = { selected, isCorrect };
+        if (!userProgress[currentSubject]._total) userProgress[currentSubject]._total = currentQuestions.length;
+        saveProgress();
+        renderQuestion();
+    }
+
+    // NAVIGASYON
+    document.getElementById('prev-btn')?.addEventListener('click', () => { 
+        if (currentIndex > 0) { 
+            currentIndex--; 
+            renderQuestion(); 
+        } 
+    });
+    document.getElementById('next-btn')?.addEventListener('click', () => { 
+        if (currentIndex < currentQuestions.length - 1) { 
+            currentIndex++; 
+            renderQuestion(); 
+        } 
+    });
+    document.getElementById('q-input')?.addEventListener('change', (e) => {
+        let val = parseInt(e.target.value);
+        if (isNaN(val)) val = 1;
+        val = Math.min(Math.max(val, 1), currentQuestions.length);
+        currentIndex = val - 1;
+        renderQuestion();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('quiz-screen').classList.contains('active')) return;
+        if (e.key === 'ArrowLeft' && !document.getElementById('prev-btn')?.disabled) { e.preventDefault(); document.getElementById('prev-btn')?.click(); }
+        if (e.key === 'ArrowRight' && !document.getElementById('next-btn')?.disabled) { e.preventDefault(); document.getElementById('next-btn')?.click(); }
+    });
+
+    function showMainMenu() {
+        currentSubject = "";
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('main-menu').classList.add('active');
+        updateAllUI();
+    }
+
+    window.onload = () => {
+        updateAllUI();
+        const subjects = ['matematik','turkce','fen','din','sosyal','ingilizce'];
+        let dirty = false;
+        for (let sub of subjects) {
+            if (userProgress[sub] && !userProgress[sub]._total) {
+                const keys = Object.keys(userProgress[sub]).filter(k => k !== '_total' && !isNaN(k));
+                if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
+            }
+        }
+        if (!userProgress._meta) userProgress._meta = {};
+        if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+        if (dirty) saveProgress();
+        // İlk MathJax render (ana menüde matematik yok, sadece hazırlık)
+        renderMath(document.getElementById('main-menu'));
+    };
+</script>
+</body>
+</html>
