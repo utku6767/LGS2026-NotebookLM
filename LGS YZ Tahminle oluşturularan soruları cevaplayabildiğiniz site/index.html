@@ -1,9 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>LGS Etkileşimli Soru Çözümü | Akıllı Devam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         window.MathJax = {
             tex: {
@@ -31,39 +35,51 @@
         }
 
         :root {
-            --bg: #0d0d0d;
-            --surface: #1a1a1a;
-            --surface2: #212121;
-            --surface3: #2a2a2a;
-            --border: #333;
-            --text: #e0e0e0;
-            --text-secondary: #aaa;
-            --text-heading: #fff;
-            --primary: #5c9ce6;
-            --primary-glow: rgba(92, 156, 230, 0.3);
-            --success: #3cb371;
-            --success-bg: rgba(60, 179, 113, 0.15);
-            --success-border: #2d8a4e;
-            --danger: #e0556a;
-            --danger-bg: rgba(224, 85, 106, 0.15);
-            --danger-border: #b33a4a;
-            --warning: #e5a840;
-            --warning-bg: rgba(229, 168, 64, 0.15);
-            --info: #4a9eff;
-            --accent-gradient: linear-gradient(135deg, #5c9ce6, #7b68ee);
-            --shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
-            --radius: 16px;
-            --radius-sm: 12px;
-            --transition: 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            --bg: #030014;
+            --surface: rgba(20, 15, 38, 0.6);
+            --surface2: rgba(30, 25, 50, 0.7);
+            --surface3: rgba(45, 38, 70, 0.8);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-heading: #ffffff;
+            --primary: #a855f7;
+            --primary-glow: rgba(168, 85, 247, 0.4);
+            --secondary: #06b6d4;
+            --success: #10b981;
+            --success-bg: rgba(16, 185, 129, 0.15);
+            --success-border: rgba(16, 185, 129, 0.4);
+            --danger: #f43f5e;
+            --danger-bg: rgba(244, 63, 94, 0.15);
+            --danger-border: rgba(244, 63, 94, 0.4);
+            --warning: #f59e0b;
+            --warning-bg: rgba(245, 158, 11, 0.15);
+            --info: #3b82f6;
+            --accent-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --shadow: 0 16px 40px -10px rgba(0,0,0,0.7);
+            --radius: 20px;
+            --radius-sm: 14px;
+            --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
         body {
-            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background: var(--bg);
+            font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+            background: var(--bg) radial-gradient(circle at top, rgba(168, 85, 247, 0.15), transparent 60%);
+            background-attachment: fixed;
             color: var(--text);
             min-height: 100vh;
             user-select: none;
             -webkit-user-select: none;
+        }
+
+        @keyframes revealUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            0% { opacity: 0; transform: scale(0.96) translateY(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
         }
 
         #flash-overlay {
@@ -87,11 +103,19 @@
             max-width: 680px;
             margin: 0 auto;
             background: var(--surface);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
             min-height: 100vh;
             box-shadow: var(--shadow);
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
             position: relative;
+            transform-origin: top center;
         }
-        .screen.active { display: flex; }
+        .screen.active { 
+            display: flex; 
+            animation: scaleIn 0.6s var(--spring) forwards;
+        }
 
         #main-menu {
             padding: 32px 20px 28px;
@@ -108,18 +132,25 @@
             50% { transform: translateY(-6px); }
         }
         #main-menu h1 {
-            font-size: 2rem;
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 800;
             background: var(--accent-gradient);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             letter-spacing: 2px;
             margin-bottom: 4px;
+            filter: drop-shadow(0 4px 12px var(--primary-glow));
+            animation: revealUp 0.7s var(--spring) both;
         }
         .subtitle {
+            font-family: 'Plus Jakarta Sans', sans-serif;
             color: var(--text-secondary);
-            font-size: 0.85rem;
+            font-size: 0.95rem;
+            font-weight: 500;
             margin-bottom: 6px;
+            animation: revealUp 0.7s var(--spring) 0.1s both;
         }
 
         .stats-box {
@@ -163,12 +194,13 @@
 
         .menu-btn {
             width: 100%;
-            padding: 16px 20px;
+            padding: 18px 24px;
             background: var(--surface2);
             border: 1px solid var(--border);
             border-radius: var(--radius);
+            font-family: 'Outfit', sans-serif;
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: var(--text-heading);
             display: flex;
             align-items: center;
@@ -176,13 +208,34 @@
             cursor: pointer;
             transition: var(--transition);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            position: relative;
+            overflow: hidden;
+            animation: revealUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
         }
+        button.menu-btn:nth-of-type(1) { animation-delay: 0.15s; }
+        button.menu-btn:nth-of-type(2) { animation-delay: 0.2s; }
+        button.menu-btn:nth-of-type(3) { animation-delay: 0.25s; }
+        button.menu-btn:nth-of-type(4) { animation-delay: 0.3s; }
+        button.menu-btn:nth-of-type(5) { animation-delay: 0.35s; }
+        button.menu-btn:nth-of-type(6) { animation-delay: 0.4s; }
+        button.menu-btn:nth-of-type(7) { animation-delay: 0.45s; }
+        button.menu-btn:nth-of-type(8) { animation-delay: 0.5s; }
+
+        .menu-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: 0.5s;
+        }
+        .menu-btn:hover::before { left: 100%; }
+
         .menu-btn:hover {
             border-color: var(--primary);
             background: var(--surface3);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px var(--primary-glow);
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 12px 24px var(--primary-glow);
         }
         .subject-icon { font-size: 1.5rem; margin-right: 12px; }
         .percentage-badge {
@@ -325,21 +378,28 @@
         }
         .option-btn {
             text-align: left;
-            padding: 16px 18px;
+            padding: 18px 20px;
             background: var(--surface2);
             border: 1px solid var(--border);
             border-radius: var(--radius-sm);
-            font-size: 1rem;
+            font-size: 1.05rem;
             cursor: pointer;
-            transition: 0.2s;
+            transition: var(--transition);
             display: flex;
             align-items: center;
             color: var(--text);
+            animation: revealUp 0.4s var(--spring) both;
         }
+        .option-btn:nth-child(1) { animation-delay: 0.1s; }
+        .option-btn:nth-child(2) { animation-delay: 0.15s; }
+        .option-btn:nth-child(3) { animation-delay: 0.2s; }
+        .option-btn:nth-child(4) { animation-delay: 0.25s; }
+
         .option-btn:hover:not(:disabled) {
             border-color: var(--primary);
             background: var(--surface3);
-            transform: translateX(4px);
+            transform: translateX(8px);
+            box-shadow: -4px 4px 12px rgba(0,0,0,0.2);
         }
         .option-icon {
             margin-right: 14px;
@@ -464,7 +524,44 @@
 
     <button class="menu-btn analytics-btn" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
     <button class="menu-btn reset-btn" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
-    <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank" class="source-link">📂 Kaynaklar & Güncellemeler</a>
+    <div style="position:relative; width:100%;" id="source-dropdown-wrap">
+        <button class="menu-btn" onclick="toggleSourceMenu()" style="border-color: var(--border); justify-content:center; gap:8px;">
+            <span>📂 Kaynaklar & Güncellemeler</span><span id="source-arrow">▼</span>
+        </button>
+        <div id="source-menu" style="display:none; flex-direction:column; gap:10px; margin-top:8px; width:100%;">
+            <a href="https://drive.google.com/drive/folders/1lhfZzfCprak_EynAAKlCi9hefFUBe72P" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#4285f4'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🗂️</span>
+                <span>Google Drive</span>
+            </a>
+            <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#888'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🐙</span>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSourceMenu() {
+            const menu = document.getElementById('source-menu');
+            const arrow = document.getElementById('source-arrow');
+            const open = menu.style.display === 'flex';
+            menu.style.display = open ? 'none' : 'flex';
+            arrow.textContent = open ? '▼' : '▲';
+        }
+        document.addEventListener('click', function(e) {
+            const wrap = document.getElementById('source-dropdown-wrap');
+            if (wrap && !wrap.contains(e.target)) {
+                document.getElementById('source-menu').style.display = 'none';
+                document.getElementById('source-arrow').textContent = '▼';
+            }
+        });
+    </script>
 </div>
 
 <div id="analytics-screen" class="screen">
@@ -720,7 +817,7 @@
         if (document.getElementById('analytics-screen').classList.contains('active')) renderAnalytics();
     }
 
-    // SORU PARSER
+    // FIXED: SORU PARSER - More flexible answer matching
     function parseQuestions(rawText) {
         if (!rawText) return [];
         const questions = [];
@@ -733,18 +830,29 @@
                 const bMatch = block.match(/(?:^|\n)-\s*B\)\s*(.*)/);
                 const cMatch = block.match(/(?:^|\n)-\s*C\)\s*(.*)/);
                 const dMatch = block.match(/(?:^|\n)-\s*D\)\s*(.*)/);
-                const ansMatch = block.match(/\*\*Cevap:\s*([A-D])\.\*\*/);
+                
+                // FIX: More flexible answer pattern - matches "Cevap: X." or "**Cevap: X.**" anywhere
+                let ansMatch = block.match(/Cevap:\s*([A-D])\./i);
+                let correctAnswer = ansMatch ? ansMatch[1].toUpperCase() : "A";
+                
                 questions.push({
                     text: soruMatch[1].trim(),
-                    options: { A: aMatch?.[1]?.trim() || '', B: bMatch?.[1]?.trim() || '', C: cMatch?.[1]?.trim() || '', D: dMatch?.[1]?.trim() || '' },
-                    correct: ansMatch ? ansMatch[1] : "A"
+                    options: { 
+                        A: aMatch?.[1]?.trim() || '', 
+                        B: bMatch?.[1]?.trim() || '', 
+                        C: cMatch?.[1]?.trim() || '', 
+                        D: dMatch?.[1]?.trim() || '' 
+                    },
+                    correct: correctAnswer
                 });
-            } catch(e) {}
+            } catch(e) {
+                console.error("Parse error:", e);
+            }
         }
         return questions;
     }
 
-    // MathJax render helper - setTimeout lets DOM settle before typesetting
+    // MathJax render helper
     function renderMath(targetEl) {
         if (window.MathJax && window.MathJax.typesetPromise) {
             setTimeout(() => {
@@ -817,12 +925,11 @@
         const questionEl = document.getElementById('question-text');
         const optsDiv = document.getElementById('options-container');
         
-        // Clear MathJax state on old nodes before replacing innerHTML
         if (window.MathJax && window.MathJax.typesetClear) {
             window.MathJax.typesetClear([questionEl, optsDiv]);
         }
         
-        questionEl.innerHTML = q.text.replace(/\n/g, '<br>');
+        questionEl.innerHTML = q.text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
         optsDiv.innerHTML = '';
         const saved = userProgress[currentSubject]?.[currentIndex];
         ['A','B','C','D'].forEach(key => {
@@ -833,8 +940,7 @@
             iconSpan.className = 'option-icon';
             iconSpan.innerText = '○';
             const textSpan = document.createElement('span');
-            // Şıklarda da matematik olabilir, ama inline olarak kalacak
-            textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key]}`;
+            textSpan.innerHTML = `<strong>${key})</strong> ${q.options[key].replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}`;
             btn.appendChild(iconSpan); btn.appendChild(textSpan);
             if (saved) {
                 btn.disabled = true;
@@ -847,7 +953,6 @@
         });
         if (saved) answered = true;
         
-        // MathJax'i sadece quiz ekranında çağır
         const quizScreen = document.getElementById('quiz-screen');
         renderMath(quizScreen);
         updateSubjectScore();
@@ -916,7 +1021,6 @@
         if (!userProgress._meta) userProgress._meta = {};
         if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
         if (dirty) saveProgress();
-        // İlk MathJax render (ana menüde matematik yok, sadece hazırlık)
         renderMath(document.getElementById('main-menu'));
     };
 </script>
