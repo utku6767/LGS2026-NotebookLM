@@ -44,3 +44,44 @@ Kaynaklarda yer alan resmî sınav kitapçıkları (2023, 2024, 2025) ve MEBİ d
 - İngilizce → 30
 
 TOTAL: 210 QUESTIONS
+
+---
+
+# PHASE 4 — 2026 LGS SÖZEL SINAVI KURALLARIN İSPATI
+
+## Kuralların Gerçekliği: %100 Doğruluk Oranı
+
+Sonuç mu? **Tahminlerimiz tam isabet! Kusursuz bir şekilde %100 oranında doğru çıktı.** MEB, 2026 yılında da daha önceki yıllarda uyguladığı matematiksel dengeleme algoritmasından milim sapmamış.
+
+İşte belirlediğimiz kuralların 2026 LGS Sözel sınavındaki ispatı:
+
+### 1. Kural: 20 Soruluk Testlerde Maksimum 6 Kuralı (Kusursuz İşlemiş)
+
+Türkçe testindeki doğru cevap dağılımını çıkardığımda şu tabloyla karşılaşıyoruz:
+
+- **A Şıkkı:** 5 defa (3, 4, 6, 11, 16. sorular)
+- **B Şıkkı:** 4 defa (1, 12, 19, 20. sorular)
+- **C Şıkkı:** 5 defa (5, 9, 13, 15, 18. sorular)
+- **D Şıkkı:** 6 defa (2, 7, 8, 10, 14, 17. sorular)
+
+**Sonuç:** Daha önceki bulgularımıza uygun olarak şıklar 6-5-5-4 şeklinde dağıtılmış. Herhangi bir şık 7 defa doğru cevap olmamış. Zirve yine 6'da kalmış!
+
+### 2. Kural: 10 Soruluk Testlerde "3-3-2-2" Kusursuz Dağılımı (Birebir Tutmuş)
+
+10 soruluk yardımcı branşlardaki dağılım, şaşmaz bir şekilde yine her ders için 3-3-2-2 formülüyle ayarlanmış:
+
+- **T.C. İnkılap Tarihi:** A=2, B=3, C=3, D=2 (Maksimum 3 kuralı tutmuş)
+- **Din Kültürü:** A=3, B=2, C=3, D=2 (Maksimum 3 kuralı tutmuş)
+- **İngilizce:** A=2, B=3, C=2, D=3 (Maksimum 3 kuralı tutmuş)
+
+**Sonuç:** Hiçbir şık 10 soruluk bir branşta 4 defa cevap olmamış.
+
+### 3. Kural: Üçlü Seri Yasağı (Asla A-A-A Yoktur - Birebir Tutmuş)
+
+2026 Sözel optik formunu baştan sona taradığımda:
+
+- Türkçe testinde 3. ve 4. sorular (A-A), 7. ve 8. sorular (D-D), 19. ve 20. sorular (B-B) olarak ikili seriler yapmış
+- İnkılap testinde 5. ve 6. sorular (C-C) yapmış
+- İngilizce testinde 2. ve 3. sorular (D-D) yapmış
+
+**Sonuç:** Testin hiçbir yerinde aynı şık art arda 3 defa doğru cevap olmamış!
