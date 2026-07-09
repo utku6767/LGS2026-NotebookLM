@@ -704,4 +704,375 @@ Bu paragrafta anlatılanlar, Mustafa Kemal Atatürk’ün kişilik özelliklerin
 - C) Akılcılık, teşkilatçılık, mücadelecilik, vatanseverlik
 - D) Sanatseverlik, çok cephelilik, eğitimcilik, mantıklılık
 **Doğru Cevap ve Çözüm:** **Cevap: A.** "Kırk asırlık Türk yurdu esir bırakılamaz" demesi Vatanseverlik, "benim şahsi meselemdir" diyerek sonuna kadar gitmesi Kararlılık ve Mücadelecilik, hasta olmasına rağmen sağlığını tehlikeye atıp saatlerce ayakta durması Fedakârlık (Özveri) özelliğini kanıtlar. B şıkkında "İnkılapçılık" (yenilik yapma), C şıkkında "Akılcılık ve Teşkilatçılık", D şıkkında ise paragrafla hiç alakası olmayan özellikler bulunmaktadır. Doğru şık A'dır.
-```
+
+## 46. Soru Tipi: Lozan'da Çözülemeyen Sorunlar ve Çözümleri / Düyun-u Umumiye ve Osmanlı Borçları
+
+**Kazanım:** Lozan Barış Antlaşması’nın sağladığı kazanımları analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Düyun-u Umumiye'nin (Genel Borçlar İdaresi) devletin gelirlerine doğrudan el koyan yapısı anlatılarak, bu kurumun kaldırılmasının ekonomik bağımsızlık üzerindeki hayati etkisi vurgulanır. "Doğrudan ilgilidir" kalıbıyla "tam bağımsızlık ve ekonomik egemenlik" çıkarımı yaptırılır.
+
+**Soru Kökü:** Osmanlı Devleti'nin dış borçlarını tahsil etmek amacıyla alacaklı devletler tarafından kurulan Düyun-u Umumiye İdaresi, devletin en önemli gelir kaynaklarına doğrudan el koyduğu için zamanla Osmanlı'nın "ekonomik esaretinin" bir sembolü hâline gelmişti. Lozan Barış Antlaşması ile Düyun-u Umumiye İdaresi kapatılmış ve Osmanlı'dan kalan borçların, Osmanlı topraklarından ayrılan devletler arasında yüzölçümleri dikkate alınarak adil bir şekilde paylaştırılmasına karar verilmiştir. Türkiye ise kendi payına düşen borcu düzenli taksitler hâlinde ödemeyi kabul etmiştir. 
+
+Bu gelişme, yeni Türk devletinin aşağıdaki kavramlardan veya hedeflerinden hangisiyle **doğrudan** ilgilidir?
+
+**Şıklar:**
+- A) Millî sınırları genişleterek yeni ekonomik pazarlar bulmak
+- B) Uluslararası alanda askerî ve siyasi üstünlük kurmak
+- C) Ekonomik egemenliği ve tam bağımsızlığı sağlamak
+- D) Yabancı okulları tamamen devlet denetimi altına almak
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Düyun-u Umumiye'nin kaldırılması, yabancı devletlerin Türkiye'nin iç gelirlerine ve maliyesine müdahale etmesini bitirmiştir. Bu durum, Türkiye'nin kendi kaynakları üzerinde söz sahibi olmasını sağlayarak "ekonomik egemenlik (mali bağımsızlık)" ve dolayısıyla "tam bağımsızlık" hedefini doğrudan gerçekleştirmiştir.
+
+---
+
+## 47. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Laiklik
+
+**Kazanım:** Atatürk ilkelerinin dayandığı temel esasları kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Atatürk'ün bir sözünden hareketle dinin özünde mantığın yattığı ve devlet yönetiminde hurafelerin değil aklın yol gösterici olması gerektiği (akılcılık ve bilimsellik) esası üzerinden laiklik ilkesiyle bağlantı kurulur.
+
+**Soru Kökü:** Atatürk, "Bizim dinimiz en makul ve en doğal bir dindir. Ve ancak bundan dolayıdır ki son din olmuştur. Bir dinin doğal olması için akla, tekniğe, ilme ve mantığa uygun olması gerekir." sözleriyle dinin özünde hurafe ve körü körüne inancın değil, ilmin yattığını ifade etmiştir. Ayrıca Cumhuriyet döneminde, devlet yönetiminde kararların dogmalara göre değil; aklın, mantığın ve bilimin rehberliğinde alınması benimsenmiş, böylece din ve devlet işleri birbirinden ayrılarak aklın öncülüğü sağlanmıştır.
+
+Bu durum, Atatürk ilkelerinin dayandığı aşağıdaki temel esaslardan hangisiyle ilişkilendirilebilir?
+
+**Şıklar:**
+- A) Millî Tarih Bilinci
+- B) Bağımsızlık ve Özgürlük
+- C) Millî Kültürün Geliştirilmesi
+- D) Akılcılık ve Bilimsellik
+
+**Doğru Cevap ve Çözüm:** Cevap: D. Metinde devlet ve toplum düzeninde kararların "akla, tekniğe, ilme ve mantığa" uygun olması gerektiği vurgulanmıştır. Din ve devlet işlerini ayırarak (laiklik) dogmaları reddetmek, doğrudan "Akılcılık ve Bilimsellik" esasına dayanır.
+
+---
+
+## 48. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Millî Birlik ve Beraberlik
+
+**Kazanım:** Atatürk ilkelerinin dayandığı temel esasları kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Türk Tarih Kurumu ve Türk Dil Kurumunun kurulması gibi somut adımlar verilerek; ortak dil, ortak kültür ve ortak tarih şuurunun toplumu nasıl bir arada tuttuğu (Millî birlik ve bütünlük) çıkarımı yaptırılır.
+
+**Soru Kökü:** Atatürk döneminde kurulan Türk Tarih Kurumu ve Türk Dil Kurumu ile Türk dilinin ve tarihinin köklü zenginlikleri bilimsel yollarla ortaya çıkarılmak istenmiştir. Atatürk, "Türkiye Cumhuriyeti'ni kuran Türkiye halkına Türk milleti denir." diyerek ırk, din ve mezhep ayrımı yapmaksızın aynı dili konuşan, aynı tarihi paylaşan ve ortak kültürel değerler etrafında sevgiyle birleşen herkesi tek bir millet olarak kabul etmiştir.
+
+Atatürk'ün bu adımları ve yaklaşımı aşağıdaki temel esaslardan hangisini güçlendirmeye yöneliktir?
+
+**Şıklar:**
+- A) Millî Birlik ve Bütünlük
+- B) Çağdaşlaşma İdeali
+- C) Millî Egemenlik
+- D) Yurtta Sulh, Cihanda Sulh
+
+**Doğru Cevap ve Çözüm:** Cevap: A. Dil, tarih ve kültür birliğini sağlamak, toplumdaki her türlü ayrımcılığı ortadan kaldırarak insanları ortak bir kimlik etrafında kenetlemeyi amaçlar. Bu çaba doğrudan "Millî Birlik ve Bütünlük (Beraberlik)" esası ile ilgilidir.
+
+---
+
+## 49. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Çağdaşlaşma ve Batılılaşma
+
+**Kazanım:** Toplumsal alanda yapılan inkılapların amaçlarını analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Takvim, saat, hafta sonu tatili ve ölçü birimlerinde yapılan köklü değişiklikler verilerek, bu değişimlerin "Batı ile uyum ve çağdaşlaşma" yönündeki ortak amacı sorgulanır.
+
+**Soru Kökü:** Cumhuriyetin ilk yıllarında toplumsal ve ticari hayatı düzenlemek amacıyla uluslararası takvim (miladi takvim) ve saat sistemine geçilmiş, arşın ve okka gibi bölgesel farklılıklar gösteren geleneksel ölçü birimleri kaldırılarak yerine metre ve kilogram kabul edilmiş, hafta sonu tatili cumadan pazara alınmış ve kılık kıyafette modern düzenlemelere gidilmiştir.
+
+Yapılan bu inkılapların **ortak amacı** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Ülke içindeki etnik grupların devlete olan bağlılığını artırmak
+- B) Devletin yönetim şeklini belirleyerek siyasi tartışmaları sonlandırmak
+- C) Batı devletleri ve çağdaş dünya ile olan ticari, sosyal ve resmî ilişkileri kolaylaştırmak
+- D) Geleneksel kurumların toplum üzerindeki etkinliğini daha da artırmak
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Takvim, saat, ölçü ve tatil günleri gibi alanlarda yapılan değişikliklerin asıl ve ortak amacı; Batılı ve çağdaş ülkelerle olan ticari ve diplomatik ilişkilerde ortaya çıkan ikilikleri/uyumsuzlukları ortadan kaldırmak, çağdaş dünya ile entegrasyonu sağlamaktır.
+
+---
+
+## 50. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Yurtta Sulh, Cihanda Sulh
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Milletler Cemiyetine Türkiye'nin özel bir davetle katılması kurgulanarak, bu durumun Türkiye'nin "Yurtta sulh, cihanda sulh" ilkesi kapsamında dünya barışına sağladığı katkı (sebep-sonuç) üzerinden test edilir.
+
+**Soru Kökü:** Milletler Cemiyeti, I. Dünya Savaşı'ndan sonra devletler arası sorunları barışçıl yollarla çözmek için kurulmuş bir örgüttü. Türkiye, Musul sorunu sırasında bu cemiyetin taraflı tutum sergilemesi nedeniyle uzun süre cemiyete mesafeli durmuştu. Ancak Türkiye'nin izlediği barışçıl diplomasi ve uluslararası alandaki saygınlığının giderek artması üzerine, İspanya’nın teklifi ve Yunanistan'ın desteğiyle 1932 yılında Türkiye, Milletler Cemiyetine özel olarak davet edilmiş ve üye olmuştur. 
+
+Türkiye'nin bu örgütün davetini kabul ederek üye olması, aşağıdaki Türk dış politikası ilkelerinden hangisinin somut bir uygulamasıdır?
+
+**Şıklar:**
+- A) Tam Bağımsızlık
+- B) Yurtta Sulh, Cihanda Sulh
+- C) Türk Kamuoyunu Dikkate Alma
+- D) Mütekabiliyet (Karşılıklılık)
+
+**Doğru Cevap ve Çözüm:** Cevap: B. Milletler Cemiyetinin kuruluş amacı uluslararası barışı korumaktır. Türkiye'nin geçmişteki haksızlıklara rağmen kin gütmeyerek küresel sorunların çözümüne diplomatik katkı sunmak için örgüte katılması, doğrudan Atatürk'ün "Yurtta Sulh, Cihanda Sulh" ilkesinin bir uygulamasıdır.
+
+---
+
+## 51. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Türk-Yunan Dostluğu
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Savaş meydanında düşman olan iki ülkenin (Türkiye-Yunanistan), mübadele sorununun çözümüyle dostluğa adım atması ve Venizelos'un Atatürk'ü Nobel Barış Ödülü'ne aday göstermesi olayının, başarılı bir diplomatik zafer olduğu çıkarımı yaptırılır.
+
+**Soru Kökü:** Kurtuluş Savaşı'nda birbirine karşı kanlı çarpışmalar yaşayan Türkiye ve Yunanistan, 1930 yılında aralarındaki "Nüfus Mübadelesi (Etabli)" sorununu barışçıl yöntemlerle çözerek sıcak bir dostluk dönemi başlatmıştır. Bu ilişkiler o kadar ilerlemiştir ki Yunanistan Başbakanı Elefterios Venizelos, 1934 yılında Mustafa Kemal Atatürk'ü "Dünya barışına yaptığı büyük katkılardan dolayı" Nobel Barış Ödülü'ne aday göstermiştir. 
+
+Birkaç yıl öncesine kadar savaşılan bir devletin lideri tarafından uluslararası bir barış ödüle aday gösterilmek, Türkiye'nin dış politikasıyla ilgili aşağıdakilerden hangisini kanıtlar niteliktedir?
+
+**Şıklar:**
+- A) Yunanistan'ın siyasi olarak Türkiye'nin himayesi altına girmeyi kabul ettiğini
+- B) Nüfus Mübadelesi sonucunda Yunanistan'da hiçbir Türk azınlık bırakılmadığını
+- C) Millî Mücadele'deki askerî zaferlerin, akılcı ve barışçıl diplomasiyle taçlandırılarak uluslararası saygınlık kazandırdığını
+- D) Türkiye'nin diğer Avrupalı devletlerle olan ikili ilişkilerinin tamamen sona erdiğini
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Savaştığı bir ülkenin başbakanı tarafından barış ödülüne aday gösterilmek; Atatürk'ün ve yeni Türk devletinin sorunları savaşarak değil masada (akılcı diplomasi ile) çözme iradesinin, uluslararası alanda ne denli büyük bir saygınlık kazandırdığını kanıtlar.
+
+---
+
+## 52. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Sadabat Paktı
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** İtalya ve Almanya'nın saldırgan politikalarının (II. Dünya Savaşı öncesi gerginlik), Orta Doğu'da yarattığı tehdide karşı Türkiye'nin doğu sınırlarını güvence altına alma hamlesi jeopolitik bağlamda sorgulanır.
+
+**Soru Kökü:** 1930'lu yılların ikinci yarısında İtalya’nın Habeşistan’ı işgal etmesi, Orta Doğu ile Doğu Akdeniz'de yayılmacı ve saldırgan bir politika izlemeye başlaması bölge ülkelerini ciddi şekilde tedirgin etmiştir. Bu durum karşısında muhtemel bir savaş ihtimaline karşı tedbir almak isteyen Türkiye; İran, Irak ve Afganistan ile bir araya gelerek 1937 yılında Sadabat Paktı'nı imzalamıştır. Bu pakt ile devletler, sınırlarına saygı göstereceklerini ve birbirlerinin iç işlerine karışmayacaklarını taahhüt etmişlerdir. 
+
+Bu bilgilere göre Sadabat Paktı'nın imzalanmasındaki **temel jeopolitik gerekçe** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) İtalya'nın ve diğer devletlerin saldırgan politikalarına karşı Türkiye'nin doğu sınırlarının güvenliğini sağlamak
+- B) Orta Doğu'daki zengin petrol yataklarını bölge ülkeleriyle ortaklaşa işlemek ve satmak
+- C) Sovyet Rusya'nın güneye inmesini engellemek amacıyla İngiltere ile yeni bir askerî ittifak kurmak
+- D) Milletler Cemiyetinin Orta Doğu'daki etkinliğini ve kararlarını tamamen geçersiz kılmak
+
+**Doğru Cevap ve Çözüm:** Cevap: A. Metinde açıkça belirtildiği gibi, İtalya'nın Doğu Akdeniz ve Orta Doğu'daki saldırgan politikaları yaklaşan II. Dünya Savaşı'nın habercisiydi. Türkiye, kendi doğu sınırlarının güvenliğini (Balkan Antantı'yla da batı sınırlarını) sağlamak için bölge ülkeleriyle Sadabat Paktı'nı imzalamıştır.
+
+---
+
+## 53. Soru Tipi: Demokrasiye Yönelik Tehditler / İzmir Suikastı
+
+**Kazanım:** Cumhuriyet rejimine ve demokratikleşmeye yönelik tehditleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** İttihatçıların ve rejim karşıtlarının Atatürk'ü öldürerek cumhuriyeti ve inkılapları yok etme hedefleri, İstiklal Mahkemelerinin devreye girmesi ve demokrasiye geçişin gecikmesi arasındaki sebep-sonuç ilişkisi ("hangi çıkarımı destekler" formatında) yorumlatılır.
+
+**Soru Kökü:** 1926 yılında inkılap karşıtlarından oluşan bir grup, Mustafa Kemal Paşa'ya İzmir gezisi sırasında bir suikast planlamış ancak eylemi gerçekleştiremeden yakalanarak İstiklal Mahkemelerinde yargılanmışlardır. Atatürk bu olay üzerine "Benim naçiz vücudum elbet bir gün toprak olacaktır ancak Türkiye Cumhuriyeti ilelebet payidar kalacaktır." sözünü söylemiştir. Yaşanan bu suikast girişimi ve ülkede oluşan güvensizlik ortamı, Türkiye'de çok partili siyasi hayata geçiş denemelerinin bir süre daha ertelenmesine neden olmuştur. 
+
+Yaşanan bu gelişmeler, aşağıdaki çıkarımlardan hangisini **destekler** niteliktedir?
+
+**Şıklar:**
+- A) İstiklal Mahkemelerinin bu suikast girişiminden sonra görevini tamamlayarak tamamen kapatıldığını
+- B) Çok partili siyasi hayatın bizzat İstiklal Mahkemelerinin aldığı bir hukuki kararla yasaklandığını
+- C) Cumhuriyet rejimine ve yeniliklere yönelik iç tehditlerin devam ettiğini, bu nedenle demokratikleşme adımlarının kesintiye uğradığını
+- D) Yeni kurulan devletin dış politikadaki sorunları bir kenara bırakarak yalnızca ekonomik reformlara odaklandığını
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Suikast girişiminin asıl amacı Atatürk'ün şahsında cumhuriyeti ve inkılapları (rejimi) yok etmektir (iç tehdit). Ortaya çıkan bu güvenlik zafiyeti, demokrasinin temel şartı olan "çok partili siyasi hayata" geçiş sürecinin de mecburen ertelenmesine (demokratik adımların kesintiye uğramasına) yol açtığı çıkarımını destekler.
+## 54. Soru Tipi: Lozan'da Çözülemeyen Sorunlar ve Çözümleri / Düyun-u Umumiye ve Osmanlı Borçları
+
+**Kazanım:** Lozan Barış Antlaşması’nın sağladığı kazanımları analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Düyun-u Umumiye'nin (Genel Borçlar İdaresi) devletin gelirlerine doğrudan el koyan yapısı anlatılarak, bu kurumun kaldırılmasının ekonomik bağımsızlık üzerindeki hayati etkisi vurgulanır. "Doğrudan ilgilidir" kalıbıyla "tam bağımsızlık ve ekonomik egemenlik" çıkarımı yaptırılır.
+
+**Soru Kökü:** Osmanlı Devleti'nin dış borçlarını tahsil etmek amacıyla alacaklı devletler tarafından kurulan Düyun-u Umumiye İdaresi, devletin en önemli gelir kaynaklarına doğrudan el koyduğu için zamanla Osmanlı'nın "ekonomik esaretinin" bir sembolü hâline gelmişti. Lozan Barış Antlaşması ile Düyun-u Umumiye İdaresi kapatılmış ve Osmanlı'dan kalan borçların, Osmanlı topraklarından ayrılan devletler arasında yüzölçümleri dikkate alınarak adil bir şekilde paylaştırılmasına karar verilmiştir. Türkiye ise kendi payına düşen borcu düzenli taksitler hâlinde ödemeyi kabul etmiştir. 
+
+Bu gelişme, yeni Türk devletinin aşağıdaki kavramlardan veya hedeflerinden hangisiyle **doğrudan** ilgilidir?
+
+**Şıklar:**
+- A) Millî sınırları genişleterek yeni ekonomik pazarlar bulmak
+- B) Uluslararası alanda askerî ve siyasi üstünlük kurmak
+- C) Ekonomik egemenliği ve tam bağımsızlığı sağlamak
+- D) Yabancı okulları tamamen devlet denetimi altına almak
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Düyun-u Umumiye'nin kaldırılması, yabancı devletlerin Türkiye'nin iç gelirlerine ve maliyesine müdahale etmesini bitirmiştir. Bu durum, Türkiye'nin kendi kaynakları üzerinde söz sahibi olmasını sağlayarak "ekonomik egemenlik (mali bağımsızlık)" ve dolayısıyla "tam bağımsızlık" hedefini doğrudan gerçekleştirmiştir.
+
+---
+
+## 55. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Laiklik
+
+**Kazanım:** Atatürk ilkelerinin dayandığı temel esasları kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Atatürk'ün bir sözünden hareketle dinin özünde mantığın yattığı ve devlet yönetiminde hurafelerin değil aklın yol gösterici olması gerektiği (akılcılık ve bilimsellik) esası üzerinden laiklik ilkesiyle bağlantı kurulur.
+
+**Soru Kökü:** Atatürk, "Bizim dinimiz en makul ve en doğal bir dindir. Ve ancak bundan dolayıdır ki son din olmuştur. Bir dinin doğal olması için akla, tekniğe, ilme ve mantığa uygun olması gerekir." sözleriyle dinin özünde hurafe ve körü körüne inancın değil, ilmin yattığını ifade etmiştir. Ayrıca Cumhuriyet döneminde, devlet yönetiminde kararların dogmalara göre değil; aklın, mantığın ve bilimin rehberliğinde alınması benimsenmiş, böylece din ve devlet işleri birbirinden ayrılarak aklın öncülüğü sağlanmıştır.
+
+Bu durum, Atatürk ilkelerinin dayandığı aşağıdaki temel esaslardan hangisiyle ilişkilendirilebilir?
+
+**Şıklar:**
+- A) Millî Tarih Bilinci
+- B) Bağımsızlık ve Özgürlük
+- C) Millî Kültürün Geliştirilmesi
+- D) Akılcılık ve Bilimsellik
+
+**Doğru Cevap ve Çözüm:** Cevap: D. Metinde devlet ve toplum düzeninde kararların "akla, tekniğe, ilme ve mantığa" uygun olması gerektiği vurgulanmıştır. Din ve devlet işlerini ayırarak (laiklik) dogmaları reddetmek, doğrudan "Akılcılık ve Bilimsellik" esasına dayanır.
+
+---
+
+## 56. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Millî Birlik ve Beraberlik
+
+**Kazanım:** Atatürk ilkelerinin dayandığı temel esasları kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Türk Tarih Kurumu ve Türk Dil Kurumunun kurulması gibi somut adımlar verilerek; ortak dil, ortak kültür ve ortak tarih şuurunun toplumu nasıl bir arada tuttuğu (Millî birlik ve bütünlük) çıkarımı yaptırılır.
+
+**Soru Kökü:** Atatürk döneminde kurulan Türk Tarih Kurumu ve Türk Dil Kurumu ile Türk dilinin ve tarihinin köklü zenginlikleri bilimsel yollarla ortaya çıkarılmak istenmiştir. Atatürk, "Türkiye Cumhuriyeti'ni kuran Türkiye halkına Türk milleti denir." diyerek ırk, din ve mezhep ayrımı yapmaksızın aynı dili konuşan, aynı tarihi paylaşan ve ortak kültürel değerler etrafında sevgiyle birleşen herkesi tek bir millet olarak kabul etmiştir.
+
+Atatürk'ün bu adımları ve yaklaşımı aşağıdaki temel esaslardan hangisini güçlendirmeye yöneliktir?
+
+**Şıklar:**
+- A) Millî Birlik ve Bütünlük
+- B) Çağdaşlaşma İdeali
+- C) Millî Egemenlik
+- D) Yurtta Sulh, Cihanda Sulh
+
+**Doğru Cevap ve Çözüm:** Cevap: A. Dil, tarih ve kültür birliğini sağlamak, toplumdaki her türlü ayrımcılığı ortadan kaldırarak insanları ortak bir kimlik etrafında kenetlemeyi amaçlar. Bu çaba doğrudan "Millî Birlik ve Bütünlük (Beraberlik)" esası ile ilgilidir.
+
+---
+
+## 57. Soru Tipi: Atatürk İlkelerinin Dayandığı Esaslar / Çağdaşlaşma ve Batılılaşma
+
+**Kazanım:** Toplumsal alanda yapılan inkılapların amaçlarını analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Takvim, saat, hafta sonu tatili ve ölçü birimlerinde yapılan köklü değişiklikler verilerek, bu değişimlerin "Batı ile uyum ve çağdaşlaşma" yönündeki ortak amacı sorgulanır.
+
+**Soru Kökü:** Cumhuriyetin ilk yıllarında toplumsal ve ticari hayatı düzenlemek amacıyla uluslararası takvim (miladi takvim) ve saat sistemine geçilmiş, arşın ve okka gibi bölgesel farklılıklar gösteren geleneksel ölçü birimleri kaldırılarak yerine metre ve kilogram kabul edilmiş, hafta sonu tatili cumadan pazara alınmış ve kılık kıyafette modern düzenlemelere gidilmiştir.
+
+Yapılan bu inkılapların **ortak amacı** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Ülke içindeki etnik grupların devlete olan bağlılığını artırmak
+- B) Devletin yönetim şeklini belirleyerek siyasi tartışmaları sonlandırmak
+- C) Batı devletleri ve çağdaş dünya ile olan ticari, sosyal ve resmî ilişkileri kolaylaştırmak
+- D) Geleneksel kurumların toplum üzerindeki etkinliğini daha da artırmak
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Takvim, saat, ölçü ve tatil günleri gibi alanlarda yapılan değişikliklerin asıl ve ortak amacı; Batılı ve çağdaş ülkelerle olan ticari ve diplomatik ilişkilerde ortaya çıkan ikilikleri/uyumsuzlukları ortadan kaldırmak, çağdaş dünya ile entegrasyonu sağlamaktır.
+
+---
+
+## 58. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Yurtta Sulh, Cihanda Sulh
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Milletler Cemiyetine Türkiye'nin özel bir davetle katılması kurgulanarak, bu durumun Türkiye'nin "Yurtta sulh, cihanda sulh" ilkesi kapsamında dünya barışına sağladığı katkı (sebep-sonuç) üzerinden test edilir.
+
+**Soru Kökü:** Milletler Cemiyeti, I. Dünya Savaşı'ndan sonra devletler arası sorunları barışçıl yollarla çözmek için kurulmuş bir örgüttü. Türkiye, Musul sorunu sırasında bu cemiyetin taraflı tutum sergilemesi nedeniyle uzun süre cemiyete mesafeli durmuştu. Ancak Türkiye'nin izlediği barışçıl diplomasi ve uluslararası alandaki saygınlığının giderek artması üzerine, İspanya’nın teklifi ve Yunanistan'ın desteğiyle 1932 yılında Türkiye, Milletler Cemiyetine özel olarak davet edilmiş ve üye olmuştur. 
+
+Türkiye'nin bu örgütün davetini kabul ederek üye olması, aşağıdaki Türk dış politikası ilkelerinden hangisinin somut bir uygulamasıdır?
+
+**Şıklar:**
+- A) Tam Bağımsızlık
+- B) Yurtta Sulh, Cihanda Sulh
+- C) Türk Kamuoyunu Dikkate Alma
+- D) Mütekabiliyet (Karşılıklılık)
+
+**Doğru Cevap ve Çözüm:** Cevap: B. Milletler Cemiyetinin kuruluş amacı uluslararası barışı korumaktır. Türkiye'nin geçmişteki haksızlıklara rağmen kin gütmeyerek küresel sorunların çözümüne diplomatik katkı sunmak için örgüte katılması, doğrudan Atatürk'ün "Yurtta Sulh, Cihanda Sulh" ilkesinin bir uygulamasıdır.
+
+---
+
+## 59. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Türk-Yunan Dostluğu
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Savaş meydanında düşman olan iki ülkenin (Türkiye-Yunanistan), mübadele sorununun çözümüyle dostluğa adım atması ve Venizelos'un Atatürk'ü Nobel Barış Ödülü'ne aday göstermesi olayının, başarılı bir diplomatik zafer olduğu çıkarımı yaptırılır.
+
+**Soru Kökü:** Kurtuluş Savaşı'nda birbirine karşı kanlı çarpışmalar yaşayan Türkiye ve Yunanistan, 1930 yılında aralarındaki "Nüfus Mübadelesi (Etabli)" sorununu barışçıl yöntemlerle çözerek sıcak bir dostluk dönemi başlatmıştır. Bu ilişkiler o kadar ilerlemiştir ki Yunanistan Başbakanı Elefterios Venizelos, 1934 yılında Mustafa Kemal Atatürk'ü "Dünya barışına yaptığı büyük katkılardan dolayı" Nobel Barış Ödülü'ne aday göstermiştir. 
+
+Birkaç yıl öncesine kadar savaşılan bir devletin lideri tarafından uluslararası bir barış ödüle aday gösterilmek, Türkiye'nin dış politikasıyla ilgili aşağıdakilerden hangisini kanıtlar niteliktedir?
+
+**Şıklar:**
+- A) Yunanistan'ın siyasi olarak Türkiye'nin himayesi altına girmeyi kabul ettiğini
+- B) Nüfus Mübadelesi sonucunda Yunanistan'da hiçbir Türk azınlık bırakılmadığını
+- C) Millî Mücadele'deki askerî zaferlerin, akılcı ve barışçıl diplomasiyle taçlandırılarak uluslararası saygınlık kazandırdığını
+- D) Türkiye'nin diğer Avrupalı devletlerle olan ikili ilişkilerinin tamamen sona erdiğini
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Savaştığı bir ülkenin başbakanı tarafından barış ödülüne aday gösterilmek; Atatürk'ün ve yeni Türk devletinin sorunları savaşarak değil masada (akılcı diplomasi ile) çözme iradesinin, uluslararası alanda ne denli büyük bir saygınlık kazandırdığını kanıtlar.
+
+---
+
+## 60. Soru Tipi: Atatürk Dönemi Türk Dış Politikası / Sadabat Paktı
+
+**Kazanım:** Atatürk Dönemi Türk dış politikasında yaşanan gelişmeleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** İtalya ve Almanya'nın saldırgan politikalarının (II. Dünya Savaşı öncesi gerginlik), Orta Doğu'da yarattığı tehdide karşı Türkiye'nin doğu sınırlarını güvence altına alma hamlesi jeopolitik bağlamda sorgulanır.
+
+**Soru Kökü:** 1930'lu yılların ikinci yarısında İtalya’nın Habeşistan’ı işgal etmesi, Orta Doğu ile Doğu Akdeniz'de yayılmacı ve saldırgan bir politika izlemeye başlaması bölge ülkelerini ciddi şekilde tedirgin etmiştir. Bu durum karşısında muhtemel bir savaş ihtimaline karşı tedbir almak isteyen Türkiye; İran, Irak ve Afganistan ile bir araya gelerek 1937 yılında Sadabat Paktı'nı imzalamıştır. Bu pakt ile devletler, sınırlarına saygı göstereceklerini ve birbirlerinin iç işlerine karışmayacaklarını taahhüt etmişlerdir. 
+
+Bu bilgilere göre Sadabat Paktı'nın imzalanmasındaki **temel jeopolitik gerekçe** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) İtalya'nın ve diğer devletlerin saldırgan politikalarına karşı Türkiye'nin doğu sınırlarının güvenliğini sağlamak
+- B) Orta Doğu'daki zengin petrol yataklarını bölge ülkeleriyle ortaklaşa işlemek ve satmak
+- C) Sovyet Rusya'nın güneye inmesini engellemek amacıyla İngiltere ile yeni bir askerî ittifak kurmak
+- D) Milletler Cemiyetinin Orta Doğu'daki etkinliğini ve kararlarını tamamen geçersiz kılmak
+
+**Doğru Cevap ve Çözüm:** Cevap: A. Metinde açıkça belirtildiği gibi, İtalya'nın Doğu Akdeniz ve Orta Doğu'daki saldırgan politikaları yaklaşan II. Dünya Savaşı'nın habercisiydi. Türkiye, kendi doğu sınırlarının güvenliğini (Balkan Antantı'yla da batı sınırlarını) sağlamak için bölge ülkeleriyle Sadabat Paktı'nı imzalamıştır.
+
+---
+
+## 61. Soru Tipi: Demokrasiye Yönelik Tehditler / İzmir Suikastı
+
+**Kazanım:** Cumhuriyet rejimine ve demokratikleşmeye yönelik tehditleri analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** İttihatçıların ve rejim karşıtlarının Atatürk'ü öldürerek cumhuriyeti ve inkılapları yok etme hedefleri, İstiklal Mahkemelerinin devreye girmesi ve demokrasiye geçişin gecikmesi arasındaki sebep-sonuç ilişkisi ("hangi çıkarımı destekler" formatında) yorumlatılır.
+
+**Soru Kökü:** 1926 yılında inkılap karşıtlarından oluşan bir grup, Mustafa Kemal Paşa'ya İzmir gezisi sırasında bir suikast planlamış ancak eylemi gerçekleştiremeden yakalanarak İstiklal Mahkemelerinde yargılanmışlardır. Atatürk bu olay üzerine "Benim naçiz vücudum elbet bir gün toprak olacaktır ancak Türkiye Cumhuriyeti ilelebet payidar kalacaktır." sözünü söylemiştir. Yaşanan bu suikast girişimi ve ülkede oluşan güvensizlik ortamı, Türkiye'de çok partili siyasi hayata geçiş denemelerinin bir süre daha ertelenmesine neden olmuştur. 
+
+Yaşanan bu gelişmeler, aşağıdaki çıkarımlardan hangisini **destekler** niteliktedir?
+
+**Şıklar:**
+- A) İstiklal Mahkemelerinin bu suikast girişiminden sonra görevini tamamlayarak tamamen kapatıldığını
+- B) Çok partili siyasi hayatın bizzat İstiklal Mahkemelerinin aldığı bir hukuki kararla yasaklandığını
+- C) Cumhuriyet rejimine ve yeniliklere yönelik iç tehditlerin devam ettiğini, bu nedenle demokratikleşme adımlarının kesintiye uğradığını
+- D) Yeni kurulan devletin dış politikadaki sorunları bir kenara bırakarak yalnızca ekonomik reformlara odaklandığını
+
+**Doğru Cevap ve Çözüm:** Cevap: C. Suikast girişiminin asıl amacı Atatürk'ün şahsında cumhuriyeti ve inkılapları (rejimi) yok etmektir (iç tehdit). Ortaya çıkan bu güvenlik zafiyeti, demokrasinin temel şartı olan "çok partili siyasi hayata" geçiş sürecinin de mecburen ertelenmesine (demokratik adımların kesintiye uğramasına) yol açtığı çıkarımını destekler.
+## 62. Soru Tipi: Millî Mücadele Hazırlık Dönemi / Amasya Genelgesi
+
+**Kazanım:** Millî Mücadele’nin hazırlık döneminde yapılan çalışmaları analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Amasya Genelgesi'ndeki "Milletin bağımsızlığını, yine milletin azim ve kararı kurtaracaktır." maddesi verilerek, bu cümlenin hem Kurtuluş Savaşı'nın "yöntemini" hem de ileride "millî egemenliğe" (rejimin değişeceğine) işaret ettiği çıkarımı yaptırılır.
+
+**Soru Kökü:** Mustafa Kemal Paşa tarafından hazırlanan Amasya Genelgesi'nde yer alan "Milletin bağımsızlığını, yine milletin azim ve kararı kurtaracaktır." maddesi, Millî Mücadele'nin en önemli dönüm noktalarından biridir.
+
+Bu maddeye bakılarak aşağıdakilerden hangisi **söylenemez**?
+
+**Şıklar:**
+- A) Kurtuluş Savaşı’nın mücadele yöntemi belirlenmiştir.
+- B) İleride millet egemenliğine dayalı yeni bir yönetime geçileceğinin ilk işareti verilmiştir.
+- C) Bağımsızlığın sağlanması için milletin gücüne ve kararlılığına güvenilmiştir.
+- D) Millî Mücadele’nin tek bir merkezden, İstanbul Hükûmeti tarafından yönetileceği ilan edilmiştir.
+
+**Doğru Cevap ve Çözüm:** Cevap: D. Amasya Genelgesi'nin bu maddesinde İstanbul Hükûmeti'ne değil, bizzat "milletin kendisine" (azim ve kararına) güvenilmiştir. Aksine, İstanbul Hükûmeti'nin sorumluluğunu yerine getiremediği belirtilerek milletin kendi kaderini kendisinin çizeceği (A, B ve C) vurgulanmıştır.
+
+---
+
+## 63. Soru Tipi: Millî Mücadele Dönemi / Tekalif-i Milliye Emirleri
+
+**Kazanım:** Sakarya Meydan Muharebesi’nin kazanılmasında ve Büyük Taarruz’a hazırlık sürecinde Türk milletinin maddi ve manevi katkılarını analiz eder.
+
+**Soru Nasıl Çalışır (Mekanizma):** Kütahya-Eskişehir Savaşları sonrasında ordunun ihtiyaçlarını karşılamak için halkın elindeki silah, yiyecek ve giyeceğin bir kısmını devlete vermesi üzerinden "topyekûn seferberlik ve dayanışma" kavramı sorgulanır.
+
+**Soru Kökü:** Kütahya-Eskişehir Savaşlarındaki kayıpların ardından Başkomutanlık yetkisini alan Mustafa Kemal Paşa, ordunun acil ihtiyaçlarını karşılamak amacıyla Tekalif-i Milliye Emirleri'ni yayımlamıştır. Bu emirlere göre halkın elindeki silah ve cephanenin teslim edilmesi, her ailenin bir askeri giydirmesi ve yiyecek maddelerinin bir kısmının bedeli sonradan ödenmek üzere devlete verilmesi istenmiştir. Türk halkı bu emirlere büyük bir fedakârlıkla uymuştur.
+
+Bu durum Türk milletiyle ilgili aşağıdaki kavramlardan hangisiyle **doğrudan** açıklanır?
+
+**Şıklar:**
+- A) Topyekûn seferberlik ve toplumsal dayanışma
+- B) Koşulsuz teslimiyet ve mandacılık
+- C) Ekonomik devletçilik ve sanayileşme
+- D) Uluslararası diplomasi ve mütekabiliyet
+
+**Doğru Cevap ve Çözüm:** Cevap: A. Sadece askerî birliklerin değil; sivil halkın da malıyla, mülküyle ve emeğiyle savaşa katılmasına ve ordusuna destek olmasına "topyekûn seferberlik (topyekûn savaş)" ve "toplumsal dayanışma" denir.
+
+---
+
+## 64. Soru Tipi: Eğitim ve Kültür Alanında İnkılaplar / Harf İnkılabı ve Millet Mektepleri
+
+**Kazanım:** Eğitim ve kültür alanında yapılan inkılapları ve gelişmeleri kavrar.
+
+**Soru Nasıl Çalışır (Mekanizma):** Yeni Türk harflerinin kabulü ve hemen ardından Millet Mekteplerinin açılması arasındaki sebep-sonuç ilişkisi kurulur. Yeniliğin sadece kâğıt üzerinde kalmaması, halka öğretilerek okuma yazma oranının artırılması hedefi test edilir.
+
+**Soru Kökü:** 1 Kasım 1928'de Latin alfabesi esas alınarak Yeni Türk Harfleri kabul edilmiştir. Ancak bu değişikliğin başarılı olabilmesi için yeni harflerin halka hızla öğretilmesi gerekiyordu. Bu amaçla 1929 yılında "Millet Mektepleri" adıyla yeni eğitim kurumları açılmış ve 16-45 yaş arasındaki tüm vatandaşların bu kurslara katılması zorunlu tutulmuştur. Mustafa Kemal Atatürk de "Başöğretmen" unvanıyla bizzat tahta başına geçerek halka yeni harfleri öğretmiştir.
+
+Buna göre Millet Mekteplerinin açılmasının **temel amacı** aşağıdakilerden hangisidir?
+
+**Şıklar:**
+- A) Ülkedeki yabancı okulların faaliyetlerini tamamen sonlandırmak
+- B) Yeni alfabeyi halka öğreterek ülkedeki okuma yazma oranını hızla artırmak
+- C) Avrupa devletleri ile olan siyasi ilişkileri daha modern hâle getirmek
+- D) Yükseköğretim kurumlarında bilimsel araştırmaları ve akademik çalışmaları başlatmak
+
+**Doğru Cevap ve Çözüm:** Cevap: B. Millet Mektepleri, okuma çağındaki çocuklardan ziyade yetişkin halka (16-45 yaş) yeni kabul edilen Türk harflerini öğretmek ve Osmanlı'dan devralınan çok düşük okuma yazma oranını hızla yukarı çekmek amacıyla açılmış yaygın eğitim kurumlarıdır.
