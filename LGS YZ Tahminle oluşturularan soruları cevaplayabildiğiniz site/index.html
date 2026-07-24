@@ -69,8 +69,6 @@
             background-attachment: fixed;
             color: var(--text);
             min-height: 100vh;
-            user-select: none;
-            -webkit-user-select: none;
         }
 
         @keyframes revealUp {
@@ -81,6 +79,41 @@
             0% { opacity: 0; transform: scale(0.96) translateY(10px); }
             100% { opacity: 1; transform: scale(1) translateY(0); }
         }
+
+        /* Skeleton Animations */
+        @keyframes skeletonPulse {
+            0% { background-color: rgba(255, 255, 255, 0.05); }
+            50% { background-color: rgba(255, 255, 255, 0.12); }
+            100% { background-color: rgba(255, 255, 255, 0.05); }
+        }
+        .skeleton {
+            animation: skeletonPulse 1.5s ease-in-out infinite !important;
+            color: transparent !important;
+            border-color: transparent !important;
+            background-image: none !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: initial !important;
+            -webkit-background-clip: initial !important;
+            user-select: none;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+        }
+        .skeleton * {
+            visibility: hidden !important;
+        }
+        .skeleton-text {
+            height: 1.1rem;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            background-color: var(--surface3);
+        }
+        .skeleton-btn {
+            height: 60px;
+            border-radius: var(--radius-sm);
+            background-color: var(--surface3);
+            margin-bottom: 12px;
+        }
+        body.reduced-sensory .skeleton { animation: none !important; background-color: var(--surface3) !important; }
 
         #flash-overlay {
             position: fixed;
@@ -114,7 +147,10 @@
         }
         .screen.active { 
             display: flex; 
-            animation: scaleIn 0.6s var(--spring) forwards;
+        }
+        
+        .no-transition, .no-transition * {
+            transition: none !important;
         }
 
         #main-menu {
@@ -388,12 +424,7 @@
             display: flex;
             align-items: center;
             color: var(--text);
-            animation: revealUp 0.4s var(--spring) both;
         }
-        .option-btn:nth-child(1) { animation-delay: 0.1s; }
-        .option-btn:nth-child(2) { animation-delay: 0.15s; }
-        .option-btn:nth-child(3) { animation-delay: 0.2s; }
-        .option-btn:nth-child(4) { animation-delay: 0.25s; }
 
         .option-btn:hover:not(:disabled) {
             border-color: var(--primary);
@@ -483,29 +514,42 @@
             .stat-value { font-size: 1.3rem; }
             .menu-btn { padding: 14px; }
         }
+
+        /* Reduced Sensory Overrides */
+        body.reduced-sensory .menu-btn:hover { box-shadow: none !important; transform: none !important; border-color: var(--border) !important; background: var(--surface3) !important; }
+        body.reduced-sensory .menu-btn { animation: none !important; }
+        body.reduced-sensory .menu-btn::before { display: none !important; }
+        body.reduced-sensory .logo-icon { animation: none !important; filter: none !important; }
+        body.reduced-sensory #main-menu h1 { animation: none !important; filter: none !important; }
+        body.reduced-sensory .subtitle { animation: none !important; }
     </style>
 </head>
 <body>
+<script>
+    if (localStorage.getItem('sensorySensitiveMode') !== 'false') {
+        document.body.classList.add('reduced-sensory');
+    }
+</script>
 
 <div id="flash-overlay"></div>
 
 <div id="modal-overlay">
     <div class="modal-box">
-        <h2 style="color: var(--danger);">⚠ TÜM VERİLER SİLİNECEK</h2>
-        <p style="margin: 12px 0;">Doğru/yanlış ilerlemeniz kalıcı olarak sıfırlanır. Geri alınamaz!</p>
+        <h2 style="color: var(--text-heading);">Sıfırlama Onayı</h2>
+        <p style="margin: 12px 0; color: var(--text-secondary);">Tüm doğru/yanlış ilerlemeniz sıfırlanacak. Emin misiniz?</p>
         <div class="modal-buttons" style="display: flex; gap: 12px; margin-top: 20px;">
-            <button class="modal-btn btn-deny" style="flex:1; background: #333; color:white; border: none; padding: 12px; border-radius: 40px; font-weight: bold;" onclick="closeResetModal()">REDDET</button>
-            <button class="modal-btn btn-accept" style="flex:1; background: var(--danger); color:white; border: none; border-radius: 40px; font-weight: bold;" onclick="confirmReset()">SİL</button>
+            <button class="modal-btn btn-deny" style="flex:1; background: var(--surface3); color: var(--text); border: 1px solid var(--border); padding: 12px; border-radius: var(--radius-sm); font-weight: bold; cursor: pointer;" onclick="closeResetModal()">İPTAL</button>
+            <button class="modal-btn btn-accept" style="flex:1; background: var(--danger); color: white; border: none; border-radius: var(--radius-sm); font-weight: bold; cursor: pointer;" onclick="confirmReset()">SIFIRLA</button>
         </div>
     </div>
 </div>
 
 <div id="main-menu" class="screen active">
-    <div class="logo-icon">🎯</div>
-    <h1>LGS ÇÖZÜM</h1>
-    <p class="subtitle">akıllı pratik · sesli geri bildirim · akıllı devam</p>
+    <div class="logo-icon skeleton" style="border-radius: 50%;">🎯</div>
+    <h1 class="skeleton" style="border-radius: 8px;">LGS ÇÖZÜM</h1>
+    <p class="subtitle skeleton" style="border-radius: 4px;">akıllı pratik · sesli geri bildirim · akıllı devam</p>
 
-    <div class="stats-box">
+    <div class="stats-box skeleton">
         <div class="stats-row-grid">
             <div class="stat-item"><div class="stat-label">📌 ÇÖZÜLEN</div><div class="stat-value" id="main-total-answered">0</div></div>
             <div class="stat-item"><div class="stat-label">✅ DOĞRU</div><div class="stat-value success" id="main-total-correct">0</div></div>
@@ -515,16 +559,27 @@
         <div style="font-size:0.7rem; text-align:center; margin-top:10px; color:var(--text-secondary);">⚡ Başarı = (Doğru / Çözülen) × 100</div>
     </div>
 
-    <button class="menu-btn" onclick="startSubject('matematik')"><span><span class="subject-icon">📐</span> MATEMATİK</span><span class="percentage-badge" id="pct-matematik">%0</span></button>
-    <button class="menu-btn" onclick="startSubject('turkce')"><span><span class="subject-icon">📖</span> TÜRKÇE</span><span class="percentage-badge" id="pct-turkce">%0</span></button>
-    <button class="menu-btn" onclick="startSubject('fen')"><span><span class="subject-icon">🔬</span> FEN BİLİMLERİ</span><span class="percentage-badge" id="pct-fen">%0</span></button>
-    <button class="menu-btn" onclick="startSubject('din')"><span><span class="subject-icon">🕌</span> DİN KÜLTÜRÜ</span><span class="percentage-badge" id="pct-din">%0</span></button>
-    <button class="menu-btn" onclick="startSubject('sosyal')"><span><span class="subject-icon">🌍</span> SOSYAL BİLGİLER</span><span class="percentage-badge" id="pct-sosyal">%0</span></button>
-    <button class="menu-btn" onclick="startSubject('ingilizce')"><span><span class="subject-icon">🇬🇧</span> İNGİLİZCE</span><span class="percentage-badge" id="pct-ingilizce">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('matematik')"><span><span class="subject-icon">📐</span> MATEMATİK</span><span class="percentage-badge" id="pct-matematik">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('turkce')"><span><span class="subject-icon">📖</span> TÜRKÇE</span><span class="percentage-badge" id="pct-turkce">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('fen')"><span><span class="subject-icon">🔬</span> FEN BİLİMLERİ</span><span class="percentage-badge" id="pct-fen">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('din')"><span><span class="subject-icon">🕌</span> DİN KÜLTÜRÜ</span><span class="percentage-badge" id="pct-din">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('sosyal')"><span><span class="subject-icon">🌍</span> SOSYAL BİLGİLER</span><span class="percentage-badge" id="pct-sosyal">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('ingilizce')"><span><span class="subject-icon">🇬🇧</span> İNGİLİZCE</span><span class="percentage-badge" id="pct-ingilizce">%0</span></button>
 
-    <button class="menu-btn analytics-btn" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
-    <button class="menu-btn reset-btn" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
-    <div style="position:relative; width:100%;" id="source-dropdown-wrap">
+    <button class="menu-btn analytics-btn skeleton" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
+    <button class="menu-btn reset-btn skeleton" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
+    
+    <div class="skeleton" style="background: var(--surface2); border: 1px solid var(--border); padding: 18px 24px; border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <span style="font-weight: 700; color: var(--text-heading); font-family: 'Outfit', sans-serif; letter-spacing: 1.5px; font-size: 1.05rem;"><span class="subject-icon" style="font-size: 1.3rem;">👁️</span> ANİMASYONLARI KAPALI TUT</span>
+        <label style="position: relative; display: inline-block; width: 54px; height: 28px; cursor: pointer;">
+            <input type="checkbox" id="main-sensory-toggle" onchange="toggleSensitiveMode(this.checked)" style="opacity: 0; width: 0; height: 0; position: absolute;">
+            <span id="toggle-bg" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--surface3); transition: .4s; border-radius: 34px; border: 1px solid var(--border);">
+                <span id="toggle-knob" style="position: absolute; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: var(--text-secondary); transition: .4s; border-radius: 50%;"></span>
+            </span>
+        </label>
+    </div>
+
+    <div class="skeleton" style="position:relative; width:100%;" id="source-dropdown-wrap">
         <button class="menu-btn" onclick="toggleSourceMenu()" style="border-color: var(--border); justify-content:center; gap:8px;">
             <span>📂 Kaynaklar & Güncellemeler</span><span id="source-arrow">▼</span>
         </button>
@@ -586,7 +641,11 @@
         </div>
     </div>
     <div class="quiz-content">
-        <div class="question-text math" id="question-text">Sorular yükleniyor...</div>
+        <div class="question-text math" id="question-text">
+            <div class="skeleton skeleton-text" style="width: 95%;"></div>
+            <div class="skeleton skeleton-text" style="width: 100%;"></div>
+            <div class="skeleton skeleton-text" style="width: 85%;"></div>
+        </div>
         <div class="options-container" id="options-container"></div>
         <div class="bottom-nav">
             <button class="nav-btn" id="prev-btn">◀ ÖNCEKİ</button>
@@ -604,6 +663,7 @@
     const AudioContext = window.AudioContext || window.webkitAudioContext;
     let audioCtx;
     function playSound(isCorrect) {
+        if (localStorage.getItem('sensorySensitiveMode') !== 'false') return;
         try {
             if (!audioCtx) audioCtx = new AudioContext();
             if (audioCtx.state === 'suspended') audioCtx.resume();
@@ -735,10 +795,15 @@
 
     function updateMainScore() {
         const stats = getOverallStats();
-        document.getElementById('main-total-answered').innerText = stats.totalSolved;
-        document.getElementById('main-total-correct').innerText = stats.totalCorrect;
-        document.getElementById('main-total-wrong').innerText = stats.totalWrong;
-        document.getElementById('main-percentage').innerText = stats.overallPercent + '%';
+        const ans = document.getElementById('main-total-answered');
+        const cor = document.getElementById('main-total-correct');
+        const wrg = document.getElementById('main-total-wrong');
+        const pct = document.getElementById('main-percentage');
+        
+        if (ans) { ans.innerText = stats.totalSolved; ans.classList.remove('skeleton'); }
+        if (cor) { cor.innerText = stats.totalCorrect; cor.classList.remove('skeleton'); }
+        if (wrg) { wrg.innerText = stats.totalWrong; wrg.classList.remove('skeleton'); }
+        if (pct) { pct.innerText = stats.overallPercent + '%'; pct.classList.remove('skeleton'); }
     }
 
     function updateSubjectScore() {
@@ -762,14 +827,37 @@
             if (badge) {
                 badge.innerText = `%${pct}`;
                 badge.style.color = pct >= 70 ? '#3cb371' : (pct >= 40 ? '#e5a840' : '#e0556a');
+                badge.classList.remove('skeleton');
             }
         });
     }
 
     function showAnalytics() {
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
-        document.getElementById('analytics-screen').classList.add('active');
-        renderAnalytics();
+        const screen = document.getElementById('analytics-screen');
+        screen.classList.add('active');
+        
+        screen.querySelector('h1').classList.add('skeleton');
+        screen.querySelector('.subtitle').classList.add('skeleton');
+        
+        const container = document.getElementById('analytics-container');
+        const totalBox = document.getElementById('analytics-total-box');
+        container.innerHTML = `
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+        `;
+        totalBox.innerHTML = '<div class="skeleton" style="height: 140px; border-radius: var(--radius);"></div>';
+        
+        setTimeout(() => {
+            document.body.classList.add('no-transition');
+            screen.querySelector('h1').classList.remove('skeleton');
+            screen.querySelector('.subtitle').classList.remove('skeleton');
+            document.querySelectorAll('#analytics-screen .skeleton').forEach(el => el.classList.remove('skeleton'));
+            void document.body.offsetHeight; // force reflow
+            document.body.classList.remove('no-transition');
+            renderAnalytics();
+        }, 400);
     }
     
     function renderAnalytics() {
@@ -862,6 +950,23 @@
         }
     }
 
+    function setQuizSkeleton(isSkeleton) {
+        const quizScreen = document.getElementById('quiz-screen');
+        const els = quizScreen.querySelectorAll('.back-btn, .subject-info, #prev-btn, .q-input-group, #next-btn');
+        
+        if (!isSkeleton) document.body.classList.add('no-transition');
+        
+        els.forEach(el => {
+            if (isSkeleton) el.classList.add('skeleton');
+            else el.classList.remove('skeleton');
+        });
+        
+        if (!isSkeleton) {
+            void document.body.offsetHeight; // force reflow
+            document.body.classList.remove('no-transition');
+        }
+    }
+
     async function startSubject(subject) {
         currentSubject = subject;
         if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
@@ -871,8 +976,20 @@
         document.getElementById('subject-title').innerText = subject.toUpperCase();
         updateSubjectScore();
 
-        document.getElementById('question-text').innerHTML = '<span style="color:#aaa;">⏳ Sorular hazırlanıyor...</span>';
-        document.getElementById('options-container').innerHTML = '';
+        setQuizSkeleton(true);
+
+        document.getElementById('question-text').innerHTML = `
+            <div class="skeleton skeleton-text" style="width: 95%;"></div>
+            <div class="skeleton skeleton-text" style="width: 100%;"></div>
+            <div class="skeleton skeleton-text" style="width: 85%;"></div>
+            <div class="skeleton skeleton-text" style="width: 60%;"></div>
+        `;
+        document.getElementById('options-container').innerHTML = `
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+        `;
         try {
             const response = await fetch(`${subject}.txt?v=${Date.now()}`);
             if (!response.ok) throw new Error(`${subject}.txt bulunamadı`);
@@ -894,11 +1011,24 @@
             
             renderQuestion();
         } catch (err) {
-            document.getElementById('question-text').innerHTML = `❌ Hata: ${err.message}`;
+            setQuizSkeleton(false);
+            document.getElementById('question-text').innerHTML = `
+                <div style="color:var(--danger); text-align:center; padding: 20px;">
+                    ❌ Hata: ${err.message}
+                    <div style="font-size:0.8rem; margin-top:10px; color:var(--text-secondary);">
+                        Tarayıcınız dosya sisteminden (file://) veri çekilmesini engelledi. Lütfen bir yerel sunucu kullanın.
+                    </div>
+                </div>
+            `;
+            document.getElementById('options-container').innerHTML = '';
         }
     }
 
-    function renderQuestion() {
+    let currentRenderId = 0;
+    
+    async function renderQuestion(skipSkeleton = false) {
+        const renderId = ++currentRenderId;
+        if (!skipSkeleton) setQuizSkeleton(true);
         answered = false;
         const total = currentQuestions.length;
         document.getElementById('total-q').innerText = total;
@@ -925,12 +1055,33 @@
         const questionEl = document.getElementById('question-text');
         const optsDiv = document.getElementById('options-container');
         
-        if (window.MathJax && window.MathJax.typesetClear) {
-            window.MathJax.typesetClear([questionEl, optsDiv]);
+        if (!skipSkeleton) {
+            questionEl.innerHTML = `
+                <div class="skeleton skeleton-text" style="width: 95%;"></div>
+                <div class="skeleton skeleton-text" style="width: 100%;"></div>
+                <div class="skeleton skeleton-text" style="width: 85%;"></div>
+                <div class="skeleton skeleton-text" style="width: 60%;"></div>
+            `;
+            optsDiv.innerHTML = `
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+            `;
         }
         
-        questionEl.innerHTML = q.text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-        optsDiv.innerHTML = '';
+        let staging = document.getElementById('math-staging');
+        if (!staging) {
+            staging = document.createElement('div');
+            staging.id = 'math-staging';
+            staging.style.display = 'none';
+            document.body.appendChild(staging);
+        }
+        
+        const stagingQ = document.createElement('div');
+        stagingQ.innerHTML = q.text.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        
+        const stagingOpts = document.createElement('div');
         const saved = userProgress[currentSubject]?.[currentIndex];
         ['A','B','C','D'].forEach(key => {
             if (!q.options[key]) return;
@@ -949,12 +1100,31 @@
             } else {
                 btn.onclick = () => selectOption(key);
             }
-            optsDiv.appendChild(btn);
+            stagingOpts.appendChild(btn);
         });
-        if (saved) answered = true;
         
-        const quizScreen = document.getElementById('quiz-screen');
-        renderMath(quizScreen);
+        staging.innerHTML = '';
+        staging.appendChild(stagingQ);
+        staging.appendChild(stagingOpts);
+        
+        if (window.MathJax && window.MathJax.typesetPromise) {
+            window.MathJax.typesetClear([staging]);
+            try {
+                await window.MathJax.typesetPromise([staging]);
+            } catch(e) {}
+        }
+        
+        if (!skipSkeleton) await new Promise(r => setTimeout(r, 200));
+        if (renderId !== currentRenderId) return;
+        
+        questionEl.innerHTML = '';
+        while (stagingQ.firstChild) questionEl.appendChild(stagingQ.firstChild);
+        optsDiv.innerHTML = '';
+        while (stagingOpts.firstChild) optsDiv.appendChild(stagingOpts.firstChild);
+        
+        if (!skipSkeleton) setQuizSkeleton(false);
+        
+        if (saved) answered = true;
         updateSubjectScore();
     }
 
@@ -964,15 +1134,17 @@
         const q = currentQuestions[currentIndex];
         const isCorrect = (selected === q.correct);
         playSound(isCorrect);
-        const overlay = document.getElementById('flash-overlay');
-        overlay.className = isCorrect ? 'flash-green' : 'flash-red';
-        setTimeout(() => overlay.className = '', 380);
+        if (localStorage.getItem('sensorySensitiveMode') === 'false') {
+            const overlay = document.getElementById('flash-overlay');
+            overlay.className = isCorrect ? 'flash-green' : 'flash-red';
+            setTimeout(() => overlay.className = '', 380);
+        }
 
         if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
         userProgress[currentSubject][currentIndex] = { selected, isCorrect };
         if (!userProgress[currentSubject]._total) userProgress[currentSubject]._total = currentQuestions.length;
         saveProgress();
-        renderQuestion();
+        renderQuestion(true);
     }
 
     // NAVIGASYON
@@ -1008,20 +1180,65 @@
         updateAllUI();
     }
 
-    window.onload = () => {
-        updateAllUI();
-        const subjects = ['matematik','turkce','fen','din','sosyal','ingilizce'];
-        let dirty = false;
-        for (let sub of subjects) {
-            if (userProgress[sub] && !userProgress[sub]._total) {
-                const keys = Object.keys(userProgress[sub]).filter(k => k !== '_total' && !isNaN(k));
-                if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
+    function toggleSensitiveMode(isSensitive) {
+        localStorage.setItem('sensorySensitiveMode', isSensitive ? 'true' : 'false');
+        document.body.classList.toggle('reduced-sensory', isSensitive);
+        updateSensitiveToggleUI(isSensitive, false);
+    }
+    
+    function updateSensitiveToggleUI(isSensitive, noAnimate = false) {
+        const knob = document.getElementById('toggle-knob');
+        const bg = document.getElementById('toggle-bg');
+        const checkbox = document.getElementById('main-sensory-toggle');
+        if (checkbox) checkbox.checked = isSensitive;
+        if (knob && bg) {
+            if (noAnimate) {
+                knob.style.transition = 'none';
+                bg.style.transition = 'none';
+            } else {
+                knob.style.transition = '.4s';
+                bg.style.transition = '.4s';
+            }
+            if (isSensitive) {
+                knob.style.transform = 'translateX(26px)';
+                knob.style.backgroundColor = '#fff';
+                bg.style.backgroundColor = 'var(--primary)';
+                bg.style.borderColor = 'var(--primary)';
+            } else {
+                knob.style.transform = 'translateX(0)';
+                knob.style.backgroundColor = 'var(--text-secondary)';
+                bg.style.backgroundColor = 'var(--surface3)';
+                bg.style.borderColor = 'var(--border)';
             }
         }
-        if (!userProgress._meta) userProgress._meta = {};
-        if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
-        if (dirty) saveProgress();
-        renderMath(document.getElementById('main-menu'));
+    }
+
+    window.onload = () => {
+        const sensitiveMode = localStorage.getItem('sensorySensitiveMode') !== 'false';
+        updateSensitiveToggleUI(sensitiveMode, true);
+        
+        updateAllUI();
+        
+        // Add a slight delay to allow skeleton screen to be visible for aesthetics
+        setTimeout(() => {
+            document.body.classList.add('no-transition');
+            document.querySelectorAll('#main-menu .skeleton').forEach(el => el.classList.remove('skeleton'));
+            void document.body.offsetHeight;
+            document.body.classList.remove('no-transition');
+            
+            const subjects = ['matematik','turkce','fen','din','sosyal','ingilizce'];
+            let dirty = false;
+            for (let sub of subjects) {
+                if (userProgress[sub] && !userProgress[sub]._total) {
+                    const keys = Object.keys(userProgress[sub]).filter(k => k !== '_total' && !isNaN(k));
+                    if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
+                }
+            }
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            if (dirty) saveProgress();
+            renderMath(document.getElementById('main-menu'));
+        }, 400);
     };
 </script>
 </body>
