@@ -1,0 +1,472 @@
+## 1. Soru Tipi: Paragraf / Özellik Eşleştirme (Personal Traits)
+**Soru Kökü:** Read the text and answer the question.
+
+Hi, I am Sarah. I have a best friend, Emily. We share all our secrets because I know she never tells them to anyone. She always backs me up when I need her. Also, she easily makes friends because she always smiles and makes jokes. However, she never changes her mind.
+
+Which of the following does NOT describe Emily?
+**Şıklar:**
+- A) Reliable
+- B) Amusing
+- C) Stubborn
+- D) Laid-back
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde Emily'nin sır tuttuğu ve destek olduğu (reliable), insanları güldürdüğü (amusing) ve fikrini hiç değiştirmediği (stubborn) belirtilmiştir. Rahat/umursamaz (laid-back) olduğuna dair bir bilgi yoktur.
+
+## 2. Soru Tipi: Davet ve Mazeret (Accepting, Refusing, Excuses)
+**Soru Kökü:** Mark: I am organizing a movie night at my house on Sunday. Would you like to join?
+
+Tom: That sounds awesome, but my cousins are coming over.
+Lisa: I'd love to, but I can't.
+John: Great idea! I will bring some popcorn.
+Anna: I am sorry, but I have to finish my science project.
+
+Who refuses the invitation with NO excuse?
+**Şıklar:**
+- A) Tom
+- B) Lisa
+- C) John
+- D) Anna
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Tom kuzenlerinin geleceğini, Anna projesi olduğunu belirterek mazeret sunmuştur. John daveti kabul etmiştir. Lisa reddetmiş fakat herhangi bir mazeret belirtmemiştir.
+
+## 3. Soru Tipi: Yemek Tarifi ve Pişirme Yöntemleri (In The Kitchen)
+**Soru Kökü:** Read the recipe and answer the question.
+
+How to make an omelette:
+First, put some oil in a pan and heat it.
+Second, crack two eggs into a bowl and mix them.
+Then, add some salt and cheese into the bowl.
+After that, pour the mixture into the hot pan.
+Finally, cook it for 3 minutes and serve hot.
+
+Which of the following questions does NOT have an answer in the recipe?
+**Şıklar:**
+- A) How long does it take to cook?
+- B) What are the ingredients?
+- C) Which cooking method do we use?
+- D) How much cheese do we need?
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Metinde pişirme süresi (3 minutes), malzemeler (oil, eggs, salt, cheese) ve pişirme yöntemi (hot pan / fry) yer almaktadır. Ancak ne kadar peynir ekleneceği belirtilmemiştir.
+
+## 4. Soru Tipi: Telefon Görüşmesi (On The Phone)
+**Soru Kökü:** Secretary: Hello, Mr. Smith's office.
+Mr. Black: Hello, this is David Black. Can I talk to Mr. Smith, please?
+Secretary: I am sorry, but he is in a meeting right now. ----?
+Mr. Black: Yes, please. Can you tell him to call me back?
+
+Which of the following completes the conversation?
+**Şıklar:**
+- A) Would you like to leave a message
+- B) Can you hold on a moment
+- C) Could you please repeat that
+- D) May I speak to him later
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Bay Black, "Evet, lütfen. Beni geri aramasını söyler misiniz?" diyerek mesaj bırakmaktadır. Sekreterin sorusu "Mesaj bırakmak ister misiniz?" olmalıdır.
+
+## 5. Soru Tipi: Grafik ve Tablo Okuma (Internet Habits)
+**Soru Kökü:** A researcher asked 100 teenagers about what they do on the Internet. Here are the results:
+- Playing online games: 45
+- Following online courses: 15
+- Using social media: 30
+- Reading the news: 10
+
+Which of the following is CORRECT according to the results?
+**Şıklar:**
+- A) More than half of the teens play online games.
+- B) Teens use the Internet mostly for education.
+- C) Using social media is more popular than reading the news.
+- D) Following online courses is the least popular activity among teens.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Sosyal medya kullanımı (30), haber okumaktan (10) daha popülerdir. Oyun oynayanlar %45'tir (yarıdan fazla değil). En az popüler olan eğitim değil, haber okumaktır.
+
+## 6. Soru Tipi: Tercihler ve Nedenleri (Extreme Sports)
+**Soru Kökü:** Jack loves extreme sports. He likes being in the air and feeling the adrenaline. He doesn't like water sports or indoor activities. He has $100 for an activity this weekend. 
+- Scuba Diving: $80
+- Skydiving: $90
+- Caving: $50
+- Canoeing: $60
+
+Which of the following activities is suitable for Jack?
+**Şıklar:**
+- A) Scuba Diving
+- B) Skydiving
+- C) Caving
+- D) Canoeing
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Jack havada olmayı seviyor, su sporlarını ve kapalı alan sporlarını sevmiyor. Bütçesi $100'dır. Tüm şartları sağlayan tek spor "Skydiving"dir.
+
+## 7. Soru Tipi: Tatil Tercihleri ve Broşür İnceleme (Tourism)
+**Soru Kökü:** Read the brochure and answer the question.
+
+VISIT CAPPADOCIA!
+- Enjoy the hot air balloon ride at sunrise.
+- Taste traditional Turkish dishes.
+- Stay in historical cave hotels.
+- $200 per person for 3 days.
+
+Which of the following questions does NOT have an answer in the brochure?
+**Şıklar:**
+- A) Where can visitors stay?
+- B) How can visitors go to Cappadocia?
+- C) How much does the tour cost?
+- D) What kind of activities can visitors do?
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Broşürde nerede kalınacağı (cave hotels), ücret ($200) ve aktiviteler (balloon ride, tasting dishes) belirtilmiştir. Ancak Kapadokya'ya nasıl gidileceği ile ilgili bilgi yoktur.
+
+## 8. Soru Tipi: Ev İşleri ve Sorumluluklar (Chores)
+**Soru Kökü:** Look at the table showing the household chores in the Taylor family.
+
+Mr. Taylor: Mowing the lawn, washing the car.
+Mrs. Taylor: Cooking the meals, doing the laundry.
+Jane: Dusting the furniture, making the beds.
+Mike: Taking out the garbage, loading the dishwasher.
+
+Which of the following is TRUE according to the table?
+**Şıklar:**
+- A) Mr. Taylor is responsible for indoor chores.
+- B) Jane has to do the chores in the kitchen.
+- C) Mrs. Taylor is in charge of preparing food.
+- D) Mike's duties are outside the house only.
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Mrs. Taylor yemekleri pişirmekle (cooking the meals = preparing food) görevlidir. Mr. Taylor'ın görevleri bahçededir (indoor değil). Mike'ın görevleri sadece dışarıda değildir.
+
+## 9. Soru Tipi: Bilimsel Gelişmeler ve Biyografi (Science)
+**Soru Kökü:** Marie Curie was a famous scientist. She was born in Poland in 1867. She moved to France to study Physics and Mathematics. She discovered radium and polonium. She won the Nobel Prize twice. She died in 1934 because of radiation.
+
+According to the text, Marie Curie ----.
+**Şıklar:**
+- A) got awards for her scientific work
+- B) lived all her life in Poland
+- C) discovered the structure of DNA
+- D) had an unsuccessful career in France
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Metinde "She won the Nobel Prize twice" ifadesi, bilimsel çalışmaları için ödül aldığını gösterir.
+
+## 10. Soru Tipi: Doğal Afetler (Natural Forces)
+**Soru Kökü:** Read the news report below.
+
+"It rained heavily for three days in the city center. The water level in the rivers increased suddenly. The streets and houses were full of water. People had to wait on the roofs of their houses to survive. Rescue teams used boats to save them."
+
+Which of the following natural disasters is the news report about?
+**Şıklar:**
+- A) Earthquake
+- B) Avalanche
+- C) Flood
+- D) Drought
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Haberde şiddetli yağmur, su seviyesinin artması ve botlarla kurtarma anlatılmaktadır. Bu "Flood" (Sel) afetidir.
+
+## 11. Soru Tipi: Davet ve Mazeret (Accepting, Refusing, Excuses)
+**Soru Kökü:** Read the text messages and answer the question.
+
+Salome: "Hi, Tommy. I'm celebrating my birthday on Saturday. You're invited, too."
+Tommy: "Oh I'd love to but I have to attend Kate's art exhibition. My flight ticket is ready."
+Salome: "So, you'll miss the party. Hope you enjoy the event!"
+Tommy: "Thanks for inviting me! Wishing you a wonderful birthday!"
+
+According to the dialogue above, which of the following is Tommy's plan for this weekend?
+**Şıklar:**
+- A) Tommy is going to join Salome's birthday party.
+- B) Tommy will attend his cousin's wedding ceremony.
+- C) Tommy and Salome are going to attend the same event.
+- D) Tommy is going to travel to see his mate's paintings.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Tommy, "Kate'in sanat sergisine katılmalıyım, uçak biletim hazır" diyerek arkadaşının resimlerini görmek için seyahat edeceğini belirtmiştir.
+
+## 12. Soru Tipi: Kişilik Özellikleri (Personal Traits)
+**Soru Kökü:** Look at the graphic about Mollie's personality traits.
+
+Mollie is: Fair, Polite, Honest, Trustworthy, Patient.
+
+Which of the following is NOT related to Mollie's personality?
+**Şıklar:**
+- A) Everybody always counts on her because she keeps secrets.
+- B) She always says "please" and behaves in a friendly way.
+- C) She always tells the truth to her friends.
+- D) She easily gets angry when she has to wait for a long time.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** D şıkkında "beklemek zorunda kaldığında kolayca sinirlenir" (impatient) denmektedir, ancak Mollie sabırlıdır (Patient).
+
+## 13. Soru Tipi: Afiş ve Etkinlik İnceleme (Events and Invitations)
+**Soru Kökü:** Read the poster below and answer the question.
+
+MUSIC FESTIVAL
+8 JUNE 2025
+* Juliana Silva  * Samira Hadid  * Cia Rodriguez
+* Pedro Fernandes  * Lorna Alvarado  * Isabel Mercado
+Hartmann Road, Sun Street 126, London, England
+BUY TICKETS ONLINE NOW (www.musicfestivalsite.com)
+
+Which of the following questions has an answer in the poster above?
+**Şıklar:**
+- A) How long is the concert?
+- B) What time is the music performance?
+- C) Where is the music festival?
+- D) How much is a ticket?
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Afişte festivalin yeri (Hartmann Road, Sun Street 126, London, England) açıkça yazmaktadır.
+
+## 14. Soru Tipi: Anlamını Sorma / Açıklama (Asking for Clarification)
+**Soru Kökü:** Read the dialogue and answer the question.
+
+Kate: Mum, can you help me? I don't know the meaning of this word.
+Mum: Sure! Tell me the word, please.
+Kate: ----?
+Mum: Oh, you use this word when you can't stand something. It makes you feel very bad.
+
+Which of the following completes the dialogue above?
+**Şıklar:**
+- A) What does "terrific" mean
+- B) What is the meaning of "impressive"
+- C) Can you explain "unbearable" to me
+- D) Do you know the meaning of "laid-back"
+**Doğru Cevap ve Çözüm:** **Cevap: C.** "Can't stand something" (bir şeye tahammül edememek) açıklaması "unbearable" (tahammül edilemez) kelimesine aittir.
+
+## 15. Soru Tipi: Günlük Rutinler (Daily Routines)
+**Soru Kökü:** Look at the speech bubbles below.
+
+1. On weekdays, I have a big breakfast with my parents, then I go to school on foot.
+2. I never read biographical books, I think they are dull. I prefer adventure books.
+3. I like spending time with my friends. Hanging out and chatting are my favourites.
+4. I'm interested in doing sports because I love being physically active.
+
+Which speech bubble is about daily routines?
+**Şıklar:**
+- A) 1
+- B) 2
+- C) 3
+- D) 4
+**Doğru Cevap ve Çözüm:** **Cevap: A.** 1 numaralı balonda hafta içi yapılan kahvaltı ve okula yürüyerek gitme eylemleri günlük rutinlerdir.
+
+## 16. Soru Tipi: Tablo Sınıflandırma (In The Kitchen)
+**Soru Kökü:** In an English lesson, the teacher asks the students to put the words into two groups. Group 1 is about cooking methods and Group 2 is about kitchen tools.
+
+Group 1: Cooking Methods
+* Bake
+* Bowl
+* Fry
+
+Group 2: Kitchen Tools
+* Boil
+* Pan
+* Teaspoon
+
+According to the information above, which two words should change places to be in the correct group?
+**Şıklar:**
+- A) Bake - Boil
+- B) Bowl - Boil
+- C) Fry - Pan
+- D) Fry - Teaspoon
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Group 1'de pişirme yöntemi olmayan "Bowl" (kâse), Group 2'de mutfak aleti olmayan "Boil" (haşlamak) yer değiştirmelidir.
+
+## 17. Soru Tipi: Harita ve Rota Okuma (Extreme Sports / Tours)
+**Soru Kökü:** Below, you see the map of "Cycling Tour August 2025".
+
+Start: Wednesday, 9 a.m. August 13
+Finish: Saturday, August 16
+* Part 1: 15 km
+* Part 2: 15 km
+* Part 3: 20 km
+* Part 4: 10 km
+(Camping areas where you have to stay at night during the tour after you complete each part.)
+
+According to the map above, which of the following is FALSE?
+**Şıklar:**
+- A) You have to ride your bike for more than 50 km to finish the whole tour.
+- B) You spend less than three nights at the camping areas during the tour.
+- C) The tour takes less than a week to complete.
+- D) The particular starting time of the tour is given on the map.
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Tur Çarşamba başlayıp Cumartesi bittiğine göre 3 gece konaklanacaktır. "Less than three nights" (üç geceden az) ifadesi yanlıştır.
+
+## 18. Soru Tipi: Telefon Görüşmesi (On the Phone)
+**Soru Kökü:** Read the phone conversation and answer the question.
+
+Caller : Hello, may I speak to Tom, please?
+Receiver : Hi, who is calling?
+Caller : ---- (I)
+Receiver : ---- (II)
+Caller : No, thank you. I'll call back later.
+Receiver : Alright, bye.
+
+Which of the following completes the phone conversation above?
+**Şıklar:**
+- A) (I) Hold on a minute. / (II) He isn't available right now.
+- B) (I) It's Martin. / (II) Hold on a second. I'll get him.
+- C) (I) This is Martin. / (II) I'm sorry, he is not at home. Would you like to leave a message?
+- D) (I) I'll call back later. / (II) Could you ask him to call me?
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Arayan kendini tanıtmalıdır (This is Martin). Arayanın "Hayır teşekkürler, sonra tekrar arayacağım" demesi, alıcının "Mesaj bırakmak ister misiniz?" sorusuna verilen yanıttır.
+
+## 19. Soru Tipi: İnternet Alışkanlıkları (The Internet)
+**Soru Kökü:** Look at the board showing internet habits of teenagers.
+
+GOOD HABITS:
+* Barış: I never share my personal information on the Internet.
+* Şevval: I talk to my parents about my online friends.
+* Duygu: I always choose a strong password.
+
+BAD HABITS:
+* Ahmet: I spend hours on the Internet and go to bed late.
+
+According to the information above, who has a bad internet habit?
+**Şıklar:**
+- A) Ahmet
+- B) Barış
+- C) Duygu
+- D) Şevval
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Ahmet internette saatler harcayıp geç uyumaktadır (kötü alışkanlık). Diğerleri iyi alışkanlıklara sahiptir.
+
+## 20. Soru Tipi: Durum Bildirme (On the Phone)
+**Soru Kökü:** Read the situation and answer the question.
+
+You are a secretary at Mr. Hunt's office. Right now, you are talking to a woman on the phone. She wants to speak to Mr. Hunt but he is busy now.
+
+What should you say to the woman?
+**Şıklar:**
+- A) Could you please repeat that? I can't hear you well.
+- B) Can you hold on a moment? I will get him.
+- C) I'm sorry, he is not available. Would you like to leave a message?
+- D) He has gone out. Can you tell him to call me back?
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Mr. Hunt meşgul (busy) olduğu için profesyonel yanıt "Üzgünüm, şu an müsait değil. Mesaj bırakmak ister misiniz?" olmalıdır.
+
+## 21. Soru Tipi: Telefon Görüşmesi (On the Phone)
+**Soru Kökü:** Below, you see some parts of four different phone conversations.
+
+Nora : Hello, this is Nora calling. May I speak to Jack?
+Jack : Hello, Nora. This is Jack. What's up?
+
+Anna : I have a message for Mr. Smith.
+Kate : Alright, I'm ready to take your message.
+
+Jim : Could you tell him to call me back?
+Tom : Sorry, can you repeat it, please? I didn't hear you well.
+
+Joe : Thanks, see you later.
+Max : OK, talk to you soon, take care.
+
+Which two people finish their phone conversation?
+**Şıklar:**
+- A) Nora - Jack
+- B) Anna - Kate
+- C) Jim - Tom
+- D) Joe - Max
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Joe "see you later" ve Max "talk to you soon, take care" diyerek vedalaşmaktadır.
+
+## 22. Soru Tipi: Kişilik Özellikleri / Arkadaşlık (Friendship)
+**Soru Kökü:** Read the opinions of four people about their friends.
+
+Alex : Tim doesn't forget to organize parties for my birthdays.
+Fred : I don't like spending time with Joe.
+Jill : I don't trust Betty, so I don't share my secrets with her.
+Sally : Ashley doesn't support me when I need her.
+
+According to the information above, who says something positive about his/her friend?
+**Şıklar:**
+- A) Alex
+- B) Fred
+- C) Jill
+- D) Sally
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Alex, arkadaşının doğum günlerini unutmadığını söyleyerek olumlu bir özellikten bahsetmektedir.
+
+## 23. Soru Tipi: İlgi Alanları ve Tercihler (Preferences)
+**Soru Kökü:** Clara is going to buy some books for her friends. She knows that Robert loves reading about architecture. Lisa reads magazines about water sports. Mary usually buys books on health and Jack is interested in cooking.
+
+According to the information above, which of the following books is Clara NOT going to buy?
+**Şıklar:**
+- A) Best Rafting Places in the World
+- B) Secret History of the Telephone
+- C) Modern Buildings
+- D) Diseases from Past to the Future
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Robert mimari (C), Lisa su sporları (A), Mary sağlık (D) ile ilgilidir. "Telefonun Gizli Tarihi" hiçbir ilgi alanıyla eşleşmez.
+
+## 24. Soru Tipi: Kurallar ve Sorumluluklar (Rules and Chores)
+**Soru Kökü:** Read the school rules below.
+
+SCHOOL RULES
+- Keep your classroom tidy.
+- - - - -
+- Be quiet while your teacher is talking.
+- Return the books to the library.
+
+Which of the following does NOT fill in the blank above?
+**Şıklar:**
+- A) Help your parents with the chores
+- B) Don't talk to each other during the lessons
+- C) Come to school on time
+- D) Don't be noisy in the school library
+**Doğru Cevap ve Çözüm:** **Cevap: A.** "Anne babana ev işlerinde yardım et" bir okul kuralı değil, ev kuralıdır.
+
+## 25. Soru Tipi: Yemek Tarifi ve Sıralama (In The Kitchen)
+**Soru Kökü:** Read the recipe below and answer the question.
+
+How to Make Donuts
+I. Put the ingredients in a large bowl and mix them.
+II. Knead the dough until it's smooth.
+III. Sprinkle some sugar on top and serve warm.
+IV. Fry the donuts until they are golden brown.
+V. Roll the dough flat and shape the donut dough.
+
+According to the recipe above, which of the following steps should change places to be in the correct order?
+**Şıklar:**
+- A) I and V
+- B) III and V
+- C) II and IV
+- D) IV and I
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Doğru sıralama I - II - V - IV - III olmalıdır. Bu nedenle III ve V yer değiştirmelidir.
+
+## 26. Soru Tipi: Davetiye Detayları (Invitations and Events)
+**Soru Kökü:** Mr. White asks his students to prepare an invitation card including information about the place, time and type of the event.
+
+Which of the following cards includes all the information Mr. White asked for?
+**Şıklar:**
+- A) Dear Alex, Why don't you join us on Sunday afternoon? I can pick you up from home. Ted
+- B) Hi Kate, I have one more ticket for a pop concert. It is at Concert House. Shall we go together? Matt
+- C) Hello Melinda, I'm having a movie night at my house at 8 p.m. on Sunday. It'll be great if you join us. Jill
+- D) Hey Sam, We are organizing a birthday party. The party will be at 9 p.m. on Friday. Would you like to come? Sue
+**Doğru Cevap ve Çözüm:** **Cevap: C.** A'da yer ve tür, B'de saat, D'de yer eksiktir. C'de tür (movie night), yer (my house) ve zaman (8 p.m. on Sunday) eksiksizdir.
+
+## 27. Soru Tipi: Program ve Randevu (Schedules)
+**Soru Kökü:** Below is a phone conversation between the doctor's secretary and a patient.
+
+Secretary : Hello, this is Doctor Robin's office. How may I help you?
+Patient : - - - -
+Secretary : Of course. The doctor is available all afternoon on that day. What time would you like to see the doctor?
+
+Doctor Robin's Weekly Timetable:
+Monday: 10:00 Appointment / 11:00-13:00 Meeting / 16:00-18:00 Online Training
+Tuesday: 10:00 Appointment / 11:00 Online App. / 12:00 Lunch (Afternoon is empty)
+Wednesday: 10:00 Appointment / 17:00 Online Appointment
+Thursday: Business Trip
+Friday: 12:00 Appointment / 16:00-18:00 Online Training
+
+According to Doctor Robin's timetable, which of the following completes the phone conversation?
+**Şıklar:**
+- A) Can I have an appointment with Doctor Robin on Thursday?
+- B) I'd like to make an appointment with the doctor on Monday morning.
+- C) Is Doctor Robin available at 16:00 on Friday?
+- D) I'd like to see the doctor on Tuesday afternoon.
+**Doğru Cevap ve Çözüm:** **Cevap: D.** Sekreter "tüm öğleden sonra müsait" demektedir. Tabloda öğleden sonrası tamamen boş olan tek gün Salı'dır (Tuesday).
+
+## 28. Soru Tipi: Kurs Seçimi (Making Choices / Budgets)
+**Soru Kökü:** Kübra wants to go to an English course to improve her English. She can attend the course after one o'clock in the afternoon during the weekends. She has ¨2500 for the course.
+
+According to the information above, which course should Kübra choose?
+**Şıklar:**
+- A) Time: 8 - 10 a.m. / Days: Saturday and Sunday / Price: ¨2200
+- B) Time: 2 - 4 p.m. / Days: Saturday and Sunday / Price: ¨2400
+- C) Time: 3 - 5 p.m. / Days: Tuesday and Wednesday / Price: ¨2500
+- D) Time: 4 - 6 p.m. / Days: Saturday and Sunday / Price: ¨2600
+**Doğru Cevap ve Çözüm:** **Cevap: B.** Hafta sonu (C elenir), öğleden sonra saat 1'den sonra (A elenir), bütçe ≤2500 (D elenir). Tüm şartları sağlayan tek kurs B'dir.
+
+## 29. Soru Tipi: Problem Çözme / Çıkarım Yapma (Internet & Communication)
+**Soru Kökü:** Last month, Elizabeth spent most of her time alone. She exercised at the gym, read books at home, and watched films on her own. After a while, she felt lonely. She needed to communicate with people face to face.
+
+According to the information above, which of the following should Elizabeth do?
+**Şıklar:**
+- A) Meet her friends at a cafe
+- B) Text with friends on social media
+- C) Post comments about books
+- D) Play online games with her classmates
+**Doğru Cevap ve Çözüm:** **Cevap: A.** Elizabeth "yüz yüze" (face to face) iletişim kurmaya ihtiyaç duymaktadır. Bunu sağlayacak tek eylem arkadaşlarıyla kafede buluşmaktır.
+
+## 30. Soru Tipi: Etkinlik Planlama ve Detaylar (Events)
+**Soru Kökü:** A group of friends are talking about their school party.
+
+Adam : I don't have any plans for next Sunday. So, I'll definitely be at the party.
+Claire : To me, 4 p.m. is too early to start the party.
+Pete : I think City Park is not a good place for the party.
+Tina : The ticket is too expensive for me. I'm not going to come.
+
+Who is talking about the location of the party?
+**Şıklar:**
+- A) Adam
+- B) Claire
+- C) Pete
+- D) Tina
+**Doğru Cevap ve Çözüm:** **Cevap: C.** Adam gün (Sunday), Claire saat (4 p.m.), Tina bilet fiyatı (expensive) hakkında konuşmaktadır. Pete ise partinin yeri (location) hakkında "City Park iyi bir yer değil" demektedir.

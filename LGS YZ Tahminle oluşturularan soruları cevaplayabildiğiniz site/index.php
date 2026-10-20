@@ -1,0 +1,1522 @@
+<?php
+declare(strict_types=1);
+
+require __DIR__ . '/auth.php';
+session_boot();
+
+debug_handle_post('index.php');
+
+$user = auth_user();
+
+/* Giriş anında yerel/bulut seçimi bir kez sorulur; bayrak hemen tüketilir. */
+$syncChoice = !empty($_SESSION['lgs_show_sync']);
+if ($syncChoice) {
+    unset($_SESSION['lgs_show_sync']);
+}
+?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>LGS Etkileşimli Soru Çözümü | Akıllı Devam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'no-mathjax',
+                processHtmlClass: 'math'
+            },
+            startup: {
+                pageReady: () => {
+                    return MathJax.startup.defaultPageReady();
+                }
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        [hidden] { display: none !important; }
+
+        :root {
+            --bg: #030014;
+            --surface: rgba(20, 15, 38, 0.6);
+            --surface2: rgba(30, 25, 50, 0.7);
+            --surface3: rgba(45, 38, 70, 0.8);
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-heading: #ffffff;
+            --primary: #a855f7;
+            --primary-glow: rgba(168, 85, 247, 0.4);
+            --secondary: #06b6d4;
+            --success: #10b981;
+            --success-bg: rgba(16, 185, 129, 0.15);
+            --success-border: rgba(16, 185, 129, 0.4);
+            --danger: #f43f5e;
+            --danger-bg: rgba(244, 63, 94, 0.15);
+            --danger-border: rgba(244, 63, 94, 0.4);
+            --warning: #f59e0b;
+            --warning-bg: rgba(245, 158, 11, 0.15);
+            --info: #3b82f6;
+            --accent-gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --shadow: 0 16px 40px -10px rgba(0,0,0,0.7);
+            --radius: 20px;
+            --radius-sm: 14px;
+            --transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+            background: var(--bg) radial-gradient(circle at top, rgba(168, 85, 247, 0.15), transparent 60%);
+            background-attachment: fixed;
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        @keyframes revealUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            0% { opacity: 0; transform: scale(0.96) translateY(10px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        /* Skeleton Animations */
+        @keyframes skeletonPulse {
+            0% { background-color: rgba(255, 255, 255, 0.05); }
+            50% { background-color: rgba(255, 255, 255, 0.12); }
+            100% { background-color: rgba(255, 255, 255, 0.05); }
+        }
+        .skeleton {
+            animation: skeletonPulse 1.5s ease-in-out infinite !important;
+            color: transparent !important;
+            border-color: transparent !important;
+            background-image: none !important;
+            -webkit-text-fill-color: transparent !important;
+            background-clip: initial !important;
+            -webkit-background-clip: initial !important;
+            user-select: none;
+            overflow: hidden;
+            border-radius: var(--radius-sm);
+        }
+        .skeleton * {
+            visibility: hidden !important;
+        }
+        .skeleton-text {
+            height: 1.1rem;
+            margin-bottom: 12px;
+            border-radius: 6px;
+            background-color: var(--surface3);
+        }
+        .skeleton-btn {
+            height: 60px;
+            border-radius: var(--radius-sm);
+            background-color: var(--surface3);
+            margin-bottom: 12px;
+        }
+        body.reduced-sensory .skeleton { animation: none !important; background-color: var(--surface3) !important; }
+
+        #flash-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: transparent;
+            pointer-events: none;
+            z-index: 9999;
+            transition: background 0.3s ease;
+        }
+        .flash-green { background: rgba(60, 179, 113, 0.25) !important; backdrop-filter: blur(1px); }
+        .flash-red { background: rgba(224, 85, 106, 0.25) !important; backdrop-filter: blur(1px); }
+
+        .screen {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            max-width: 680px;
+            margin: 0 auto;
+            background: var(--surface);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            min-height: 100vh;
+            box-shadow: var(--shadow);
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            position: relative;
+            transform-origin: top center;
+        }
+        .screen.active { 
+            display: flex; 
+        }
+        
+        .no-transition, .no-transition * {
+            transition: none !important;
+        }
+
+        #main-menu {
+            padding: 32px 20px 28px;
+            align-items: center;
+            gap: 18px;
+        }
+        .logo-icon {
+            font-size: 3.2rem;
+            filter: drop-shadow(0 0 16px var(--primary-glow));
+            animation: float 3s infinite ease-in-out;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+        #main-menu h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            margin-bottom: 4px;
+            filter: drop-shadow(0 4px 12px var(--primary-glow));
+            animation: revealUp 0.7s var(--spring) both;
+        }
+        .subtitle {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            margin-bottom: 6px;
+            animation: revealUp 0.7s var(--spring) 0.1s both;
+        }
+
+
+
+        .brand-row {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            gap: 26px;
+            width: 100%;
+            min-height: 92px;
+        }
+        .brand-slot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-width: 0;
+        }
+        .brand-row .logo-icon {
+            justify-self: center;
+            font-size: 5rem;
+        }
+        .auth-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 34px;
+            background: var(--surface2);
+            border: 2px solid var(--border);
+            border-radius: 999px;
+            color: var(--text-heading);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .auth-pill:hover {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateY(-3px);
+            box-shadow: 0 14px 28px var(--primary-glow);
+        }
+        .auth-pill.is-primary { border-color: var(--primary); }
+        .auth-pill.is-danger { border-color: var(--danger-border); color: var(--danger); }
+        .auth-pill.is-danger:hover {
+            border-color: var(--danger);
+            background: var(--danger-bg);
+            box-shadow: none;
+        }
+        .brand-user {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            min-width: 0;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .stats-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            width: 100%;
+            margin: 12px 0 8px;
+            transition: var(--transition);
+        }
+        .stats-row-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            background: var(--surface3);
+            padding: 8px 6px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+        }
+        .stat-value {
+            font-size: 1.7rem;
+            font-weight: 800;
+            line-height: 1.2;
+            color: var(--text-heading);
+        }
+        .stat-value.success { color: var(--success); }
+        .stat-value.danger { color: var(--danger); }
+        .stat-value.primary { color: var(--primary); }
+
+        .menu-btn {
+            width: 100%;
+            padding: 18px 24px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--text-heading);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+            overflow: hidden;
+            animation: revealUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+        button.menu-btn:nth-of-type(1) { animation-delay: 0.15s; }
+        button.menu-btn:nth-of-type(2) { animation-delay: 0.2s; }
+        button.menu-btn:nth-of-type(3) { animation-delay: 0.25s; }
+        button.menu-btn:nth-of-type(4) { animation-delay: 0.3s; }
+        button.menu-btn:nth-of-type(5) { animation-delay: 0.35s; }
+        button.menu-btn:nth-of-type(6) { animation-delay: 0.4s; }
+        button.menu-btn:nth-of-type(7) { animation-delay: 0.45s; }
+        button.menu-btn:nth-of-type(8) { animation-delay: 0.5s; }
+
+        .menu-btn::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: 0.5s;
+        }
+        .menu-btn:hover::before { left: 100%; }
+
+        .menu-btn:hover {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 12px 24px var(--primary-glow);
+        }
+        .subject-icon { font-size: 1.5rem; margin-right: 12px; }
+        .percentage-badge {
+            background: var(--surface3);
+            padding: 5px 12px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
+        .reset-btn {
+            background: transparent;
+            border: 1px solid var(--danger-border);
+            color: var(--danger);
+            margin-top: 8px;
+        }
+        .reset-btn:hover {
+            background: var(--danger-bg);
+            border-color: var(--danger);
+            color: #ffb3b3;
+        }
+        .source-link {
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--border);
+            transition: 0.2s;
+        }
+        .source-link:hover {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        #analytics-screen {
+            padding: 32px 20px;
+        }
+        .analytics-card {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 18px;
+            margin-bottom: 14px;
+        }
+        .progress-bar-wrap {
+            background: var(--surface3);
+            border-radius: 20px;
+            height: 8px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            border-radius: 20px;
+            background: var(--accent-gradient);
+            transition: width 0.5s ease;
+        }
+        .analytics-total {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+        }
+        .big-percent {
+            font-size: 2.4rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .top-bar {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--surface);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .back-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 8px 14px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: #fff;
+        }
+        .subject-info {
+            text-align: right;
+        }
+        #subject-title {
+            font-weight: 800;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+        .subject-stats {
+            display: flex;
+            gap: 12px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            margin-top: 6px;
+            border: 1px solid var(--border);
+        }
+        .subject-stats span {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .quiz-content {
+            padding: 22px 18px;
+            flex: 1;
+        }
+        .question-text {
+            background: var(--surface2);
+            padding: 20px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        .question-text p { margin: 0 0 12px; }
+        .question-text p:last-child { margin-bottom: 0; }
+        .question-text ul { margin: 0 0 12px 22px; padding: 0; }
+        .question-text li { margin-bottom: 6px; }
+        .question-text li:last-child { margin-bottom: 0; }
+        .question-text hr { border: 0; border-top: 1px solid var(--border); margin: 16px 0; }
+        .question-text .md-heading { color: var(--text-heading); }
+        .option-text { flex: 1; }
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+        .option-btn {
+            text-align: left;
+            padding: 18px 20px;
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            font-size: 1.05rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            color: var(--text);
+        }
+
+        .option-btn:hover:not(:disabled) {
+            border-color: var(--primary);
+            background: var(--surface3);
+            transform: translateX(8px);
+            box-shadow: -4px 4px 12px rgba(0,0,0,0.2);
+        }
+        .option-icon {
+            margin-right: 14px;
+            font-size: 1.2rem;
+            min-width: 28px;
+        }
+        .correct {
+            background: var(--success-bg) !important;
+            border-color: var(--success-border) !important;
+        }
+        .incorrect {
+            background: var(--danger-bg) !important;
+            border-color: var(--danger-border) !important;
+        }
+        .bottom-nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .nav-btn {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            padding: 12px 18px;
+            border-radius: 32px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+            color: white;
+        }
+        .nav-btn:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+        .q-input-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--surface2);
+            padding: 6px 12px;
+            border-radius: 40px;
+            border: 1px solid var(--border);
+        }
+        .q-input-group input {
+            width: 55px;
+            text-align: center;
+            background: var(--surface3);
+            border: none;
+            padding: 8px;
+            border-radius: 30px;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        #modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(4px);
+            z-index: 20000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        #modal-overlay.active { display: flex; }
+        .modal-box {
+            background: var(--surface2);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            width: 85%;
+            max-width: 380px;
+            padding: 28px;
+            text-align: center;
+        }
+        @media (max-width: 620px) {
+            .brand-row { gap: 14px; min-height: 70px; }
+            .brand-row .logo-icon { font-size: 3.4rem; }
+            .auth-pill { padding: 14px 20px; font-size: 0.95rem; letter-spacing: 1px; }
+            .brand-user { font-size: 0.75rem; }
+            #main-menu h1 { font-size: 3rem; }
+        }
+        @media (max-width: 450px) {
+            .stat-value { font-size: 1.3rem; }
+            .menu-btn { padding: 14px; }
+            .brand-row { gap: 8px; min-height: 60px; }
+            .brand-row .logo-icon { font-size: 2.8rem; }
+            .auth-pill { padding: 11px 14px; font-size: 0.78rem; letter-spacing: 0.5px; border-width: 1px; }
+            .brand-user { font-size: 0.68rem; }
+            #main-menu h1 { font-size: 2.4rem; }
+        }
+
+        /* Reduced Sensory Overrides */
+        body.reduced-sensory .menu-btn:hover { box-shadow: none !important; transform: none !important; border-color: var(--border) !important; background: var(--surface3) !important; }
+        body.reduced-sensory .menu-btn { animation: none !important; }
+        body.reduced-sensory .menu-btn::before { display: none !important; }
+        body.reduced-sensory .logo-icon { animation: none !important; filter: none !important; }
+        body.reduced-sensory #main-menu h1 { animation: none !important; filter: none !important; }
+        body.reduced-sensory .subtitle { animation: none !important; }
+        body.reduced-sensory .auth-pill:hover { transform: none !important; box-shadow: none !important; }
+    </style>
+</head>
+<body data-user="<?= e($user['username'] ?? '') ?>" data-sync-choice="<?= $syncChoice ? '1' : '0' ?>" data-debug="<?= debug_enabled() ? '1' : '0' ?>">
+<script>
+    if (localStorage.getItem('sensorySensitiveMode') !== 'false') {
+        document.body.classList.add('reduced-sensory');
+    }
+</script>
+
+<script>
+    // Giriş anı: yerelde cevaplanmış soru varsa seçim ekranına git,
+    // yoksa bulut verisi sessizce yüklenir. Sonraki sayfa girişlerinde
+    // fark denetimi pullCloudProgress() tarafından yapılır.
+    (() => {
+        if (!document.body.dataset.user) {
+            return;
+        }
+        if (document.body.dataset.syncChoice === '1') {
+            location.replace('sync.php');
+        }
+    })();
+</script>
+
+<div id="flash-overlay"></div>
+
+<div id="modal-overlay">
+    <div class="modal-box">
+        <h2 style="color: var(--text-heading);">Sıfırlama Onayı</h2>
+        <p style="margin: 12px 0; color: var(--text-secondary);"><?= $user === null
+            ? 'Bu cihazdaki tüm doğru/yanlış ilerlemeniz sıfırlanacak. Emin misiniz?'
+            : 'Bu cihazdaki ve hesabınızdaki tüm doğru/yanlış ilerlemeniz sıfırlanacak. Emin misiniz?' ?></p>
+        <div class="modal-buttons" style="display: flex; gap: 12px; margin-top: 20px;">
+            <button class="modal-btn btn-deny" style="flex:1; background: var(--surface3); color: var(--text); border: 1px solid var(--border); padding: 12px; border-radius: var(--radius-sm); font-weight: bold; cursor: pointer;" onclick="closeResetModal()">İPTAL</button>
+            <button class="modal-btn btn-accept" style="flex:1; background: var(--danger); color: white; border: none; border-radius: var(--radius-sm); font-weight: bold; cursor: pointer;" onclick="confirmReset()">SIFIRLA</button>
+        </div>
+    </div>
+</div>
+
+<div id="main-menu" class="screen active">
+    <div class="brand-row">
+        <div class="brand-slot is-left">
+            <?php if ($user === null): ?>
+                <a class="auth-pill" href="register.php">Kayıt Ol</a>
+            <?php else: ?>
+                <span class="brand-user">👤 <?= e($user['display_name'] !== '' ? $user['display_name'] : $user['username']) ?></span>
+            <?php endif; ?>
+        </div>
+        <div class="logo-icon" style="border-radius: 50%;">🎯</div>
+        <div class="brand-slot is-right">
+            <?php if ($user === null): ?>
+                <a class="auth-pill is-primary" href="login.php">Giriş Yap</a>
+            <?php else: ?>
+                <a class="auth-pill is-danger" href="logout.php">Çıkış</a>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <h1 class="skeleton" style="border-radius: 8px;">LGS ÇÖZÜM</h1>
+    <p class="subtitle skeleton" style="border-radius: 4px;">akıllı pratik · sesli geri bildirim · akıllı devam</p>
+
+    <div class="stats-box skeleton">
+        <div class="stats-row-grid">
+            <div class="stat-item"><div class="stat-label">📌 ÇÖZÜLEN</div><div class="stat-value" id="main-total-answered">0</div></div>
+            <div class="stat-item"><div class="stat-label">✅ DOĞRU</div><div class="stat-value success" id="main-total-correct">0</div></div>
+            <div class="stat-item"><div class="stat-label">❌ YANLIŞ</div><div class="stat-value danger" id="main-total-wrong">0</div></div>
+            <div class="stat-item"><div class="stat-label">🏆 BAŞARI</div><div class="stat-value primary" id="main-percentage">0%</div></div>
+        </div>
+        <div style="font-size:0.7rem; text-align:center; margin-top:10px; color:var(--text-secondary);">⚡ Başarı = (Doğru / Çözülen) × 100</div>
+    </div>
+
+    <button class="menu-btn skeleton" onclick="startSubject('matematik')"><span><span class="subject-icon">📐</span> MATEMATİK</span><span class="percentage-badge" id="pct-matematik">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('turkce')"><span><span class="subject-icon">📖</span> TÜRKÇE</span><span class="percentage-badge" id="pct-turkce">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('fen')"><span><span class="subject-icon">🔬</span> FEN BİLİMLERİ</span><span class="percentage-badge" id="pct-fen">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('din')"><span><span class="subject-icon">🕌</span> DİN KÜLTÜRÜ</span><span class="percentage-badge" id="pct-din">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('sosyal')"><span><span class="subject-icon">🌍</span> SOSYAL BİLGİLER</span><span class="percentage-badge" id="pct-sosyal">%0</span></button>
+    <button class="menu-btn skeleton" onclick="startSubject('ingilizce')"><span><span class="subject-icon">🇬🇧</span> İNGİLİZCE</span><span class="percentage-badge" id="pct-ingilizce">%0</span></button>
+
+    <a class="menu-btn skeleton" href="deneme.php" style="border-color: var(--secondary); text-decoration: none;"><span><span class="subject-icon">📝</span> DENEME (GERÇEK LGS)</span><span class="percentage-badge" style="color: var(--secondary);">SÜRELİ ⏱</span></a>
+    <button class="menu-btn analytics-btn skeleton" onclick="showAnalytics()" style="border-color: var(--warning);"><span><span class="subject-icon">📊</span> DETAYLI ANALİZ</span><span class="percentage-badge">🔎</span></button>
+    <button class="menu-btn reset-btn skeleton" onclick="showResetModal()"><span><span class="subject-icon">🗑</span> İLERLEMEYİ SIFIRLA</span></button>
+    
+    <div class="skeleton" style="background: var(--surface2); border: 1px solid var(--border); padding: 18px 24px; border-radius: var(--radius); display: flex; align-items: center; justify-content: space-between; width: 100%;">
+        <span style="font-weight: 700; color: var(--text-heading); font-family: 'Outfit', sans-serif; letter-spacing: 1.5px; font-size: 1.05rem;"><span class="subject-icon" style="font-size: 1.3rem;">👁️</span> ANİMASYONLARI KAPALI TUT</span>
+        <label style="position: relative; display: inline-block; width: 54px; height: 28px; cursor: pointer;">
+            <input type="checkbox" id="main-sensory-toggle" onchange="toggleSensitiveMode(this.checked)" style="opacity: 0; width: 0; height: 0; position: absolute;">
+            <span id="toggle-bg" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--surface3); transition: .4s; border-radius: 34px; border: 1px solid var(--border);">
+                <span id="toggle-knob" style="position: absolute; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: var(--text-secondary); transition: .4s; border-radius: 50%;"></span>
+            </span>
+        </label>
+    </div>
+
+    <div class="skeleton" style="position:relative; width:100%;" id="source-dropdown-wrap">
+        <button class="menu-btn" onclick="toggleSourceMenu()" style="border-color: var(--border); justify-content:center; gap:8px;">
+            <span>📂 Kaynaklar & Güncellemeler</span><span id="source-arrow">▼</span>
+        </button>
+        <div id="source-menu" style="display:none; flex-direction:column; gap:10px; margin-top:8px; width:100%;">
+            <a href="https://drive.google.com/drive/folders/1lhfZzfCprak_EynAAKlCi9hefFUBe72P" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#4285f4'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🗂️</span>
+                <span>Google Drive</span>
+            </a>
+            <a href="https://github.com/utku6767/LGS2026-NotebookLM/tree/main" target="_blank"
+               style="display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--surface2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-heading); text-decoration:none; font-weight:700; font-size:0.95rem; transition:var(--transition);"
+               onmouseover="this.style.borderColor='#888'; this.style.background='var(--surface3)'"
+               onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--surface2)'">
+                <span style="font-size:1.4rem;">🐙</span>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        function toggleSourceMenu() {
+            const menu = document.getElementById('source-menu');
+            const arrow = document.getElementById('source-arrow');
+            const open = menu.style.display === 'flex';
+            menu.style.display = open ? 'none' : 'flex';
+            arrow.textContent = open ? '▼' : '▲';
+        }
+        document.addEventListener('click', function(e) {
+            const wrap = document.getElementById('source-dropdown-wrap');
+            if (wrap && !wrap.contains(e.target)) {
+                document.getElementById('source-menu').style.display = 'none';
+                document.getElementById('source-arrow').textContent = '▼';
+            }
+        });
+    </script>
+</div>
+
+<div id="analytics-screen" class="screen">
+    <h1 style="text-align:center; margin-bottom: 6px;">📈 Gelişim Raporu</h1>
+    <p class="subtitle" style="text-align:center">Başarı oranı = (Doğru / Çözülen) × 100</p>
+    <div id="analytics-container"></div>
+    <div class="analytics-total" id="analytics-total-box"></div>
+    <button class="back-btn-analytics" onclick="showMainMenu()" style="margin-top: 20px; background: var(--surface2); border: 1px solid var(--border); padding: 14px; border-radius: 40px; font-weight: bold;">⬅ ANA MENÜYE DÖN</button>
+</div>
+
+<div id="quiz-screen" class="screen">
+    <div class="top-bar">
+        <button class="back-btn" onclick="showMainMenu()">← Menü</button>
+        <div class="subject-info">
+            <strong id="subject-title">Ders Adı</strong>
+            <div class="subject-stats" id="quiz-stats-area">
+                <span>📘 Ç: <b id="sub-answered">0</b></span>
+                <span style="color:var(--success)">✔ D: <b id="sub-correct">0</b></span>
+                <span style="color:var(--danger)">✘ Y: <b id="sub-wrong">0</b></span>
+                <span style="color:var(--primary)">% <b id="sub-percent">0</b></span>
+            </div>
+        </div>
+    </div>
+    <div class="quiz-content">
+        <div class="question-text math" id="question-text">
+            <div class="skeleton skeleton-text" style="width: 95%;"></div>
+            <div class="skeleton skeleton-text" style="width: 100%;"></div>
+            <div class="skeleton skeleton-text" style="width: 85%;"></div>
+        </div>
+        <div class="options-container math" id="options-container"></div>
+        <div class="bottom-nav">
+            <button class="nav-btn" id="prev-btn">◀ ÖNCEKİ</button>
+            <div class="q-input-group">
+                <input type="number" id="q-input" min="1" value="1">
+                <span>/ <span id="total-q">0</span></span>
+            </div>
+            <button class="nav-btn" id="next-btn">SONRAKİ ▶</button>
+        </div>
+    </div>
+</div>
+
+<script src="md-lite.js?v=<?= (int) @filemtime(__DIR__ . '/md-lite.js') ?>"></script>
+<script>
+    // SES SİSTEMİ
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    function playSound(isCorrect) {
+        if (localStorage.getItem('sensorySensitiveMode') !== 'false') return;
+        try {
+            if (!audioCtx) audioCtx = new AudioContext();
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+            if (isCorrect) {
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(523.25, audioCtx.currentTime);
+                osc.frequency.setValueAtTime(659.25, audioCtx.currentTime + 0.12);
+                osc.frequency.setValueAtTime(783.99, audioCtx.currentTime + 0.24);
+                gain.gain.setValueAtTime(0.09, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.55);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.55);
+            } else {
+                osc.type = 'sawtooth';
+                osc.frequency.setValueAtTime(190, audioCtx.currentTime);
+                osc.frequency.linearRampToValueAtTime(80, audioCtx.currentTime + 0.35);
+                gain.gain.setValueAtTime(0.08, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.35);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.35);
+            }
+        } catch(e) { }
+    }
+
+    // VERİ YÖNETİMİ
+    const signedIn = Boolean(document.body.dataset.user);
+    let userProgress = JSON.parse(localStorage.getItem('lgsProgress')) || {};
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let answered = false;
+    let currentSubject = "";
+
+    if (!userProgress._meta) userProgress._meta = {};
+    if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+
+    function saveProgress() {
+        localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
+        updateAllUI();
+        queueCloudPush();
+    }
+
+    let cloudPushTimer = null;
+
+    function queueCloudPush() {
+        if (cloudPushTimer) clearTimeout(cloudPushTimer);
+        cloudPushTimer = setTimeout(pushProgressToCloud, 1200);
+    }
+
+    function pushProgressToCloud() {
+        cloudPushTimer = null;
+        if (!signedIn) return;
+        fetch('progress.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'push', progress: userProgress }),
+            keepalive: true
+        }).then((res) => {
+            if (!res.ok) console.warn('progress push failed:', res.status);
+        }).catch((e) => console.warn('progress push failed:', e));
+    }
+
+    function resetCloudProgress() {
+        if (cloudPushTimer) clearTimeout(cloudPushTimer);
+        if (!signedIn) return;
+        fetch('progress.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ action: 'reset' }),
+            keepalive: true
+        }).catch((e) => console.warn('progress reset failed:', e));
+    }
+
+    const CLOUD_SUBJECTS = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+
+    function solvedCount(progress) {
+        let total = 0;
+        for (const subject of CLOUD_SUBJECTS) {
+            const bucket = progress?.[subject] || {};
+            for (const key in bucket) {
+                if (key !== '_total' && bucket[key] && bucket[key].selected) total++;
+            }
+        }
+        return total;
+    }
+
+    function progressFingerprint(progress) {
+        return CLOUD_SUBJECTS.map(subject => {
+            const bucket = progress?.[subject] || {};
+            const keys = Object.keys(bucket)
+                .filter(k => k !== '_total' && bucket[k] && bucket[k].selected)
+                .sort((a, b) => Number(a) - Number(b));
+            return subject + ':' + keys.map(k => k + bucket[k].selected + (bucket[k].isCorrect ? '1' : '0')).join(',');
+        }).join('|');
+    }
+
+    // Bulut + yerel birleşimi: bir soru bir tarafta doğruysa doğru cevap korunur.
+    function mergeProgress(cloud, local) {
+        const merged = { _meta: { lastVisited: {} } };
+        for (const subject of CLOUD_SUBJECTS) {
+            const fromCloud = cloud?.[subject] || {};
+            const fromLocal = local?.[subject] || {};
+            const bucket = {};
+
+            for (const key in fromCloud) {
+                if (key !== '_total' && fromCloud[key] && fromCloud[key].selected) bucket[key] = fromCloud[key];
+            }
+            for (const key in fromLocal) {
+                if (key === '_total') continue;
+                if (!fromLocal[key] || !fromLocal[key].selected) continue;
+
+                const existing = bucket[key];
+                if (!existing) {
+                    bucket[key] = fromLocal[key];
+                    continue;
+                }
+                if (!existing.isCorrect && fromLocal[key].isCorrect) {
+                    bucket[key] = fromLocal[key];
+                }
+            }
+
+            const total = Math.max(Number(fromCloud._total) || 0, Number(fromLocal._total) || 0);
+            if (total) bucket._total = total;
+            merged[subject] = bucket;
+
+            const visited = Math.max(
+                Number(cloud?._meta?.lastVisited?.[subject]) || 0,
+                Number(local?._meta?.lastVisited?.[subject]) || 0
+            );
+            if (visited) merged._meta.lastVisited[subject] = visited;
+        }
+        return merged;
+    }
+
+    let cloudPullStarted = false;
+
+    // Her açılışta hesaptaki ilerlemeyi çek, yerelle birleştir, eksiği buluta yaz.
+    async function pullCloudProgress() {
+        if (!signedIn || cloudPullStarted) return;
+        if (document.body.dataset.syncChoice === '1') return; // sayfa sync.php'ye gidiyor
+        cloudPullStarted = true;
+
+        try {
+            const res = await fetch('progress.php', { cache: 'no-store' });
+            if (!res.ok) {
+                if (res.status !== 401) console.warn('progress pull failed:', res.status);
+                return;
+            }
+
+            const data = await res.json();
+            const cloud = data && data.progress && typeof data.progress === 'object' ? data.progress : {};
+            if (solvedCount(cloud) === 0) return;
+
+            const merged = mergeProgress(cloud, userProgress);
+            const before = progressFingerprint(userProgress);
+            const after = progressFingerprint(merged);
+
+            if (after !== before) {
+                userProgress = merged;
+                localStorage.setItem('lgsProgress', JSON.stringify(userProgress));
+                updateAllUI();
+            }
+
+            /* Bulutta eksik ya da yanlış kalan cevapları geri yaz. */
+            if (after !== progressFingerprint(cloud)) queueCloudPush();
+        } catch (e) {
+            cloudPullStarted = false;
+            console.warn('progress pull failed:', e);
+        }
+    }
+
+    void pullCloudProgress();
+
+    window.addEventListener('pagehide', () => {
+        if (cloudPushTimer) {
+            clearTimeout(cloudPushTimer);
+            pushProgressToCloud();
+        }
+    });
+
+    function getTotalQuestionsForSubject(subject) {
+        const progress = userProgress[subject] || {};
+        if (progress._total && progress._total > 0) return progress._total;
+        const keys = Object.keys(progress).map(Number).filter(k => !isNaN(k) && k !== '_total');
+        if (keys.length === 0) return 0;
+        return Math.max(...keys) + 1;
+    }
+
+    function getSubjectStats(subject) {
+        const progress = userProgress[subject] || {};
+        let solved = 0, correct = 0;
+        for (let key in progress) {
+            if (key === '_total') continue;
+            if (progress[key] && progress[key].selected) {
+                solved++;
+                if (progress[key].isCorrect) correct++;
+            }
+        }
+        const wrong = solved - correct;
+        const percent = solved > 0 ? Math.round((correct / solved) * 100) : 0;
+        const totalAvailable = getTotalQuestionsForSubject(subject);
+        return { totalAvailable, solved, correct, wrong, percent };
+    }
+
+    // AKILLI BAŞLANGIÇ İNDEKSİ
+    function getStartIndex(subject, total) {
+        const progress = userProgress[subject] || {};
+        let allSolved = true;
+        for (let i = 0; i < total; i++) {
+            if (!progress[i] || !progress[i].selected) {
+                allSolved = false;
+                break;
+            }
+        }
+
+        if (allSolved) {
+            for (let i = 0; i < total; i++) {
+                if (progress[i] && progress[i].selected && !progress[i].isCorrect) return i;
+            }
+            return 0;
+        } else {
+            const finalSolved = (progress[total-1] && progress[total-1].selected);
+            if (finalSolved) {
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0;
+            } else {
+                const lastVisited = userProgress._meta?.lastVisited?.[subject];
+                if (lastVisited !== undefined && lastVisited < total) {
+                    if (!progress[lastVisited] || !progress[lastVisited].selected) return lastVisited;
+                    for (let i = lastVisited + 1; i < total; i++) {
+                        if (!progress[i] || !progress[i].selected) return i;
+                    }
+                }
+                for (let i = 0; i < total; i++) {
+                    if (!progress[i] || !progress[i].selected) return i;
+                }
+                return 0;
+            }
+        }
+    }
+
+    function getOverallStats() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        let totalSolved = 0, totalCorrect = 0;
+        subjects.forEach(sub => {
+            const st = getSubjectStats(sub);
+            totalSolved += st.solved;
+            totalCorrect += st.correct;
+        });
+        const totalWrong = totalSolved - totalCorrect;
+        const overallPercent = totalSolved > 0 ? Math.round((totalCorrect / totalSolved) * 100) : 0;
+        let totalAvailableSum = 0;
+        subjects.forEach(sub => { totalAvailableSum += getTotalQuestionsForSubject(sub); });
+        return { totalSolved, totalCorrect, totalWrong, overallPercent, totalAvailableSum };
+    }
+
+    function updateAllUI() {
+        updateMainScore();
+        updatePercentageBadges();
+        if (currentSubject && document.getElementById('quiz-screen').classList.contains('active')) {
+            updateSubjectScore();
+        }
+    }
+
+    function updateMainScore() {
+        const stats = getOverallStats();
+        const ans = document.getElementById('main-total-answered');
+        const cor = document.getElementById('main-total-correct');
+        const wrg = document.getElementById('main-total-wrong');
+        const pct = document.getElementById('main-percentage');
+        
+        if (ans) { ans.innerText = stats.totalSolved; ans.classList.remove('skeleton'); }
+        if (cor) { cor.innerText = stats.totalCorrect; cor.classList.remove('skeleton'); }
+        if (wrg) { wrg.innerText = stats.totalWrong; wrg.classList.remove('skeleton'); }
+        if (pct) { pct.innerText = stats.overallPercent + '%'; pct.classList.remove('skeleton'); }
+    }
+
+    function updateSubjectScore() {
+        if (!currentSubject) return;
+        const stats = getSubjectStats(currentSubject);
+        const elAns = document.getElementById('sub-answered');
+        const elCor = document.getElementById('sub-correct');
+        const elWro = document.getElementById('sub-wrong');
+        const elPer = document.getElementById('sub-percent');
+        if (elAns) elAns.innerText = stats.solved;
+        if (elCor) elCor.innerText = stats.correct;
+        if (elWro) elWro.innerText = stats.wrong;
+        if (elPer) elPer.innerText = stats.percent;
+    }
+
+    function updatePercentageBadges() {
+        const subs = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        subs.forEach(sub => {
+            const pct = getSubjectStats(sub).percent;
+            const badge = document.getElementById(`pct-${sub}`);
+            if (badge) {
+                badge.innerText = `%${pct}`;
+                badge.style.color = pct >= 70 ? '#3cb371' : (pct >= 40 ? '#e5a840' : '#e0556a');
+                badge.classList.remove('skeleton');
+            }
+        });
+    }
+
+    function showAnalytics() {
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        const screen = document.getElementById('analytics-screen');
+        screen.classList.add('active');
+        
+        screen.querySelector('h1').classList.add('skeleton');
+        screen.querySelector('.subtitle').classList.add('skeleton');
+        
+        const container = document.getElementById('analytics-container');
+        const totalBox = document.getElementById('analytics-total-box');
+        container.innerHTML = `
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+            <div class="analytics-card skeleton" style="height: 140px; margin-bottom: 14px; border-radius: var(--radius);"></div>
+        `;
+        totalBox.innerHTML = '<div class="skeleton" style="height: 140px; border-radius: var(--radius);"></div>';
+        
+        setTimeout(() => {
+            document.body.classList.add('no-transition');
+            screen.querySelector('h1').classList.remove('skeleton');
+            screen.querySelector('.subtitle').classList.remove('skeleton');
+            document.querySelectorAll('#analytics-screen .skeleton').forEach(el => el.classList.remove('skeleton'));
+            void document.body.offsetHeight; // force reflow
+            document.body.classList.remove('no-transition');
+            renderAnalytics();
+        }, 400);
+    }
+    
+    function renderAnalytics() {
+        const subjects = ['matematik', 'turkce', 'fen', 'din', 'sosyal', 'ingilizce'];
+        const container = document.getElementById('analytics-container');
+        let html = '';
+        for (let sub of subjects) {
+            const s = getSubjectStats(sub);
+            let fillWidth = s.percent;
+            html += `
+                <div class="analytics-card">
+                    <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+                        <span style="font-weight:800;">${sub === 'matematik'?'📐':sub==='turkce'?'📖':sub==='fen'?'🔬':sub==='din'?'🕌':sub==='sosyal'?'🌍':'🇬🇧'} ${sub.toUpperCase()}</span>
+                        <span style="color:var(--primary); font-weight:800;">%${s.percent}</span>
+                    </div>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap; font-size:0.75rem;">
+                        <span>📚 Toplam soru: ${s.totalAvailable}</span>
+                        <span>✅ Doğru: ${s.correct}</span>
+                        <span>❌ Yanlış: ${s.wrong}</span>
+                        <span>📌 Çözülen: ${s.solved}</span>
+                    </div>
+                    <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${fillWidth}%;"></div></div>
+                    <div style="font-size:0.65rem; margin-top:5px; color:var(--text-secondary);">Başarı = (Doğru / Çözülen) × 100</div>
+                </div>
+            `;
+        }
+        container.innerHTML = html;
+        const overall = getOverallStats();
+        document.getElementById('analytics-total-box').innerHTML = `
+            <div style="font-size:0.9rem;">GENEL BAŞARI (Çözülenler Bazında)</div>
+            <div class="big-percent">%${overall.overallPercent}</div>
+            <div style="margin-top:6px;">${overall.totalCorrect} doğru / ${overall.totalSolved} çözülen soru</div>
+            <div class="progress-bar-wrap mt-2"><div class="progress-bar-fill" style="width:${overall.overallPercent}%;"></div></div>
+            <div style="font-size:0.7rem; margin-top:8px;">⭐ Havuzdaki toplam soru: ${overall.totalAvailableSum}</div>
+        `;
+    }
+
+    function showResetModal() { document.getElementById('modal-overlay').classList.add('active'); }
+    function closeResetModal() { document.getElementById('modal-overlay').classList.remove('active'); }
+    function confirmReset() {
+        userProgress = {};
+        localStorage.removeItem('lgsProgress');
+        resetCloudProgress();
+        updateAllUI();
+        closeResetModal();
+        if (document.getElementById('analytics-screen').classList.contains('active')) renderAnalytics();
+    }
+
+    // FIXED: SORU PARSER - More flexible answer matching
+    function parseQuestions(rawText) {
+        if (!rawText) return [];
+        const questions = [];
+        const blocks = rawText.split(/## \d+\.\s*Soru Tipi:/).slice(1);
+        for (let block of blocks) {
+            try {
+                const soruMatch = block.match(/\*\*Soru Kökü:\*\*\s*([\s\S]*?)\*\*Şıklar:\*\*/);
+                if (!soruMatch) continue;
+                const aMatch = block.match(/(?:^|\n)-\s*A\)\s*(.*)/);
+                const bMatch = block.match(/(?:^|\n)-\s*B\)\s*(.*)/);
+                const cMatch = block.match(/(?:^|\n)-\s*C\)\s*(.*)/);
+                const dMatch = block.match(/(?:^|\n)-\s*D\)\s*(.*)/);
+                
+                // FIX: More flexible answer pattern - matches "Cevap: X." or "**Cevap: X.**" anywhere
+                let ansMatch = block.match(/Cevap:\s*([A-D])\./i);
+                let correctAnswer = ansMatch ? ansMatch[1].toUpperCase() : "A";
+                
+                questions.push({
+                    text: soruMatch[1].trim(),
+                    options: { 
+                        A: aMatch?.[1]?.trim() || '', 
+                        B: bMatch?.[1]?.trim() || '', 
+                        C: cMatch?.[1]?.trim() || '', 
+                        D: dMatch?.[1]?.trim() || '' 
+                    },
+                    correct: correctAnswer
+                });
+            } catch(e) {
+                console.error("Parse error:", e);
+            }
+        }
+        return questions;
+    }
+
+    // MathJax render helper
+    function renderMath(targetEl) {
+        const els = targetEl ? [targetEl] : undefined;
+        LGSMarkdown.typeset(els).catch(err => console.log('MathJax error:', err));
+    }
+
+    function setQuizSkeleton(isSkeleton) {
+        const quizScreen = document.getElementById('quiz-screen');
+        const els = quizScreen.querySelectorAll('.back-btn, .subject-info, #prev-btn, .q-input-group, #next-btn');
+        
+        if (!isSkeleton) document.body.classList.add('no-transition');
+        
+        els.forEach(el => {
+            if (isSkeleton) el.classList.add('skeleton');
+            else el.classList.remove('skeleton');
+        });
+        
+        if (!isSkeleton) {
+            void document.body.offsetHeight; // force reflow
+            document.body.classList.remove('no-transition');
+        }
+    }
+
+    async function startSubject(subject) {
+        currentSubject = subject;
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('quiz-screen').classList.add('active');
+        document.getElementById('subject-title').innerText = subject.toUpperCase();
+        updateSubjectScore();
+
+        setQuizSkeleton(true);
+
+        document.getElementById('question-text').innerHTML = `
+            <div class="skeleton skeleton-text" style="width: 95%;"></div>
+            <div class="skeleton skeleton-text" style="width: 100%;"></div>
+            <div class="skeleton skeleton-text" style="width: 85%;"></div>
+            <div class="skeleton skeleton-text" style="width: 60%;"></div>
+        `;
+        document.getElementById('options-container').innerHTML = `
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+            <div class="skeleton skeleton-btn"></div>
+        `;
+        try {
+            const response = await fetch(`main/${subject}.txt?v=${Date.now()}`);
+            if (!response.ok) throw new Error(`main/${subject}.txt bulunamadı`);
+            const txt = await response.text();
+            currentQuestions = parseQuestions(txt);
+            if (currentQuestions.length && !userProgress[currentSubject]._total) {
+                userProgress[currentSubject]._total = currentQuestions.length;
+                saveProgress();
+            }
+            
+            const total = currentQuestions.length;
+            const startIdx = getStartIndex(currentSubject, total);
+            currentIndex = startIdx;
+            
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+            
+            renderQuestion();
+        } catch (err) {
+            setQuizSkeleton(false);
+            document.getElementById('question-text').innerHTML = `
+                <div style="color:var(--danger); text-align:center; padding: 20px;">
+                    ❌ Hata: ${err.message}
+                    <div style="font-size:0.8rem; margin-top:10px; color:var(--text-secondary);">
+                        Tarayıcınız dosya sisteminden (file://) veri çekilmesini engelledi. Lütfen bir yerel sunucu kullanın.
+                    </div>
+                </div>
+            `;
+            document.getElementById('options-container').innerHTML = '';
+        }
+    }
+
+    let currentRenderId = 0;
+    
+    async function renderQuestion(skipSkeleton = false) {
+        const renderId = ++currentRenderId;
+        if (!skipSkeleton) setQuizSkeleton(true);
+        answered = false;
+        const total = currentQuestions.length;
+        document.getElementById('total-q').innerText = total;
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex >= total && total) currentIndex = total - 1;
+        document.getElementById('q-input').value = currentIndex + 1;
+        document.getElementById('prev-btn').disabled = currentIndex === 0;
+        document.getElementById('next-btn').disabled = currentIndex === total - 1 || total === 0;
+        
+        if (total === 0) {
+            document.getElementById('question-text').innerHTML = '⚠️ Soru bulunamadı. Lütfen dosyaları kontrol edin.';
+            document.getElementById('options-container').innerHTML = '';
+            return;
+        }
+        
+        if (currentSubject && currentIndex !== undefined) {
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            userProgress._meta.lastVisited[currentSubject] = currentIndex;
+            saveProgress();
+        }
+        
+        const q = currentQuestions[currentIndex];
+        const questionEl = document.getElementById('question-text');
+        const optsDiv = document.getElementById('options-container');
+        
+        if (!skipSkeleton) {
+            questionEl.innerHTML = `
+                <div class="skeleton skeleton-text" style="width: 95%;"></div>
+                <div class="skeleton skeleton-text" style="width: 100%;"></div>
+                <div class="skeleton skeleton-text" style="width: 85%;"></div>
+                <div class="skeleton skeleton-text" style="width: 60%;"></div>
+            `;
+            optsDiv.innerHTML = `
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+                <div class="skeleton skeleton-btn"></div>
+            `;
+        }
+        
+        let staging = document.getElementById('math-staging');
+        if (!staging) {
+            staging = document.createElement('div');
+            staging.id = 'math-staging';
+            staging.style.display = 'none';
+            document.body.appendChild(staging);
+        }
+        
+        const stagingQ = document.createElement('div');
+        stagingQ.className = 'math';
+        stagingQ.innerHTML = LGSMarkdown.block(q.text);
+        
+        const stagingOpts = document.createElement('div');
+        stagingOpts.className = 'math';
+        const saved = userProgress[currentSubject]?.[currentIndex];
+        ['A','B','C','D'].forEach(key => {
+            if (!q.options[key]) return;
+            const btn = document.createElement('button');
+            btn.className = 'option-btn';
+            const iconSpan = document.createElement('span');
+            iconSpan.className = 'option-icon';
+            iconSpan.innerText = '○';
+            const textSpan = document.createElement('span');
+            textSpan.className = 'option-text';
+            textSpan.innerHTML = `<strong>${key})</strong> ${LGSMarkdown.inline(q.options[key])}`;
+            btn.appendChild(iconSpan); btn.appendChild(textSpan);
+            if (saved) {
+                btn.disabled = true;
+                if (key === q.correct) { btn.classList.add('correct'); iconSpan.innerText = '✅'; }
+                else if (key === saved.selected) { btn.classList.add('incorrect'); iconSpan.innerText = '❌'; }
+            } else {
+                btn.onclick = () => selectOption(key);
+            }
+            stagingOpts.appendChild(btn);
+        });
+        
+        staging.innerHTML = '';
+        staging.appendChild(stagingQ);
+        staging.appendChild(stagingOpts);
+        
+        try {
+            if (window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([staging]);
+            await LGSMarkdown.typeset([staging]);
+        } catch (e) {}
+        
+        if (!skipSkeleton) await new Promise(r => setTimeout(r, 200));
+        if (renderId !== currentRenderId) return;
+        
+        if (window.MathJax && window.MathJax.typesetClear) window.MathJax.typesetClear([questionEl, optsDiv]);
+        questionEl.innerHTML = '';
+        while (stagingQ.firstChild) questionEl.appendChild(stagingQ.firstChild);
+        optsDiv.innerHTML = '';
+        while (stagingOpts.firstChild) optsDiv.appendChild(stagingOpts.firstChild);
+        
+        if (!skipSkeleton) setQuizSkeleton(false);
+        
+        if (saved) answered = true;
+        updateSubjectScore();
+    }
+
+    function selectOption(selected) {
+        if (answered) return;
+        answered = true;
+        const q = currentQuestions[currentIndex];
+        const isCorrect = (selected === q.correct);
+        playSound(isCorrect);
+        if (localStorage.getItem('sensorySensitiveMode') === 'false') {
+            const overlay = document.getElementById('flash-overlay');
+            overlay.className = isCorrect ? 'flash-green' : 'flash-red';
+            setTimeout(() => overlay.className = '', 380);
+        }
+
+        if (!userProgress[currentSubject]) userProgress[currentSubject] = {};
+        userProgress[currentSubject][currentIndex] = { selected, isCorrect };
+        if (!userProgress[currentSubject]._total) userProgress[currentSubject]._total = currentQuestions.length;
+        saveProgress();
+        renderQuestion(true);
+    }
+
+    // NAVIGASYON
+    document.getElementById('prev-btn')?.addEventListener('click', () => { 
+        if (currentIndex > 0) { 
+            currentIndex--; 
+            renderQuestion(); 
+        } 
+    });
+    document.getElementById('next-btn')?.addEventListener('click', () => { 
+        if (currentIndex < currentQuestions.length - 1) { 
+            currentIndex++; 
+            renderQuestion(); 
+        } 
+    });
+    document.getElementById('q-input')?.addEventListener('change', (e) => {
+        let val = parseInt(e.target.value);
+        if (isNaN(val)) val = 1;
+        val = Math.min(Math.max(val, 1), currentQuestions.length);
+        currentIndex = val - 1;
+        renderQuestion();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (!document.getElementById('quiz-screen').classList.contains('active')) return;
+        if (e.key === 'ArrowLeft' && !document.getElementById('prev-btn')?.disabled) { e.preventDefault(); document.getElementById('prev-btn')?.click(); }
+        if (e.key === 'ArrowRight' && !document.getElementById('next-btn')?.disabled) { e.preventDefault(); document.getElementById('next-btn')?.click(); }
+    });
+
+    function showMainMenu() {
+        currentSubject = "";
+        document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+        document.getElementById('main-menu').classList.add('active');
+        updateAllUI();
+    }
+
+    function toggleSensitiveMode(isSensitive) {
+        localStorage.setItem('sensorySensitiveMode', isSensitive ? 'true' : 'false');
+        document.body.classList.toggle('reduced-sensory', isSensitive);
+        updateSensitiveToggleUI(isSensitive, false);
+    }
+    
+    function updateSensitiveToggleUI(isSensitive, noAnimate = false) {
+        const knob = document.getElementById('toggle-knob');
+        const bg = document.getElementById('toggle-bg');
+        const checkbox = document.getElementById('main-sensory-toggle');
+        if (checkbox) checkbox.checked = isSensitive;
+        if (knob && bg) {
+            if (noAnimate) {
+                knob.style.transition = 'none';
+                bg.style.transition = 'none';
+            } else {
+                knob.style.transition = '.4s';
+                bg.style.transition = '.4s';
+            }
+            if (isSensitive) {
+                knob.style.transform = 'translateX(26px)';
+                knob.style.backgroundColor = '#fff';
+                bg.style.backgroundColor = 'var(--primary)';
+                bg.style.borderColor = 'var(--primary)';
+            } else {
+                knob.style.transform = 'translateX(0)';
+                knob.style.backgroundColor = 'var(--text-secondary)';
+                bg.style.backgroundColor = 'var(--surface3)';
+                bg.style.borderColor = 'var(--border)';
+            }
+        }
+    }
+
+    window.onload = () => {
+        const sensitiveMode = localStorage.getItem('sensorySensitiveMode') !== 'false';
+        updateSensitiveToggleUI(sensitiveMode, true);
+        
+        updateAllUI();
+        
+        // Add a slight delay to allow skeleton screen to be visible for aesthetics
+        setTimeout(() => {
+            document.body.classList.add('no-transition');
+            document.querySelectorAll('#main-menu .skeleton').forEach(el => el.classList.remove('skeleton'));
+            void document.body.offsetHeight;
+            document.body.classList.remove('no-transition');
+            
+            const subjects = ['matematik','turkce','fen','din','sosyal','ingilizce'];
+            let dirty = false;
+            for (let sub of subjects) {
+                if (userProgress[sub] && !userProgress[sub]._total) {
+                    const keys = Object.keys(userProgress[sub]).filter(k => k !== '_total' && !isNaN(k));
+                    if (keys.length) { userProgress[sub]._total = Math.max(...keys.map(Number)) + 1; dirty = true; }
+                }
+            }
+            if (!userProgress._meta) userProgress._meta = {};
+            if (!userProgress._meta.lastVisited) userProgress._meta.lastVisited = {};
+            if (dirty) saveProgress();
+            renderMath(document.getElementById('main-menu'));
+        }, 400);
+    };
+</script>
+<script src="konami.js?v=<?= (int) @filemtime(__DIR__ . '/konami.js') ?>"></script>
+</body>
+</html>

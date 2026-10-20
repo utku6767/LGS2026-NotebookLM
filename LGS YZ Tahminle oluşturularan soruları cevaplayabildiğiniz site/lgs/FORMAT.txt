@@ -1,0 +1,49 @@
+DENEME SORU DOSYALARI — BİÇİM
+================================
+
+Deneme modu soruları bu klasördeki şu dosyalardan okunur (main/ ile aynı adlar):
+
+    lgs/turkce.txt      lgs/sosyal.txt   lgs/din.txt
+    lgs/ingilizce.txt   lgs/matematik.txt  lgs/fen.txt
+
+Biçim, main/ klasöründeki dosyalarla birebir aynıdır:
+
+    ## 1. Soru Tipi: <konu adı>
+    **Soru Kökü:** <soru metni — birden fazla satır olabilir>
+    **Şıklar:**
+    - A) <A şıkkı>
+    - B) <B şıkkı>
+    - C) <C şıkkı>
+    - D) <D şıkkı>
+    **Doğru Cevap ve Çözüm:** **Cevap: B.** <çözüm metni>
+
+Kurallar
+--------
+- Her soru "## <numara>. Soru Tipi:" satırıyla başlar; deneme bu başlıkları sırayla okur.
+- "**Soru Kökü:**" ile "**Şıklar:**" arasındaki her şey soru metnidir.
+- Şıklar "- A)" ... "- D)" biçiminde olmalı; başka madde işaretleri (ör. "- Müzik etkinliği ...")
+  soru metnine ait sayılır, şık sayılmaz.
+- Doğru cevap "Cevap: X." kalıbından okunur (X = A/B/C/D). Bu kalıp yoksa soru A kabul edilir.
+- Dosya başındaki "#" ile başlayan not satırları soru sayılmaz.
+
+Görünüm (Markdown)
+------------------
+Soru metni hafif Markdown olarak yazılır; tarayıcıda biçimlendirilerek gösterilir
+(ortak okuyucu: md-lite.js — hem index.php hem deneme.php kullanır).
+
+    **kalın**            → kalın yazı
+    *italik*             → italik yazı
+    - madde / * madde    → madde listesi
+    ---                  → yatay ayırıcı çizgi
+    satır sonunda \      → alt satıra zorunlu geçiş
+    $...$                → matematik (MathJax ile dizilir), ör. $3,5\cdot10^{10}$
+    <, >, &              → metin olarak gösterilir; $...$ içinde de sorunsuz çalışır
+
+Denemede her dersten kaç soru kullanılır (gerçek LGS dağılımı)
+-------------------------------------------------------------
+    SÖZEL   (75 dk) : Türkçe 20 · Sosyal 10 · Din 10 · İngilizce 10  = 50 soru
+    SAYISAL (80 dk) : Matematik 20 · Fen 20                          = 40 soru
+    MARATON (155 dk): hepsi (Türkçe 20 · Sosyal 10 · Din 10 · İngilizce 10 ·
+                             Matematik 20 · Fen 20)                  = 90 soru
+
+Dosyada o dersten daha az soru varsa eldeki soru sayısı kadar kullanılır.

@@ -1,0 +1,60 @@
+/* LGS Çözüm — kurulum / teşhis sayfalarının ortak stilleri (setup.php, install.php) */
+
+.setup-card {
+    width: 100%;
+    max-width: 640px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 26px;
+    box-shadow: var(--shadow);
+}
+.setup-card h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.55rem;
+    color: var(--text-heading);
+    margin-bottom: 6px;
+}
+.setup-sub {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+}
+.setup-list { display: flex; flex-direction: column; gap: 8px; }
+.setup-row {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 10px;
+    align-items: start;
+    padding: 11px 13px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(0, 0, 0, 0.25);
+}
+.setup-row.is-bad { border-color: var(--danger-border); background: var(--danger-bg); }
+.setup-mark { font-size: 0.95rem; line-height: 1.4; }
+.setup-row.is-good .setup-mark { color: var(--success); }
+.setup-row.is-bad .setup-mark { color: var(--danger); }
+.setup-label { font-size: 0.85rem; font-weight: 700; color: var(--text-heading); }
+.setup-detail {
+    font-size: 0.76rem;
+    color: var(--text-secondary);
+    word-break: break-word;
+    margin-top: 2px;
+}
+.setup-verdict {
+    margin-top: 18px;
+    padding: 14px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 0.87rem;
+    border: 1px solid var(--success-border);
+    background: var(--success-bg);
+}
+.setup-verdict.is-bad { border-color: var(--danger-border); background: var(--danger-bg); }
+.setup-verdict b { color: var(--text-heading); }
+.setup-note {
+    margin-top: 14px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
